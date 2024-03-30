@@ -3,20 +3,11 @@
     "com.vrchat.core.vpm-resolver": {
       "version": "0.1.27"
     },
-    "com.vrchat.base": {
-      "version": "3.5.0"
-    },
-    "com.vrchat.avatars": {
-      "version": "3.5.0"
-    },
     "vrchat.blackstartx.gesture-manager": {
       "version": "3.8.8"
     },
     "jp.lilxyzw.liltoon": {
       "version": "1.6.0"
-    },
-    "io.github.azukimochi.light-limit-changer": {
-      "version": "1.8.0"
     },
     "jp.lilxyzw.avatar-utils": {
       "version": "1.1.0"
@@ -24,39 +15,38 @@
     "com.anatawa12.vpm-package-auto-installer.creator": {
       "version": "1.1.1"
     },
-    "dev.hai-vr.lightbox-viewer": {
-      "version": "2.0.2"
-    },
-    "com.anatawa12.avatar-optimizer": {
-      "version": "1.6.8"
-    },
-    "nadena.dev.ndmf": {
-      "version": "1.3.7"
-    },
-    "nadena.dev.modular-avatar": {
-      "version": "1.9.8"
-    },
-    "jp.suzuryg.face-emo": {
-      "version": "1.5.3"
-    },
     "dev.hai-vr.animation-viewer": {
       "version": "2.0.3"
+    },
+    "com.anatawa12.avatar-optimizer": {
+      "version": "1.6.9"
+    },
+    "nadena.dev.ndmf": {
+      "version": "1.4.0"
+    },
+    "com.vrchat.base": {
+      "version": "3.5.2"
+    },
+    "com.vrchat.avatars": {
+      "version": "3.5.2"
+    },
+    "dev.hai-vr.lightbox-viewer": {
+      "version": "2.1.0"
+    },
+    "io.github.azukimochi.light-limit-changer": {
+      "version": "1.11.1"
+    },
+    "jp.suzuryg.face-emo": {
+      "version": "1.5.4"
+    },
+    "nadena.dev.modular-avatar": {
+      "version": "1.9.10"
     }
   },
   "locked": {
     "com.vrchat.core.vpm-resolver": {
       "version": "0.1.28",
       "dependencies": {}
-    },
-    "com.vrchat.base": {
-      "version": "3.5.1",
-      "dependencies": {}
-    },
-    "com.vrchat.avatars": {
-      "version": "3.5.1",
-      "dependencies": {
-        "com.vrchat.base": "3.5.1"
-      }
     },
     "vrchat.blackstartx.gesture-manager": {
       "version": "3.8.8",
@@ -72,14 +62,6 @@
       "version": "1.2.0",
       "dependencies": {}
     },
-    "io.github.azukimochi.light-limit-changer": {
-      "version": "1.10.0",
-      "dependencies": {
-        "com.vrchat.avatars": ">=3.2.0",
-        "nadena.dev.modular-avatar": "^1.8.0",
-        "nadena.dev.ndmf": "^1.3.1"
-      }
-    },
     "jp.lilxyzw.avatar-utils": {
       "version": "1.1.0",
       "dependencies": {}
@@ -87,18 +69,18 @@
     "com.anatawa12.vpm-package-auto-installer.creator": {
       "version": "1.1.1"
     },
-    "dev.hai-vr.lightbox-viewer": {
-      "version": "2.0.2",
-      "dependencies": {
-        "dev.hai-vr.resilience.toolkit": "1.0.x"
-      }
-    },
     "dev.hai-vr.resilience.toolkit": {
       "version": "1.0.1",
       "dependencies": {}
     },
+    "dev.hai-vr.animation-viewer": {
+      "version": "2.0.3",
+      "dependencies": {
+        "dev.hai-vr.resilience.toolkit": "1.0.x"
+      }
+    },
     "com.anatawa12.avatar-optimizer": {
-      "version": "1.6.8",
+      "version": "1.6.9",
       "dependencies": {
         "com.anatawa12.custom-localization-for-editor-extension": "^1.2.0",
         "nadena.dev.ndmf": "^1.3.0",
@@ -106,24 +88,42 @@
       }
     },
     "nadena.dev.ndmf": {
-      "version": "1.3.7",
+      "version": "1.4.0",
       "dependencies": {}
     },
-    "nadena.dev.modular-avatar": {
-      "version": "1.9.8",
+    "com.vrchat.base": {
+      "version": "3.5.2",
+      "dependencies": {}
+    },
+    "com.vrchat.avatars": {
+      "version": "3.5.2",
       "dependencies": {
-        "com.vrchat.avatars": ">=3.4.0",
-        "nadena.dev.ndmf": ">=1.3.6 <2.0.0-a"
+        "com.vrchat.base": "3.5.2"
+      }
+    },
+    "dev.hai-vr.lightbox-viewer": {
+      "version": "2.1.0",
+      "dependencies": {
+        "dev.hai-vr.resilience.toolkit": "1.0.x"
+      }
+    },
+    "io.github.azukimochi.light-limit-changer": {
+      "version": "1.11.1",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.2.0",
+        "nadena.dev.modular-avatar": "^1.9.9",
+        "nadena.dev.ndmf": "^1.4.0"
       }
     },
     "jp.suzuryg.face-emo": {
-      "version": "1.5.3",
+      "version": "1.5.4",
       "dependencies": {}
     },
-    "dev.hai-vr.animation-viewer": {
-      "version": "2.0.3",
+    "nadena.dev.modular-avatar": {
+      "version": "1.9.10",
       "dependencies": {
-        "dev.hai-vr.resilience.toolkit": "1.0.x"
+        "com.vrchat.avatars": ">=3.4.0",
+        "nadena.dev.ndmf": ">=1.4.0 <2.0.0-a"
       }
     }
   }

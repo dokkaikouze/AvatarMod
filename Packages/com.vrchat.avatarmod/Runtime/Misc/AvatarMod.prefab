@@ -35,6 +35,7 @@ Transform:
   - {fileID: 3208107807829423206}
   - {fileID: 6316215527280138163}
   - {fileID: 1480801961356939128}
+  - {fileID: 3804701513393048199}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5077675285912645034
@@ -84,6 +85,95 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameters: []
+--- !u!1 &1998699434946656706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3804701513393048199}
+  - component: {fileID: 3737529282930754510}
+  - component: {fileID: 4357366309041734856}
+  - component: {fileID: 8781932133211191120}
+  m_Layer: 0
+  m_Name: '[Option Local] HeadChop'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3804701513393048199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998699434946656706}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6461410430392657849}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3737529282930754510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998699434946656706}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1888410255, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetBones:
+  - transform: {fileID: 0}
+    scaleFactor: 1
+    applyCondition: 1
+    defaultScaleFactorAssigned: 1
+  globalScaleFactor: 1
+--- !u!114 &4357366309041734856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998699434946656706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 760814665e7bf7b4e9fa695b5c6b300d, type: 2}
+  installTargetMenu: {fileID: 0}
+--- !u!114 &8781932133211191120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998699434946656706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: AvatarMod/HeadChop
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 1
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 0
 --- !u!1 &5610640479461771885
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +186,7 @@ GameObject:
   - component: {fileID: 503367460359505191}
   - component: {fileID: 5637847080924482470}
   m_Layer: 0
-  m_Name: "[Option] \u660E\u308B\u3055 -  Brightness"
+  m_Name: "[Option] \u660E\u308B\u3055 - Brightness"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,6 +315,8 @@ GameObject:
   - component: {fileID: 3208107807829423206}
   - component: {fileID: 818119063114840965}
   - component: {fileID: 3814755182487221320}
+  - component: {fileID: 600558828867362666}
+  - component: {fileID: 5004937914471142961}
   m_Layer: 0
   m_Name: "[Option] \u30C0\u30F3\u30B9\u8868\u60C5 - DanceWorld"
   m_TagString: Untagged
@@ -274,3 +366,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameters: []
+--- !u!114 &600558828867362666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8810076049042100375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1888410255, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetBones:
+  - transform: {fileID: 0}
+    scaleFactor: 1
+    applyCondition: 1
+    defaultScaleFactorAssigned: 1
+  - transform: {fileID: 0}
+    scaleFactor: 0
+    applyCondition: 2
+    defaultScaleFactorAssigned: 1
+  globalScaleFactor: 1
+--- !u!114 &5004937914471142961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8810076049042100375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 9100000, guid: bc1f0a9f4bdd477479e9032a399e64e6, type: 2}
+  layerType: 7
+  deleteAttachedAnimator: 0
+  pathMode: 1
+  matchAvatarWriteDefaults: 0
+  relativePathRoot:
+    referencePath: 
+  layerPriority: 0

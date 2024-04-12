@@ -9,3 +9,11 @@ https://twitter.com/Minamoto_Syun/status/1441483957011320839
 FaceEmo
 suzuryg 様
 https://suzuryg.github.io/face-emo/ja/
+
+VRChat向けCustom Animator Controllers
+Pocho 様
+https://booth.pm/ja/items/4424448
+
+ごろ寝システムEX
+みんみんみーん 様
+https://minminmart.booth.pm/items/4233545

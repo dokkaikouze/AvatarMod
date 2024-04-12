@@ -712,6 +712,18 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: AvatarMod/Costume/SkirtSide
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: AvatarMod/Costume/SkirtFront
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: AvatarMod
@@ -1097,7 +1109,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 6373029304493317122}
-    m_Threshold: 0.06666667
+    m_Threshold: 0.05454546
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1105,7 +1117,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 1572832570332686063}
-    m_Threshold: 0.13333334
+    m_Threshold: 0.10909092
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1113,7 +1125,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 52c39bbbfd304da4aaca5940b459739d, type: 2}
-    m_Threshold: 0.20000002
+    m_Threshold: 0.16363637
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1121,7 +1133,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e818b36ef8a4bd943987ce4559c7336f, type: 2}
-    m_Threshold: 0.26666668
+    m_Threshold: 0.21818183
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1129,7 +1141,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: fb221bafed6d34946a0521025ee14ca7, type: 2}
-    m_Threshold: 0.33333337
+    m_Threshold: 0.27272728
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1137,7 +1149,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 66628c641b3f1314795c160a20fbe05f, type: 2}
-    m_Threshold: 0.40000004
+    m_Threshold: 0.32727274
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1145,15 +1157,31 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: d3d0cd944d37cf546b26a7561444df45, type: 2}
-    m_Threshold: 0.4666667
+    m_Threshold: 0.3818182
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Costume/BreastRibbon
     m_Mirror: 0
   - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: a8921722e51df944bbcf17795773313c, type: 2}
+    m_Threshold: 0.43636367
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Costume/SkirtSide
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 4ba2e83208250594798e1ba9d17f913c, type: 2}
+    m_Threshold: 0.4909091
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Costume/SkirtFront
+    m_Mirror: 0
+  - serializedVersion: 2
     m_Motion: {fileID: 20600000, guid: 9a156761dac842249a25ca1a85c94ac9, type: 2}
-    m_Threshold: 0.53333336
+    m_Threshold: 0.54545456
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0

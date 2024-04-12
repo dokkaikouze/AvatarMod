@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: SupineMenu2_ex
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Supine
+    icon: {fileID: 2800000, guid: 2a1a8951bb6a8f641a9293ae2a648c4e, type: 3}
+    type: 102
+    parameter:
+      name: VRCSupine
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Right Side
+    icon: {fileID: 2800000, guid: b8d40d7f52f19f840ae2ca6ab8ab00da, type: 3}
+    type: 102
+    parameter:
+      name: VRCSupine
+    value: 2
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Left Side
+    icon: {fileID: 2800000, guid: b4ef9afc2af98bf41a9959bbae8ead83, type: 3}
+    type: 102
+    parameter:
+      name: VRCSupine
+    value: 3
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Sit 1
+    icon: {fileID: 2800000, guid: bd877222b4042984f85270b0f2d7bc5b, type: 3}
+    type: 102
+    parameter:
+      name: VRCSupine
+    value: 4
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Sit 2
+    icon: {fileID: 2800000, guid: 963c4ea916ac8654696eb3102a2d81ac, type: 3}
+    type: 102
+    parameter:
+      name: VRCSupine
+    value: 5
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Lock Pose Transition
+    icon: {fileID: 2800000, guid: a995a5a528320cf4094232abffcb916d, type: 3}
+    type: 102
+    parameter:
+      name: VRCLockPose
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Foot Anchor
+    icon: {fileID: 2800000, guid: ac0c842deeb87ba45851f9f4ca22b01a, type: 3}
+    type: 102
+    parameter:
+      name: VRCFootAnchor
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []

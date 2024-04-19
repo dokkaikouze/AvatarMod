@@ -512,7 +512,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  colliders: []
+  colliders:
+  - {fileID: 6501227198154074041}
+  - {fileID: 8378203658868183229}
+  - {fileID: 1359539120000691582}
   limitType: 3
   maxAngleX: 180
   maxAngleXCurve:
@@ -4970,7 +4973,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  colliders: []
+  colliders:
+  - {fileID: 4598340202677502892}
+  - {fileID: 1359539120000691582}
+  - {fileID: 8378203658868183229}
   limitType: 3
   maxAngleX: 180
   maxAngleXCurve:
@@ -7166,6 +7172,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 532363343536253704}
+    - targetCorrespondingSourceObject: {fileID: 500446977570683752, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4598340202677502892}
+    - targetCorrespondingSourceObject: {fileID: -374126398024475882, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1359539120000691582}
     - targetCorrespondingSourceObject: {fileID: -8326922580406772625, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
         type: 3}
       insertIndex: -1
@@ -7174,6 +7188,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6277879616317532825}
+    - targetCorrespondingSourceObject: {fileID: 8157677260545985594, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6501227198154074041}
+    - targetCorrespondingSourceObject: {fileID: -1153256917476700660, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8378203658868183229}
     - targetCorrespondingSourceObject: {fileID: 2497687562716173956, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
         type: 3}
       insertIndex: -1
@@ -11325,6 +11347,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2792233061295456215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 500446977570683752, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2319900209600611519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4598340202677502892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792233061295456215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631200402, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootTransform: {fileID: 0}
+  shapeType: 1
+  insideBounds: 0
+  radius: 0.018
+  height: 0.21
+  position: {x: 0, y: 0.1, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  bonesAsSpheres: 0
 --- !u!1 &2813767931416966872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 521700630430429799, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
@@ -12020,56 +12068,38 @@ MonoBehaviour:
     isDefault: 1
   AnimationPreset: {fileID: 0}
   animationHashSet:
-  - hash: 1926658452
-    name: Standing
-  - hash: 2069122584
-    name: Crouching
-  - hash: 1063665824
-    name: Prone
-  - hash: 66598079
-    name: Jump and Fall.Hop
-  - hash: -262395056
-    name: Jump and Fall.Short Fall
-  - hash: -1955555581
-    name: Jump and Fall.Long Fall
-  - hash: -1295572665
-    name: Jump and Fall.Hard Landing
-  - hash: 1387365684
-    name: Jump and Fall.Quick Landing
-  - hash: 1311189836
-    name: Jump and Fall.Restore Tracking
-  - hash: 1847486962
-    name: DEFAULT.Victory
-  - hash: 2032099718
-    name: DEFAULT.FingerPoint
-  - hash: -404120710
-    name: DEFAULT.HandGun
-  - hash: -390798940
-    name: DEFAULT.HandOpen
-  - hash: -1165915048
-    name: DEFAULT.Neutral
-  - hash: -265339112
-    name: DEFAULT.Fist
-  - hash: 1198445072
-    name: DEFAULT.ThumbsUp
-  - hash: -213208713
-    name: DEFAULT.RockNRoll
-  - hash: 946538521
-    name: DEFAULT.Victory
-  - hash: -516653094
-    name: DEFAULT.FingerPoint
-  - hash: -1315112303
-    name: DEFAULT.HandGun
-  - hash: -549802187
-    name: DEFAULT.HandOpen
-  - hash: -319492685
-    name: DEFAULT.Neutral
-  - hash: 1560696564
-    name: DEFAULT.Fist
-  - hash: 1893768321
-    name: DEFAULT.ThumbsUp
-  - hash: 1953864939
-    name: DEFAULT.RockNRoll
+  - hash: -398611352
+    name: Victory
+  - hash: -2030803559
+    name: FingerPoint
+  - hash: 1640652512
+    name: HandGun
+  - hash: -118966213
+    name: HandOpen
+  - hash: 1017268674
+    name: Neutral
+  - hash: -1694705457
+    name: Fist
+  - hash: 1462930319
+    name: ThumbsUp
+  - hash: -1813355525
+    name: RockNRoll
+  - hash: -1942014581
+    name: Victory
+  - hash: -938094605
+    name: FingerPoint
+  - hash: 97044227
+    name: HandGun
+  - hash: -1047590560
+    name: HandOpen
+  - hash: 1486934049
+    name: Neutral
+  - hash: -1558136028
+    name: Fist
+  - hash: 1851079380
+    name: ThumbsUp
+  - hash: 1869253686
+    name: RockNRoll
   - hash: 965340609
     name: IDLE Stand
   - hash: -862420499
@@ -14747,6 +14777,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &5750883430046059187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1153256917476700660, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2319900209600611519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8378203658868183229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5750883430046059187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631200402, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootTransform: {fileID: 0}
+  shapeType: 1
+  insideBounds: 0
+  radius: 0.018
+  height: 0.24
+  position: {x: 0, y: 0.11, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  bonesAsSpheres: 0
 --- !u!1 &5788209284784197130 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1125291471529358667, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
@@ -14784,6 +14840,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5837813884604991621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157677260545985594, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2319900209600611519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6501227198154074041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837813884604991621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631200402, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootTransform: {fileID: 0}
+  shapeType: 1
+  insideBounds: 0
+  radius: 0.018
+  height: 0.21
+  position: {x: 0, y: 0.1, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  bonesAsSpheres: 0
 --- !u!1 &5889595194920235039 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8182472432364827808, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
@@ -15348,6 +15430,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6557002424559525801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -374126398024475882, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2319900209600611519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1359539120000691582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557002424559525801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631200402, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootTransform: {fileID: 0}
+  shapeType: 1
+  insideBounds: 0
+  radius: 0.018
+  height: 0.24
+  position: {x: 0, y: 0.11, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  bonesAsSpheres: 0
 --- !u!1 &6856945713796142290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9158407663068745837, guid: a47bc62f8f85eb148b2a81b4c5eed6b5,

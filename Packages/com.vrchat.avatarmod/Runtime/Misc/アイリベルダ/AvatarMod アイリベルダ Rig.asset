@@ -7,7 +7,7 @@ Avatar:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "AvatarMod \u30A2\u30A4\u30EA\u30D9\u30EB\u30C0 Rig"
-  m_AvatarSize: 23908
+  m_AvatarSize: 24236
   m_Avatar:
     serializedVersion: 3
     m_AvatarSkeleton:
@@ -1042,7 +1042,7 @@ Avatar:
       data:
         serializedVersion: 2
         m_RootX:
-          t: {x: 0.0023800936, y: 0.9791517, z: 0.0011348719}
+          t: {x: 0.0023800936, y: 0.97861946, z: 0.0018487042}
           q: {x: 0.0000000016151914, y: 0.0000000027212552, z: 4.3953483e-18, w: 1}
           s: {x: 1, y: 1, z: 1}
         m_Skeleton:
@@ -1146,13 +1146,17 @@ Avatar:
               m_AxesId: 46
             - m_ParentId: 47
               m_AxesId: 47
-            - m_ParentId: 1
+            - m_ParentId: 48
               m_AxesId: 48
-            - m_ParentId: 49
+            - m_ParentId: 1
               m_AxesId: 49
             - m_ParentId: 50
               m_AxesId: 50
-            m_ID: b28d6c7da8964ed447d35688f558d7664dfed8118273afb55cef4e254c176ece21c975fcdea34c257b639d345718a8a60f76581db094020413e210f33577d23afed31be166a3b65a7ec3aac296ce663bd4f331a590ff5f37042378696e7aece1b0534ec35ceaf2a9d6f300a84c0a5839e2368505c9c86851a66a11d74fde3cfd99258a309fdc03190ac395a50222876c1ff43b294bab1d5a52b399c46955b801ab58003538757d0f53516d13853bf95b98970d566b55890c887ca9cf07814ba373f0de72632b0022ac91234eef933120
+            - m_ParentId: 51
+              m_AxesId: 51
+            - m_ParentId: 52
+              m_AxesId: 52
+            m_ID: b28d6c7da8964ed447d35688f558d7664dfed8118273afb55cef4e254c176ece21c975fcdea34c257b639d345718a8a60f76581db094020413e210f33577d23afed31be166a3b65a7ec3aac296ce663bd4f331a590ff5f37042378696e7aece1b0534ec35ceaf2a9d6f300a84c0a5839e2368505c9c86851a66a11d74fde3cfd99258a309fdc03190ac395a50222876c1ff43b294bab1d5a52b399c46955b801ab58003538757d0f53516d13853bf95b98970d566b55890c887ca9cf07814ba373f0de72f1f52669632b0022ac91234eef9331206d9464f7
             m_AxesArray:
             - m_PreQ: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
               m_PostQ: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
@@ -1539,6 +1543,14 @@ Avatar:
                 m_Max: {x: 0, y: 0.5235988, z: 0.87266463}
               m_Length: 0.118254334
               m_Type: 1
+            - m_PreQ: {x: 0.3185484, y: 0.63352376, z: 0.3156766, w: 0.6304943}
+              m_PostQ: {x: -0.70704377, y: -0.0000038082808, z: -0.7071699, w: -0.0000017551037}
+              m_Sgn: {x: 1, y: 1, z: 1}
+              m_Limit:
+                m_Min: {x: 0, y: 0, z: -0.87266463}
+                m_Max: {x: 0, y: 0, z: 0.87266463}
+              m_Length: 0.045912288
+              m_Type: 1
             - m_PreQ: {x: 0.6164596, y: -0.3474917, z: 0.6146142, w: -0.348535}
               m_PostQ: {x: 0.49919468, y: 0.49919465, z: 0.5008041, w: 0.5008041}
               m_Sgn: {x: -1, y: -1, z: 1}
@@ -1562,6 +1574,14 @@ Avatar:
                 m_Min: {x: 0, y: -0.5235988, z: -0.87266463}
                 m_Max: {x: 0, y: 0.5235988, z: 0.87266463}
               m_Length: 0.118254334
+              m_Type: 1
+            - m_PreQ: {x: 0.3156766, y: 0.6304943, z: 0.3185484, w: 0.63352376}
+              m_PostQ: {x: -0.7071699, y: -0.0000017551037, z: -0.70704377, w: -0.0000038082808}
+              m_Sgn: {x: 1, y: 1, z: 1}
+              m_Limit:
+                m_Min: {x: 0, y: 0, z: -0.87266463}
+                m_Max: {x: 0, y: 0, z: 0.87266463}
+              m_Length: 0.045912288
               m_Type: 1
         m_SkeletonPose:
           data:
@@ -1715,6 +1735,9 @@ Avatar:
             - t: {x: 0.000000007450788, y: 0.38561708, z: -0.0000000013983765}
               q: {x: -0.4562353, y: 0.0075586718, z: -0.0011031758, w: 0.8898264}
               s: {x: 1, y: 1, z: 0.99999994}
+            - t: {x: -0.0000000069560095, y: 0.18364921, z: -0.000000014916017}
+              q: {x: 0.8937941, y: -0.0020693708, z: -0.0020618313, w: -0.44846812}
+              s: {x: 1, y: 1, z: 0.99999994}
             - t: {x: 0.081046395, y: -0.036175907, z: 0}
               q: {x: 0.9999573, y: 0.0015133301, z: 0.0015958565, w: 0.008972903}
               s: {x: 0.99997216, y: 0.9999998, z: 0.99900407}
@@ -1724,21 +1747,24 @@ Avatar:
             - t: {x: -0.000000007450788, y: 0.38561708, z: -0.0000000013983765}
               q: {x: -0.4562353, y: -0.0075586718, z: 0.0011031758, w: 0.8898264}
               s: {x: 1, y: 1, z: 0.99999994}
+            - t: {x: 0.0000000069560095, y: 0.18364921, z: -0.000000014916017}
+              q: {x: 0.8937941, y: 0.0020693708, z: 0.0020618313, w: -0.44846812}
+              s: {x: 1, y: 1, z: 0.99999994}
         m_LeftHand:
           data:
             m_HandBoneIndex: 0c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a000000
         m_RightHand:
           data:
             m_HandBoneIndex: 1f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d000000
-        m_HumanBoneIndex: 010000002e000000310000002f0000003200000030000000330000000200000003000000ffffffff0400000005000000080000001b000000090000001c0000000a0000001d0000000b0000001e000000ffffffffffffffff0600000007000000ffffffff
+        m_HumanBoneIndex: 010000002e000000320000002f0000003300000030000000340000000200000003000000ffffffff0400000005000000080000001b000000090000001c0000000a0000001d0000000b0000001e00000031000000350000000600000007000000ffffffff
         m_HumanBoneMass:
         - 0.14545456
         - 0.12121213
         - 0.12121213
         - 0.048484854
         - 0.048484854
-        - 0.012121214
-        - 0.012121214
+        - 0.009696971
+        - 0.009696971
         - 0.030303033
         - 0.2909091
         - 0
@@ -1752,12 +1778,12 @@ Avatar:
         - 0.01818182
         - 0.006060607
         - 0.006060607
+        - 0.0024242427
+        - 0.0024242427
         - 0
         - 0
         - 0
-        - 0
-        - 0
-        m_Scale: 0.9791517
+        m_Scale: 0.97861946
         m_ArmTwist: 0.5
         m_ForeArmTwist: 0.5
         m_UpperLegTwist: 0.5
@@ -1768,8 +1794,8 @@ Avatar:
         m_HasLeftHand: 1
         m_HasRightHand: 1
         m_HasTDoF: 0
-    m_HumanSkeletonIndexArray: 0100000002000000030000000400000005000000060000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f0000005000000051000000520000005300000054000000550000005600000057000000580000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c000000720000007300000074000000760000007700000078000000
-    m_HumanSkeletonReverseIndexArray: ffffffff000000000100000002000000030000000400000005000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a000000ffffffff1b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d000000ffffffffffffffffffffffffffffffffffffffff2e0000002f00000030000000ffffffff310000003200000033000000ffffffffffffffffffffffffffffffffffffffffffffffff
+    m_HumanSkeletonIndexArray: 0100000002000000030000000400000005000000060000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f0000005000000051000000520000005300000054000000550000005600000057000000580000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000007200000073000000740000007500000076000000770000007800000079000000
+    m_HumanSkeletonReverseIndexArray: ffffffff000000000100000002000000030000000400000005000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a000000ffffffff1b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d000000ffffffffffffffffffffffffffffffffffffffff2e0000002f000000300000003100000032000000330000003400000035000000ffffffffffffffffffffffffffffffffffffffff
     m_RootMotionBoneIndex: -1
     m_RootMotionBoneX:
       t: {x: 0, y: 0, z: 0}
@@ -2344,6 +2370,22 @@ Avatar:
         m_Modified: 0
     - m_BoneName: LittleFinger3_R
       m_HumanName: Right Little Distal
+      m_Limit:
+        m_Min: {x: 0, y: 0, z: 0}
+        m_Max: {x: 0, y: 0, z: 0}
+        m_Value: {x: 0, y: 0, z: 0}
+        m_Length: 0
+        m_Modified: 0
+    - m_BoneName: Left toe
+      m_HumanName: LeftToes
+      m_Limit:
+        m_Min: {x: 0, y: 0, z: 0}
+        m_Max: {x: 0, y: 0, z: 0}
+        m_Value: {x: 0, y: 0, z: 0}
+        m_Length: 0
+        m_Modified: 0
+    - m_BoneName: Right toe
+      m_HumanName: RightToes
       m_Limit:
         m_Min: {x: 0, y: 0, z: 0}
         m_Max: {x: 0, y: 0, z: 0}

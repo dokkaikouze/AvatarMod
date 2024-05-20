@@ -19577,6 +19577,9 @@ MonoBehaviour:
   preserveEndBone: 0
   removeZeroSizedPolygons: 1
   optimizePhysBone: 1
+  optimizeAnimator: 1
+  mergeSkinnedMesh: 1
+  allowShuffleMaterialSlots: 0
   mmdWorldCompatibility: 0
   advancedSettings:
     exclusions: []
@@ -19587,6 +19590,15 @@ MonoBehaviour:
     skipFreezingMeaninglessBlendShape: 0
     skipIsAnimatedOptimization: 0
     skipMergePhysBoneCollider: 0
+    skipEntryExitToBlendTree: 0
+    skipRemoveUnusedAnimatingProperties: 0
+    skipMergeBlendTreeLayer: 0
+    skipRemoveMeaninglessAnimatorLayer: 0
+    skipMergeStaticSkinnedMesh: 0
+    skipMergeAnimatingSkinnedMesh: 0
+    skipMergeMaterialAnimatingSkinnedMesh: 0
+    skipMergeMaterials: 0
+    skipRemoveEmptySubMesh: 0
 --- !u!114 &702939383850597396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31557,21 +31569,6 @@ PrefabInstance:
       propertyPath: targetBones.Array.data[1].defaultScaleFactorAssigned
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3814755182487221320, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: parameters.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814755182487221320, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: parameters.Array.data[0].syncType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814755182487221320, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: parameters.Array.data[0].nameOrPrefix
-      value: AvatarMod/Dance
-      objectReference: {fileID: 0}
     - target: {fileID: 4357366309041734856, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: installTargetMenu
@@ -31583,31 +31580,6 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 9100000, guid: dafe816d94feea24c92413879b5e2165, type: 2}
-    - target: {fileID: 5637847080924482470, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: parameters.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5637847080924482470, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: parameters.Array.data[0].syncType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5637847080924482470, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: parameters.Array.data[0].defaultValue
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5637847080924482470, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: parameters.Array.data[0].nameOrPrefix
-      value: AvatarMod/Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 5637847080924482470, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: parameters.Array.data[0].hasExplicitDefaultValue
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31658,6 +31630,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6810811509225280865, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: installTargetMenu
+      value: 
+      objectReference: {fileID: 11400000, guid: d9facaa81f073914c8b4f1e95b04fb0d,
+        type: 2}
     - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: parameters.Array.size

@@ -129,9 +129,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Main2ndTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: 205a22dbf444fe34182d128dae01b9d7, type: 3}
+        m_Scale: {x: 28.571428, y: 28.571428}
+        m_Offset: {x: -2.06, y: -24.214285}
     - _Main3rdBlendMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -412,13 +412,13 @@ Material:
     - _LightMaxLimit: 1
     - _LightMinLimit: 0.05
     - _Main2ndDissolveNoiseStrength: 0.1
-    - _Main2ndEnableLighting: 1
-    - _Main2ndTexAlphaMode: 0
+    - _Main2ndEnableLighting: 0
+    - _Main2ndTexAlphaMode: 4
     - _Main2ndTexAngle: 0
-    - _Main2ndTexBlendMode: 0
-    - _Main2ndTexIsDecal: 0
+    - _Main2ndTexBlendMode: 3
+    - _Main2ndTexIsDecal: 1
     - _Main2ndTexIsLeftOnly: 0
-    - _Main2ndTexIsMSDF: 0
+    - _Main2ndTexIsMSDF: 1
     - _Main2ndTexIsRightOnly: 0
     - _Main2ndTexShouldCopy: 0
     - _Main2ndTexShouldFlipCopy: 0
@@ -587,7 +587,7 @@ Material:
     - _TessShrink: 0
     - _TessStrength: 0.5
     - _TransparentMode: 0
-    - _UDIMDiscardCompile: 0
+    - _UDIMDiscardCompile: 1
     - _UDIMDiscardMode: 0
     - _UDIMDiscardRow0_0: 0
     - _UDIMDiscardRow0_1: 0
@@ -604,8 +604,8 @@ Material:
     - _UDIMDiscardRow3_0: 0
     - _UDIMDiscardRow3_1: 0
     - _UDIMDiscardRow3_2: 0
-    - _UDIMDiscardRow3_3: 0
-    - _UDIMDiscardUV: 0
+    - _UDIMDiscardRow3_3: 1
+    - _UDIMDiscardUV: 1
     - _UseAnisotropy: 0
     - _UseAudioLink: 0
     - _UseBacklight: 0
@@ -616,7 +616,7 @@ Material:
     - _UseEmission: 0
     - _UseEmission2nd: 0
     - _UseGlitter: 0
-    - _UseMain2ndTex: 0
+    - _UseMain2ndTex: 1
     - _UseMain3rdTex: 0
     - _UseMatCap: 1
     - _UseMatCap2nd: 0
@@ -651,7 +651,7 @@ Material:
     - _BacklightColor: {r: 0.85, g: 0.8, b: 0.7, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color2nd: {r: 1, g: 1, b: 1, a: 1}
+    - _Color2nd: {r: 1, g: 1, b: 1, a: 0}
     - _Color3rd: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveColor: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveNoiseMask_ScrollRotate: {r: 0, g: 0, b: 0, a: 0}
@@ -704,7 +704,7 @@ Material:
     - _ReflectionCubeColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 0.17808825, g: 0.19552293, b: 0.21698105, a: 1}
     - _RimIndirColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimShadeColor: {r: 0.5, g: 0.4823529, b: 0.4823529, a: 0.34117648}
+    - _RimShadeColor: {r: 0, g: 0, b: 0, a: 0.2509804}
     - _Shadow2ndColor: {r: 0.85490197, g: 0.81960785, b: 0.8784314, a: 1}
     - _Shadow3rdColor: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowAOShift: {r: 1, g: 0, b: 1, a: 0}

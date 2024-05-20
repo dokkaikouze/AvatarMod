@@ -118,7 +118,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMinLimit
-    path: CombineMesh Common
+    path: CombineMesh Clothes3
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -139,7 +139,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMaxLimit
-    path: CombineMesh Common
+    path: CombineMesh Clothes3
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -160,7 +160,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMinLimit
-    path: CombineMesh Breasts Big
+    path: CombineMesh Clothes2
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -181,7 +181,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMaxLimit
-    path: CombineMesh Breasts Big
+    path: CombineMesh Clothes2
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -202,7 +202,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMinLimit
-    path: CombineMesh Breasts Small
+    path: CombineMesh Clothes1
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -223,7 +223,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMaxLimit
-    path: CombineMesh Breasts Small
+    path: CombineMesh Clothes1
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -561,6 +561,90 @@ AnimationClip:
     attribute: material._LightMaxLimit
     path: "Armature/Hips/Spine/Chest/Neck/Head/\u982C\u7D053"
     classID: 23
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._LightMaxLimit
+    path: CombineMesh Hair
+    classID: 137
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._LightMinLimit
+    path: CombineMesh Hair
+    classID: 137
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._LightMaxLimit
+    path: CombineMesh body
+    classID: 137
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._LightMinLimit
+    path: CombineMesh body
+    classID: 137
     script: {fileID: 0}
     flags: 0
   m_PPtrCurves: []
@@ -608,7 +692,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1118220861
+      path: 902699097
       attribute: 2185604570
       script: {fileID: 0}
       typeID: 137
@@ -617,7 +701,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1118220861
+      path: 902699097
       attribute: 2217017915
       script: {fileID: 0}
       typeID: 137
@@ -626,7 +710,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3229613180
+      path: 1120479439
       attribute: 2185604570
       script: {fileID: 0}
       typeID: 137
@@ -635,7 +719,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3229613180
+      path: 1120479439
       attribute: 2217017915
       script: {fileID: 0}
       typeID: 137
@@ -644,7 +728,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 763037250
+      path: 3686824309
       attribute: 2185604570
       script: {fileID: 0}
       typeID: 137
@@ -653,7 +737,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 763037250
+      path: 3686824309
       attribute: 2217017915
       script: {fileID: 0}
       typeID: 137
@@ -801,6 +885,42 @@ AnimationClip:
       attribute: 2217017915
       script: {fileID: 0}
       typeID: 23
+      customType: 22
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 2048198886
+      attribute: 2217017915
+      script: {fileID: 0}
+      typeID: 137
+      customType: 22
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 2048198886
+      attribute: 2185604570
+      script: {fileID: 0}
+      typeID: 137
+      customType: 22
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 2641939827
+      attribute: 2217017915
+      script: {fileID: 0}
+      typeID: 137
+      customType: 22
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 2641939827
+      attribute: 2185604570
+      script: {fileID: 0}
+      typeID: 137
       customType: 22
       isPPtrCurve: 0
       isIntCurve: 0
@@ -928,7 +1048,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMinLimit
-    path: CombineMesh Common
+    path: CombineMesh Clothes3
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -949,7 +1069,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMaxLimit
-    path: CombineMesh Common
+    path: CombineMesh Clothes3
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -970,7 +1090,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMinLimit
-    path: CombineMesh Breasts Big
+    path: CombineMesh Clothes2
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -991,7 +1111,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMaxLimit
-    path: CombineMesh Breasts Big
+    path: CombineMesh Clothes2
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -1012,7 +1132,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMinLimit
-    path: CombineMesh Breasts Small
+    path: CombineMesh Clothes1
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -1033,7 +1153,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._LightMaxLimit
-    path: CombineMesh Breasts Small
+    path: CombineMesh Clothes1
     classID: 137
     script: {fileID: 0}
     flags: 0
@@ -1371,6 +1491,90 @@ AnimationClip:
     attribute: material._LightMaxLimit
     path: "Armature/Hips/Spine/Chest/Neck/Head/\u982C\u7D053"
     classID: 23
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._LightMaxLimit
+    path: CombineMesh Hair
+    classID: 137
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._LightMinLimit
+    path: CombineMesh Hair
+    classID: 137
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._LightMaxLimit
+    path: CombineMesh body
+    classID: 137
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.05
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._LightMinLimit
+    path: CombineMesh body
+    classID: 137
     script: {fileID: 0}
     flags: 0
   m_EulerEditorCurves: []

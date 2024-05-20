@@ -17,3 +17,15 @@ https://booth.pm/ja/items/4424448
 ごろ寝システムEX
 みんみんみーん 様
 https://minminmart.booth.pm/items/4233545
+
+Modular Avatar
+bd_ 様
+https://modular-avatar.nadena.dev/ja/
+
+Avatar Optimizer
+anatawa12 様
+https://github.com/anatawa12/AvatarOptimizer
+
+非破壊でliltoonのUV Tile Discardに合わせてUVを設定するツール
+猫好き 様
+https://cats-lab.booth.pm/items/5445935

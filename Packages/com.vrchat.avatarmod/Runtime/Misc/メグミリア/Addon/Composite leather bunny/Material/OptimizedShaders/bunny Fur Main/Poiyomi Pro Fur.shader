@@ -1,8 +1,8 @@
-Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
+Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 {
 	Properties
 	{
-		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.0.57</color>", Float) = 0
+		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.1.2</color>", Float) = 0
 		[HideInInspector] shader_is_using_thry_editor ("", Float) = 0
 		[HideInInspector] shader_locale ("0db0b86376c3dca4b9a6828ef8615fe0", Float) = 0
 		[HideInInspector] footer_youtube ("{texture:{name:icon-youtube,height:16},action:{type:URL,data:https://www.youtube.com/poiyomi},hover:YOUTUBE}", Float) = 0
@@ -73,6 +73,53 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _AlphaGlobalMask ("Global Mask--{reference_property:_AlphaGlobalMaskBlendType}", Int) = 0
 		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _AlphaGlobalMaskBlendType ("Blending", Int) = 2
 		[HideInInspector] m_end_Alpha ("Alpha Options", Float) = 0
+		[HideInInspector] m_start_tps_penetrator("Penetrator--{reference_property:_TPSPenetratorEnabled,tooltip:Enable TPS Penetrator: Requires the TPS Setup Wizard to be run (under Poi/TPS)}", Float) = 0
+		[HideInInspector] m_start_pen_autoConfig("Configured By Tool", Float) = 0
+		_TPS_PenetratorLength("Length of Penetrator Model--{tooltip:The length from the root of the P to the very tip}", Float) = 1
+		[Vector3]_TPS_PenetratorScale("Scale of Penetrator Model", Vector) = (1,1,1,1)
+		[Vector3]_TPS_PenetratorRight("Right Vector", Vector) = (1,0,0,0)
+		[Vector3]_TPS_PenetratorUp("Up Vector", Vector) = (0,1,0,0)
+		[Vector3]_TPS_PenetratorForward("Forward Vector", Vector) = (0,0,1,0)
+		[Toggle(TPS_IsSkinnedMesh)]_TPS_IsSkinnedMeshRenderer("Baked Vertex Colors", Float) = 0
+		_TPS_BakedMesh("Baked Mesh / Mask", 2D) = "white" {}
+		[HideInInspector] m_end_pen_autoConfig("TPS", Float) = 0
+		[Helpbox(1)]_TPSHelpbox("Penetrator allows your mesh to bend in the direction of an orifice. It is fully compatible with DPS. Requires the TPS Setup Wizard to be run afterwards. Click here to open the setup window.--{onClick:Thry.TPS.TPS_Setup}", Float) = 0
+		[HideInInspector][ThryToggle(TPS_Penetrator)]_TPSPenetratorEnabled("Enabled", Float) = 0
+		[Space(10)]
+		[Toggle]_TPS_AnimatedToggle("Animatable Toggle--{tooltip:This is a toggle that can be animated}", Float) = 1
+		[ThryIntRange]_TPS_Channel("Channel--{tooltip:Channel of the penetrator. Channel -1 is DPS Channel 1}", Range(-1,17)) = 0
+		[Helpbox(2)]_TPS_ChannelWarning("DPS Channel -1 may be deprecated in the future. It does not support animator features. Use channels 0-8 instead.--{condition_show:_TPS_Channel==-1}", Float) = 0
+		[HideInInspector]g_start_tps_bezier("Bezier (Bending)--{draw_border:true,margin_top:10,tooltip: Changes how the penetrator bends}", Float) = 0
+		_TPS_BezierStart("Bezier Start--{tooltip:Start later down the penetrator}", Range(0,5)) = 0.0
+		_TPS_BezierSmoothness("Bezier Smoothness--{tooltip:Smoothness of bending}", Range(0.49,0.01)) = 0.4
+		_TPS_SmoothStart("Smooth Start--{tooltip:When penetrator starts moving towards orifice}", Range(0.01,1)) = 1
+		[HideInInspector]g_end_tps_bezier("", Float) = 0
+		[HideInInspector]g_start_tps_squeeze("Squeeze--{draw_border:true,margin_top:10,tooltip:Penetrator contracts when entering an orifice}", Float) = 0
+		_TPS_Squeeze("Squeeze Strength--{tooltip:Percentage penetrator squeezes}", Range(0,1)) = 0.3
+		_TPS_SqueezeDistance("Squeeze Distance--{tooltip:Width of the squeezing}", Range(0.01,1)) = 0.2
+		[Space(5)]
+		[VectorToSliders(Hole Multiplier,0,1,Ring Multiplier,0,1)]_TPS_SqueezeTypeMultiplier("--{tooltip:Multiplies the squeeze depending on the orifice type}", Vector) = (1,1,1,1)
+		[HideInInspector]g_end_tps_squeeze("", Float) = 0
+		[HideInInspector]g_start_tps_buldge("Buldge--{draw_border:true,margin_top:10,tooltip:Penetrator expands in front of the orifice}", Float) = 0
+		_TPS_Buldge("Buldge--{tooltip:Amount in percentage}", Range(0,3)) = 0.3
+		_TPS_BuldgeDistance("Buldge Distance--{tooltip:Width of the buldging}", Range(0.01,1)) = 0.2
+		_TPS_BuldgeFalloffDistance("Buldge Falloff--{tooltip:Width of bulding in front of orifice}", Range(0.01,0.5)) = 0.05
+		[Space(5)]
+		[VectorToSliders(Hole Multiplier,0,1,Ring Multiplier,0,1)]_TPS_BuldgeTypeMultiplier("--{tooltip:Multiplies the buldge depending on the orifice type}", Vector) = (1,1,1,1)
+		[HideInInspector]g_end_tps_buldge("", Float) = 0
+		[HideInInspector]g_start_tps_pulsing("Pulsing--{draw_border:true,margin_top:10,tooltip: Penetrator expands in pulses while entering orifice}", Float) = 0
+		_TPS_PumpingStrength("Pumping Strength--{tooltip:Amount in percentage}", Range(0,1)) = 0
+		_TPS_PumpingSpeed("Pumping Speed--{tooltip:Frequenzy of pulsing}", Range(0,10)) = 1
+		_TPS_PumpingWidth("Pumping Width--{tooltip:Width of pulsing}", Range(0.01,1)) = 0.2
+		[HideInInspector]g_end_tps_pulsing("", Float) = 0
+		[HideInInspector]g_start_tps_idle("Idle--{draw_border:true,margin_top:10,tooltip: Changes how the penetrator bends while no orifice is near}", Float) = 0
+		[Helpbox(0)]_TPS_IdleGravity("Tip: For idle gravity & movement use physbones gravity & other functions", Float) = 0
+		_TPS_IdleSkrinkWidth("Idle Shrink Width--{tooltip:P shrinks while not penetrating}", Range(0,1)) = 1
+		_TPS_IdleSkrinkLength("Idle Shrink Length--{tooltip:P shrinks while not penetrating}", Range(0,1)) = 1
+		[HideInInspector]g_end_tps_idle("", Float) = 0
+		[HideInInspector]_TPS_BufferedDepth   ("_TPS2_BufferedDepth NL", Float) = 0
+		[HideInInspector]_TPS_BufferedStrength("_TPS2_BufferedStrength NL", Float) = 0
+		[HideInInspector] m_end_tps_penetrator("", Float) = 0
 		[HideInInspector] m_lightingCategory ("Shading", Float) = 0
 		[HideInInspector] m_start_PoiLightData ("Light Data--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/shading/light-data},hover:Documentation}}", Float) = 0
 		[sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingAOMaps ("AO Maps (expand)--{reference_properties:[_LightingAOMapsPan, _LightingAOMapsUV,_LightDataAOStrengthR,_LightDataAOStrengthG,_LightDataAOStrengthB,_LightDataAOStrengthA, _LightDataAOGlobalMaskR]}", 2D) = "white" { }
@@ -466,6 +513,33 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 		_FXProximityColorMaxDistance ("Max Distance", Float) = 1
 		[ToggleUI]_FXProximityColorBackFace ("Force BackFace Color", Float) = 0
 		[HideInInspector] m_end_FXProximityColor ("", Float) = 0
+		[HideInInspector] m_furCategory ("Fur", Float) = 0
+		[NoAnimate][IntRange]_FurLayerCount ("Layer Count", Range(1, 31)) = 15
+		_FurLength ("Length", Range(0.0, 0.05)) = 0.005
+		_FurGravityStrength ("Gravity Strength", Range(-1, 1)) = 0.5
+		_FurColor ("Color--{reference_property:_FurColorThemeIndex}", Color) = (1, 1, 1, 1)
+		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _FurColorThemeIndex ("", Int) = 0
+		[sRGBWarning(true)]_FurTexture ("Fur Texture--{reference_properties:[_FurTexturePan, _FurTextureUV]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_FurTexturePan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _FurTextureUV ("UV", Int) = 0
+		[ToggleUI]_FurTextureApplyToSkin ("Apply Fur Texture to Skin", Float) = 1
+		[sRGBWarning]_FurMask ("Mask--{reference_properties:[_FurMaskPan, _FurMaskUV]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_FurMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _FurMaskUV ("UV", Int) = 0
+		[sRGBWarning]_FurHeightMap ("Height Map--{reference_properties:[_FurHeightMapPan, _FurHeightMapUV]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_FurHeightMapPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _FurHeightMapUV ("UV", Int) = 0
+		[MultiSlider]_FurHeightMapMinMax ("Height Map Min Max", Vector) = (0.0, 1.0, 0, 1)
+		_FurAO ("AO", Range(0, 1)) = 0.5
+		[MultiSlider]_FurAOMinMax ("AO Min Max", Vector) = (0.0, 1.0, 0, 1)
+		[ThryToggleUI(true)] _FurHueShiftEnabled ("<size=13><b>  Hue Shift</b></size>", Float) = 0
+		_FurHueShiftSpeed ("Shift Speed--{condition_showS:(_FurHueShiftEnabled==1)}", Float) = 0
+		_FurHueShift ("Hue Shift--{condition_showS:(_FurHueShiftEnabled==1)}", Range(0, 1)) = 0
+		[HideInInspector] m_start_furAdvanced ("Advanced", Float) = 0
+		[ToggleUI]_FurUseVertexColorNormals ("Vertex Color Normals", Float) = 0
+		_FurMinDistance ("Min Distance", Float) = 2
+		_FurMaxDistance ("Max Distance", Float) = 8
+		[HideInInspector] m_end_furAdvanced ("Advanced", Float) = 0
 		[HideInInspector] m_modifierCategory ("Global Modifiers & Data", Float) = 0
 		[HideInInspector] m_start_PoiGlobalCategory ("Global Data and Masks", Float) = 0
 		[HideInInspector] m_start_GlobalThemes ("Global Themes--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/color-and-normals/global-themes},hover:Documentation}}", Float) = 0
@@ -662,6 +736,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 			#include "UnityMetaPass.cginc"
 			#endif
 			#pragma vertex vert
+			#pragma geometry GeometryProgram
 			#pragma fragment frag
 			#define DielectricSpec float4(0.04, 0.04, 0.04, 1.0 - 0.04)
 			#define PI float(3.14159265359)
@@ -821,6 +896,35 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 			float _AlphaBoostFA;
 			float _AlphaGlobalMask;
 			float _AlphaGlobalMaskBlendType;
+			int _FurLayerCount;
+			float _FurLength;
+			float _FurGravityStrength;
+			float4 _FurColor;
+			float _FurColorThemeIndex;
+			Texture2D _FurTexture;
+			float4 _FurTexture_ST;
+			float2 _FurTexturePan;
+			float _FurTextureUV;
+			float _FurTextureApplyToSkin;
+			Texture2D _FurMask;
+			float4 _FurMask_ST;
+			float2 _FurMaskPan;
+			float _FurMaskUV;
+			Texture2D _FurHeightMap;
+			float4 _FurHeightMap_ST;
+			float2 _FurHeightMapPan;
+			float _FurHeightMapUV;
+			float2 _FurHeightMapMinMax;
+			float _FurAO;
+			float2 _FurAOMinMax;
+			float _FurHueShiftEnabled;
+			float _FurHueShift;
+			float _FurHueShiftSpeed;
+			float _FurUseVertexColorNormals;
+			#ifdef POI_WORLD
+			float _FurMinDistance;
+			float _FurMaxDistance;
+			#endif
 			float4 _GlobalThemeColor0;
 			float4 _GlobalThemeColor1;
 			float4 _GlobalThemeColor2;
@@ -1156,6 +1260,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				float4 lightmapUV : TEXCOORD7;
 				float2 fogCoord: TEXCOORD10;
 				UNITY_SHADOW_COORDS(11)
+				float2 furSettings : TEXCOORD18;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 				UNITY_VERTEX_OUTPUT_STEREO
 			};
@@ -2579,6 +2684,64 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				#endif
 				return o;
 			}
+			#if !defined(OPTIMIZER_ENABLED)
+			[instance(32)]
+			#else
+			[instance((11 /*_FurLayerCount*/) + 1)]
+			#endif
+			[maxvertexcount(3)]
+			void GeometryProgram(triangle VertexOut p[3], inout TriangleStream<VertexOut> tristream, uint InstanceID : SV_GSInstanceID)
+			{
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[0]);
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[1]);
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[2]);
+				float3 objectPos = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
+				#ifndef POI_PASS_OUTLINE
+				#ifdef POI_WORLD
+				uint layerCount = max(1, ceil((11 /*_FurLayerCount*/) * (1 - smoothstep((2.0 /*_FurMinDistance*/), (8.0 /*_FurMaxDistance*/), distance(objectPos, getCameraPosition())))));
+				#else
+				uint layerCount = max(1, ceil((11 /*_FurLayerCount*/) * (1 - smoothstep(2, 8, distance(objectPos, getCameraPosition())))));
+				#endif
+				if (InstanceID > layerCount) return;
+				float4 furSettings = 0;
+				furSettings.x = InstanceID > 0;
+				furSettings.y = (InstanceID) / (float)layerCount;
+				furSettings.y *= furSettings.x;
+				VertexOut o[3];
+				[unroll(3)]
+				for (int i = 0; i < 3; i++)
+				{
+					VertexOut t = p[i];
+					float3 normal = t.normal;
+					if ((0.0 /*_FurUseVertexColorNormals*/))
+					{
+						float3 vectorTS = t.vertexColor.rgb * 2.0 - 1.0;
+						float3 binormal = cross(t.normal, t.tangent) * (t.tangent.w * unity_WorldTransformParams.w);
+						normal = vectorTS.x * t.tangent.xyz + vectorTS.y * binormal.xyz + vectorTS.z * normal;
+					}
+					float3 furGravityOffset = (float3(0, -1, 0) * (furSettings.y * (0.02 /*_FurLength*/)) * (0.188 /*_FurGravityStrength*/)) * smoothstep(-0.5, 1, dot(normal, float3(0, -sign((0.188 /*_FurGravityStrength*/)), 0)) * 0.5 + 0.5);
+					t.furSettings = furSettings;
+					float3 offset = furGravityOffset +furSettings.y * (0.02 /*_FurLength*/) * normal;
+					t.worldPos.xyz += offset;
+					t.localPos.xyz += mul((float3x3)unity_WorldToObject, offset);
+					o[i] = t;
+				}
+				float3 faceNormal = normalize(mul(unity_ObjectToWorld, float4(cross(normalize(o[0].localPos.xyz - o[1].localPos.xyz), normalize(o[0].localPos.xyz - o[2].localPos.xyz)), 0)));
+				if (InstanceID > 0 && dot(normalize(UnityWorldSpaceViewDir((o[0].worldPos.xyz + o[1].worldPos.xyz + o[2].worldPos.xyz) * 0.33333333)), faceNormal) < 0.0) return;
+				[unroll(3)]
+				for (int j = 0; j < 3; j++)
+				{
+					o[j].pos = UnityWorldToClipPos(o[j].worldPos.xyz);
+					tristream.Append(o[j]);
+				}
+				#else
+				[unroll(3)]
+				for (int j = 0; j < 3; j++)
+				{
+					tristream.Append(p[j]);
+				}
+				#endif
+			}
 			#if defined(_STOCHASTICMODE_DELIOT_HEITZ)
 			#define POI2D_SAMPLER_STOCHASTIC(tex, texSampler, uv, useStochastic) (useStochastic ? DeliotHeitzSampleTexture(tex, sampler##texSampler, uv) : POI2D_SAMPLER(tex, texSampler, uv))
 			#define POI2D_SAMPLER_PAN_STOCHASTIC(tex, texSampler, uv, pan, useStochastic) (useStochastic ? DeliotHeitzSampleTexture(tex, sampler##texSampler, POI_PAN_UV(uv, pan)) : POI2D_SAMPLER_PAN(tex, texSampler, uv, pan))
@@ -2713,6 +2876,38 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				if ((0.0 /*_AlphaGlobalMask*/) > 0)
 				{
 					poiFragData.alpha = maskBlend(poiFragData.alpha, poiMods.globalMask[(0.0 /*_AlphaGlobalMask*/) - 1], (2.0 /*_AlphaGlobalMaskBlendType*/));
+				}
+			}
+			void applyFur(in float2 furSettings, inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiMods poiMods)
+			{
+				float furMask = POI2D_SAMPLER_PAN(_FurMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).x;
+				float furHeightMap = POI2D_SAMPLER_PAN(_FurHeightMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurHeightMapUV*/)], float4(30,30,0,0)), float4(0,0,0,0)).x;
+				furHeightMap = saturate(remap(furHeightMap, 0, float4(0,1,0,1).y, float4(0,1,0,1).x, 1));
+				float ao = lerp(1, smoothstep(float4(0,1,0,1).x, float4(0,1,0,1).y, furHeightMap), (0.237 /*_FurAO*/) * furMask);
+				float4 furTexture = POI2D_SAMPLER_PAN(_FurTexture, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurTextureUV*/)], float4(30,30,0,0)), float4(0,0,0,0));
+				furTexture.rgb *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_FurColorThemeIndex*/));
+				if ((0.0 /*_FurHueShiftEnabled*/))
+				{
+					furTexture.rgb = hueShift(furTexture.rgb, (0.0 /*_FurHueShift*/) + _Time.x * (0.0 /*_FurHueShiftSpeed*/));
+				}
+				furTexture.rgb *= ao;
+				poiFragData.baseColor = lerp(poiFragData.baseColor, furTexture.rgb, furMask * (0.0 /*_FurTextureApplyToSkin*/));
+				if (furSettings.x)
+				{
+					poiFragData.baseColor = furTexture.rgb;
+					if ((0.0 /*_AlphaToCoverage*/))
+					{
+						poiFragData.alpha = min(poiFragData.alpha, min(saturate(furHeightMap - furSettings.y), saturate(furMask - furSettings.y)));
+						if (!(0.0 /*_AlphaSharpenedA2C*/))
+						{
+							poiFragData.alpha = saturate((poiFragData.alpha) / max(fwidth(poiFragData.alpha), 0.0001));
+						}
+					}
+					else
+					{
+						clip(furHeightMap - furSettings.y);
+						clip(furMask - furSettings.y);
+					}
 				}
 			}
 			void calculateGlobalThemes(inout PoiMods poiMods)
@@ -4100,15 +4295,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				#else
 				float4 decalMask = 1;
 				#endif
-				#ifdef TPS_Penetrator
-				if ((0.0 /*_DecalTPSDepthMaskEnabled*/))
-				{
-					decalMask.r = lerp(0, decalMask.r * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_Decal0TPSMaskStrength*/));
-					decalMask.g = lerp(0, decalMask.g * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_Decal1TPSMaskStrength*/));
-					decalMask.b = lerp(0, decalMask.b * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_Decal2TPSMaskStrength*/));
-					decalMask.a = lerp(0, decalMask.a * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_Decal3TPSMaskStrength*/));
-				}
-				#endif
 				float4 decalColor = 1;
 				float2 uv = 0;
 			}
@@ -4263,12 +4449,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				{
 					matcapMask = 1 - matcapMask;
 				}
-				#ifdef TPS_Penetrator
-				if ((0.0 /*_MatcapTPSDepthEnabled*/))
-				{
-					matcapMask = lerp(0, matcapMask * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_MatcapTPSMaskStrength*/));
-				}
-				#endif
 				poiFragData.alpha *= lerp(1, matcap.a, matcapMask * (0.0 /*_MatcapAlphaOverride*/));
 				if ((0.0 /*_MatcapHueShiftEnabled*/))
 				{
@@ -4613,12 +4793,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				{
 					specularMask = 1 - specularMask;
 				}
-				#ifdef TPS_Penetrator
-				if ((0.0 /*_ClearCoatTPSDepthMaskEnabled*/))
-				{
-					clearCoatMask = lerp(0, clearCoatMask * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_ClearCoatTPSMaskStrength*/));
-				}
-				#endif
 				float roughness = GetRoughness(smoothness);
 				float3 specCol = 0.220916301;
 				float omr = unity_ColorSpaceDielectricSpec.a;
@@ -5013,6 +5187,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 					UNITY_LIGHT_ATTENUATION(attenuation, i, poiMesh.worldPos)
 					poiLight.attenuation *= attenuation;
 				}
+				#ifdef RALIV_PENETRATION
+				if ((0.0 /*_PenetratorEnabled*/) || (0.0 /*_OrifaceEnabled*/))
+				{
+					if ((1.0 /*_RalivDPSDisableShadowCaster*/))
+					{
+						poiLight.attenuation = 1;
+					}
+				}
+				#endif
 				if (!any(poiLight.directColor) && !any(poiLight.indirectColor) && lightMapMode == 0)
 				{
 					lightMapMode = 1;
@@ -5164,6 +5347,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 					if ((2.0 /*_MainAlphaMaskMode*/) == 3) poiFragData.alpha = saturate(poiFragData.alpha + alphaMask);
 					if ((2.0 /*_MainAlphaMaskMode*/) == 4) poiFragData.alpha = saturate(poiFragData.alpha - alphaMask);
 				}
+				#endif
+				#ifndef POI_PASS_OUTLINE
+				applyFur(i.furSettings, poiFragData, poiMesh, poiMods);
 				#endif
 				applyAlphaOptions(poiFragData, poiMesh, poiCam, poiMods);
 				#if defined(_LIGHTINGMODE_SHADEMAP) && defined(VIGNETTE_MASKED)
@@ -5409,6 +5595,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 			#include "UnityMetaPass.cginc"
 			#endif
 			#pragma vertex vert
+			#pragma geometry GeometryProgram
 			#pragma fragment frag
 			#define DielectricSpec float4(0.04, 0.04, 0.04, 1.0 - 0.04)
 			#define PI float(3.14159265359)
@@ -5568,6 +5755,35 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 			float _AlphaBoostFA;
 			float _AlphaGlobalMask;
 			float _AlphaGlobalMaskBlendType;
+			int _FurLayerCount;
+			float _FurLength;
+			float _FurGravityStrength;
+			float4 _FurColor;
+			float _FurColorThemeIndex;
+			Texture2D _FurTexture;
+			float4 _FurTexture_ST;
+			float2 _FurTexturePan;
+			float _FurTextureUV;
+			float _FurTextureApplyToSkin;
+			Texture2D _FurMask;
+			float4 _FurMask_ST;
+			float2 _FurMaskPan;
+			float _FurMaskUV;
+			Texture2D _FurHeightMap;
+			float4 _FurHeightMap_ST;
+			float2 _FurHeightMapPan;
+			float _FurHeightMapUV;
+			float2 _FurHeightMapMinMax;
+			float _FurAO;
+			float2 _FurAOMinMax;
+			float _FurHueShiftEnabled;
+			float _FurHueShift;
+			float _FurHueShiftSpeed;
+			float _FurUseVertexColorNormals;
+			#ifdef POI_WORLD
+			float _FurMinDistance;
+			float _FurMaxDistance;
+			#endif
 			float4 _GlobalThemeColor0;
 			float4 _GlobalThemeColor1;
 			float4 _GlobalThemeColor2;
@@ -5889,6 +6105,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				float4 lightmapUV : TEXCOORD7;
 				float2 fogCoord: TEXCOORD10;
 				UNITY_SHADOW_COORDS(11)
+				float2 furSettings : TEXCOORD18;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 				UNITY_VERTEX_OUTPUT_STEREO
 			};
@@ -7312,6 +7529,64 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				#endif
 				return o;
 			}
+			#if !defined(OPTIMIZER_ENABLED)
+			[instance(32)]
+			#else
+			[instance((11 /*_FurLayerCount*/) + 1)]
+			#endif
+			[maxvertexcount(3)]
+			void GeometryProgram(triangle VertexOut p[3], inout TriangleStream<VertexOut> tristream, uint InstanceID : SV_GSInstanceID)
+			{
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[0]);
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[1]);
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[2]);
+				float3 objectPos = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
+				#ifndef POI_PASS_OUTLINE
+				#ifdef POI_WORLD
+				uint layerCount = max(1, ceil((11 /*_FurLayerCount*/) * (1 - smoothstep((2.0 /*_FurMinDistance*/), (8.0 /*_FurMaxDistance*/), distance(objectPos, getCameraPosition())))));
+				#else
+				uint layerCount = max(1, ceil((11 /*_FurLayerCount*/) * (1 - smoothstep(2, 8, distance(objectPos, getCameraPosition())))));
+				#endif
+				if (InstanceID > layerCount) return;
+				float4 furSettings = 0;
+				furSettings.x = InstanceID > 0;
+				furSettings.y = (InstanceID) / (float)layerCount;
+				furSettings.y *= furSettings.x;
+				VertexOut o[3];
+				[unroll(3)]
+				for (int i = 0; i < 3; i++)
+				{
+					VertexOut t = p[i];
+					float3 normal = t.normal;
+					if ((0.0 /*_FurUseVertexColorNormals*/))
+					{
+						float3 vectorTS = t.vertexColor.rgb * 2.0 - 1.0;
+						float3 binormal = cross(t.normal, t.tangent) * (t.tangent.w * unity_WorldTransformParams.w);
+						normal = vectorTS.x * t.tangent.xyz + vectorTS.y * binormal.xyz + vectorTS.z * normal;
+					}
+					float3 furGravityOffset = (float3(0, -1, 0) * (furSettings.y * (0.02 /*_FurLength*/)) * (0.188 /*_FurGravityStrength*/)) * smoothstep(-0.5, 1, dot(normal, float3(0, -sign((0.188 /*_FurGravityStrength*/)), 0)) * 0.5 + 0.5);
+					t.furSettings = furSettings;
+					float3 offset = furGravityOffset +furSettings.y * (0.02 /*_FurLength*/) * normal;
+					t.worldPos.xyz += offset;
+					t.localPos.xyz += mul((float3x3)unity_WorldToObject, offset);
+					o[i] = t;
+				}
+				float3 faceNormal = normalize(mul(unity_ObjectToWorld, float4(cross(normalize(o[0].localPos.xyz - o[1].localPos.xyz), normalize(o[0].localPos.xyz - o[2].localPos.xyz)), 0)));
+				if (InstanceID > 0 && dot(normalize(UnityWorldSpaceViewDir((o[0].worldPos.xyz + o[1].worldPos.xyz + o[2].worldPos.xyz) * 0.33333333)), faceNormal) < 0.0) return;
+				[unroll(3)]
+				for (int j = 0; j < 3; j++)
+				{
+					o[j].pos = UnityWorldToClipPos(o[j].worldPos.xyz);
+					tristream.Append(o[j]);
+				}
+				#else
+				[unroll(3)]
+				for (int j = 0; j < 3; j++)
+				{
+					tristream.Append(p[j]);
+				}
+				#endif
+			}
 			#if defined(_STOCHASTICMODE_DELIOT_HEITZ)
 			#define POI2D_SAMPLER_STOCHASTIC(tex, texSampler, uv, useStochastic) (useStochastic ? DeliotHeitzSampleTexture(tex, sampler##texSampler, uv) : POI2D_SAMPLER(tex, texSampler, uv))
 			#define POI2D_SAMPLER_PAN_STOCHASTIC(tex, texSampler, uv, pan, useStochastic) (useStochastic ? DeliotHeitzSampleTexture(tex, sampler##texSampler, POI_PAN_UV(uv, pan)) : POI2D_SAMPLER_PAN(tex, texSampler, uv, pan))
@@ -7446,6 +7721,38 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				if ((0.0 /*_AlphaGlobalMask*/) > 0)
 				{
 					poiFragData.alpha = maskBlend(poiFragData.alpha, poiMods.globalMask[(0.0 /*_AlphaGlobalMask*/) - 1], (2.0 /*_AlphaGlobalMaskBlendType*/));
+				}
+			}
+			void applyFur(in float2 furSettings, inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiMods poiMods)
+			{
+				float furMask = POI2D_SAMPLER_PAN(_FurMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).x;
+				float furHeightMap = POI2D_SAMPLER_PAN(_FurHeightMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurHeightMapUV*/)], float4(30,30,0,0)), float4(0,0,0,0)).x;
+				furHeightMap = saturate(remap(furHeightMap, 0, float4(0,1,0,1).y, float4(0,1,0,1).x, 1));
+				float ao = lerp(1, smoothstep(float4(0,1,0,1).x, float4(0,1,0,1).y, furHeightMap), (0.237 /*_FurAO*/) * furMask);
+				float4 furTexture = POI2D_SAMPLER_PAN(_FurTexture, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurTextureUV*/)], float4(30,30,0,0)), float4(0,0,0,0));
+				furTexture.rgb *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_FurColorThemeIndex*/));
+				if ((0.0 /*_FurHueShiftEnabled*/))
+				{
+					furTexture.rgb = hueShift(furTexture.rgb, (0.0 /*_FurHueShift*/) + _Time.x * (0.0 /*_FurHueShiftSpeed*/));
+				}
+				furTexture.rgb *= ao;
+				poiFragData.baseColor = lerp(poiFragData.baseColor, furTexture.rgb, furMask * (0.0 /*_FurTextureApplyToSkin*/));
+				if (furSettings.x)
+				{
+					poiFragData.baseColor = furTexture.rgb;
+					if ((0.0 /*_AlphaToCoverage*/))
+					{
+						poiFragData.alpha = min(poiFragData.alpha, min(saturate(furHeightMap - furSettings.y), saturate(furMask - furSettings.y)));
+						if (!(0.0 /*_AlphaSharpenedA2C*/))
+						{
+							poiFragData.alpha = saturate((poiFragData.alpha) / max(fwidth(poiFragData.alpha), 0.0001));
+						}
+					}
+					else
+					{
+						clip(furHeightMap - furSettings.y);
+						clip(furMask - furSettings.y);
+					}
 				}
 			}
 			void calculateGlobalThemes(inout PoiMods poiMods)
@@ -7990,15 +8297,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				#else
 				float4 decalMask = 1;
 				#endif
-				#ifdef TPS_Penetrator
-				if ((0.0 /*_DecalTPSDepthMaskEnabled*/))
-				{
-					decalMask.r = lerp(0, decalMask.r * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_Decal0TPSMaskStrength*/));
-					decalMask.g = lerp(0, decalMask.g * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_Decal1TPSMaskStrength*/));
-					decalMask.b = lerp(0, decalMask.b * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_Decal2TPSMaskStrength*/));
-					decalMask.a = lerp(0, decalMask.a * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_Decal3TPSMaskStrength*/));
-				}
-				#endif
 				float4 decalColor = 1;
 				float2 uv = 0;
 			}
@@ -8153,12 +8451,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				{
 					matcapMask = 1 - matcapMask;
 				}
-				#ifdef TPS_Penetrator
-				if ((0.0 /*_MatcapTPSDepthEnabled*/))
-				{
-					matcapMask = lerp(0, matcapMask * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_MatcapTPSMaskStrength*/));
-				}
-				#endif
 				poiFragData.alpha *= lerp(1, matcap.a, matcapMask * (0.0 /*_MatcapAlphaOverride*/));
 				if ((0.0 /*_MatcapHueShiftEnabled*/))
 				{
@@ -8503,12 +8795,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				{
 					specularMask = 1 - specularMask;
 				}
-				#ifdef TPS_Penetrator
-				if ((0.0 /*_ClearCoatTPSDepthMaskEnabled*/))
-				{
-					clearCoatMask = lerp(0, clearCoatMask * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), (1.0 /*_ClearCoatTPSMaskStrength*/));
-				}
-				#endif
 				float roughness = GetRoughness(smoothness);
 				float3 specCol = 0.220916301;
 				float omr = unity_ColorSpaceDielectricSpec.a;
@@ -8903,6 +9189,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 					UNITY_LIGHT_ATTENUATION(attenuation, i, poiMesh.worldPos)
 					poiLight.attenuation *= attenuation;
 				}
+				#ifdef RALIV_PENETRATION
+				if ((0.0 /*_PenetratorEnabled*/) || (0.0 /*_OrifaceEnabled*/))
+				{
+					if ((1.0 /*_RalivDPSDisableShadowCaster*/))
+					{
+						poiLight.attenuation = 1;
+					}
+				}
+				#endif
 				if (!any(poiLight.directColor) && !any(poiLight.indirectColor) && lightMapMode == 0)
 				{
 					lightMapMode = 1;
@@ -9054,6 +9349,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 					if ((2.0 /*_MainAlphaMaskMode*/) == 3) poiFragData.alpha = saturate(poiFragData.alpha + alphaMask);
 					if ((2.0 /*_MainAlphaMaskMode*/) == 4) poiFragData.alpha = saturate(poiFragData.alpha - alphaMask);
 				}
+				#endif
+				#ifndef POI_PASS_OUTLINE
+				applyFur(i.furSettings, poiFragData, poiMesh, poiMods);
 				#endif
 				applyAlphaOptions(poiFragData, poiMesh, poiCam, poiMods);
 				#if defined(_LIGHTINGMODE_SHADEMAP) && defined(VIGNETTE_MASKED)
@@ -9242,6 +9540,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 			#include "UnityMetaPass.cginc"
 			#endif
 			#pragma vertex vert
+			#pragma geometry GeometryProgram
 			#pragma fragment frag
 			#define DielectricSpec float4(0.04, 0.04, 0.04, 1.0 - 0.04)
 			#define PI float(3.14159265359)
@@ -9334,6 +9633,35 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 			float _AlphaBoostFA;
 			float _AlphaGlobalMask;
 			float _AlphaGlobalMaskBlendType;
+			int _FurLayerCount;
+			float _FurLength;
+			float _FurGravityStrength;
+			float4 _FurColor;
+			float _FurColorThemeIndex;
+			Texture2D _FurTexture;
+			float4 _FurTexture_ST;
+			float2 _FurTexturePan;
+			float _FurTextureUV;
+			float _FurTextureApplyToSkin;
+			Texture2D _FurMask;
+			float4 _FurMask_ST;
+			float2 _FurMaskPan;
+			float _FurMaskUV;
+			Texture2D _FurHeightMap;
+			float4 _FurHeightMap_ST;
+			float2 _FurHeightMapPan;
+			float _FurHeightMapUV;
+			float2 _FurHeightMapMinMax;
+			float _FurAO;
+			float2 _FurAOMinMax;
+			float _FurHueShiftEnabled;
+			float _FurHueShift;
+			float _FurHueShiftSpeed;
+			float _FurUseVertexColorNormals;
+			#ifdef POI_WORLD
+			float _FurMinDistance;
+			float _FurMaxDistance;
+			#endif
 			int _GlobalMaskVertexColorLinearSpace;
 			#ifdef POI_UDIMDISCARD
 			float _UDIMDiscardMode;
@@ -9408,6 +9736,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				float4 lightmapUV : TEXCOORD7;
 				float2 fogCoord: TEXCOORD10;
 				UNITY_SHADOW_COORDS(11)
+				float2 furSettings : TEXCOORD18;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 				UNITY_VERTEX_OUTPUT_STEREO
 			};
@@ -10831,6 +11160,64 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				#endif
 				return o;
 			}
+			#if !defined(OPTIMIZER_ENABLED)
+			[instance(32)]
+			#else
+			[instance((11 /*_FurLayerCount*/) + 1)]
+			#endif
+			[maxvertexcount(3)]
+			void GeometryProgram(triangle VertexOut p[3], inout TriangleStream<VertexOut> tristream, uint InstanceID : SV_GSInstanceID)
+			{
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[0]);
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[1]);
+				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(p[2]);
+				float3 objectPos = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
+				#ifndef POI_PASS_OUTLINE
+				#ifdef POI_WORLD
+				uint layerCount = max(1, ceil((11 /*_FurLayerCount*/) * (1 - smoothstep((2.0 /*_FurMinDistance*/), (8.0 /*_FurMaxDistance*/), distance(objectPos, getCameraPosition())))));
+				#else
+				uint layerCount = max(1, ceil((11 /*_FurLayerCount*/) * (1 - smoothstep(2, 8, distance(objectPos, getCameraPosition())))));
+				#endif
+				if (InstanceID > layerCount) return;
+				float4 furSettings = 0;
+				furSettings.x = InstanceID > 0;
+				furSettings.y = (InstanceID) / (float)layerCount;
+				furSettings.y *= furSettings.x;
+				VertexOut o[3];
+				[unroll(3)]
+				for (int i = 0; i < 3; i++)
+				{
+					VertexOut t = p[i];
+					float3 normal = t.normal;
+					if ((0.0 /*_FurUseVertexColorNormals*/))
+					{
+						float3 vectorTS = t.vertexColor.rgb * 2.0 - 1.0;
+						float3 binormal = cross(t.normal, t.tangent) * (t.tangent.w * unity_WorldTransformParams.w);
+						normal = vectorTS.x * t.tangent.xyz + vectorTS.y * binormal.xyz + vectorTS.z * normal;
+					}
+					float3 furGravityOffset = (float3(0, -1, 0) * (furSettings.y * (0.02 /*_FurLength*/)) * (0.188 /*_FurGravityStrength*/)) * smoothstep(-0.5, 1, dot(normal, float3(0, -sign((0.188 /*_FurGravityStrength*/)), 0)) * 0.5 + 0.5);
+					t.furSettings = furSettings;
+					float3 offset = furGravityOffset +furSettings.y * (0.02 /*_FurLength*/) * normal;
+					t.worldPos.xyz += offset;
+					t.localPos.xyz += mul((float3x3)unity_WorldToObject, offset);
+					o[i] = t;
+				}
+				float3 faceNormal = normalize(mul(unity_ObjectToWorld, float4(cross(normalize(o[0].localPos.xyz - o[1].localPos.xyz), normalize(o[0].localPos.xyz - o[2].localPos.xyz)), 0)));
+				if (InstanceID > 0 && dot(normalize(UnityWorldSpaceViewDir((o[0].worldPos.xyz + o[1].worldPos.xyz + o[2].worldPos.xyz) * 0.33333333)), faceNormal) < 0.0) return;
+				[unroll(3)]
+				for (int j = 0; j < 3; j++)
+				{
+					o[j].pos = UnityWorldToClipPos(o[j].worldPos.xyz);
+					tristream.Append(o[j]);
+				}
+				#else
+				[unroll(3)]
+				for (int j = 0; j < 3; j++)
+				{
+					tristream.Append(p[j]);
+				}
+				#endif
+			}
 			#if defined(_STOCHASTICMODE_DELIOT_HEITZ)
 			#define POI2D_SAMPLER_STOCHASTIC(tex, texSampler, uv, useStochastic) (useStochastic ? DeliotHeitzSampleTexture(tex, sampler##texSampler, uv) : POI2D_SAMPLER(tex, texSampler, uv))
 			#define POI2D_SAMPLER_PAN_STOCHASTIC(tex, texSampler, uv, pan, useStochastic) (useStochastic ? DeliotHeitzSampleTexture(tex, sampler##texSampler, POI_PAN_UV(uv, pan)) : POI2D_SAMPLER_PAN(tex, texSampler, uv, pan))
@@ -10965,6 +11352,38 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 				if ((0.0 /*_AlphaGlobalMask*/) > 0)
 				{
 					poiFragData.alpha = maskBlend(poiFragData.alpha, poiMods.globalMask[(0.0 /*_AlphaGlobalMask*/) - 1], (2.0 /*_AlphaGlobalMaskBlendType*/));
+				}
+			}
+			void applyFur(in float2 furSettings, inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiMods poiMods)
+			{
+				float furMask = POI2D_SAMPLER_PAN(_FurMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).x;
+				float furHeightMap = POI2D_SAMPLER_PAN(_FurHeightMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurHeightMapUV*/)], float4(30,30,0,0)), float4(0,0,0,0)).x;
+				furHeightMap = saturate(remap(furHeightMap, 0, float4(0,1,0,1).y, float4(0,1,0,1).x, 1));
+				float ao = lerp(1, smoothstep(float4(0,1,0,1).x, float4(0,1,0,1).y, furHeightMap), (0.237 /*_FurAO*/) * furMask);
+				float4 furTexture = POI2D_SAMPLER_PAN(_FurTexture, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FurTextureUV*/)], float4(30,30,0,0)), float4(0,0,0,0));
+				furTexture.rgb *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_FurColorThemeIndex*/));
+				if ((0.0 /*_FurHueShiftEnabled*/))
+				{
+					furTexture.rgb = hueShift(furTexture.rgb, (0.0 /*_FurHueShift*/) + _Time.x * (0.0 /*_FurHueShiftSpeed*/));
+				}
+				furTexture.rgb *= ao;
+				poiFragData.baseColor = lerp(poiFragData.baseColor, furTexture.rgb, furMask * (0.0 /*_FurTextureApplyToSkin*/));
+				if (furSettings.x)
+				{
+					poiFragData.baseColor = furTexture.rgb;
+					if ((0.0 /*_AlphaToCoverage*/))
+					{
+						poiFragData.alpha = min(poiFragData.alpha, min(saturate(furHeightMap - furSettings.y), saturate(furMask - furSettings.y)));
+						if (!(0.0 /*_AlphaSharpenedA2C*/))
+						{
+							poiFragData.alpha = saturate((poiFragData.alpha) / max(fwidth(poiFragData.alpha), 0.0001));
+						}
+					}
+					else
+					{
+						clip(furHeightMap - furSettings.y);
+						clip(furMask - furSettings.y);
+					}
 				}
 			}
 			float customDistanceBlend(float base, float blend, float blendType)
@@ -11237,6 +11656,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a89948a6b0b279240aa055e21863b61f"
 					if ((2.0 /*_MainAlphaMaskMode*/) == 3) poiFragData.alpha = saturate(poiFragData.alpha + alphaMask);
 					if ((2.0 /*_MainAlphaMaskMode*/) == 4) poiFragData.alpha = saturate(poiFragData.alpha - alphaMask);
 				}
+				#endif
+				#ifndef POI_PASS_OUTLINE
+				applyFur(i.furSettings, poiFragData, poiMesh, poiMods);
 				#endif
 				applyAlphaOptions(poiFragData, poiMesh, poiCam, poiMods);
 				poiFragData.finalColor = poiFragData.baseColor;

@@ -1362,7 +1362,7 @@ Material:
     - _EnableEnvironmentalRim: 0
     - _EnableFlipbook: 0
     - _EnableGITDEmission: 1
-    - _EnableGITDEmission1: 0
+    - _EnableGITDEmission1: 1
     - _EnableGITDEmission2: 0
     - _EnableGITDEmission3: 0
     - _EnableMirrorOptions: 0
@@ -1425,19 +1425,19 @@ Material:
     - _ForceFlatRampedLightmap: 1
     - _ForgotToLockMaterial: 1
     - _GITDEMaxEmissionMultiplier: 0
-    - _GITDEMaxEmissionMultiplier1: 0
+    - _GITDEMaxEmissionMultiplier1: 1
     - _GITDEMaxEmissionMultiplier2: 0
     - _GITDEMaxEmissionMultiplier3: 0
     - _GITDEMaxLight: 1
-    - _GITDEMaxLight1: 1
+    - _GITDEMaxLight1: 0.8
     - _GITDEMaxLight2: 1
     - _GITDEMaxLight3: 1
-    - _GITDEMinEmissionMultiplier: 0.2
-    - _GITDEMinEmissionMultiplier1: 1
+    - _GITDEMinEmissionMultiplier: 0.05
+    - _GITDEMinEmissionMultiplier1: 0.2
     - _GITDEMinEmissionMultiplier2: 1
     - _GITDEMinEmissionMultiplier3: 1
     - _GITDEMinLight: 0.1
-    - _GITDEMinLight1: 0
+    - _GITDEMinLight1: 0.1
     - _GITDEMinLight2: 0
     - _GITDEMinLight3: 0
     - _GITDEWorldOrMesh: 0
@@ -3042,10 +3042,10 @@ Material:
     - m_start_depthRimLightOptions: 0
     - m_start_dissolve: 0
     - m_start_dissolveHueShift: 0
-    - m_start_emission1Options: 0
+    - m_start_emission1Options: 1
     - m_start_emission2Options: 0
     - m_start_emission3Options: 0
-    - m_start_emissionOptions: 0
+    - m_start_emissionOptions: 1
     - m_start_flipBook: 0
     - m_start_glitter: 0
     - m_start_internalparallax: 0
@@ -3343,8 +3343,8 @@ Material:
     - s_start_EmissionHueShift1: 0
     - s_start_EmissionHueShift2: 0
     - s_start_EmissionHueShift3: 0
-    - s_start_EmissionLightBased0: 0
-    - s_start_EmissionLightBased1: 0
+    - s_start_EmissionLightBased0: 1
+    - s_start_EmissionLightBased1: 1
     - s_start_EmissionLightBased2: 0
     - s_start_EmissionLightBased3: 0
     - s_start_EmissionScrolling1: 0

@@ -5299,7 +5299,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				float3 emissionColor0 = 0;
 				applyALEmmissionStrength(poiMods, emissionStrength0, float4(0,0,0,0), (0.0 /*_EmissionAL0StrengthBand*/), float4(1,1,0,0), (0.0 /*_EmissionAL0MultipliersBand*/), (0.0 /*_EmissionAL0Enabled*/));
 				applyALCenterOutEmission(poiMods, poiLight.nDotV, emissionStrength0, (0.0 /*_AudioLinkEmission0CenterOutSize*/), (0.0 /*_AudioLinkEmission0CenterOutBand*/), float4(0,0,0,0), (0.0 /*_EmissionAL0Enabled*/), (1.0 /*_AudioLinkEmission0CenterOutDuration*/));
-				float glowInTheDarkMultiplier0 = calculateGlowInTheDark((0.1 /*_GITDEMinLight*/), (1.0 /*_GITDEMaxLight*/), (0.2 /*_GITDEMinEmissionMultiplier*/), (0.0 /*_GITDEMaxEmissionMultiplier*/), (1.0 /*_EnableGITDEmission*/), (0.0 /*_GITDEWorldOrMesh*/), poiLight);
+				float glowInTheDarkMultiplier0 = calculateGlowInTheDark((0.1 /*_GITDEMinLight*/), (1.0 /*_GITDEMaxLight*/), (0.05 /*_GITDEMinEmissionMultiplier*/), (0.0 /*_GITDEMaxEmissionMultiplier*/), (1.0 /*_EnableGITDEmission*/), (0.0 /*_GITDEWorldOrMesh*/), poiLight);
 				#if defined(PROP_EMISSIONMAP) || !defined(OPTIMIZER_ENABLED)
 				if (!(0.0 /*_EmissionCenterOutEnabled*/))
 				{
@@ -5370,7 +5370,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				emissionStrength1 = (1.0 /*_EmissionStrength1*/);
 				applyALEmmissionStrength(poiMods, emissionStrength1, float4(0,0,0,0), (0.0 /*_EmissionAL1StrengthBand*/), float4(1,1,0,0), (0.0 /*_EmissionAL1MultipliersBand*/), (0.0 /*_EmissionAL1Enabled*/));
 				applyALCenterOutEmission(poiMods, poiLight.nDotV, emissionStrength1, (0.0 /*_AudioLinkEmission1CenterOutSize*/), (0.0 /*_AudioLinkEmission1CenterOutBand*/), float4(0,0,0,0), (0.0 /*_EmissionAL1Enabled*/), (1.0 /*_AudioLinkEmission1CenterOutDuration*/));
-				float glowInTheDarkMultiplier1 = calculateGlowInTheDark((0.0 /*_GITDEMinLight1*/), (1.0 /*_GITDEMaxLight1*/), (1.0 /*_GITDEMinEmissionMultiplier1*/), (0.0 /*_GITDEMaxEmissionMultiplier1*/), (0.0 /*_EnableGITDEmission1*/), (0.0 /*_GITDEWorldOrMesh1*/), poiLight);
+				float glowInTheDarkMultiplier1 = calculateGlowInTheDark((0.1 /*_GITDEMinLight1*/), (0.8 /*_GITDEMaxLight1*/), (0.2 /*_GITDEMinEmissionMultiplier1*/), (1.0 /*_GITDEMaxEmissionMultiplier1*/), (1.0 /*_EnableGITDEmission1*/), (0.0 /*_GITDEWorldOrMesh1*/), poiLight);
 				#if defined(PROP_EMISSIONMAP1) || !defined(OPTIMIZER_ENABLED)
 				if (!(0.0 /*_EmissionCenterOutEnabled1*/))
 				{

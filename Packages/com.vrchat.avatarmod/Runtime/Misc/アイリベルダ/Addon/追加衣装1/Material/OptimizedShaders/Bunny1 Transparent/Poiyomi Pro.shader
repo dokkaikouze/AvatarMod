@@ -6589,7 +6589,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/6b1615c905f7a0b4cb72b9c1591a0106"
 				float3 emissionColor0 = 0;
 				applyALEmmissionStrength(poiMods, emissionStrength0, float4(0,0,0,0), (0.0 /*_EmissionAL0StrengthBand*/), float4(1,1,0,0), (0.0 /*_EmissionAL0MultipliersBand*/), (0.0 /*_EmissionAL0Enabled*/));
 				applyALCenterOutEmission(poiMods, poiLight.nDotV, emissionStrength0, (0.0 /*_AudioLinkEmission0CenterOutSize*/), (0.0 /*_AudioLinkEmission0CenterOutBand*/), float4(0,0,0,0), (0.0 /*_EmissionAL0Enabled*/), (1.0 /*_AudioLinkEmission0CenterOutDuration*/));
-				float glowInTheDarkMultiplier0 = calculateGlowInTheDark((0.1 /*_GITDEMinLight*/), (1.0 /*_GITDEMaxLight*/), (0.3 /*_GITDEMinEmissionMultiplier*/), (0.1 /*_GITDEMaxEmissionMultiplier*/), (1.0 /*_EnableGITDEmission*/), (0.0 /*_GITDEWorldOrMesh*/), poiLight);
+				float glowInTheDarkMultiplier0 = calculateGlowInTheDark((0.1 /*_GITDEMinLight*/), (1.0 /*_GITDEMaxLight*/), (0.1 /*_GITDEMinEmissionMultiplier*/), (0.05 /*_GITDEMaxEmissionMultiplier*/), (1.0 /*_EnableGITDEmission*/), (0.0 /*_GITDEWorldOrMesh*/), poiLight);
 				#if defined(PROP_EMISSIONMAP) || !defined(OPTIMIZER_ENABLED)
 				if (!(0.0 /*_EmissionCenterOutEnabled*/))
 				{

@@ -542,7 +542,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e19ce3816dc603447950954483d0e6fa, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8245199293230077033, guid: 5706eface90f085409905e3ed1614795,
         type: 3}
       propertyPath: m_IsActive
@@ -802,6 +802,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 765475310832003473}
     m_Modifications:
+    - target: {fileID: 3070329522014124108, guid: bf65e3656d6f6104e86a4ba72df0ace6,
+        type: 3}
+      propertyPath: LockMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7235576791265331246, guid: bf65e3656d6f6104e86a4ba72df0ace6,
         type: 3}
       propertyPath: m_LocalPosition.x

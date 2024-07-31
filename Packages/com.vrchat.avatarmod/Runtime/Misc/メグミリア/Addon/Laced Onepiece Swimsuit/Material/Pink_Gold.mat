@@ -25,7 +25,6 @@ Material:
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
-  - _TPS_ANIMATEDTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -38,6 +37,7 @@ Material:
     OriginalShader: .poiyomi/Poiyomi Pro
     OriginalShaderGUID: 91f453b66d212d242b4824aa72c0b70b
     RenderType: Opaque
+    VRCFallback: Toon
     _LTCGI_AnimToggleAnimated: 1
     _LightingAdditiveCastedShadowsAnimated: 1
     _LightingAdditiveLimitAnimated: 1
@@ -932,7 +932,7 @@ Material:
     - _CubeMapUVMode: 1
     - _CubeMapWorldNormalsStrength: 1
     - _CubemapBlendType: 0
-    - _Cull: 0
+    - _Cull: 2
     - _CurvFix: 1
     - _Curvature: 0
     - _CurvatureU: 0

@@ -8,11 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bunny1 Transparent
-  m_Shader: {fileID: 4800000, guid: 6a6be79be323a2a4db9adfee32cd3dd7, type: 3}
+  m_Shader: {fileID: 4800000, guid: 91f453b66d212d242b4824aa72c0b70b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_ValidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
   - POI_BACKLIGHT
   - POI_CLEARCOAT
@@ -28,12 +27,13 @@ Material:
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   - _SUNDISK_SIMPLE
+  m_InvalidKeywords:
+  - _TPS_ANIMATEDTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3001
   stringTagMap:
-    AllLockedGUIDS: 6b1615c905f7a0b4cb72b9c1591a0106
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT POI_BACKLIGHT POI_CLEARCOAT POI_LTCGI
       POI_MATCAP0 POI_MATCAP0_CUSTOM_NORMAL POI_RIM2 POI_UDIMDISCARD VIGNETTE_MASKED
       _EMISSION _LIGHTINGMODE_SHADEMAP _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
@@ -2468,7 +2468,7 @@ Material:
     - _Set_RimLightMaskChannel: 1
     - _Set_RimLightMaskUV: 0
     - _ShadeColor_Step: 0
-    - _ShaderOptimizerEnabled: 1
+    - _ShaderOptimizerEnabled: 0
     - _ShaderUIWarning0: -0
     - _ShaderUIWarning1: -0
     - _ShadingEnabled: 1

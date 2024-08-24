@@ -26,6 +26,6 @@ Avatar Optimizer
 anatawa12 様
 https://github.com/anatawa12/AvatarOptimizer
 
-非破壊でliltoonのUV Tile Discardに合わせてUVを設定するツール
-猫好き 様
-https://cats-lab.booth.pm/items/5445935
+Prefabulous
+Haï~ 様
+https://docs.hai-vr.dev/docs/products/prefabulous

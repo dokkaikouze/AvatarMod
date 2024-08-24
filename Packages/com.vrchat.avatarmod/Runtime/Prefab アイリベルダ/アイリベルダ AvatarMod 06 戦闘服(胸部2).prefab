@@ -68,6 +68,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u30A2\u30A4\u30EA\u30D9\u30EB\u30C0 AvatarMod 06 \u6226\u95D8\u670D(\u80F8\u90E82)"
       objectReference: {fileID: 0}
+    - target: {fileID: 1867010206437747949, guid: 32bfa2b09b2f2314e990cf91d7de3a4d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2162712262040670184, guid: 32bfa2b09b2f2314e990cf91d7de3a4d,
         type: 3}
       propertyPath: m_TagString
@@ -112,6 +117,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: EditorOnly
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051412168203569048, guid: 32bfa2b09b2f2314e990cf91d7de3a4d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00000048056245
       objectReference: {fileID: 0}
     - target: {fileID: 6222934568082050588, guid: 32bfa2b09b2f2314e990cf91d7de3a4d,
         type: 3}
@@ -193,7 +203,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: EditorOnly
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2165869798886146332, guid: 32bfa2b09b2f2314e990cf91d7de3a4d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

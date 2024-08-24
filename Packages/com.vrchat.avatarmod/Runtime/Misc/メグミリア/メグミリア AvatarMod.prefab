@@ -1692,8 +1692,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5602270796118526618}
-  - component: {fileID: 1906710550815801531}
   - component: {fileID: 8775722785269584025}
+  - component: {fileID: 1798423804861176507}
   m_Layer: 0
   m_Name: BreastCollider
   m_TagString: Untagged
@@ -1710,34 +1710,12 @@ Transform:
   m_GameObject: {fileID: 1845389790120155201}
   serializedVersion: 2
   m_LocalRotation: {x: 0.11176726, y: -0.00000011846237, z: -0.000000013323677, w: 0.9937344}
-  m_LocalPosition: {x: -0.00000006455993, y: 0.004322361, z: 0.06070918}
+  m_LocalPosition: {x: -0.00000006455993, y: 0.004322427, z: 0.060709205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5790868718089189666}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1818360608 &1906710550815801531
-PositionConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845389790120155201}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 1
-  m_TranslationAtRest: {x: -0.00000006455993, y: 0.0043223416, z: 0.0607088}
-  m_TranslationOffset: {x: 0, y: -0.0035761213, z: 0.03652699}
-  m_AffectTranslationX: 0
-  m_AffectTranslationY: 1
-  m_AffectTranslationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 5410641799297600335}
-    weight: 0.5
-  - sourceTransform: {fileID: 2428233658087297149}
-    weight: 0.5
 --- !u!114 &8775722785269584025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,6 +1736,130 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   bonesAsSpheres: 0
+--- !u!114 &1798423804861176507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845389790120155201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1116338486, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 1
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 5410641799297600335}
+      Weight: 0.5
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 2428233658087297149}
+      Weight: 0.5
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 2
+    overflowList: []
+  cachedExecutionGroupIndex: 0
+  PositionAtRest: {x: -0.00000006455993, y: 0.004322361, z: 0.06070918}
+  PositionOffset: {x: -0.00000056561146, y: -0.0035763807, z: 0.03652693}
+  AffectsPositionX: 0
+  AffectsPositionY: 1
+  AffectsPositionZ: 1
 --- !u!1 &1847334261313917739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1923,38 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3549735982503734137}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2094492282643971280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519052938681593078}
+  m_Layer: 0
+  m_Name: '[Option] FaceEmo'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &519052938681593078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094492282643971280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7978826740766961553}
+  m_Father: {fileID: 2862962864457786196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2244287424076676415
 GameObject:
@@ -5942,7 +6076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8717698004538437980}
-  - component: {fileID: 8617858087428945137}
+  - component: {fileID: 1216484364739651313}
   m_Layer: 0
   m_Name: BreastRibbonConstraint
   m_TagString: Untagged
@@ -5959,7 +6093,7 @@ Transform:
   m_GameObject: {fileID: 8995823424416341033}
   serializedVersion: 2
   m_LocalRotation: {x: 0.49999923, y: -0.50000083, z: -0.5000006, w: 0.49999934}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00000014901161}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00000018626451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5967,28 +6101,130 @@ Transform:
   - {fileID: 1099959024372492091}
   m_Father: {fileID: 5211893606370900698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1818360608 &8617858087428945137
-PositionConstraint:
+--- !u!114 &1216484364739651313
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8995823424416341033}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 1
-  m_TranslationAtRest: {x: 0, y: 0, z: 0}
-  m_TranslationOffset: {x: -0.028434215, y: 0.0016886666, z: 0.08081666}
-  m_AffectTranslationX: 0
-  m_AffectTranslationY: 0
-  m_AffectTranslationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 5410641799297600335}
-    weight: 0.5
-  - sourceTransform: {fileID: 2428233658087297149}
-    weight: 0.5
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1116338486, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 1
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 5410641799297600335}
+      Weight: 0.5
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 2428233658087297149}
+      Weight: 0.5
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 2
+    overflowList: []
+  cachedExecutionGroupIndex: 0
+  PositionAtRest: {x: 0, y: 0, z: -0.00000014901161}
+  PositionOffset: {x: -0.028434156, y: 0.001689285, z: 0.08081638}
+  AffectsPositionX: 0
+  AffectsPositionY: 0
+  AffectsPositionZ: 1
 --- !u!1 &9099428970832736954
 GameObject:
   m_ObjectHideFlags: 0
@@ -6937,17 +7173,17 @@ PrefabInstance:
     - target: {fileID: -4930804397731858793, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7975088
+      value: 0.7975089
       objectReference: {fileID: 0}
     - target: {fileID: -4930804397731858793, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.40200803
+      value: -0.402008
       objectReference: {fileID: 0}
     - target: {fileID: -4930804397731858793, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.40200794
+      value: -0.402008
       objectReference: {fileID: 0}
     - target: {fileID: -4930804397731858793, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
@@ -8617,22 +8853,22 @@ PrefabInstance:
     - target: {fileID: -251431338061175316, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.016158655
+      value: 0.015670337
       objectReference: {fileID: 0}
     - target: {fileID: -251431338061175316, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.9998693
+      value: 0.99987686
       objectReference: {fileID: 0}
     - target: {fileID: -251431338061175316, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00028889612
+      value: -0.0008313616
       objectReference: {fileID: 0}
     - target: {fileID: -251431338061175316, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0005317681
+      value: 0.0000068764143
       objectReference: {fileID: 0}
     - target: {fileID: -251431338061175316, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
@@ -9257,22 +9493,22 @@ PrefabInstance:
     - target: {fileID: 1396250371220522287, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.19860408
+      value: 0.19860402
       objectReference: {fileID: 0}
     - target: {fileID: 1396250371220522287, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7966643
+      value: 0.7966644
       objectReference: {fileID: 0}
     - target: {fileID: 1396250371220522287, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.40365985
+      value: 0.40365982
       objectReference: {fileID: 0}
     - target: {fileID: 1396250371220522287, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.4036596
+      value: 0.40365958
       objectReference: {fileID: 0}
     - target: {fileID: 1396250371220522287, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
@@ -10437,22 +10673,22 @@ PrefabInstance:
     - target: {fileID: 5200200224294868784, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.20189142
+      value: 0.2018914
       objectReference: {fileID: 0}
     - target: {fileID: 5200200224294868784, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7975092
+      value: 0.79750925
       objectReference: {fileID: 0}
     - target: {fileID: 5200200224294868784, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.4020068
+      value: 0.40200683
       objectReference: {fileID: 0}
     - target: {fileID: 5200200224294868784, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.4020068
+      value: 0.40200672
       objectReference: {fileID: 0}
     - target: {fileID: 5200200224294868784, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
@@ -10477,22 +10713,22 @@ PrefabInstance:
     - target: {fileID: 5587777452975546138, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.016158747
+      value: 0.015670333
       objectReference: {fileID: 0}
     - target: {fileID: 5587777452975546138, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.9998693
+      value: 0.99987686
       objectReference: {fileID: 0}
     - target: {fileID: 5587777452975546138, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000296482
+      value: 0.00083911116
       objectReference: {fileID: 0}
     - target: {fileID: 5587777452975546138, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0005320779
+      value: -0.0000071170293
       objectReference: {fileID: 0}
     - target: {fileID: 5587777452975546138, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
@@ -11122,22 +11358,22 @@ PrefabInstance:
     - target: {fileID: 7449920400882360919, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.98379207
+      value: 0.983792
       objectReference: {fileID: 0}
     - target: {fileID: 7449920400882360919, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17931113
+      value: 0.17931114
       objectReference: {fileID: 0}
     - target: {fileID: 7449920400882360919, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000038897273
+      value: 0.000038897793
       objectReference: {fileID: 0}
     - target: {fileID: 7449920400882360919, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00091225584
+      value: 0.00091225345
       objectReference: {fileID: 0}
     - target: {fileID: 7449920400882360919, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
@@ -11507,22 +11743,22 @@ PrefabInstance:
     - target: {fileID: 8157304335060438721, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.19860196
+      value: 0.19860199
       objectReference: {fileID: 0}
     - target: {fileID: 8157304335060438721, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.79666173
+      value: 0.7966617
       objectReference: {fileID: 0}
     - target: {fileID: 8157304335060438721, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.4036628
+      value: -0.4036629
       objectReference: {fileID: 0}
     - target: {fileID: 8157304335060438721, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.4036628
+      value: -0.4036629
       objectReference: {fileID: 0}
     - target: {fileID: 8157304335060438721, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
@@ -11792,22 +12028,22 @@ PrefabInstance:
     - target: {fileID: 9016639589614956012, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9837922
+      value: 0.9837921
       objectReference: {fileID: 0}
     - target: {fileID: 9016639589614956012, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17931053
+      value: 0.17931056
       objectReference: {fileID: 0}
     - target: {fileID: 9016639589614956012, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000040573083
+      value: -0.00004068621
       objectReference: {fileID: 0}
     - target: {fileID: 9016639589614956012, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00091088226
+      value: -0.00091078243
       objectReference: {fileID: 0}
     - target: {fileID: 9016639589614956012, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
@@ -11853,7 +12089,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4792767313242338343}
+      addedObject: {fileID: 519052938681593078}
     - targetCorrespondingSourceObject: {fileID: -1122314837758968419, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
@@ -12226,11 +12462,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8326922580406772625, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6256442852033583081}
+      addedObject: {fileID: 8268656154664631696}
     - targetCorrespondingSourceObject: {fileID: -7738966351812232886, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6277879616317532825}
+      addedObject: {fileID: 7237760193429307438}
     - targetCorrespondingSourceObject: {fileID: 8157677260545985594, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
@@ -12242,11 +12478,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2497687562716173956, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3029580613791558667}
+      addedObject: {fileID: 123007967146746819}
     - targetCorrespondingSourceObject: {fileID: 2223212376344293230, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8992998468306907907}
+      addedObject: {fileID: 4850099538027199458}
     - targetCorrespondingSourceObject: {fileID: -3833243137820156727, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
@@ -12434,19 +12670,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1125291471529358667, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8433300606120500191}
+      addedObject: {fileID: 1311761761703187654}
     - targetCorrespondingSourceObject: {fileID: -7234345566507723382, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 27238133617636851}
+      addedObject: {fileID: 9098053593434084475}
     - targetCorrespondingSourceObject: {fileID: 4336990579403468503, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 111328128009187256}
+      addedObject: {fileID: 1737491772678233134}
     - targetCorrespondingSourceObject: {fileID: 7067082011489581046, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1553669217570878031}
+      addedObject: {fileID: 3328351335773314390}
     - targetCorrespondingSourceObject: {fileID: -4806527567748653666, guid: cd38593efa241b84fb2990309da01f7d,
         type: 3}
       insertIndex: -1
@@ -13094,26 +13330,130 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &3029580613791558667
-RotationConstraint:
+--- !u!114 &123007967146746819
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187006491826491963}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 0.5
-  m_RotationAtRest: {x: -0.5408512, y: 126.530716, z: 126.5307}
-  m_RotationOffset: {x: 2.3659937, y: 122.03013, z: 122.0301}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 8625614049650225747}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1788371120, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 0.5
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 8625614049650225747}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 0
+  RotationAtRest: {x: -0.5409241, y: 126.53096, z: 126.53094}
+  RotationOffset: {x: 2.3660455, y: 122.02987, z: 122.02984}
+  AffectsRotationX: 1
+  AffectsRotationY: 1
+  AffectsRotationZ: 1
 --- !u!137 &295003825626648640 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2605860809733231871, guid: cd38593efa241b84fb2990309da01f7d,
@@ -15467,31 +15807,135 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
---- !u!895512359 &111328128009187256
-AimConstraint:
+--- !u!114 &1737491772678233134
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018145926737455720}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 1
-  m_RotationAtRest: {x: 1.8506207, y: -179.99919, z: -179.98381}
-  m_RotationOffset: {x: -90, y: 0, z: -179.99043}
-  m_AimVector: {x: 0, y: 0, z: 1}
-  m_UpVector: {x: 0, y: 3.962616, z: -0.0949538}
-  m_WorldUpVector: {x: 0, y: 0, z: -1}
-  m_WorldUpObject: {fileID: 1610768615504743725}
-  m_UpType: 2
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 2835017866627855788}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -926596935, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 1
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 2835017866627855788}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 1
+  RotationAtRest: {x: 1.8517432, y: 179.93958, z: -179.96786}
+  RotationOffset: {x: -89.94403, y: -179.92923, z: 0}
+  WorldUpTransform: {fileID: 1610768615504743725}
+  AffectsRotationX: 1
+  AffectsRotationY: 1
+  AffectsRotationZ: 1
+  AimAxis: {x: 0, y: 0, z: 1}
+  UpAxis: {x: 0, y: 3.962616, z: -0.0949538}
+  WorldUp: 2
+  WorldUpVector: {x: 0, y: 0, z: -1}
 --- !u!1 &2034552429795087728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4327359272640926159, guid: cd38593efa241b84fb2990309da01f7d,
@@ -16595,26 +17039,130 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &6256442852033583081
-RotationConstraint:
+--- !u!114 &8268656154664631696
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3188870645592463568}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 0.5
-  m_RotationAtRest: {x: -0.54136866, y: -126.53073, z: -126.53073}
-  m_RotationOffset: {x: 2.3654468, y: -122.03013, z: -122.03013}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 6446648080254513635}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1788371120, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 0.5
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 6446648080254513635}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 0
+  RotationAtRest: {x: -0.5414734, y: -126.53073, z: -126.53073}
+  RotationOffset: {x: 2.3655224, y: -122.03009, z: -122.03009}
+  AffectsRotationX: 1
+  AffectsRotationY: 1
+  AffectsRotationZ: 1
 --- !u!1 &3218618984444105112 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8315012589423176409, guid: cd38593efa241b84fb2990309da01f7d,
@@ -17755,26 +18303,130 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &6277879616317532825
-RotationConstraint:
+--- !u!114 &7237760193429307438
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3794383738387742197}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 0.5
-  m_RotationAtRest: {x: -0.069106124, y: -126.53128, z: -126.53128}
-  m_RotationOffset: {x: -0.54139596, y: -126.53073, z: -126.530716}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 8777701844022357263}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1788371120, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 0.5
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 8777701844022357263}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 0
+  RotationAtRest: {x: -0.06906128, y: -126.53131, z: -126.53131}
+  RotationOffset: {x: -0.5414734, y: -126.5307, z: -126.5307}
+  AffectsRotationX: 1
+  AffectsRotationY: 1
+  AffectsRotationZ: 1
 --- !u!1 &3926611392733487772 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1607733058968544803, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18167,26 +18819,130 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &27238133617636851
-RotationConstraint:
+--- !u!114 &9098053593434084475
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4299673181448032565}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 0.5
-  m_RotationAtRest: {x: 20.659601, y: 0.024742067, z: 0.11101894}
-  m_RotationOffset: {x: 19.820778, y: 0.20732757, z: -0.20450252}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 6463351435907249042}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1788371120, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 0.5
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 6463351435907249042}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 0
+  RotationAtRest: {x: 20.659264, y: 0.024719236, z: 0.11076449}
+  RotationOffset: {x: 19.821098, y: 0.20734997, z: -0.20425415}
+  AffectsRotationX: 1
+  AffectsRotationY: 1
+  AffectsRotationZ: 1
 --- !u!1 &4318267924119647436 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7215785578711469965, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18265,26 +19021,130 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &8992998468306907907
-RotationConstraint:
+--- !u!114 &4850099538027199458
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4533892356312247249}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 0.5
-  m_RotationAtRest: {x: -0.06859045, y: 126.5313, z: 126.53129}
-  m_RotationOffset: {x: -0.54088706, y: 126.53073, z: 126.53073}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 5533499932285317896}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1788371120, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 0.5
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 5533499932285317896}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 0
+  RotationAtRest: {x: -0.06866455, y: 126.53125, z: 126.53125}
+  RotationOffset: {x: -0.5408325, y: 126.5308, z: 126.530785}
+  AffectsRotationX: 1
+  AffectsRotationY: 1
+  AffectsRotationZ: 1
 --- !u!137 &4556496694029896679 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2236632502028308312, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18728,26 +19588,130 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &1553669217570878031
-RotationConstraint:
+--- !u!114 &3328351335773314390
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4765548748581040969}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 0.5
-  m_RotationAtRest: {x: 20.659527, y: -0.024958013, z: -0.11080085}
-  m_RotationOffset: {x: 19.820692, y: -0.20753951, z: 0.20471364}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 1610768615504743725}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1788371120, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 0.5
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 1610768615504743725}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 0
+  RotationAtRest: {x: 20.659195, y: -0.024902344, z: -0.11062622}
+  RotationOffset: {x: 0, y: 0, z: 0}
+  AffectsRotationX: 1
+  AffectsRotationY: 1
+  AffectsRotationZ: 1
 --- !u!137 &4781122852507914962 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -2132448839554705811, guid: cd38593efa241b84fb2990309da01f7d,
@@ -20086,31 +21050,135 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2319900209600611519}
   m_PrefabAsset: {fileID: 0}
---- !u!895512359 &8433300606120500191
-AimConstraint:
+--- !u!114 &1311761761703187654
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5788209284784197130}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 1
-  m_RotationAtRest: {x: 1.8507433, y: 179.99918, z: 179.98308}
-  m_RotationOffset: {x: -90, y: 0, z: 179.98952}
-  m_AimVector: {x: 0, y: 0, z: 1}
-  m_UpVector: {x: 0, y: 3.962616, z: -0.0949538}
-  m_WorldUpVector: {x: 0, y: 0, z: -1}
-  m_WorldUpObject: {fileID: 6463351435907249042}
-  m_UpType: 2
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 3518164832092291815}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -926596935, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 1
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 3518164832092291815}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+      _defaultsApplied: 1
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 1
+  RotationAtRest: {x: 1.8517544, y: -179.93956, z: 179.96701}
+  RotationOffset: {x: -89.94403, y: 179.92831, z: 0}
+  WorldUpTransform: {fileID: 6463351435907249042}
+  AffectsRotationX: 1
+  AffectsRotationY: 1
+  AffectsRotationZ: 1
+  AimAxis: {x: 0, y: 0, z: 1}
+  UpAxis: {x: 0, y: 3.962616, z: -0.0949538}
+  WorldUp: 2
+  WorldUpVector: {x: 0, y: 0, z: -1}
 --- !u!137 &5790290736318912676 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 8100513705980025883, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24899,6 +25967,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5120912505422402753}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5125272546433772052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 519052938681593078}
+    m_Modifications:
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088316178104045916, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+        type: 3}
+      propertyPath: m_Name
+      value: FaceEmoPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc, type: 3}
+--- !u!4 &7978826740766961553 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5125272546433772052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5587809125077547966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25101,80 +26243,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: be014d180436ae44ab26b5820cc74ea0,
     type: 3}
   m_PrefabInstance: {fileID: 6225371601727411404}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &7717349958572831138
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2862962864457786196}
-    m_Modifications:
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088316178104045916, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-        type: 3}
-      propertyPath: m_Name
-      value: FaceEmoPrefab
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc, type: 3}
---- !u!4 &4792767313242338343 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2997951065698223493, guid: b22dfd2ccd555c041a5c3d1a5d99e1cc,
-    type: 3}
-  m_PrefabInstance: {fileID: 7717349958572831138}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8777409501102447995
 PrefabInstance:

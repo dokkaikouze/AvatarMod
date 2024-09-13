@@ -19,5 +19,5 @@ MITライセンスです
 
 ## 連絡先
 
-AvatarModに関する質問やサポートは以下のDiscordサーバー内の該当するチャンネルで行っています
+AvatarModに関する質問やサポートは以下のDiscordサーバー内の該当するチャンネルで行っています  
 https://discord.gg/7E4FYqhd33  

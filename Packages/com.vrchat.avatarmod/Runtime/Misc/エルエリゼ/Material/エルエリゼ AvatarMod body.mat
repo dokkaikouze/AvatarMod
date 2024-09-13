@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u30A8\u30EB\u30A8\u30EA\u30BC AvatarMod body"
+  m_Shader: {fileID: 4800000, guid: 3b4aa19949601f046a20ca8bdaee929f, type: 3}
+  m_Parent: {fileID: 2100000, guid: 952e88abec60c8b4da33a023b94ecbab, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    VRCFallback: Hidden
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MatCap2ndBumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 35, y: 35}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapBumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 35, y: 35}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionColorTex:
+        m_Texture: {fileID: 2800000, guid: 6d678fc0d1ea1034fabeb0a4f60ec016, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RimColorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ApplyReflection: 1
+    - _GSAAStrength: 0.15
+    - _MatCap2ndBumpScale: 0.25
+    - _MatCap2ndCustomNormal: 0
+    - _MatCapBumpScale: 0.25
+    - _MatCapCustomNormal: 0
+    - _OutlineDeleteMesh: 1
+    - _Reflectance: 0.54999995
+    - _RimBlendMode: 1
+    - _RimShadeBorder: 0.871
+    - _Shadow2ndBlur: 0
+    - _Shadow2ndBorder: 0
+    - _Shadow2ndNormalStrength: 1
+    - _ShadowBorder: 0.45
+    - _ShadowPostAO: 1
+    - _ShadowStrength: 1
+    - _Smoothness: 0.4
+    - _SpecularToon: 0
+    - _UDIMDiscardRow0_0: 0
+    - _UDIMDiscardRow0_1: 0
+    - _UDIMDiscardRow0_3: 0
+    - _UDIMDiscardRow1_1: 1
+    - _UDIMDiscardRow1_2: 1
+    - _UDIMDiscardRow1_3: 1
+    - _UDIMDiscardRow2_2: 0
+    - _UDIMDiscardRow2_3: 0
+    - _UDIMDiscardRow3_0: 1
+    - _UDIMDiscardRow3_1: 1
+    - _UDIMDiscardRow3_2: 1
+    - _UDIMDiscardRow3_3: 1
+    - _UseAnisotropy: 0
+    - _UseBump2ndMap: 0
+    - _UseMatCap2nd: 1
+    - _UseParallax: 0
+    - _UseReflection: 1
+    - _UseRim: 0
+    - _UseRimShade: 1
+    - _UseShadow: 1
+    m_Colors:
+    - _DistanceFade: {r: 0.09, g: 0.025, b: 0, a: 0}
+    - _DistanceFadeColor: {r: 0.25490195, g: 0.25490195, b: 0.25490195, a: 1}
+    - _MatCap2ndColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectionColor: {r: 1, g: 1, b: 1, a: 0}
+    - _RimColor: {r: 0.66, g: 0.5, b: 0.48, a: 1}
+    - _RimShadeColor: {r: 0, g: 0, b: 0, a: 0.2509804}
+    - _Shadow2ndColor: {r: 0.97647053, g: 0.9137255, b: 0.93333334, a: 0}
+    - _ShadowBorderColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowColor: {r: 0.9779411, g: 0.91322446, b: 0.93330896, a: 1}
+  m_BuildTextureStacks: []

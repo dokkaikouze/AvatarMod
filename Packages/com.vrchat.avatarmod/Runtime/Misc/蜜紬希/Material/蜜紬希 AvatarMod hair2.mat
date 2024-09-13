@@ -70,8 +70,10 @@ Material:
     - _MatCap2ndShadowMask: 0
     - _MatCapBlendMode: 0
     - _OutlineDeleteMesh: 1
-    - _Shadow2ndReceive: 1
-    - _ShadowReceive: 1
+    - _Shadow2ndNormalStrength: 1
+    - _Shadow2ndReceive: 0
+    - _ShadowNormalStrength: 1
+    - _ShadowReceive: 0
     - _UDIMDiscardCompile: 1
     - _UDIMDiscardUV: 1
     - _UseMatCap: 1
@@ -79,4 +81,5 @@ Material:
     m_Colors:
     - _MatCap2ndColor: {r: 1, g: 1, b: 1, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Shadow2ndColor: {r: 0.9779411, g: 0.91322446, b: 0.93330896, a: 0}
   m_BuildTextureStacks: []

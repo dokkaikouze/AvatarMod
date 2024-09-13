@@ -12,17 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
   m_Name: "MenuGimmick \u30E1\u30B0\u30DF\u30EA\u30A22"
   m_EditorClassIdentifier: 
+  Parameters: {fileID: 0}
   controls:
-  - name: "\u8863\u88C5\u5207\u308A\u66FF\u3048"
-    icon: {fileID: 0}
-    type: 103
-    parameter:
-      name: 
-    value: 1
-    style: 0
-    subMenu: {fileID: 11400000, guid: d7dcbae9240420a4796bddceb32aebb0, type: 2}
-    subParameters: []
-    labels: []
   - name: "\u8863\u88C5\u30D1\u30FC\u30C4\u8ABF\u6574"
     icon: {fileID: 2800000, guid: 621a12f984de07e4bb30645a992d29a6, type: 2}
     type: 103
@@ -31,6 +22,16 @@ MonoBehaviour:
     value: 1
     style: 0
     subMenu: {fileID: 11400000, guid: 9d285711c5c7ac04fa28d1b8781d1c39, type: 2}
+    subParameters: []
+    labels: []
+  - name: "\u8863\u88C5\u30D7\u30EA\u30BB\u30C3\u30C8"
+    icon: {fileID: 0}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: d7dcbae9240420a4796bddceb32aebb0, type: 2}
     subParameters: []
     labels: []
   - name: Option

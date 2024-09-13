@@ -2802,7 +2802,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 05b90d439154f914db9761f6072d709e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6a44a52582a8bfb4086298842f35fdcc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -4832,7 +4832,7 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Costume/flagCostume
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 6373029304493317122}
+    m_Motion: {fileID: 20600000, guid: c0207c3f7f71ce344a1ff68c69d7e949, type: 2}
     m_Threshold: 0.05653294
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -4840,7 +4840,7 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/flagLight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 20600000, guid: 02929342eceff6842a043b7fcc2f6834, type: 2}
+    m_Motion: {fileID: 20600000, guid: 4209ab50e30de3346be714d0c17c83fa, type: 2}
     m_Threshold: 0.075377256
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -4848,7 +4848,7 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/flagReflection
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 20600000, guid: b1e5b1de121f50245b7531863250017c, type: 2}
+    m_Motion: {fileID: 20600000, guid: 3b1d381a986c00b4ab42d8d6d666e8e1, type: 2}
     m_Threshold: 0.09422158
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -5112,7 +5112,7 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 36bf57a377dd16e4d93a9e228f7de0aa, type: 2}
+    m_Motion: {fileID: 7400000, guid: ae2ca95f4a94101429f35aa31868f001, type: 2}
     m_Threshold: 0.71608394
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -5375,45 +5375,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!206 &6373029304493317122
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Light
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b7c1fff523fa9544ba7766e851dcc426, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: BreastPBrootL_Squish
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e00b2837c442fe54aac423a5564bed7f, type: 2}
-    m_Threshold: 0.5
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: BreastPBrootL_Squish
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 15cc906b2799a9c4db41f54148c585fa, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: BreastPBrootL_Squish
-    m_Mirror: 0
-  m_BlendParameter: AvatarMod/Light
-  m_BlendParameterY: Blend
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
 --- !u!1101 &6409698771169067205
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6023,7 +5984,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 05b90d439154f914db9761f6072d709e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6a44a52582a8bfb4086298842f35fdcc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

@@ -34,7 +34,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: limitRotation.x
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_L
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -55,7 +55,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_L
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -76,7 +76,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: maxAngleX
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_L
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -97,7 +97,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: maxAngleZ
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_L
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -118,7 +118,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: limitRotation.x
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_R
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -139,7 +139,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_R
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -160,7 +160,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: maxAngleX
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_R
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -181,9 +181,30 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: maxAngleZ
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_R
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Armature/Hips/Spine/Chest/Breasts_PBCollider
+    classID: 114
+    script: {fileID: -1631200402, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -194,7 +215,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 688723407
+      path: 1860328832
       attribute: 3305885265
       script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
       typeID: 114
@@ -203,7 +224,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3540134060
+      path: 332549503
       attribute: 3305885265
       script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
       typeID: 114
@@ -212,7 +233,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 688723407
+      path: 2787431634
+      attribute: 3305885265
+      script: {fileID: -1631200402, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+      typeID: 114
+      customType: 24
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 1860328832
       attribute: 199768524
       script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
       typeID: 114
@@ -221,7 +251,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 688723407
+      path: 1860328832
       attribute: 4041467659
       script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
       typeID: 114
@@ -230,7 +260,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 688723407
+      path: 1860328832
       attribute: 518882855
       script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
       typeID: 114
@@ -239,7 +269,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3540134060
+      path: 332549503
       attribute: 199768524
       script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
       typeID: 114
@@ -248,7 +278,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3540134060
+      path: 332549503
       attribute: 4041467659
       script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
       typeID: 114
@@ -257,7 +287,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3540134060
+      path: 332549503
       attribute: 518882855
       script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
       typeID: 114
@@ -304,7 +334,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: limitRotation.x
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_L
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -325,7 +355,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_L
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -346,7 +376,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: maxAngleX
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_L
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -367,7 +397,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: maxAngleZ
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_L
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -388,7 +418,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: limitRotation.x
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_R
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -409,7 +439,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_R
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -430,7 +460,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: maxAngleX
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_R
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
@@ -451,9 +481,30 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: maxAngleZ
-    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_R
+    path: Armature/Hips/Spine/Chest/Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Armature/Hips/Spine/Chest/Breasts_PBCollider
+    classID: 114
+    script: {fileID: -1631200402, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
     flags: 0
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0

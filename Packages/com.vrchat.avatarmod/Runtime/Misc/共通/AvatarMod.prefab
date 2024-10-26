@@ -33,8 +33,10 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3208107807829423206}
-  - {fileID: 6316215527280138163}
+  - {fileID: 9209289373123209248}
   - {fileID: 8759436594321319198}
+  - {fileID: 315589779297061065}
+  - {fileID: 6316215527280138163}
   - {fileID: 1480801961356939128}
   - {fileID: 3804701513393048199}
   - {fileID: 1783262201730743235}
@@ -63,6 +65,7 @@ MonoBehaviour:
   matchAvatarWriteDefaults: 0
   relativePathRoot:
     referencePath: 
+    targetObject: {fileID: 0}
   layerPriority: 1
 --- !u!114 &1216097752875793660
 MonoBehaviour:
@@ -180,6 +183,76 @@ MonoBehaviour:
     saved: 1
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
+--- !u!1 &2996911907037275065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9209289373123209248}
+  - component: {fileID: 5049100686929601666}
+  - component: {fileID: 6880401003652150117}
+  m_Layer: 0
+  m_Name: "[Option] \u76EEEmission"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9209289373123209248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2996911907037275065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6461410430392657849}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5049100686929601666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2996911907037275065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: f346e88cbd90ebd4c83e50df2cd77564, type: 2}
+  installTargetMenu: {fileID: 0}
+--- !u!114 &6880401003652150117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2996911907037275065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/\u76EEEmission"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 2
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &3227114959261766319
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +848,96 @@ MonoBehaviour:
     defaultValue: 0.5
     saved: 0
     hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
+--- !u!1 &5902410978584744805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 315589779297061065}
+  - component: {fileID: 7842518432114523634}
+  - component: {fileID: 7482347559745865669}
+  m_Layer: 0
+  m_Name: "[Option] \u80F8\u30B5\u30A4\u30BA\u8ABF\u6574"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &315589779297061065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902410978584744805}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6461410430392657849}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7842518432114523634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902410978584744805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 061d0fe3ec1b24d4bbcfcdea6acb528d, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
+--- !u!114 &7482347559745865669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902410978584744805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/\u80F8\u30B5\u30A4\u30BA\u8ABF\u6574"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 2
+    localOnly: 0
+    defaultValue: 0.5
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
+  - nameOrPrefix: AvatarMod/flagBTAnimation
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 1
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: AvatarMod/syncBTAnimation
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
 --- !u!1 &6275928207359562862
 GameObject:
@@ -845,7 +1008,7 @@ MonoBehaviour:
     defaultValue: 0.5
     saved: 1
     hasExplicitDefaultValue: 1
-    m_overrideAnimatorDefaults: 0
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &7451172289923407987
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +1062,7 @@ MonoBehaviour:
   matchAvatarWriteDefaults: 0
   relativePathRoot:
     referencePath: 
+    targetObject: {fileID: 0}
   layerPriority: -1
 --- !u!114 &7696635483234050896
 MonoBehaviour:
@@ -1056,7 +1220,7 @@ MonoBehaviour:
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
-    m_overrideAnimatorDefaults: 0
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &8810076049042100375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1342,7 @@ MonoBehaviour:
   matchAvatarWriteDefaults: 0
   relativePathRoot:
     referencePath: 
+    targetObject: {fileID: 0}
   layerPriority: 0
 --- !u!1 &9000411443450549231
 GameObject:

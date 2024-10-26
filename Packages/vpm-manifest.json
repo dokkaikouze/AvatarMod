@@ -1,22 +1,10 @@
 {
   "dependencies": {
-    "jp.lilxyzw.liltoon": {
-      "version": "1.7.3"
-    },
-    "com.anatawa12.vpm-package-auto-installer.creator": {
-      "version": "1.1.2"
-    },
-    "nadena.dev.ndmf": {
-      "version": "1.4.1"
-    },
     "com.vrchat.core.vpm-resolver": {
       "version": "0.1.29"
     },
     "dev.hai-vr.lightbox-viewer": {
       "version": "2.2.0"
-    },
-    "lyuma.av3emulator": {
-      "version": "3.4.5"
     },
     "jp.suzuryg.face-emo": {
       "version": "1.5.5"
@@ -39,32 +27,44 @@
     "vrchat.blackstartx.gesture-manager": {
       "version": "3.9.2"
     },
-    "com.vrchat.base": {
-      "version": "3.7.0"
-    },
-    "com.vrchat.avatars": {
-      "version": "3.7.0"
-    },
     "dev.hai-vr.resilience.prefabulous.universal": {
       "version": "2.1.0"
-    },
-    "jp.lilxyzw.avatar-utils": {
-      "version": "1.2.0"
-    },
-    "com.anatawa12.avatar-optimizer": {
-      "version": "1.7.12"
-    },
-    "io.github.azukimochi.light-limit-changer": {
-      "version": "1.14.0"
     },
     "com.anatawa12.continuous-avatar-uploader": {
       "version": "0.3.2"
     },
-    "nadena.dev.modular-avatar": {
-      "version": "1.9.16"
-    },
     "dev.vrlabs.av3manager": {
       "version": "2.0.33"
+    },
+    "lyuma.av3emulator": {
+      "version": "3.4.6"
+    },
+    "jp.lilxyzw.avatar-utils": {
+      "version": "1.3.0"
+    },
+    "io.github.azukimochi.light-limit-changer": {
+      "version": "1.14.2"
+    },
+    "com.anatawa12.avatar-optimizer": {
+      "version": "1.7.13"
+    },
+    "com.anatawa12.vpm-package-auto-installer.creator": {
+      "version": "1.1.3"
+    },
+    "jp.lilxyzw.liltoon": {
+      "version": "1.8.3"
+    },
+    "jp.lilxyzw.editortoolbox": {
+      "version": "1.2.2"
+    },
+    "com.vrchat.base": {
+      "version": "3.7.2"
+    },
+    "com.vrchat.avatars": {
+      "version": "3.7.2"
+    },
+    "nadena.dev.modular-avatar": {
+      "version": "1.10.5"
     }
   },
   "locked": {
@@ -76,18 +76,6 @@
       "version": "1.0.1",
       "dependencies": {}
     },
-    "jp.lilxyzw.liltoon": {
-      "version": "1.7.3",
-      "dependencies": {}
-    },
-    "com.anatawa12.vpm-package-auto-installer.creator": {
-      "version": "1.1.2",
-      "dependencies": {}
-    },
-    "nadena.dev.ndmf": {
-      "version": "1.4.1",
-      "dependencies": {}
-    },
     "com.vrchat.core.vpm-resolver": {
       "version": "0.1.29",
       "dependencies": {}
@@ -95,12 +83,6 @@
     "dev.hai-vr.lightbox-viewer": {
       "version": "2.2.0",
       "dependencies": {}
-    },
-    "lyuma.av3emulator": {
-      "version": "3.4.5",
-      "dependencies": {
-        "com.vrchat.avatars": "^3.1.0"
-      }
     },
     "jp.suzuryg.face-emo": {
       "version": "1.5.5",
@@ -146,38 +128,9 @@
         "com.vrchat.avatars": ">=3.5.2 < 3.8.X"
       }
     },
-    "com.vrchat.base": {
-      "version": "3.7.0",
-      "dependencies": {}
-    },
-    "com.vrchat.avatars": {
-      "version": "3.7.0",
-      "dependencies": {
-        "com.vrchat.base": "3.7.0"
-      }
-    },
     "dev.hai-vr.resilience.prefabulous.universal": {
       "version": "2.1.0",
       "dependencies": {}
-    },
-    "jp.lilxyzw.avatar-utils": {
-      "version": "1.2.0",
-      "dependencies": {}
-    },
-    "com.anatawa12.avatar-optimizer": {
-      "version": "1.7.12",
-      "dependencies": {
-        "nadena.dev.ndmf": "^1.3.0",
-        "com.vrchat.avatars": ">=3.3.0 <3.8.0"
-      }
-    },
-    "io.github.azukimochi.light-limit-changer": {
-      "version": "1.14.0",
-      "dependencies": {
-        "com.vrchat.avatars": ">=3.2.0",
-        "nadena.dev.modular-avatar": "^1.9.9",
-        "nadena.dev.ndmf": "^1.4.0"
-      }
     },
     "com.anatawa12.continuous-avatar-uploader": {
       "version": "0.3.2",
@@ -185,18 +138,69 @@
         "com.vrchat.avatars": ">=3.3.0-beta.1 <3.8.0"
       }
     },
-    "nadena.dev.modular-avatar": {
-      "version": "1.9.16",
-      "dependencies": {
-        "com.vrchat.avatars": ">=3.4.0",
-        "nadena.dev.ndmf": ">=1.4.1 <2.0.0-a"
-      }
-    },
     "dev.vrlabs.av3manager": {
       "version": "2.0.33",
       "dependencies": {
         "com.vrchat.avatars": "3.2 - 3.7"
       }
+    },
+    "lyuma.av3emulator": {
+      "version": "3.4.6",
+      "dependencies": {
+        "com.vrchat.avatars": "^3.1.0"
+      }
+    },
+    "jp.lilxyzw.avatar-utils": {
+      "version": "1.3.0",
+      "dependencies": {}
+    },
+    "io.github.azukimochi.light-limit-changer": {
+      "version": "1.14.2",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.2.0",
+        "nadena.dev.modular-avatar": "^1.9.9",
+        "nadena.dev.ndmf": "^1.4.0"
+      }
+    },
+    "com.anatawa12.avatar-optimizer": {
+      "version": "1.7.13",
+      "dependencies": {
+        "nadena.dev.ndmf": "^1.3.0",
+        "com.vrchat.avatars": ">=3.3.0 <3.8.0"
+      }
+    },
+    "com.anatawa12.vpm-package-auto-installer.creator": {
+      "version": "1.1.3",
+      "dependencies": {}
+    },
+    "jp.lilxyzw.liltoon": {
+      "version": "1.8.3",
+      "dependencies": {}
+    },
+    "jp.lilxyzw.editortoolbox": {
+      "version": "1.2.2",
+      "dependencies": {}
+    },
+    "com.vrchat.base": {
+      "version": "3.7.2",
+      "dependencies": {}
+    },
+    "com.vrchat.avatars": {
+      "version": "3.7.2",
+      "dependencies": {
+        "com.vrchat.base": "3.7.2"
+      }
+    },
+    "nadena.dev.modular-avatar": {
+      "version": "1.10.5",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.7.0",
+        "nadena.dev.ndmf": ">=1.5.6 <2.0.0-a"
+      }
+    },
+    "nadena.dev.ndmf": {
+      "version": "1.5.6",
+      "dependencies": {}
     }
   }
 }

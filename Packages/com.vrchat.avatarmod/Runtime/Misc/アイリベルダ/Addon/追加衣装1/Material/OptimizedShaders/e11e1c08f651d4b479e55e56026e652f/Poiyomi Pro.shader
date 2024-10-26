@@ -3325,9 +3325,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				o.pos = UnityObjectToClipPos(o.localPos);
 				#ifdef POI_PASS_OUTLINE
 				#if defined(UNITY_REVERSED_Z)
-				o.pos.z += (0.0 /*_Offset_Z*/) * - 0.01;
+				o.pos.z += (0.0001 /*_Offset_Z*/) * - 0.01;
 				#else
-				o.pos.z += (0.0 /*_Offset_Z*/) * 0.01;
+				o.pos.z += (0.0001 /*_Offset_Z*/) * 0.01;
 				#endif
 				#endif
 				#ifndef FORWARD_META_PASS
@@ -5912,7 +5912,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				float2 mainUV = poiUV(poiMesh.uv[(0.0 /*_MainTexUV*/)].xy, float4(1,1,0,0));
 				if ((0.0 /*_MainPixelMode*/))
 				{
-					mainUV = sharpSample(float4(0.0004882813,0.0004882813,2048,2048), mainUV);
+					mainUV = sharpSample(float4(0.0002441406,0.0002441406,4096,4096), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), (0.0 /*_MainTexStochastic*/));
 				#if defined(PROP_BUMPMAP) || !defined(OPTIMIZER_ENABLED)
@@ -8646,9 +8646,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				o.pos = UnityObjectToClipPos(o.localPos);
 				#ifdef POI_PASS_OUTLINE
 				#if defined(UNITY_REVERSED_Z)
-				o.pos.z += (0.0 /*_Offset_Z*/) * - 0.01;
+				o.pos.z += (0.0001 /*_Offset_Z*/) * - 0.01;
 				#else
-				o.pos.z += (0.0 /*_Offset_Z*/) * 0.01;
+				o.pos.z += (0.0001 /*_Offset_Z*/) * 0.01;
 				#endif
 				#endif
 				#ifndef FORWARD_META_PASS
@@ -10197,7 +10197,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				float2 mainUV = poiUV(poiMesh.uv[(0.0 /*_MainTexUV*/)].xy, float4(1,1,0,0));
 				if ((0.0 /*_MainPixelMode*/))
 				{
-					mainUV = sharpSample(float4(0.0004882813,0.0004882813,2048,2048), mainUV);
+					mainUV = sharpSample(float4(0.0002441406,0.0002441406,4096,4096), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), (0.0 /*_MainTexStochastic*/));
 				#if defined(PROP_BUMPMAP) || !defined(OPTIMIZER_ENABLED)
@@ -12597,9 +12597,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				o.pos = UnityObjectToClipPos(o.localPos);
 				#ifdef POI_PASS_OUTLINE
 				#if defined(UNITY_REVERSED_Z)
-				o.pos.z += (0.0 /*_Offset_Z*/) * - 0.01;
+				o.pos.z += (0.0001 /*_Offset_Z*/) * - 0.01;
 				#else
-				o.pos.z += (0.0 /*_Offset_Z*/) * 0.01;
+				o.pos.z += (0.0001 /*_Offset_Z*/) * 0.01;
 				#endif
 				#endif
 				#ifndef FORWARD_META_PASS
@@ -13189,7 +13189,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				float2 mainUV = poiUV(poiMesh.uv[(0.0 /*_MainTexUV*/)].xy, float4(1,1,0,0));
 				if ((0.0 /*_MainPixelMode*/))
 				{
-					mainUV = sharpSample(float4(0.0004882813,0.0004882813,2048,2048), mainUV);
+					mainUV = sharpSample(float4(0.0002441406,0.0002441406,4096,4096), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), (0.0 /*_MainTexStochastic*/));
 				#if defined(PROP_BUMPMAP) || !defined(OPTIMIZER_ENABLED)
@@ -15342,9 +15342,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				o.pos = UnityObjectToClipPos(o.localPos);
 				#ifdef POI_PASS_OUTLINE
 				#if defined(UNITY_REVERSED_Z)
-				o.pos.z += (0.0 /*_Offset_Z*/) * - 0.01;
+				o.pos.z += (0.0001 /*_Offset_Z*/) * - 0.01;
 				#else
-				o.pos.z += (0.0 /*_Offset_Z*/) * 0.01;
+				o.pos.z += (0.0001 /*_Offset_Z*/) * 0.01;
 				#endif
 				#endif
 				#ifndef FORWARD_META_PASS
@@ -15725,7 +15725,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/e11e1c08f651d4b479e55e56026e652f"
 				float2 mainUV = poiUV(poiMesh.uv[(0.0 /*_MainTexUV*/)].xy, float4(1,1,0,0));
 				if ((0.0 /*_MainPixelMode*/))
 				{
-					mainUV = sharpSample(float4(0.0004882813,0.0004882813,2048,2048), mainUV);
+					mainUV = sharpSample(float4(0.0002441406,0.0002441406,4096,4096), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), (0.0 /*_MainTexStochastic*/));
 				#if defined(PROP_BUMPMAP) || !defined(OPTIMIZER_ENABLED)

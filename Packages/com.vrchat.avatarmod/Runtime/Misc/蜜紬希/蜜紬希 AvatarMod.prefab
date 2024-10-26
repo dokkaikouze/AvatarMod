@@ -2732,10 +2732,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
-    defaultValue: 0
+    defaultValue: 1
     saved: 1
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &1786222504600782580
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,7 +4446,7 @@ Transform:
   m_LocalRotation: {x: 0.68789965, y: -0.6873625, z: 0.0829279, w: -0.21783005}
   m_LocalPosition: {x: 0.018295601, y: 0.058694437, z: -0.0023784544}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8048213397759850170}
   m_Father: {fileID: 6544524765985198616}
@@ -6873,6 +6873,12 @@ PrefabInstance:
       propertyPath: entireMeshes.Array.data[1]
       value: 
       objectReference: {fileID: 8798634128330784543}
+    - target: {fileID: 5049100686929601666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: installTargetMenu
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550,
+        type: 2}
     - target: {fileID: 5077675285912645034, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: animator
@@ -7029,6 +7035,12 @@ PrefabInstance:
       propertyPath: installTargetMenu
       value: 
       objectReference: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550,
+        type: 2}
+    - target: {fileID: 7842518432114523634, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: installTargetMenu
+      value: 
+      objectReference: {fileID: 11400000, guid: debd26d4d3cf9eb458af176d7df826bf,
         type: 2}
     - target: {fileID: 7900120506419512912, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
@@ -8423,7 +8435,7 @@ PrefabInstance:
     - target: {fileID: -6781712547471606747, guid: a6015051120e8734b86465c188897b9e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6781712547471606747, guid: a6015051120e8734b86465c188897b9e,
         type: 3}
@@ -8693,7 +8705,7 @@ PrefabInstance:
     - target: {fileID: -5819533380122704622, guid: a6015051120e8734b86465c188897b9e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5819533380122704622, guid: a6015051120e8734b86465c188897b9e,
         type: 3}
@@ -8713,7 +8725,7 @@ PrefabInstance:
     - target: {fileID: -5762657567365440773, guid: a6015051120e8734b86465c188897b9e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5762657567365440773, guid: a6015051120e8734b86465c188897b9e,
         type: 3}
@@ -16605,10 +16617,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
-    defaultValue: 0
+    defaultValue: 1
     saved: 1
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &3282807188131380779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7978041660588176559, guid: a6015051120e8734b86465c188897b9e,
@@ -16728,7 +16740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: 
-  ViewPosition: {x: 0, y: 1.390011, z: 0.02606661}
+  ViewPosition: {x: 0, y: 1.37, z: 0.023}
   Animations: 0
   ScaleIPD: 1
   lipSync: 3
@@ -17338,9 +17350,11 @@ MonoBehaviour:
   InheritProbeAnchor: 1
   ProbeAnchor:
     referencePath: AutoAnchorObject
+    targetObject: {fileID: 0}
   InheritBounds: 1
   RootBone:
     referencePath: AutoAnchorObject
+    targetObject: {fileID: 0}
   Bounds:
     m_Center: {x: 0, y: -0.2, z: 0}
     m_Extent: {x: 0.9429477, y: 0.9429477, z: 0.9429477}

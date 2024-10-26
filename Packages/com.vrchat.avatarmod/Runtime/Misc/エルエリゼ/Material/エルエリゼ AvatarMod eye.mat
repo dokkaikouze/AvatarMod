@@ -31,6 +31,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _ApplyReflection: 1
+    - _EmissionFluorescence: 0
+    - _EmissionMainStrength: 1
     - _GSAAStrength: 0.15
     - _Reflectance: 0.54999995
     - _RimShadeBlur: 0
@@ -45,12 +47,14 @@ Material:
     - _ShadowStrength: 1
     - _Smoothness: 0.965
     - _SpecularToon: 0
+    - _UseEmission: 1
     - _UseReflection: 1
     - _UseRimShade: 0
     - _UseShadow: 1
     m_Colors:
     - _DistanceFade: {r: 0.09, g: 0.025, b: 0, a: 0}
     - _DistanceFadeColor: {r: 0.25490195, g: 0.25490195, b: 0.25490195, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 0}
     - _ReflectionColor: {r: 1, g: 1, b: 1, a: 0}
     - _RimShadeColor: {r: 0, g: 0, b: 0, a: 1}
     - _Shadow2ndColor: {r: 0.97647053, g: 0.9137255, b: 0.93333334, a: 0}

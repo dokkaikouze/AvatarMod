@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneReference: 8
-  subPath: Breasts_Origin/Breastsb1_PBroot_Animation_R/Breastsb1_PBroot_R/Breastsb1_Dummy1_R/Breastsb1_Dummy1_Animation_R/Breastsb1_Dummy1_Animation2_R/Breastsb1_Dummy1_Animation3_R
+  subPath: Breasts_Origin/Breastsb1_PBroot_Animation_R/Breastsb1_PBroot_AnimationSpace_R/Breastsb1_PBroot_R/Breastsb1_Dummy1_R/Breastsb1_Dummy1_Animation_R/Breastsb1_Dummy1_Animation2_R/Breastsb1_Dummy1_Animation3_R
   attachmentMode: 2
 --- !u!1 &145599535266340029
 GameObject:
@@ -3570,13 +3570,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256018667145533006}
   serializedVersion: 2
-  m_LocalRotation: {x: 7.320634e-27, y: -7.9580786e-13, z: 4.2632575e-13, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.8443359}
+  m_LocalRotation: {x: 7.320627e-27, y: -7.9580786e-13, z: 4.2632575e-13, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8443358}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2667221153651013106}
-  m_Father: {fileID: 6263447288631940812}
+  m_Father: {fileID: 1208530638760023172}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4706801091645103781
 MonoBehaviour:
@@ -3707,7 +3707,7 @@ MonoBehaviour:
   collisionFilter:
     allowSelf: 1
     allowOthers: 1
-  radius: 0.065
+  radius: 0.13
   radiusCurve:
     serializedVersion: 2
     m_Curve:
@@ -3731,7 +3731,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4666,6 +4666,38 @@ Transform:
   - {fileID: 4280842872456002358}
   m_Father: {fileID: 6067893980392369172}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1452609545165297174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3716249395505032492}
+  m_Layer: 0
+  m_Name: Breasts1_PBroot_AnimationSpace_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3716249395505032492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452609545165297174}
+  serializedVersion: 2
+  m_LocalRotation: {x: -1.5751975e-26, y: -7.9580786e-13, z: 4.5474746e-13, w: 1}
+  m_LocalPosition: {x: 1.2177053e-13, y: -0.00000014901161, z: -0.075000696}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5661199795579250698}
+  m_Father: {fileID: 2688963116759022664}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531395046450941352
 GameObject:
   m_ObjectHideFlags: 0
@@ -4724,11 +4756,11 @@ Transform:
   m_GameObject: {fileID: 1537075629564057133}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.000000004656956, z: -0.000000005900677, w: 1}
-  m_LocalPosition: {x: -0.06770312, y: 0.049973965, z: 0.1326166}
+  m_LocalPosition: {x: -0.06770312, y: 0.049973965, z: 0.122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 2904738976587719980}
+  - {fileID: 4972771258234602126}
   m_Father: {fileID: 8126375888751490936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1542306033922135309
@@ -7042,7 +7074,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2252985778257533869}
   serializedVersion: 2
-  m_LocalRotation: {x: -1.5349384e-15, y: 1.110223e-16, z: 3.330669e-16, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -8754,12 +8786,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 5.1947687e-18, y: 0.0000000027944511, z: 0.0000000046562434,
     w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.8443359}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8443358}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8516198695897358169}
-  m_Father: {fileID: 2413614490749854906}
+  m_Father: {fileID: 8499963200425575393}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4827759284112930780
 MonoBehaviour:
@@ -8890,7 +8922,7 @@ MonoBehaviour:
   collisionFilter:
     allowSelf: 1
     allowOthers: 1
-  radius: 0.065
+  radius: 0.13
   radiusCurve:
     serializedVersion: 2
     m_Curve:
@@ -8914,7 +8946,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -12333,7 +12365,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 116070387715345886}
+  - {fileID: 8499963200425575393}
   m_Father: {fileID: 8126375888751490936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3758191104854321362
@@ -17071,7 +17103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneReference: 8
-  subPath: Breasts_Origin/Breastsb1_PBroot_Animation_L/Breastsb1_PBroot_L/Breastsb1_Dummy1_L/Breastsb1_Dummy1_Animation_L/Breastsb1_Dummy1_Animation2_L/Breastsb1_Dummy1_Animation3_L
+  subPath: Breasts_Origin/Breastsb1_PBroot_Animation_L/Breastsb1_PBroot_AnimationSpace_L/Breastsb1_PBroot_L/Breastsb1_Dummy1_L/Breastsb1_Dummy1_Animation_L/Breastsb1_Dummy1_Animation2_L/Breastsb1_Dummy1_Animation3_L
   attachmentMode: 2
 --- !u!1 &5018314814196975349
 GameObject:
@@ -17100,7 +17132,7 @@ Transform:
   m_GameObject: {fileID: 5018314814196975349}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.049999952, z: 0.115000024}
+  m_LocalPosition: {x: 0, y: 0.05000019, z: 0.104383476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -17283,6 +17315,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7311711493389116520}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5055885347889682453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208530638760023172}
+  m_Layer: 0
+  m_Name: Breastsb1_PBroot_AnimationSpace_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208530638760023172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5055885347889682453}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6055995433018094702}
+  m_Father: {fileID: 6263447288631940812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5088364636334059668
 GameObject:
@@ -18792,11 +18856,11 @@ Transform:
   m_GameObject: {fileID: 5979076620033221837}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 8.117951e-13, z: -4.4408932e-13, w: 1}
-  m_LocalPosition: {x: 0.06770312, y: 0.049973965, z: 0.1326166}
+  m_LocalPosition: {x: 0.06770312, y: 0.049974084, z: 0.122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 5661199795579250698}
+  - {fileID: 3716249395505032492}
   m_Father: {fileID: 8126375888751490936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6003441924221277429
@@ -19131,14 +19195,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6222934568082050588}
   serializedVersion: 2
-  m_LocalRotation: {x: 5.1947687e-18, y: 0.0000000027944511, z: 0.0000000046562434,
-    w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.8443359}
+  m_LocalRotation: {x: 2.3100414e-18, y: 9.313794e-10, z: 0.0000000018625881, w: 1}
+  m_LocalPosition: {x: -0.0000000038853796, y: 0.0000002682209, z: -0.7693351}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6690288582692420328}
-  m_Father: {fileID: 4287268918794322278}
+  m_Father: {fileID: 4972771258234602126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2640927224383568055
 MonoBehaviour:
@@ -19269,7 +19332,7 @@ MonoBehaviour:
   collisionFilter:
     allowSelf: 1
     allowOthers: 1
-  radius: 0.065
+  radius: 0.13
   radiusCurve:
     serializedVersion: 2
     m_Curve:
@@ -19293,7 +19356,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -19517,6 +19580,39 @@ Transform:
   m_Children:
   - {fileID: 6853029651578658652}
   m_Father: {fileID: 6101943876472960914}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6328101928333741931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4972771258234602126}
+  m_Layer: 0
+  m_Name: Breasts1_PBroot_AnimationSpace_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4972771258234602126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6328101928333741931}
+  serializedVersion: 2
+  m_LocalRotation: {x: 2.0165456e-18, y: 0.0000000018630717, z: 0.0000000027936553,
+    w: 1}
+  m_LocalPosition: {x: 0.000000006752034, y: -0.0000002682209, z: -0.075000696}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2904738976587719980}
+  m_Father: {fileID: 4287268918794322278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6368971135760577395
 GameObject:
@@ -20329,7 +20425,7 @@ Transform:
   m_GameObject: {fileID: 6494878706523848750}
   serializedVersion: 2
   m_LocalRotation: {x: 0.96252525, y: -0.0033588207, z: 0.0021235736, w: 0.27116317}
-  m_LocalPosition: {x: 0.0000000037252903, y: 0.026575208, z: 0.17225154}
+  m_LocalPosition: {x: 0.0000000037252903, y: 0.026575446, z: 0.161635}
   m_LocalScale: {x: 1, y: 0.9999998, z: 0.9999985}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -22298,13 +22394,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6819268617254282100}
   serializedVersion: 2
-  m_LocalRotation: {x: 7.320634e-27, y: -7.9580786e-13, z: 4.2632575e-13, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.8443359}
+  m_LocalRotation: {x: 4.543839e-28, y: 0, z: -2.842171e-14, w: 1}
+  m_LocalPosition: {x: -1.3462562e-12, y: 0.00000014901161, z: -0.7693351}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6142238047109744616}
-  m_Father: {fileID: 2688963116759022664}
+  m_Father: {fileID: 3716249395505032492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &841477582476113893
 MonoBehaviour:
@@ -22435,7 +22531,7 @@ MonoBehaviour:
   collisionFilter:
     allowSelf: 1
     allowOthers: 1
-  radius: 0.065
+  radius: 0.13
   radiusCurve:
     serializedVersion: 2
     m_Curve:
@@ -22459,7 +22555,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -23886,6 +23982,38 @@ Transform:
   - {fileID: 8394778541686217566}
   m_Father: {fileID: 6142238047109744616}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7640984820103486340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8499963200425575393}
+  m_Layer: 0
+  m_Name: Breastsb1_PBroot_AnimationSpace_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8499963200425575393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7640984820103486340}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 116070387715345886}
+  m_Father: {fileID: 2413614490749854906}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7660472006227233360
 GameObject:
   m_ObjectHideFlags: 0
@@ -24667,7 +24795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 6055995433018094702}
+  - {fileID: 1208530638760023172}
   m_Father: {fileID: 8126375888751490936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8399800392665995178
@@ -27363,91 +27491,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1320045658139292734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9038759615653451387
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9133744872425701634}
-  - component: {fileID: 6955979503741517989}
-  - component: {fileID: 7781721001981052073}
-  - component: {fileID: 306208159377181432}
-  m_Layer: 0
-  m_Name: "[Option] \u7D20\u4F53\u80F8\u9593\u9694"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9133744872425701634
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9038759615653451387}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8363880683955187826}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6955979503741517989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9038759615653451387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: 1d4d5522170c3d440833334fc56f8279, type: 2}
-  installTargetMenu: {fileID: 11400000, guid: 134144506ca669e4487be455c74c360a, type: 2}
---- !u!114 &7781721001981052073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9038759615653451387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameters:
-  - nameOrPrefix: AvatarMod/Breast/NakedSpace
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 2
-    localOnly: 0
-    defaultValue: 0
-    saved: 1
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
---- !u!114 &306208159377181432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9038759615653451387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: 1d4d5522170c3d440833334fc56f8279, type: 2}
-  installTargetMenu: {fileID: 11400000, guid: c18edba5a74222e4eadaedaa6e13d45f, type: 2}
 --- !u!1 &9049612734485587840
 GameObject:
   m_ObjectHideFlags: 0
@@ -30899,7 +30942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneReference: 8
-  subPath: Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L/Breasts1_Dummy1_L/Breasts1_Dummy2_L/Breasts1_Dummy2_Animation_L/Breasts1_Dummy2_Animation2_L/Breasts1_Dummy2_Animation3_L
+  subPath: Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_AnimationSpace_L/Breasts1_PBroot_L/Breasts1_Dummy1_L/Breasts1_Dummy2_L/Breasts1_Dummy2_Animation_L/Breasts1_Dummy2_Animation2_L/Breasts1_Dummy2_Animation3_L
   attachmentMode: 2
 --- !u!4 &1431020944858533904 stripped
 Transform:
@@ -33091,7 +33134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneReference: 8
-  subPath: Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_L/Breasts1_Dummy1_L/Breasts1_Dummy1_Animation_L/Breasts1_Dummy1_Animation2_L/Breasts1_Dummy1_Animation3_L
+  subPath: Breasts_Origin/Breasts1_PBroot_Animation_L/Breasts1_PBroot_AnimationSpace_L/Breasts1_PBroot_L/Breasts1_Dummy1_L/Breasts1_Dummy1_Animation_L/Breasts1_Dummy1_Animation2_L/Breasts1_Dummy1_Animation3_L
   attachmentMode: 2
 --- !u!1 &4642000835168873335 stripped
 GameObject:
@@ -34102,7 +34145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneReference: 8
-  subPath: Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R/Breasts1_Dummy1_R/Breasts1_Dummy2_R/Breasts1_Dummy2_Animation_R/Breasts1_Dummy2_Animation2_R/Breasts1_Dummy2_Animation3_R
+  subPath: Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_AnimationSpace_R/Breasts1_PBroot_R/Breasts1_Dummy1_R/Breasts1_Dummy2_R/Breasts1_Dummy2_Animation_R/Breasts1_Dummy2_Animation2_R/Breasts1_Dummy2_Animation3_R
   attachmentMode: 2
 --- !u!137 &6719319984443008929 stripped
 SkinnedMeshRenderer:
@@ -35135,7 +35178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boneReference: 8
-  subPath: Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_R/Breasts1_Dummy1_R/Breasts1_Dummy1_Animation_R/Breasts1_Dummy1_Animation2_R/Breasts1_Dummy1_Animation3_R
+  subPath: Breasts_Origin/Breasts1_PBroot_Animation_R/Breasts1_PBroot_AnimationSpace_R/Breasts1_PBroot_R/Breasts1_Dummy1_R/Breasts1_Dummy1_Animation_R/Breasts1_Dummy1_Animation2_R/Breasts1_Dummy1_Animation3_R
   attachmentMode: 2
 --- !u!1 &8888868271216664070 stripped
 GameObject:
@@ -41811,12 +41854,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550,
         type: 2}
-    - target: {fileID: 7842518432114523634, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: installTargetMenu
-      value: 
-      objectReference: {fileID: 11400000, guid: d9facaa81f073914c8b4f1e95b04fb0d,
-        type: 2}
     - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: parameters.Array.size
@@ -42052,12 +42089,8 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
-      insertIndex: -1
+      insertIndex: 12
       addedObject: {fileID: 802274658176592133}
-    - targetCorrespondingSourceObject: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 9133744872425701634}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f61b51d12a5574e970fbd647d9fc9e, type: 3}
 --- !u!4 &8363880683955187826 stripped

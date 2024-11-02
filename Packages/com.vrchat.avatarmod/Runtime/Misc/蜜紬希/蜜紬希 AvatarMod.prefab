@@ -6879,6 +6879,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550,
         type: 2}
+    - target: {fileID: 5064238011629146978, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].defaultValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064238011629146978, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].hasExplicitDefaultValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064238011629146978, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].m_overrideAnimatorDefaults
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5077675285912645034, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: animator
@@ -7035,12 +7050,6 @@ PrefabInstance:
       propertyPath: installTargetMenu
       value: 
       objectReference: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550,
-        type: 2}
-    - target: {fileID: 7842518432114523634, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: installTargetMenu
-      value: 
-      objectReference: {fileID: 11400000, guid: debd26d4d3cf9eb458af176d7df826bf,
         type: 2}
     - target: {fileID: 7900120506419512912, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
@@ -7326,6 +7335,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5983965321457208593}
     - targetCorrespondingSourceObject: {fileID: 9000411443450549231, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       insertIndex: -1
@@ -7387,6 +7400,26 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4384179802795443050}
   m_SourcePrefab: {fileID: 100100000, guid: 27f61b51d12a5574e970fbd647d9fc9e, type: 3}
+--- !u!1 &3860664829520858600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3766775105468424324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5983965321457208593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3860664829520858600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 1bca31543a11d504ba10964c2191a8e5, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: f0bef537f29745c40af710a0595b0ea9, type: 2}
 --- !u!1 &5233645136491180907 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9000411443450549231, guid: 27f61b51d12a5574e970fbd647d9fc9e,

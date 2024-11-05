@@ -11391,7 +11391,7 @@ MonoBehaviour:
     totalLength: 2
     overflowList: []
   cachedExecutionGroupIndex: -1
-  latestValidExecutionGroupIndex: -1
+  latestValidExecutionGroupIndex: 0
   PositionAtRest: {x: 0, y: 0.00000012665987, z: -0.000000014901161}
   PositionOffset: {x: 1.4691367e-16, y: -0.021124715, z: -0.10498189}
   AffectsPositionX: 1
@@ -20234,7 +20234,7 @@ MonoBehaviour:
   blueprintId: 
   contentType: 0
   assetBundleUnityVersion: 
-  fallbackStatus: 0
+  fallbackStatus: 1
 --- !u!114 &3985631017219034770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20250,11 +20250,11 @@ MonoBehaviour:
   InheritProbeAnchor: 1
   ProbeAnchor:
     referencePath: AutoAnchorObject
-    targetObject: {fileID: 0}
+    targetObject: {fileID: 818687857325213682}
   InheritBounds: 1
   RootBone:
     referencePath: AutoAnchorObject
-    targetObject: {fileID: 0}
+    targetObject: {fileID: 818687857325213682}
   Bounds:
     m_Center: {x: 0, y: -0.2, z: 0}
     m_Extent: {x: 1.183397, y: 1.183397, z: 1.183397}

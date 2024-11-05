@@ -584,6 +584,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4355703614335152437}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3005772103608054021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1568436370156994608, guid: 9bf4fc42f1550d14ca04e07c427df161,
+    type: 3}
+  m_PrefabInstance: {fileID: 4355703614335152437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4706552981018123580 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9017219808066857993, guid: 9bf4fc42f1550d14ca04e07c427df161,
@@ -736,6 +742,11 @@ PrefabInstance:
       propertyPath: LockMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4606131938506493907, guid: 37437feb36b1a4247be3f65fc3018c9b,
+        type: 3}
+      propertyPath: mergeTarget.targetObject
+      value: 
+      objectReference: {fileID: 3005772103608054021}
     - target: {fileID: 4683190637668345605, guid: 37437feb36b1a4247be3f65fc3018c9b,
         type: 3}
       propertyPath: m_RootBone

@@ -753,18 +753,6 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 0
-    name: AvatarMod/syncBTAnimation
-    source: 
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 0
-    sourceMin: 0
-    sourceMax: 0
-    destMin: 0
-    destMax: 0
   localOnly: 0
   debugString: 
 --- !u!1101 &-7278085871200006611
@@ -806,6 +794,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: AvatarMod/syncBTAnimation
+    m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: AvatarMod/BTAnimation
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2699529222114314740}
@@ -1236,6 +1227,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: AvatarMod/syncBTAnimation
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsLocal
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8390757036725010116}
   m_Solo: 0
@@ -1587,6 +1581,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: AvatarMod/queueBTAnimation
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsLocal
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7728341737978267489}
   m_Solo: 0
@@ -1866,6 +1863,33 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-4558523888313836510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: AvatarMod/syncBTAnimation
+    source: 
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 1
+  debugString: 
 --- !u!1101 &-4512185039861766699
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2320,7 +2344,7 @@ AnimatorStateMachine:
     m_Position: {x: 110, y: 540, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6104527689137324188}
-    m_Position: {x: 350, y: 470, z: 0}
+    m_Position: {x: 400, y: 510, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3379154873811751154}
     m_Position: {x: 780, y: 120, z: 0}
@@ -2932,6 +2956,7 @@ AnimatorState:
   - {fileID: -8830227384976446858}
   m_StateMachineBehaviours:
   - {fileID: -7382886502724012061}
+  - {fileID: -4558523888313836510}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -3255,6 +3280,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 4
     m_ConditionEvent: AvatarMod/BTAnimation
     m_EventTreshold: 0.1
+  - m_ConditionMode: 2
+    m_ConditionEvent: AvatarMod/syncBTAnimation
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6104527689137324188}
   m_Solo: 0
@@ -5065,7 +5093,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0
+  m_TransitionDuration: 0.5
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
@@ -8044,7 +8072,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8a871bffcddfd3447a4602352e70bb60, type: 2}
-    m_Threshold: 1
+    m_Threshold: 0.98
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -8053,8 +8081,8 @@ BlendTree:
   m_BlendParameter: AvatarMod/Breast/Size
   m_BlendParameterY: Blend
   m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
+  m_MaxThreshold: 0.98
+  m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
 --- !u!206 &7770940980548460149

@@ -2367,7 +2367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358933792145290801}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -7.4398064e-16, y: -6.506706e-20, z: 2.4589105e-17, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.0000002, z: 1.0000002}
   m_ConstrainProportionsScale: 0
@@ -2827,7 +2827,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 0.5
-      value: 0.5
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2836,7 +2836,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 0
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2866,7 +2866,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.056262106
+      value: 0.215
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2916,7 +2916,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.05
+      value: 0.2
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3088,7 +3088,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000008940699, y: -2.0141164e-13, z: 0.000000014901125,
     w: 1}
-  m_LocalPosition: {x: 0.0000018880643, y: 0.0000005252658, z: 0.8443368}
+  m_LocalPosition: {x: 0, y: 0, z: 0.787}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3374,7 +3374,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 0.5
-      value: 0.5
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3383,7 +3383,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 0
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3413,7 +3413,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.056262106
+      value: 0.215
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3463,7 +3463,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.05
+      value: 0.2
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3793,17 +3793,31 @@ MonoBehaviour:
     - {fileID: 449157898105825607}
     - {fileID: 2168013886074916141}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   staticRenderersSet:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   doNotMergeMaterials:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 0
+  copyEnablementAnimation: 0
+  blendShapeMode: 2
 --- !u!114 &2952074471067810650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4045,17 +4059,31 @@ MonoBehaviour:
     - {fileID: 7139863531027279996}
     - {fileID: 6337414593333065189}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   staticRenderersSet:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   doNotMergeMaterials:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 0
+  copyEnablementAnimation: 0
+  blendShapeMode: 2
 --- !u!1 &2435367095744551211
 GameObject:
   m_ObjectHideFlags: 0
@@ -4081,7 +4109,7 @@ Transform:
   m_GameObject: {fileID: 2435367095744551211}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0000014498614, y: 0.00000077743516, z: 0.8443363}
+  m_LocalPosition: {x: 0, y: -0, z: 0.787}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4178,9 +4206,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3048294951659891644}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0102, y: -0.0217, z: 0.0629}
-  m_LocalScale: {x: 1, y: 1.0000005, z: 1.0000002}
+  m_LocalRotation: {x: -0.000000015509391, y: 2.0477557e-13, z: -0.0000000046963984,
+    w: 1}
+  m_LocalPosition: {x: 0.00000001374025, y: -0.00000018346249, z: 0.057336748}
+  m_LocalScale: {x: 1, y: 1.0000002, z: 1.0000002}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1399184949222868568}
@@ -4447,7 +4476,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 0.5
-      value: 0.5
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4456,7 +4485,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 0
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4486,7 +4515,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.056262106
+      value: 0.215
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4536,7 +4565,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.05
+      value: 0.2
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5046,9 +5075,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3601990982513954467}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0102, y: -0.0217, z: 0.0629}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.000000014362368, y: -7.1054265e-15, z: -0.000000003097899,
+    w: 1}
+  m_LocalPosition: {x: -0.0000014513356, y: 0.00000052154064, z: 0.05733627}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5251070247154417949}
@@ -5231,7 +5261,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 0.5
-      value: 0.5
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5240,7 +5270,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 0
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5270,7 +5300,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.056262106
+      value: 0.215
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5320,7 +5350,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.05
+      value: 0.2
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5491,7 +5521,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000008940699, y: -2.0141164e-13, z: 0.000000014901125,
     w: 1}
-  m_LocalPosition: {x: 0.0000018880643, y: 0.0000005252658, z: 0.8443368}
+  m_LocalPosition: {x: 0, y: 0, z: 0.7885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5647,17 +5677,31 @@ MonoBehaviour:
     - {fileID: 3958672983588708108}
     - {fileID: 5956941163929726428}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   staticRenderersSet:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   doNotMergeMaterials:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 0
+  copyEnablementAnimation: 0
+  blendShapeMode: 2
 --- !u!114 &1976128984514940402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6135,7 +6179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5123814544017265716}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -7.4398064e-16, y: -6.506706e-20, z: 2.4589105e-17, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.0000002, z: 1.0000002}
   m_ConstrainProportionsScale: 0
@@ -6293,7 +6337,7 @@ Transform:
   m_GameObject: {fileID: 6384079553557455462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0000014498614, y: 0.00000077743516, z: 0.8443363}
+  m_LocalPosition: {x: -0, y: 0, z: 0.7885}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6356,7 +6400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6534249578124546096}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 1.8551541e-22, y: 4.2682268e-17, z: -1.1582562e-21, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 1
@@ -6451,7 +6495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6936074460536090718}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 1.3440106e-21, y: -4.2679644e-17, z: -1.5585216e-21, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 1
@@ -6951,17 +6995,31 @@ MonoBehaviour:
     - {fileID: 2850179346409796284}
     - {fileID: 4218039509283075793}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   staticRenderersSet:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   doNotMergeMaterials:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 0
+  copyEnablementAnimation: 0
+  blendShapeMode: 2
 --- !u!114 &5303904887387400184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7032,9 +7090,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8231559727097604304}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0274, z: 0.0558}
-  m_LocalScale: {x: 1, y: 1.0000005, z: 1.0000002}
+  m_LocalRotation: {x: -0.000000015509393, y: 2.0477576e-13, z: -0.0000000046963984,
+    w: 1}
+  m_LocalPosition: {x: -0.0000000019878, y: -0.00000020031969, z: 0.055836797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4244858200039414905}
@@ -7196,17 +7255,31 @@ MonoBehaviour:
     - {fileID: 6390738141122469611}
     - {fileID: 6701526305592913176}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   staticRenderersSet:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   doNotMergeMaterials:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 0
+  copyEnablementAnimation: 0
+  blendShapeMode: 2
 --- !u!1 &8618941738943617220
 GameObject:
   m_ObjectHideFlags: 0
@@ -7723,6 +7796,10 @@ MonoBehaviour:
     mainSet:
     - {fileID: 151435338208310546}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   staticRenderersSet:
     mainSet:
@@ -7734,13 +7811,23 @@ MonoBehaviour:
     - {fileID: 2482100227481753932}
     - {fileID: 178637811690054453}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   doNotMergeMaterials:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 0
+  copyEnablementAnimation: 0
+  blendShapeMode: 2
 --- !u!114 &4242450076495586740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7874,9 +7961,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9164327735958029652}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.0274, z: 0.0558}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.000000014362368, y: -7.1054265e-15, z: -0.000000003097899,
+    w: 1}
+  m_LocalPosition: {x: -0.000001460503, y: 0.0000005122274, z: 0.0558362}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7575580395699466254}
@@ -18306,7 +18394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad67726f6714ccbbb27913837ce7b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freezeBlendShape: 1
+  optimizeBlendShape: 1
   removeUnusedObjects: 1
   preserveEndBone: 0
   removeZeroSizedPolygons: 1
@@ -18314,8 +18402,9 @@ MonoBehaviour:
   optimizeAnimator: 1
   mergeSkinnedMesh: 1
   allowShuffleMaterialSlots: 0
+  optimizeTexture: 1
   mmdWorldCompatibility: 1
-  advancedSettings:
+  debugOptions:
     exclusions: []
     gcDebug: 0
     noConfigureMergeBone: 0
@@ -18333,6 +18422,9 @@ MonoBehaviour:
     skipMergeMaterialAnimatingSkinnedMesh: 0
     skipMergeMaterials: 0
     skipRemoveEmptySubMesh: 0
+    skipAnyStateToEntryExit: 0
+    skipRemoveMaterialUnusedProperties: 0
+    skipAutoMergeBlendShape: 0
 --- !u!114 &5476242070621043011
 MonoBehaviour:
   m_ObjectHideFlags: 0

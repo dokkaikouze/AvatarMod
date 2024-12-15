@@ -25,7 +25,6 @@ Material:
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
-  - _TPS_ANIMATEDTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -590,7 +589,7 @@ Material:
     - GeometryShader_Enabled: 1
     - Instancing: 0
     - Tessellation_Enabled: 1
-    - _1st2nd_Shades_Feather: 0.2
+    - _1st2nd_Shades_Feather: 0.0001
     - _1stShadeMapMask_Inverse: 0
     - _1st_ShadeMapUV: 0
     - _2ndShadeMapMask_Inverse: 0
@@ -837,8 +836,8 @@ Material:
     - _BacklightNormalStrength: 1
     - _BacklightReceiveShadow: 1
     - _BacklightViewStrength: 1
-    - _BaseColor_Step: 0.34
-    - _BaseShade_Feather: 0.3
+    - _BaseColor_Step: 0.5
+    - _BaseShade_Feather: 0.15
     - _BlackLightMasking0GlobalMaskBlendType: 0
     - _BlackLightMasking0GlobalMaskIndex: 0
     - _BlackLightMasking0Key: 1
@@ -1791,8 +1790,8 @@ Material:
     - _LightingAddDetailShadowStrengthR: 1
     - _LightingAdditiveCastedShadows: 1
     - _LightingAdditiveEnable: 1
-    - _LightingAdditiveGradientEnd: 0.75
-    - _LightingAdditiveGradientStart: 0.3
+    - _LightingAdditiveGradientEnd: 0.82
+    - _LightingAdditiveGradientStart: 0.43
     - _LightingAdditiveLimit: 1
     - _LightingAdditiveLimited: 1
     - _LightingAdditiveMonochromatic: 0.15
@@ -2464,7 +2463,7 @@ Material:
     - _Set_Rim2LightMaskUV: 0
     - _Set_RimLightMaskChannel: 1
     - _Set_RimLightMaskUV: 0
-    - _ShadeColor_Step: 0.22
+    - _ShadeColor_Step: 0
     - _ShaderOptimizerEnabled: 1
     - _ShaderUIWarning0: -0
     - _ShaderUIWarning1: -0
@@ -2493,7 +2492,7 @@ Material:
     - _ShadowOffset: 0
     - _ShadowPostAO: 0
     - _ShadowReceive: 0
-    - _ShadowStrength: 0.5
+    - _ShadowStrength: 1
     - _Shape1Depth: 0.1
     - _Shape1Duration: 0.1
     - _Shape2Depth: 0.2
@@ -2666,7 +2665,7 @@ Material:
     - _UVTileDissolveUV: 0
     - _Unlit_Intensity: 1
     - _UseLightColor: 1
-    - _Use_1stAs2nd: 1
+    - _Use_1stAs2nd: 0
     - _Use_1stShadeMapAlpha_As_ShadowMask: 0
     - _Use_2ndShadeMapAlpha_As_ShadowMask: 0
     - _Use_BaseAs1st: 1
@@ -3437,7 +3436,7 @@ Material:
     - s_start_RimLight2DirectionMask: 0
     - s_start_RimLightDirectionMask: 0
     - s_start_ScrollingEmission0: 0
-    - s_start_ShadingAddPass: 0
+    - s_start_ShadingAddPass: 1
     - s_start_ShadingGlobalMask: 0
     - s_start_StylizedSpecularAdvanced: 0
     - s_start_StylizedSpecularLayer0: 1
@@ -3474,9 +3473,9 @@ Material:
     - shader_locale: 0
     - shader_master_label: 0
     m_Colors:
-    - _1st_ShadeColor: {r: 0.6245608, g: 0.54334277, b: 0.9339623, a: 1}
+    - _1st_ShadeColor: {r: 0.827451, g: 0.79607844, b: 0.9490196, a: 1}
     - _1st_ShadeMapPan: {r: 0, g: 0, b: 0, a: 0}
-    - _2nd_ShadeColor: {r: 0.41162592, g: 0.31405, b: 0.6320754, a: 1}
+    - _2nd_ShadeColor: {r: 1, g: 1, b: 1, a: 1}
     - _2nd_ShadeMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _ALDecalColorMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _ALDecalVolumeColorHigh: {r: 1, g: 0, b: 0, a: 1}

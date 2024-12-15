@@ -3877,8 +3877,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 				#if defined(POINT) || defined(SPOT)
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				float MainColorFeatherStep = (0.34 /*_BaseColor_Step*/) - (0.3 /*_BaseShade_Feather*/);
-				float firstColorFeatherStep = (0.22 /*_ShadeColor_Step*/) - (0.2 /*_1st2nd_Shades_Feather*/);
+				float MainColorFeatherStep = (0.5 /*_BaseColor_Step*/) - (0.15 /*_BaseShade_Feather*/);
+				float firstColorFeatherStep = (0.0 /*_ShadeColor_Step*/) - (0.0001 /*_1st2nd_Shades_Feather*/);
 				#if defined(PROP_1ST_SHADEMAP) || !defined(OPTIMIZER_ENABLED)
 				float4 firstShadeMap = POI2D_SAMPLER_PAN(_1st_ShadeMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_1st_ShadeMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
 				#else
@@ -3890,16 +3890,16 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 				#else
 				float4 secondShadeMap = float4(1, 1, 1, 1);
 				#endif
-				secondShadeMap = lerp(secondShadeMap, firstShadeMap, (1.0 /*_Use_1stAs2nd*/));
-				firstShadeMap.rgb *= float4(0.3479702,0.2563741,0.8562991,1).rgb; //* lighColor
-				secondShadeMap.rgb *= float4(0.1411625,0.08038936,0.3572768,1).rgb; //* LightColor;
+				secondShadeMap = lerp(secondShadeMap, firstShadeMap, (0.0 /*_Use_1stAs2nd*/));
+				firstShadeMap.rgb *= float4(0.6514057,0.5972019,0.8879232,1).rgb; //* lighColor
+				secondShadeMap.rgb *= float4(1,1,1,1).rgb; //* LightColor;
 				float shadowMask = 1;
 				shadowMask *= (0.0 /*_Use_1stShadeMapAlpha_As_ShadowMask*/) ? ((0.0 /*_1stShadeMapMask_Inverse*/) ? (1.0 - firstShadeMap.a) : firstShadeMap.a) : 1;
 				shadowMask *= (0.0 /*_Use_2ndShadeMapAlpha_As_ShadowMask*/) ? ((0.0 /*_2ndShadeMapMask_Inverse*/) ? (1.0 - secondShadeMap.a) : secondShadeMap.a) : 1;
-				float mainShadowMask = saturate(1 - ((poiLight.lightMap) - MainColorFeatherStep) / ((0.34 /*_BaseColor_Step*/) - MainColorFeatherStep) * (shadowMask));
-				float firstSecondShadowMask = saturate(1 - ((poiLight.lightMap) - firstColorFeatherStep) / ((0.22 /*_ShadeColor_Step*/) - firstColorFeatherStep) * (shadowMask));
-				mainShadowMask *= poiLight.shadowMask * (0.5 /*_ShadowStrength*/);
-				firstSecondShadowMask *= poiLight.shadowMask * (0.5 /*_ShadowStrength*/);
+				float mainShadowMask = saturate(1 - ((poiLight.lightMap) - MainColorFeatherStep) / ((0.5 /*_BaseColor_Step*/) - MainColorFeatherStep) * (shadowMask));
+				float firstSecondShadowMask = saturate(1 - ((poiLight.lightMap) - firstColorFeatherStep) / ((0.0 /*_ShadeColor_Step*/) - firstColorFeatherStep) * (shadowMask));
+				mainShadowMask *= poiLight.shadowMask * (1.0 /*_ShadowStrength*/);
+				firstSecondShadowMask *= poiLight.shadowMask * (1.0 /*_ShadowStrength*/);
 				if ((0.0 /*_ShadingShadeMapBlendType*/) == 0)
 				{
 					poiFragData.baseColor.rgb = lerp(poiFragData.baseColor.rgb, lerp(firstShadeMap.rgb, secondShadeMap.rgb, firstSecondShadowMask), mainShadowMask) * attenuation;
@@ -3950,7 +3950,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 					#else
 					float passthrough = (0.35 /*_LightingAdditivePassthrough*/);
 					#endif
-					float2 ToonAddGradient = float2((0.3 /*_LightingAdditiveGradientStart*/), (0.75 /*_LightingAdditiveGradientEnd*/));
+					float2 ToonAddGradient = float2((0.43 /*_LightingAdditiveGradientStart*/), (0.82 /*_LightingAdditiveGradientEnd*/));
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -3961,7 +3961,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 					return;
 				}
 				#endif
-				float shadowStrength = (0.5 /*_ShadowStrength*/) * poiLight.shadowMask;
+				float shadowStrength = (1.0 /*_ShadowStrength*/) * poiLight.shadowMask;
 				#ifdef POI_PASS_OUTLINE
 				shadowStrength = lerp(0, shadowStrength, (0.0 /*_OutlineShadowStrength*/));
 				#endif
@@ -3989,7 +3989,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2((0.3 /*_LightingAdditiveGradientStart*/), (0.75 /*_LightingAdditiveGradientEnd*/));
+							float2 ToonAddGradient = float2((0.43 /*_LightingAdditiveGradientStart*/), (0.82 /*_LightingAdditiveGradientEnd*/));
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * (0.35 /*_LightingAdditivePassthrough*/), smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
@@ -7879,8 +7879,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 				#if defined(POINT) || defined(SPOT)
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				float MainColorFeatherStep = (0.34 /*_BaseColor_Step*/) - (0.3 /*_BaseShade_Feather*/);
-				float firstColorFeatherStep = (0.22 /*_ShadeColor_Step*/) - (0.2 /*_1st2nd_Shades_Feather*/);
+				float MainColorFeatherStep = (0.5 /*_BaseColor_Step*/) - (0.15 /*_BaseShade_Feather*/);
+				float firstColorFeatherStep = (0.0 /*_ShadeColor_Step*/) - (0.0001 /*_1st2nd_Shades_Feather*/);
 				#if defined(PROP_1ST_SHADEMAP) || !defined(OPTIMIZER_ENABLED)
 				float4 firstShadeMap = POI2D_SAMPLER_PAN(_1st_ShadeMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_1st_ShadeMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
 				#else
@@ -7892,16 +7892,16 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 				#else
 				float4 secondShadeMap = float4(1, 1, 1, 1);
 				#endif
-				secondShadeMap = lerp(secondShadeMap, firstShadeMap, (1.0 /*_Use_1stAs2nd*/));
-				firstShadeMap.rgb *= float4(0.3479702,0.2563741,0.8562991,1).rgb; //* lighColor
-				secondShadeMap.rgb *= float4(0.1411625,0.08038936,0.3572768,1).rgb; //* LightColor;
+				secondShadeMap = lerp(secondShadeMap, firstShadeMap, (0.0 /*_Use_1stAs2nd*/));
+				firstShadeMap.rgb *= float4(0.6514057,0.5972019,0.8879232,1).rgb; //* lighColor
+				secondShadeMap.rgb *= float4(1,1,1,1).rgb; //* LightColor;
 				float shadowMask = 1;
 				shadowMask *= (0.0 /*_Use_1stShadeMapAlpha_As_ShadowMask*/) ? ((0.0 /*_1stShadeMapMask_Inverse*/) ? (1.0 - firstShadeMap.a) : firstShadeMap.a) : 1;
 				shadowMask *= (0.0 /*_Use_2ndShadeMapAlpha_As_ShadowMask*/) ? ((0.0 /*_2ndShadeMapMask_Inverse*/) ? (1.0 - secondShadeMap.a) : secondShadeMap.a) : 1;
-				float mainShadowMask = saturate(1 - ((poiLight.lightMap) - MainColorFeatherStep) / ((0.34 /*_BaseColor_Step*/) - MainColorFeatherStep) * (shadowMask));
-				float firstSecondShadowMask = saturate(1 - ((poiLight.lightMap) - firstColorFeatherStep) / ((0.22 /*_ShadeColor_Step*/) - firstColorFeatherStep) * (shadowMask));
-				mainShadowMask *= poiLight.shadowMask * (0.5 /*_ShadowStrength*/);
-				firstSecondShadowMask *= poiLight.shadowMask * (0.5 /*_ShadowStrength*/);
+				float mainShadowMask = saturate(1 - ((poiLight.lightMap) - MainColorFeatherStep) / ((0.5 /*_BaseColor_Step*/) - MainColorFeatherStep) * (shadowMask));
+				float firstSecondShadowMask = saturate(1 - ((poiLight.lightMap) - firstColorFeatherStep) / ((0.0 /*_ShadeColor_Step*/) - firstColorFeatherStep) * (shadowMask));
+				mainShadowMask *= poiLight.shadowMask * (1.0 /*_ShadowStrength*/);
+				firstSecondShadowMask *= poiLight.shadowMask * (1.0 /*_ShadowStrength*/);
 				if ((0.0 /*_ShadingShadeMapBlendType*/) == 0)
 				{
 					poiFragData.baseColor.rgb = lerp(poiFragData.baseColor.rgb, lerp(firstShadeMap.rgb, secondShadeMap.rgb, firstSecondShadowMask), mainShadowMask) * attenuation;
@@ -7952,7 +7952,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 					#else
 					float passthrough = (0.35 /*_LightingAdditivePassthrough*/);
 					#endif
-					float2 ToonAddGradient = float2((0.3 /*_LightingAdditiveGradientStart*/), (0.75 /*_LightingAdditiveGradientEnd*/));
+					float2 ToonAddGradient = float2((0.43 /*_LightingAdditiveGradientStart*/), (0.82 /*_LightingAdditiveGradientEnd*/));
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -7963,7 +7963,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 					return;
 				}
 				#endif
-				float shadowStrength = (0.5 /*_ShadowStrength*/) * poiLight.shadowMask;
+				float shadowStrength = (1.0 /*_ShadowStrength*/) * poiLight.shadowMask;
 				#ifdef POI_PASS_OUTLINE
 				shadowStrength = lerp(0, shadowStrength, (0.0 /*_OutlineShadowStrength*/));
 				#endif
@@ -7991,7 +7991,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro Fur/a89948a6b0b279240aa055e21863b61f"
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2((0.3 /*_LightingAdditiveGradientStart*/), (0.75 /*_LightingAdditiveGradientEnd*/));
+							float2 ToonAddGradient = float2((0.43 /*_LightingAdditiveGradientStart*/), (0.82 /*_LightingAdditiveGradientEnd*/));
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * (0.35 /*_LightingAdditivePassthrough*/), smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}

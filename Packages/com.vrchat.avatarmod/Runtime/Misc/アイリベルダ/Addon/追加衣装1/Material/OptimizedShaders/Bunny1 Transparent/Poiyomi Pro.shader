@@ -5934,7 +5934,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/6b1615c905f7a0b4cb72b9c1591a0106"
 				float4 secondShadeMap = float4(1, 1, 1, 1);
 				#endif
 				secondShadeMap = lerp(secondShadeMap, firstShadeMap, (0.0 /*_Use_1stAs2nd*/));
-				firstShadeMap.rgb *= float4(0.701102,0.637597,0.7454044,1).rgb; //* lighColor
+				firstShadeMap.rgb *= float4(0.7681513,0.7156937,0.8148467,1).rgb; //* lighColor
 				secondShadeMap.rgb *= float4(1,1,1,1).rgb; //* LightColor;
 				float shadowMask = 1;
 				shadowMask *= (0.0 /*_Use_1stShadeMapAlpha_As_ShadowMask*/) ? ((0.0 /*_1stShadeMapMask_Inverse*/) ? (1.0 - firstShadeMap.a) : firstShadeMap.a) : 1;
@@ -10350,7 +10350,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/6b1615c905f7a0b4cb72b9c1591a0106"
 				float4 secondShadeMap = float4(1, 1, 1, 1);
 				#endif
 				secondShadeMap = lerp(secondShadeMap, firstShadeMap, (0.0 /*_Use_1stAs2nd*/));
-				firstShadeMap.rgb *= float4(0.701102,0.637597,0.7454044,1).rgb; //* lighColor
+				firstShadeMap.rgb *= float4(0.7681513,0.7156937,0.8148467,1).rgb; //* lighColor
 				secondShadeMap.rgb *= float4(1,1,1,1).rgb; //* LightColor;
 				float shadowMask = 1;
 				shadowMask *= (0.0 /*_Use_1stShadeMapAlpha_As_ShadowMask*/) ? ((0.0 /*_1stShadeMapMask_Inverse*/) ? (1.0 - firstShadeMap.a) : firstShadeMap.a) : 1;
@@ -14421,7 +14421,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/6b1615c905f7a0b4cb72b9c1591a0106"
 				float4 secondShadeMap = float4(1, 1, 1, 1);
 				#endif
 				secondShadeMap = lerp(secondShadeMap, firstShadeMap, (0.0 /*_Use_1stAs2nd*/));
-				firstShadeMap.rgb *= float4(0.701102,0.637597,0.7454044,1).rgb; //* lighColor
+				firstShadeMap.rgb *= float4(0.7681513,0.7156937,0.8148467,1).rgb; //* lighColor
 				secondShadeMap.rgb *= float4(1,1,1,1).rgb; //* LightColor;
 				float shadowMask = 1;
 				shadowMask *= (0.0 /*_Use_1stShadeMapAlpha_As_ShadowMask*/) ? ((0.0 /*_1stShadeMapMask_Inverse*/) ? (1.0 - firstShadeMap.a) : firstShadeMap.a) : 1;

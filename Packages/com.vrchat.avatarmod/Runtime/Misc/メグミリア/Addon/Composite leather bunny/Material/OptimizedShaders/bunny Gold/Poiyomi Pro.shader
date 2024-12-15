@@ -3728,7 +3728,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/1faa23c1a873a0747a4d44e3ca2ea4c4"
 				#if defined(POINT) || defined(SPOT)
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				float MainColorFeatherStep = (0.5 /*_BaseColor_Step*/) - (0.214 /*_BaseShade_Feather*/);
+				float MainColorFeatherStep = (0.5 /*_BaseColor_Step*/) - (0.15 /*_BaseShade_Feather*/);
 				float firstColorFeatherStep = (0.0 /*_ShadeColor_Step*/) - (0.0001 /*_1st2nd_Shades_Feather*/);
 				#if defined(PROP_1ST_SHADEMAP) || !defined(OPTIMIZER_ENABLED)
 				float4 firstShadeMap = POI2D_SAMPLER_PAN(_1st_ShadeMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_1st_ShadeMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
@@ -3801,7 +3801,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/1faa23c1a873a0747a4d44e3ca2ea4c4"
 					#else
 					float passthrough = (0.35 /*_LightingAdditivePassthrough*/);
 					#endif
-					float2 ToonAddGradient = float2((0.3 /*_LightingAdditiveGradientStart*/), (0.75 /*_LightingAdditiveGradientEnd*/));
+					float2 ToonAddGradient = float2((0.43 /*_LightingAdditiveGradientStart*/), (0.82 /*_LightingAdditiveGradientEnd*/));
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -3840,7 +3840,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/1faa23c1a873a0747a4d44e3ca2ea4c4"
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2((0.3 /*_LightingAdditiveGradientStart*/), (0.75 /*_LightingAdditiveGradientEnd*/));
+							float2 ToonAddGradient = float2((0.43 /*_LightingAdditiveGradientStart*/), (0.82 /*_LightingAdditiveGradientEnd*/));
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * (0.35 /*_LightingAdditivePassthrough*/), smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
@@ -7605,7 +7605,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/1faa23c1a873a0747a4d44e3ca2ea4c4"
 				#if defined(POINT) || defined(SPOT)
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				float MainColorFeatherStep = (0.5 /*_BaseColor_Step*/) - (0.214 /*_BaseShade_Feather*/);
+				float MainColorFeatherStep = (0.5 /*_BaseColor_Step*/) - (0.15 /*_BaseShade_Feather*/);
 				float firstColorFeatherStep = (0.0 /*_ShadeColor_Step*/) - (0.0001 /*_1st2nd_Shades_Feather*/);
 				#if defined(PROP_1ST_SHADEMAP) || !defined(OPTIMIZER_ENABLED)
 				float4 firstShadeMap = POI2D_SAMPLER_PAN(_1st_ShadeMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_1st_ShadeMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0));
@@ -7678,7 +7678,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/1faa23c1a873a0747a4d44e3ca2ea4c4"
 					#else
 					float passthrough = (0.35 /*_LightingAdditivePassthrough*/);
 					#endif
-					float2 ToonAddGradient = float2((0.3 /*_LightingAdditiveGradientStart*/), (0.75 /*_LightingAdditiveGradientEnd*/));
+					float2 ToonAddGradient = float2((0.43 /*_LightingAdditiveGradientStart*/), (0.82 /*_LightingAdditiveGradientEnd*/));
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -7717,7 +7717,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/1faa23c1a873a0747a4d44e3ca2ea4c4"
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2((0.3 /*_LightingAdditiveGradientStart*/), (0.75 /*_LightingAdditiveGradientEnd*/));
+							float2 ToonAddGradient = float2((0.43 /*_LightingAdditiveGradientStart*/), (0.82 /*_LightingAdditiveGradientEnd*/));
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * (0.35 /*_LightingAdditivePassthrough*/), smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}

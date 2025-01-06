@@ -105,17 +105,31 @@ MonoBehaviour:
     - {fileID: 2213543279275981828}
     - {fileID: 8164145381475333025}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   staticRenderersSet:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   doNotMergeMaterials:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 1
+  copyEnablementAnimation: 0
+  blendShapeMode: 2
 --- !u!1 &4604341065431832384
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,17 +233,31 @@ MonoBehaviour:
     - {fileID: 2164200162563388350}
     - {fileID: 4463962690480752948}
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   staticRenderersSet:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   doNotMergeMaterials:
     mainSet: []
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: {fileID: 0}
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 1
+  copyEnablementAnimation: 0
+  blendShapeMode: 2
 --- !u!1001 &4355703614335152437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -240,20 +268,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454434040528063, guid: 9bf4fc42f1550d14ca04e07c427df161, type: 3}
       propertyPath: entireMeshes.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5454434040528063, guid: 9bf4fc42f1550d14ca04e07c427df161, type: 3}
-      propertyPath: entireMeshes.Array.data[0]
+      propertyPath: entireMeshes.Array.data[1]
       value: 
       objectReference: {fileID: 3947484074510807645}
     - target: {fileID: 1142236024011936247, guid: 9bf4fc42f1550d14ca04e07c427df161,
         type: 3}
       propertyPath: entireMeshes.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1142236024011936247, guid: 9bf4fc42f1550d14ca04e07c427df161,
         type: 3}
-      propertyPath: entireMeshes.Array.data[0]
+      propertyPath: entireMeshes.Array.data[1]
       value: 
       objectReference: {fileID: 8164145381475333025}
     - target: {fileID: 2375918110075092143, guid: 9bf4fc42f1550d14ca04e07c427df161,
@@ -269,11 +297,11 @@ PrefabInstance:
     - target: {fileID: 2509145269055397307, guid: 9bf4fc42f1550d14ca04e07c427df161,
         type: 3}
       propertyPath: entireMeshes.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2509145269055397307, guid: 9bf4fc42f1550d14ca04e07c427df161,
         type: 3}
-      propertyPath: entireMeshes.Array.data[0]
+      propertyPath: entireMeshes.Array.data[1]
       value: 
       objectReference: {fileID: 2164200162563388350}
     - target: {fileID: 3330745943610227091, guid: 9bf4fc42f1550d14ca04e07c427df161,
@@ -469,21 +497,21 @@ PrefabInstance:
     - target: {fileID: 7436474853723444717, guid: 9bf4fc42f1550d14ca04e07c427df161,
         type: 3}
       propertyPath: entireMeshes.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7436474853723444717, guid: 9bf4fc42f1550d14ca04e07c427df161,
         type: 3}
-      propertyPath: entireMeshes.Array.data[0]
+      propertyPath: entireMeshes.Array.data[1]
       value: 
       objectReference: {fileID: 5474092063847974760}
     - target: {fileID: 7703403421150421962, guid: 9bf4fc42f1550d14ca04e07c427df161,
         type: 3}
       propertyPath: entireMeshes.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7703403421150421962, guid: 9bf4fc42f1550d14ca04e07c427df161,
         type: 3}
-      propertyPath: entireMeshes.Array.data[0]
+      propertyPath: entireMeshes.Array.data[1]
       value: 
       objectReference: {fileID: 4463962690480752948}
     - target: {fileID: 8075242847606393781, guid: 9bf4fc42f1550d14ca04e07c427df161,
@@ -832,6 +860,10 @@ MonoBehaviour:
     - "\u7D102"
     - "\u7D103"
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: 
 --- !u!137 &2164200162563388350 stripped
 SkinnedMeshRenderer:
@@ -869,6 +901,10 @@ MonoBehaviour:
     - "\u7D102"
     - "\u7D103"
     prefabLayers: []
+    usingOnSceneLayer: 0
+    onSceneLayer:
+      removes: []
+      additions: []
     fakeSlot: 
 --- !u!137 &3947484074510807645 stripped
 SkinnedMeshRenderer:

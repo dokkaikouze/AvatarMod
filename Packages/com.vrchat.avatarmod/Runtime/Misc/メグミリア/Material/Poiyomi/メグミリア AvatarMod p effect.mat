@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u30E1\u30B0\u30DF\u30EA\u30A2 AvatarMod p effect"
-  m_Shader: {fileID: 4800000, guid: d1680be87d26d4c478d0e6ee049e7e82, type: 3}
+  m_Shader: {fileID: 4800000, guid: f01902b1594448b478712c738a5d4b89, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -42,6 +42,7 @@ Material:
     _NormalCorrectAmountAnimated: 1
     _PPEmissionMultiplierAnimated: 1
     _PPFinalColorMultiplierAnimated: 1
+    _PPLightingMultiplierAnimated: 1
     _RimEnviroIntensityAnimated: 1
     _SSAOAnimationToggleAnimated: 1
     _StylizedSpecularStrengthAnimated: 1
@@ -1305,9 +1306,9 @@ Material:
     - _LTCGI_Smoothness: 0.343
     - _LTCGI_SpecularColorThemeIndex: 0
     - _LTCGI_UsePBR: 0
-    - _Layer1Strength: 0.26
+    - _Layer1Strength: 0.07
     - _Layer2Size: 0.538
-    - _Layer2Strength: 0.666
+    - _Layer2Strength: 0.18
     - _Length: 0
     - _LightDataAOGlobalMaskBlendTypeR: 2
     - _LightDataAOGlobalMaskR: 0

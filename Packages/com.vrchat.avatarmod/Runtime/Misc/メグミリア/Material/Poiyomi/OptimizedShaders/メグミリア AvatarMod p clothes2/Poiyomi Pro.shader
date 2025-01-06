@@ -5582,13 +5582,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/65fea0be6482bc74794ec570d770b189"
 				float specMask2 = 0;
 				if ((1.0 /*_Is_SpecularToHighColor*/))
 				{
-					specMask1 += pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.26 /*_Layer1Strength*/);
-					specMask2 += pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.666 /*_Layer2Strength*/);
+					specMask1 += pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.07 /*_Layer1Strength*/);
+					specMask2 += pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.18 /*_Layer2Strength*/);
 				}
 				else
 				{
-					specMask1 += poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.26 /*_Layer1Strength*/);
-					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.666 /*_Layer2Strength*/);
+					specMask1 += poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.07 /*_Layer1Strength*/);
+					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.18 /*_Layer2Strength*/);
 				}
 				#if defined(PROP_SET_HIGHCOLORMASK) || !defined(OPTIMIZER_ENABLED)
 				float specularMask = POI2D_SAMPLER_PAN(_Set_HighColorMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_Set_HighColorMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(1.0 /*_Set_HighColorMaskChannel*/)];
@@ -5631,13 +5631,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/65fea0be6482bc74794ec570d770b189"
 						specArea = 0.5 * poiLight.vDotNH[index] + 0.5;
 						if ((1.0 /*_Is_SpecularToHighColor*/))
 						{
-							vSpecMask = pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.26 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
-							vSpecMask = max(vSpecMask, pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.666 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
+							vSpecMask = pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.07 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
+							vSpecMask = max(vSpecMask, pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.18 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
 						}
 						else
 						{
-							vSpecMask = poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.26 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
-							vSpecMask = max(vSpecMask, poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.666 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
+							vSpecMask = poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.07 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
+							vSpecMask = max(vSpecMask, poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.18 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
 						}
 						vSpecMask *= specularMask;
 						float finalSpecMask = min(min(vSpecMask, poiLight.occlusion), attenuation) * _StylizedSpecularStrength;
@@ -6169,9 +6169,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/65fea0be6482bc74794ec570d770b189"
 					poiLight.directColor = poiThemeColor(poiMods, float4(1,1,1,1), (0.0 /*_LightingForcedColorThemeIndex*/));
 				}
 				#ifdef UNITY_PASS_FORWARDBASE
-				poiLight.directColor = max(poiLight.directColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.directColor = max(poiLight.directColor * _PPLightingMultiplier, 0);
 				poiLight.directColor = max(poiLight.directColor + (0.0 /*_PPLightingAddition*/), 0);
-				poiLight.indirectColor = max(poiLight.indirectColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.indirectColor = max(poiLight.indirectColor * _PPLightingMultiplier, 0);
 				poiLight.indirectColor = max(poiLight.indirectColor + (0.0 /*_PPLightingAddition*/), 0);
 				#endif
 				#endif
@@ -10155,13 +10155,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/65fea0be6482bc74794ec570d770b189"
 				float specMask2 = 0;
 				if ((1.0 /*_Is_SpecularToHighColor*/))
 				{
-					specMask1 += pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.26 /*_Layer1Strength*/);
-					specMask2 += pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.666 /*_Layer2Strength*/);
+					specMask1 += pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.07 /*_Layer1Strength*/);
+					specMask2 += pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.18 /*_Layer2Strength*/);
 				}
 				else
 				{
-					specMask1 += poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.26 /*_Layer1Strength*/);
-					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.666 /*_Layer2Strength*/);
+					specMask1 += poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.07 /*_Layer1Strength*/);
+					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.18 /*_Layer2Strength*/);
 				}
 				#if defined(PROP_SET_HIGHCOLORMASK) || !defined(OPTIMIZER_ENABLED)
 				float specularMask = POI2D_SAMPLER_PAN(_Set_HighColorMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_Set_HighColorMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(1.0 /*_Set_HighColorMaskChannel*/)];
@@ -10204,13 +10204,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/65fea0be6482bc74794ec570d770b189"
 						specArea = 0.5 * poiLight.vDotNH[index] + 0.5;
 						if ((1.0 /*_Is_SpecularToHighColor*/))
 						{
-							vSpecMask = pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.26 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
-							vSpecMask = max(vSpecMask, pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.666 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
+							vSpecMask = pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.07 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
+							vSpecMask = max(vSpecMask, pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.18 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
 						}
 						else
 						{
-							vSpecMask = poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.26 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
-							vSpecMask = max(vSpecMask, poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.666 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
+							vSpecMask = poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.07 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
+							vSpecMask = max(vSpecMask, poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.18 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
 						}
 						vSpecMask *= specularMask;
 						float finalSpecMask = min(min(vSpecMask, poiLight.occlusion), attenuation) * _StylizedSpecularStrength;
@@ -10742,9 +10742,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/65fea0be6482bc74794ec570d770b189"
 					poiLight.directColor = poiThemeColor(poiMods, float4(1,1,1,1), (0.0 /*_LightingForcedColorThemeIndex*/));
 				}
 				#ifdef UNITY_PASS_FORWARDBASE
-				poiLight.directColor = max(poiLight.directColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.directColor = max(poiLight.directColor * _PPLightingMultiplier, 0);
 				poiLight.directColor = max(poiLight.directColor + (0.0 /*_PPLightingAddition*/), 0);
-				poiLight.indirectColor = max(poiLight.indirectColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.indirectColor = max(poiLight.indirectColor * _PPLightingMultiplier, 0);
 				poiLight.indirectColor = max(poiLight.indirectColor + (0.0 /*_PPLightingAddition*/), 0);
 				#endif
 				#endif
@@ -13799,9 +13799,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/65fea0be6482bc74794ec570d770b189"
 					poiLight.directColor = poiThemeColor(poiMods, float4(1,1,1,1), (0.0 /*_LightingForcedColorThemeIndex*/));
 				}
 				#ifdef UNITY_PASS_FORWARDBASE
-				poiLight.directColor = max(poiLight.directColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.directColor = max(poiLight.directColor * _PPLightingMultiplier, 0);
 				poiLight.directColor = max(poiLight.directColor + (0.0 /*_PPLightingAddition*/), 0);
-				poiLight.indirectColor = max(poiLight.indirectColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.indirectColor = max(poiLight.indirectColor * _PPLightingMultiplier, 0);
 				poiLight.indirectColor = max(poiLight.indirectColor + (0.0 /*_PPLightingAddition*/), 0);
 				#endif
 				#endif

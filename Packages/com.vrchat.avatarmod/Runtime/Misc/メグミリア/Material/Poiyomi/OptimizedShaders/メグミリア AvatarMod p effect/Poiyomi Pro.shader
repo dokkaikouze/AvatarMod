@@ -4205,9 +4205,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/c326bc21b507b7c4c810357b1bb52e82"
 					poiLight.directColor = poiThemeColor(poiMods, float4(1,1,1,1), (0.0 /*_LightingForcedColorThemeIndex*/));
 				}
 				#ifdef UNITY_PASS_FORWARDBASE
-				poiLight.directColor = max(poiLight.directColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.directColor = max(poiLight.directColor * _PPLightingMultiplier, 0);
 				poiLight.directColor = max(poiLight.directColor + (0.0 /*_PPLightingAddition*/), 0);
-				poiLight.indirectColor = max(poiLight.indirectColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.indirectColor = max(poiLight.indirectColor * _PPLightingMultiplier, 0);
 				poiLight.indirectColor = max(poiLight.indirectColor + (0.0 /*_PPLightingAddition*/), 0);
 				#endif
 				#endif
@@ -7382,9 +7382,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/c326bc21b507b7c4c810357b1bb52e82"
 					poiLight.directColor = poiThemeColor(poiMods, float4(1,1,1,1), (0.0 /*_LightingForcedColorThemeIndex*/));
 				}
 				#ifdef UNITY_PASS_FORWARDBASE
-				poiLight.directColor = max(poiLight.directColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.directColor = max(poiLight.directColor * _PPLightingMultiplier, 0);
 				poiLight.directColor = max(poiLight.directColor + (0.0 /*_PPLightingAddition*/), 0);
-				poiLight.indirectColor = max(poiLight.indirectColor * (1.0 /*_PPLightingMultiplier*/), 0);
+				poiLight.indirectColor = max(poiLight.indirectColor * _PPLightingMultiplier, 0);
 				poiLight.indirectColor = max(poiLight.indirectColor + (0.0 /*_PPLightingAddition*/), 0);
 				#endif
 				#endif

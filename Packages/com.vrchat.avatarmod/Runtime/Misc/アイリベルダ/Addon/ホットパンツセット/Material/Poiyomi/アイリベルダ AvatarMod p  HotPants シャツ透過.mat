@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u30A2\u30A4\u30EA\u30D9\u30EB\u30C0 AvatarMod p  HotPants \u30B7\u30E3\u30C4\u900F\u904E"
-  m_Shader: {fileID: 4800000, guid: 4586858b241ee084aa6d68840ed37265, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5854cda8fc9accc4fae5a7e10a61020f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -30,6 +30,7 @@ Material:
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
+  - _TPS_ANIMATEDTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -39,7 +40,7 @@ Material:
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT COLOR_GRADING_HDR_3D POI_ANISOTROPICS
       POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM POI_LTCGI POI_MATCAP0 POI_MATCAP2
       POI_RIM2 POI_SSAO POI_STYLIZED_StylizedSpecular VIGNETTE_MASKED _LIGHTINGMODE_SHADEMAP
-      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
+      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _TPS_ANIMATEDTOGGLE_ON
     OriginalShader: .poiyomi/Poiyomi Pro
     OriginalShaderGUID: 12e112dbea893494d8c3bd0c31fd7f29
     RenderType: Opaque
@@ -1405,9 +1406,9 @@ Material:
     - _LTCGI_Smoothness: 0.343
     - _LTCGI_SpecularColorThemeIndex: 0
     - _LTCGI_UsePBR: 0
-    - _Layer1Strength: 0.26
+    - _Layer1Strength: 0.07
     - _Layer2Size: 0.538
-    - _Layer2Strength: 0.666
+    - _Layer2Strength: 0.18
     - _Length: 0
     - _LightDataAOGlobalMaskBlendTypeR: 2
     - _LightDataAOGlobalMaskR: 0

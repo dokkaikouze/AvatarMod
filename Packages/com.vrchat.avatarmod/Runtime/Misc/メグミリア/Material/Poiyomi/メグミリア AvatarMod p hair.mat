@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u30E1\u30B0\u30DF\u30EA\u30A2 AvatarMod p hair"
-  m_Shader: {fileID: 4800000, guid: 497000197ed011a4481f89b32697b493, type: 3}
+  m_Shader: {fileID: 4800000, guid: aad2a23af81205b4db2853feed1e1fdd, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -54,6 +54,7 @@ Material:
     _LightingMinLightBrightnessAnimated: 1
     _PPEmissionMultiplierAnimated: 1
     _PPFinalColorMultiplierAnimated: 1
+    _PPLightingMultiplierAnimated: 1
     _Rim2BlendStrengthAnimated: 1
     _RimEnviroIntensityAnimated: 1
     _SSAOAnimationToggleAnimated: 1
@@ -1403,9 +1404,9 @@ Material:
     - _LTCGI_Smoothness: 0.38
     - _LTCGI_SpecularColorThemeIndex: 0
     - _LTCGI_UsePBR: 0
-    - _Layer1Strength: 0.26
+    - _Layer1Strength: 0.07
     - _Layer2Size: 0.538
-    - _Layer2Strength: 0.666
+    - _Layer2Strength: 0.18
     - _Length: 0
     - _LightDataAOGlobalMaskBlendTypeR: 2
     - _LightDataAOGlobalMaskR: 0
@@ -2467,7 +2468,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 1
+    - m_OutlineCategory: 0
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2615,8 +2616,8 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 1
-    - m_mainCategory: 1
+    - m_lightingCategory: 0
+    - m_mainCategory: 0
     - m_modifierCategory: 1
     - m_renderingCategory: 1
     - m_specialFXCategory: 1
@@ -2721,7 +2722,7 @@ Material:
     - m_start_backlight: 1
     - m_start_blending: 1
     - m_start_brdf: 0
-    - m_start_clearCoat: 0
+    - m_start_clearCoat: 1
     - m_start_clearcoatadvanced: 1
     - m_start_clearcoatglobalmask: 0
     - m_start_depthFX: 0

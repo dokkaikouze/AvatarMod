@@ -2175,7 +2175,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/b2f50c9fd14cd1840b39c7c2ac05ba8e"
 					(udim.x >= 3 && udim.x < 4));
 					isDiscarded += (udim.y >= 0 && udim.y < 1) * dot(float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3), xMask);
 					isDiscarded += (udim.y >= 1 && udim.y < 2) * dot(float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3), xMask);
-					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4((0.0 /*_UDIMDiscardRow2_0*/), _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
+					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
 					isDiscarded += (udim.y >= 3 && udim.y < 4) * dot(float4((0.0 /*_UDIMDiscardRow3_0*/), _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3), xMask);
 					isDiscarded *= any(float4(udim.y >= 0, udim.y < 4, udim.x >= 0, udim.x < 4)); // never discard outside 4x4 grid in pos coords
 					const float threshold = 0.001;
@@ -2422,7 +2422,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/b2f50c9fd14cd1840b39c7c2ac05ba8e"
 					(udim.x >= 3 && udim.x < 4));
 					isDiscarded += (udim.y >= 0 && udim.y < 1) * dot(float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3), xMask);
 					isDiscarded += (udim.y >= 1 && udim.y < 2) * dot(float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3), xMask);
-					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4((0.0 /*_UDIMDiscardRow2_0*/), _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
+					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
 					isDiscarded += (udim.y >= 3 && udim.y < 4) * dot(float4((0.0 /*_UDIMDiscardRow3_0*/), _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3), xMask);
 					isDiscarded *= any(float4(udim.y >= 0, udim.y < 4, udim.x >= 0, udim.x < 4)); // never discard outside 4x4 grid in pos coords
 					const float threshold = 0.001;
@@ -6264,7 +6264,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/b2f50c9fd14cd1840b39c7c2ac05ba8e"
 					(udim.x >= 3 && udim.x < 4));
 					isDiscarded += (udim.y >= 0 && udim.y < 1) * dot(float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3), xMask);
 					isDiscarded += (udim.y >= 1 && udim.y < 2) * dot(float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3), xMask);
-					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4((0.0 /*_UDIMDiscardRow2_0*/), _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
+					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
 					isDiscarded += (udim.y >= 3 && udim.y < 4) * dot(float4((0.0 /*_UDIMDiscardRow3_0*/), _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3), xMask);
 					isDiscarded *= any(float4(udim.y >= 0, udim.y < 4, udim.x >= 0, udim.x < 4)); // never discard outside 4x4 grid in pos coords
 					const float threshold = 0.001;
@@ -6511,7 +6511,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/b2f50c9fd14cd1840b39c7c2ac05ba8e"
 					(udim.x >= 3 && udim.x < 4));
 					isDiscarded += (udim.y >= 0 && udim.y < 1) * dot(float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3), xMask);
 					isDiscarded += (udim.y >= 1 && udim.y < 2) * dot(float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3), xMask);
-					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4((0.0 /*_UDIMDiscardRow2_0*/), _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
+					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
 					isDiscarded += (udim.y >= 3 && udim.y < 4) * dot(float4((0.0 /*_UDIMDiscardRow3_0*/), _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3), xMask);
 					isDiscarded *= any(float4(udim.y >= 0, udim.y < 4, udim.x >= 0, udim.x < 4)); // never discard outside 4x4 grid in pos coords
 					const float threshold = 0.001;
@@ -9305,7 +9305,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/b2f50c9fd14cd1840b39c7c2ac05ba8e"
 					(udim.x >= 3 && udim.x < 4));
 					isDiscarded += (udim.y >= 0 && udim.y < 1) * dot(float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3), xMask);
 					isDiscarded += (udim.y >= 1 && udim.y < 2) * dot(float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3), xMask);
-					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4((0.0 /*_UDIMDiscardRow2_0*/), _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
+					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
 					isDiscarded += (udim.y >= 3 && udim.y < 4) * dot(float4((0.0 /*_UDIMDiscardRow3_0*/), _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3), xMask);
 					isDiscarded *= any(float4(udim.y >= 0, udim.y < 4, udim.x >= 0, udim.x < 4)); // never discard outside 4x4 grid in pos coords
 					const float threshold = 0.001;
@@ -9539,7 +9539,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/b2f50c9fd14cd1840b39c7c2ac05ba8e"
 					(udim.x >= 3 && udim.x < 4));
 					isDiscarded += (udim.y >= 0 && udim.y < 1) * dot(float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3), xMask);
 					isDiscarded += (udim.y >= 1 && udim.y < 2) * dot(float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3), xMask);
-					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4((0.0 /*_UDIMDiscardRow2_0*/), _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
+					isDiscarded += (udim.y >= 2 && udim.y < 3) * dot(float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3), xMask);
 					isDiscarded += (udim.y >= 3 && udim.y < 4) * dot(float4((0.0 /*_UDIMDiscardRow3_0*/), _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3), xMask);
 					isDiscarded *= any(float4(udim.y >= 0, udim.y < 4, udim.x >= 0, udim.x < 4)); // never discard outside 4x4 grid in pos coords
 					const float threshold = 0.001;

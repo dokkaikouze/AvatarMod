@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u30A2\u30A4\u30EA\u30D9\u30EB\u30C0 AvatarMod p effect"
-  m_Shader: {fileID: 4800000, guid: e9fdeab12de109b4dae8e2c2774dd427, type: 3}
+  m_Shader: {fileID: 4800000, guid: 09390b6a68e7f30479046babeb824572, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -43,6 +43,7 @@ Material:
     _NormalCorrectAmountAnimated: 1
     _PPEmissionMultiplierAnimated: 1
     _PPFinalColorMultiplierAnimated: 1
+    _PPLightingMultiplierAnimated: 1
     _RenderingReduceClipDistanceAnimated: 1
     _Rim2BlendStrengthAnimated: 1
     _RimEnviroIntensityAnimated: 1
@@ -1308,9 +1309,9 @@ Material:
     - _LTCGI_Smoothness: 0.343
     - _LTCGI_SpecularColorThemeIndex: 0
     - _LTCGI_UsePBR: 0
-    - _Layer1Strength: 0.26
+    - _Layer1Strength: 0.07
     - _Layer2Size: 0.538
-    - _Layer2Strength: 0.666
+    - _Layer2Strength: 0.18
     - _Length: 0
     - _LightDataAOGlobalMaskBlendTypeR: 2
     - _LightDataAOGlobalMaskR: 0
@@ -2372,7 +2373,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 1
+    - m_OutlineCategory: 0
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2520,8 +2521,8 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 1
-    - m_mainCategory: 1
+    - m_lightingCategory: 0
+    - m_mainCategory: 0
     - m_modifierCategory: 1
     - m_renderingCategory: 1
     - m_specialFXCategory: 1
@@ -2662,7 +2663,7 @@ Material:
     - m_start_subsurfaceScattering: 0
     - m_start_tps_penetrator: 0
     - m_start_truchet: 0
-    - m_start_udimdiscardOptions: 0
+    - m_start_udimdiscardOptions: 1
     - m_start_uvDistortion: 0
     - m_start_uvLocalWorld: 0
     - m_start_uvPanosphere: 0

@@ -5997,13 +5997,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/199d26d914c6d17468b8b15a520f53a9"
 				float specMask2 = 0;
 				if ((1.0 /*_Is_SpecularToHighColor*/))
 				{
-					specMask1 += pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.26 /*_Layer1Strength*/);
-					specMask2 += pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.666 /*_Layer2Strength*/);
+					specMask1 += pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.07 /*_Layer1Strength*/);
+					specMask2 += pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.18 /*_Layer2Strength*/);
 				}
 				else
 				{
-					specMask1 += poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.26 /*_Layer1Strength*/);
-					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.666 /*_Layer2Strength*/);
+					specMask1 += poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.07 /*_Layer1Strength*/);
+					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.18 /*_Layer2Strength*/);
 				}
 				#if defined(PROP_SET_HIGHCOLORMASK) || !defined(OPTIMIZER_ENABLED)
 				float specularMask = POI2D_SAMPLER_PAN(_Set_HighColorMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_Set_HighColorMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(1.0 /*_Set_HighColorMaskChannel*/)];
@@ -6046,13 +6046,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/199d26d914c6d17468b8b15a520f53a9"
 						specArea = 0.5 * poiLight.vDotNH[index] + 0.5;
 						if ((1.0 /*_Is_SpecularToHighColor*/))
 						{
-							vSpecMask = pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.26 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
-							vSpecMask = max(vSpecMask, pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.666 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
+							vSpecMask = pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.07 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
+							vSpecMask = max(vSpecMask, pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.18 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
 						}
 						else
 						{
-							vSpecMask = poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.26 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
-							vSpecMask = max(vSpecMask, poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.666 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
+							vSpecMask = poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.07 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
+							vSpecMask = max(vSpecMask, poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.18 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
 						}
 						vSpecMask *= specularMask;
 						float finalSpecMask = min(min(vSpecMask, poiLight.occlusion), attenuation) * _StylizedSpecularStrength;
@@ -10951,13 +10951,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/199d26d914c6d17468b8b15a520f53a9"
 				float specMask2 = 0;
 				if ((1.0 /*_Is_SpecularToHighColor*/))
 				{
-					specMask1 += pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.26 /*_Layer1Strength*/);
-					specMask2 += pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.666 /*_Layer2Strength*/);
+					specMask1 += pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.07 /*_Layer1Strength*/);
+					specMask2 += pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.18 /*_Layer2Strength*/);
 				}
 				else
 				{
-					specMask1 += poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.26 /*_Layer1Strength*/);
-					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.666 /*_Layer2Strength*/);
+					specMask1 += poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.07 /*_Layer1Strength*/);
+					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.18 /*_Layer2Strength*/);
 				}
 				#if defined(PROP_SET_HIGHCOLORMASK) || !defined(OPTIMIZER_ENABLED)
 				float specularMask = POI2D_SAMPLER_PAN(_Set_HighColorMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_Set_HighColorMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(1.0 /*_Set_HighColorMaskChannel*/)];
@@ -11000,13 +11000,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/199d26d914c6d17468b8b15a520f53a9"
 						specArea = 0.5 * poiLight.vDotNH[index] + 0.5;
 						if ((1.0 /*_Is_SpecularToHighColor*/))
 						{
-							vSpecMask = pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.26 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
-							vSpecMask = max(vSpecMask, pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.666 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
+							vSpecMask = pow(specArea, exp2(lerp(11, 1, (0.252 /*_HighColor_Power*/)))) * (0.07 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
+							vSpecMask = max(vSpecMask, pow(specArea, exp2(lerp(11, 1, (0.538 /*_Layer2Size*/)))) * (0.18 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
 						}
 						else
 						{
-							vSpecMask = poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.26 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
-							vSpecMask = max(vSpecMask, poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.666 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
+							vSpecMask = poiEdgeNonLinear(specArea, (1.0 - pow((0.252 /*_HighColor_Power*/), 5)), (0.0 /*_StylizedSpecularFeather*/)) * (0.07 /*_Layer1Strength*/) * poiLight.vAttenuation[index];
+							vSpecMask = max(vSpecMask, poiEdgeNonLinear(specArea, (1.0 - pow((0.538 /*_Layer2Size*/), 5)), (0.0 /*_StylizedSpecular2Feather*/)) * (0.18 /*_Layer2Strength*/) * poiLight.vAttenuation[index]);
 						}
 						vSpecMask *= specularMask;
 						float finalSpecMask = min(min(vSpecMask, poiLight.occlusion), attenuation) * _StylizedSpecularStrength;

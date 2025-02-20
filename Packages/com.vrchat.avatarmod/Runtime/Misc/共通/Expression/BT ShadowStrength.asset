@@ -6,10 +6,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Light
+  m_Name: BT ShadowStrength
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d6cac08fb166d3241b56d64515da64f1, type: 2}
+    m_Motion: {fileID: 7400000, guid: 9d67d0a0f8016e0409938c8204345b28, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -17,7 +17,7 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c3dba36fff5f0db4fa8147fb74c14879, type: 2}
+    m_Motion: {fileID: 7400000, guid: c84edf21029486c4e928569942525dc7, type: 2}
     m_Threshold: 0.5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -25,14 +25,14 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 43362b15b2a2f0d4788d0e494508c74d, type: 2}
+    m_Motion: {fileID: 7400000, guid: c11d80ddabff1fd4ebe21fd362b4f2dc, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: AvatarMod/Light
+  m_BlendParameter: AvatarMod/ShadowStrength
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1

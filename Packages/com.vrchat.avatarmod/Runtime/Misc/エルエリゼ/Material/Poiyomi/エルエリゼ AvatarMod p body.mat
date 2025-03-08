@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u30A8\u30EB\u30A8\u30EA\u30BC AvatarMod p body"
-  m_Shader: {fileID: 4800000, guid: 953538219851f794ab9f61136ee6f800, type: 3}
+  m_Shader: {fileID: 4800000, guid: 1ff08b47ea94af548bb1933bbdbf7704, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -118,8 +118,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _GlitterMask:
         m_Texture: {fileID: 2800000, guid: 364d6c3b6d64be1429c6cb6780e34d8a, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: -0.5}
     - _GlitterTexture:
         m_Texture: {fileID: 2800000, guid: f5b49da3e7065f14894d289de4144039, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -1561,6 +1561,9 @@ Material:
     - _MainBrightnessGlobalMaskBlendType: 2
     - _MainColorAdjustTextureUV: 0
     - _MainColorAdjustToggle: 0
+    - _MainGamma: 1
+    - _MainGammaGlobalMask: 0
+    - _MainGammaGlobalMaskBlendType: 2
     - _MainGammma: 1
     - _MainGradationStrength: 0
     - _MainHueALCTEnabled: 0
@@ -1726,7 +1729,7 @@ Material:
     - _Matcap4MaskSmoothnessChannel: 3
     - _Matcap4MaskUV: 0
     - _Matcap4Mixed: 0
-    - _Matcap4Multiply: 0
+    - _Matcap4Multiply: 1
     - _Matcap4Normal: 1
     - _Matcap4Replace: 0
     - _Matcap4Rotation: 0
@@ -1841,6 +1844,8 @@ Material:
     - _OutlineExpansionMode: 1
     - _OutlineFixWidth: 0.5
     - _OutlineFixedSize: 1
+    - _OutlineGamma: 1
+    - _OutlineHue: 0
     - _OutlineHueOffsetSpeed: 0
     - _OutlineHueShift: 0
     - _OutlineLit: 1
@@ -1848,6 +1853,7 @@ Material:
     - _OutlineMaskUV: 0
     - _OutlineOverrideAlpha: 0
     - _OutlineRimLightBlend: 0
+    - _OutlineSaturation: 1
     - _OutlineShadowStrength: 1
     - _OutlineSpace: 0
     - _OutlineSrcBlend: 1
@@ -1871,6 +1877,7 @@ Material:
     - _OutlineTextureUV: 0
     - _OutlineTintMix: 0
     - _OutlineUseVertexColorNormals: 0
+    - _OutlineValue: 1
     - _OutlineVertexColorMask: 0
     - _OutlineVertexColorMaskStrength: 1
     - _OutlineZTest: 2
@@ -2715,7 +2722,7 @@ Material:
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 1
-    - m_mainCategory: 0
+    - m_mainCategory: 1
     - m_modifierCategory: 1
     - m_renderingCategory: 1
     - m_specialFXCategory: 1

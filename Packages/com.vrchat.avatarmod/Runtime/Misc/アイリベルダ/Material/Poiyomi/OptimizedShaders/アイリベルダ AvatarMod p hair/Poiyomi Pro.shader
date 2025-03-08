@@ -2,7 +2,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 {
 	Properties
 	{
-		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.2.11</color>", Float) = 0
+		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.2.13</color>", Float) = 0
 		[HideInInspector] shader_is_using_thry_editor ("", Float) = 0
 		[HideInInspector] shader_locale ("0db0b86376c3dca4b9a6828ef8615fe0", Float) = 0
 		[HideInInspector] footer_youtube ("{texture:{name:icon-youtube,height:16},action:{type:URL,data:https://www.youtube.com/poiyomi},hover:YOUTUBE}", Float) = 0
@@ -183,7 +183,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 		[HideInInspector] s_end_LightDataBasePass ("Base Pass", Float) = 1
 		[HideInInspector] s_start_LightDataAddPass ("Add Pass (Point & Spot lights)--{persistent_expand:true,default_expand:true}", Float) = 1
 		[ToggleUI]_LightingAdditiveEnable ("Pixel lights (Important)", Float) = 1
-		[ToggleUI]_DisableDirectionalInAdd ("Ignore Directional--{condition_showS:(_LightingAdditiveEnable==1)}", Float) = 1
+		[ToggleUI]_DisableDirectionalInAdd ("Ignore Directional Lights--{condition_showS:(_LightingAdditiveEnable==1)}", Float) = 1
 		[ToggleUI]_LightingAdditiveLimited ("Limit Brightness", Float) = 1
 		_LightingAdditiveLimit ("Max Brightness--{condition_showS:(_LightingAdditiveLimited==1)}", Range(0, 10)) = 1
 		_LightingAdditiveCastedShadows ("Receive Casted Shadows", Range(0, 1)) = 1
@@ -238,8 +238,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 		_ShadowBorderMask ("Shadow Border Map--{reference_properties:[_ShadowBorderMaskPan, _ShadowBorderMaskUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_ShadowBorderMaskPan ("Panning", Vector) = (0, 0, 0, 0)
 		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _ShadowBorderMaskUV ("UV", Int) = 0
-		[ToggleUI]_ShadowPostAO ("Post AO", Float) = 0
 		_ShadowBorderMaskLOD ("Border Map LOD", Range(0, 1)) = 0
+		[ToggleUI]_ShadowPostAO ("Ignore Border Properties", Float) = 0
 		[VectorToSliders(1st Min, n0.01, p1.01, 1st Max, n0.01, p1.01, 2nd Min, n0.01, p1.01, 2nd Max, n0.01, p1.01)]_ShadowAOShift ("Shadow AO Shift", Vector) = (0, 1, 0, 1)
 		[VectorToSliders(3rd Min, n0.01, p1.01, 3rd Max, n0.01, p1.01)]_ShadowAOShift2 ("Shadow AO Shift", Vector) = (0, 1, 0, 1)
 		[HideInInspector] s_end_MultilayerMathBorderMap ("Shadow Border Map", Float) = 1
@@ -774,7 +774,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 		[ToggleUI]_PoiUTSStyleOutlineBlend ("UTS2 style Blend", Float) = 0
 		[HideInInspector] s_start_OutlineColorAdjust ("Color Adjust--{reference_property:_OutlineHueShift,persistent_expand:true,default_expand:false}", Float) = 0
 		[HideInInspector][ThryToggleUI(true)]_OutlineHueShift ("Color Adjust", Float) = 0
-		[VectorToSliders(Hue, 0, 1, Saturation, 0, 2, Value, 0, 2, Gamma, 0.01, 2)]_OutlineTexHSVG ("HSVG", Vector) = (0, 1, 1, 1)
+		_OutlineHue ("Hue", Range(0,1)) = 0
+		_OutlineSaturation ("Saturation", Range(0,2)) = 1
+		_OutlineValue ("Value", Range(0,2)) = 1
+		_OutlineGamma ("Gamma", Range(0.01,2)) = 1
 		_OutlineHueOffsetSpeed ("Shift Speed", Float) = 0
 		[HideInInspector] s_end_OutlineColorAdjust ("Color Adjust", Float) = 0
 		[HideInInspector] s_start_OutlineAlphaDistanceFade ("Distance Alpha--{reference_property:_OutlineAlphaDistanceFade,persistent_expand:true,default_expand:false}", Float) = 0
@@ -7649,7 +7652,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 					{
 						float3 N = poiMesh.normals[1]; // this was potentially a reflection direction and not just the straight up normal
 						float3 envReflectionColor = 0;
-						if (SceneHasReflections() || (0.0 /*_ReflectionCubeOverride*/))
+						if (!SceneHasReflections() || (0.0 /*_ReflectionCubeOverride*/))
 						{
 							#if defined(PROP_REFLECTIONCUBETEX) || !defined(OPTIMIZER_ENABLED)
 							envReflectionColor = lilCustomReflection(_ReflectionCubeTex, _ReflectionCubeTex_HDR, poiCam.viewDir, N, perceptualRoughness);
@@ -8351,7 +8354,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 				float rim2Bias = rim2MaskAndBias.a;
 				#else
 				float rim2Mask = 1;
-				float rim2Bias = 0;
+				float rim2Bias = 1;
 				#endif
 				if ((0.0 /*_Rim2MaskInvert*/))
 				{
@@ -12536,7 +12539,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 					{
 						float3 N = poiMesh.normals[1]; // this was potentially a reflection direction and not just the straight up normal
 						float3 envReflectionColor = 0;
-						if (SceneHasReflections() || (0.0 /*_ReflectionCubeOverride*/))
+						if (!SceneHasReflections() || (0.0 /*_ReflectionCubeOverride*/))
 						{
 							#if defined(PROP_REFLECTIONCUBETEX) || !defined(OPTIMIZER_ENABLED)
 							envReflectionColor = lilCustomReflection(_ReflectionCubeTex, _ReflectionCubeTex_HDR, poiCam.viewDir, N, perceptualRoughness);
@@ -13238,7 +13241,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 				float rim2Bias = rim2MaskAndBias.a;
 				#else
 				float rim2Mask = 1;
-				float rim2Bias = 0;
+				float rim2Bias = 1;
 				#endif
 				if ((0.0 /*_Rim2MaskInvert*/))
 				{
@@ -13615,7 +13618,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 			float _OutlineRimLightBlend;
 			float _OutlineLit;
 			float _OutlineTintMix;
-			float4 _OutlineTexHSVG;
+			float _OutlineHue;
+			float _OutlineSaturation;
+			float _OutlineValue;
+			float _OutlineGamma;
 			float _OutlineHueShift;
 			float _OutlineHueOffset;
 			float _OutlineHueOffsetSpeed;
@@ -15458,7 +15464,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Pro/3faa12ccabbe9cc48808358546b50e9d"
 				col.a *= outlineColor.a;
 				if ((0.0 /*_OutlineHueShift*/))
 				{
-					float4 hsvg = float4(0,1,1,1);
+					float4 hsvg = float4((0.0 /*_OutlineHue*/) ,(1.0 /*_OutlineSaturation*/) ,(1.0 /*_OutlineValue*/) ,(1.0 /*_OutlineGamma*/));
 					hsvg.r += (0.0 /*_OutlineHueOffsetSpeed*/) * _Time.x;
 					poiFragData.baseColor.rgb = lilToneCorrection(poiFragData.baseColor.rgb, hsvg);
 				}

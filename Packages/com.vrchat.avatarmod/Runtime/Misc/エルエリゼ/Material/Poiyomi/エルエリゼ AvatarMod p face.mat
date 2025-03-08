@@ -28,6 +28,7 @@ Material:
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
+  - _TPS_ANIMATEDTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -37,7 +38,7 @@ Material:
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM
       POI_LTCGI POI_NORMALCORRECT POI_RIM2 POI_SSAO POI_STYLIZED_StylizedSpecular
       SSAO_MASK_TEX VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI
-      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _TPS_ANIMATEDTOGGLE_ON
     OriginalShader: .poiyomi/Poiyomi Pro
     OriginalShaderGUID: 12e112dbea893494d8c3bd0c31fd7f29
     RenderType: Opaque
@@ -1491,6 +1492,9 @@ Material:
     - _MainBrightnessGlobalMaskBlendType: 2
     - _MainColorAdjustTextureUV: 0
     - _MainColorAdjustToggle: 0
+    - _MainGamma: 1
+    - _MainGammaGlobalMask: 0
+    - _MainGammaGlobalMaskBlendType: 2
     - _MainGammma: 1
     - _MainGradationStrength: 0
     - _MainHueALCTEnabled: 0
@@ -1771,6 +1775,8 @@ Material:
     - _OutlineExpansionMode: 1
     - _OutlineFixWidth: 0.5
     - _OutlineFixedSize: 1
+    - _OutlineGamma: 1
+    - _OutlineHue: 0
     - _OutlineHueOffsetSpeed: 0
     - _OutlineHueShift: 0
     - _OutlineLit: 1
@@ -1778,6 +1784,7 @@ Material:
     - _OutlineMaskUV: 0
     - _OutlineOverrideAlpha: 0
     - _OutlineRimLightBlend: 0
+    - _OutlineSaturation: 1
     - _OutlineShadowStrength: 1
     - _OutlineSpace: 0
     - _OutlineSrcBlend: 1
@@ -1801,6 +1808,7 @@ Material:
     - _OutlineTextureUV: 0
     - _OutlineTintMix: 0
     - _OutlineUseVertexColorNormals: 0
+    - _OutlineValue: 1
     - _OutlineVertexColorMask: 0
     - _OutlineVertexColorMaskStrength: 1
     - _OutlineZTest: 2

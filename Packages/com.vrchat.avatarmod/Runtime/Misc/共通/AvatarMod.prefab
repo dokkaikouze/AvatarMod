@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToAppend: {fileID: 11400000, guid: f346e88cbd90ebd4c83e50df2cd77564, type: 2}
-  installTargetMenu: {fileID: 0}
+  installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &6880401003652150117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,6 +417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9168173551053590435}
+  - component: {fileID: 2173161821161108603}
   - component: {fileID: 2980512848699676479}
   - component: {fileID: 6596248226052840277}
   - component: {fileID: 7131959894556212851}
@@ -454,6 +455,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6461410430392657849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2173161821161108603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3301175685125044159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035a7d77391e45cca7a650206f575d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  blendShapes: []
+  limitToSpecificMeshes: 0
+  renderers: []
+  keepPartialPolygons: 0
+  entireMeshes: []
+  uvChannel: 2
+  u: 0
+  v: 0
+  existingData: 0
 --- !u!114 &2980512848699676479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,6 +957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 374135049225153483}
   - component: {fileID: 8392016077663032285}
+  - component: {fileID: 687860126854220133}
   m_Layer: 0
   m_Name: "[Option] \u5F71\u306E\u6FC3\u3055 - Shadow Strength"
   m_TagString: Untagged
@@ -972,6 +996,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuToAppend: {fileID: 11400000, guid: d432338de2f3acc4b8a06326a005813f, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
+--- !u!114 &687860126854220133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4881543122739987450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: AvatarMod/flagShadowStrength
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 0
+    localOnly: 0
+    defaultValue: 1
+    saved: 0
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 0
 --- !u!1 &5610640479461771885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,9 +1155,9 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
-    defaultValue: 0
+    defaultValue: 0.5
     saved: 1
-    hasExplicitDefaultValue: 0
+    hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
 --- !u!1 &5902410978584744805
 GameObject:
@@ -1859,6 +1906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8671806998749701562}
+  - component: {fileID: 9212249500828051318}
   - component: {fileID: 6367611657331381099}
   - component: {fileID: 4575243450181466681}
   - component: {fileID: 8698097094235345787}
@@ -1896,6 +1944,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6461410430392657849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9212249500828051318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000411443450549231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035a7d77391e45cca7a650206f575d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  blendShapes: []
+  limitToSpecificMeshes: 0
+  renderers: []
+  keepPartialPolygons: 0
+  entireMeshes: []
+  uvChannel: 1
+  u: 0
+  v: 0
+  existingData: 0
 --- !u!114 &6367611657331381099
 MonoBehaviour:
   m_ObjectHideFlags: 0

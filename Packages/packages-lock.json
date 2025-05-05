@@ -32,11 +32,26 @@
         "com.unity.nuget.newtonsoft-json": "2.0.2"
       }
     },
+    "com.autodesk.fbx": {
+      "version": "4.2.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.mcardellje.macs": {
       "version": "file:com.mcardellje.macs",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
+    },
+    "com.triturbo.blendshare": {
+      "version": "file:com.triturbo.blendshare",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.autodesk.fbx": "4.2.1"
+      }
     },
     "com.unity.ai.navigation": {
       "version": "1.1.5",

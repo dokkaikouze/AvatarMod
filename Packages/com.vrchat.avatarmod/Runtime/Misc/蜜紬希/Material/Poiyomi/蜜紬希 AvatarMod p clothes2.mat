@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u871C\u7D2C\u5E0C AvatarMod p clothes2"
-  m_Shader: {fileID: 4800000, guid: dca7dad244bd3e54baac56137b6f69d3, type: 3}
+  m_Shader: {fileID: 4800000, guid: 3899ac0c8d8424e46ab0c57bb10bc0d0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -30,7 +30,6 @@ Material:
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
-  - _TPS_ANIMATEDTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -40,7 +39,7 @@ Material:
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT COLOR_GRADING_HDR_3D POI_ANISOTROPICS
       POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM POI_LTCGI POI_MATCAP0 POI_RIM2 POI_SSAO
       POI_STYLIZED_StylizedSpecular POI_UDIMDISCARD VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH
-      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _TPS_ANIMATEDTOGGLE_ON
+      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Pro
     OriginalShaderGUID: 12e112dbea893494d8c3bd0c31fd7f29
     RenderType: Opaque
@@ -230,6 +229,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowColorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowStrengthMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -491,7 +494,7 @@ Material:
     - _BackFaceTextureUV: 0
     - _BacklightBackfaceMask: 1
     - _BacklightBlur: 0.05
-    - _BacklightBorder: 0.35
+    - _BacklightBorder: 0.52
     - _BacklightColorTexUV: 0
     - _BacklightDirectivity: 5
     - _BacklightEnabled: 1
@@ -1046,6 +1049,7 @@ Material:
     - _EnableTouchGlow: 0
     - _EnableTruchet: 0
     - _EnableUDIMDiscardOptions: 1
+    - _EnableUDIMFaceDiscardOptions: 0
     - _EnableVolumeColor: 0
     - _EntranceStiffness: 0.01
     - _EntryOpenDuration: 0.1
@@ -1586,7 +1590,7 @@ Material:
     - _Matcap2ApplyToAlphaEnabled: 0
     - _Matcap2ApplyToAlphaSourceBlend: 0
     - _Matcap2BaseColorMix: 0
-    - _Matcap2Border: 0.43
+    - _Matcap2Border: 0.5
     - _Matcap2ColorThemeIndex: 0
     - _Matcap2CustomNormal: 0
     - _Matcap2EmissionStrength: 0
@@ -1634,7 +1638,7 @@ Material:
     - _Matcap3ApplyToAlphaEnabled: 0
     - _Matcap3ApplyToAlphaSourceBlend: 0
     - _Matcap3BaseColorMix: 0
-    - _Matcap3Border: 0.43
+    - _Matcap3Border: 0.5
     - _Matcap3ColorThemeIndex: 0
     - _Matcap3CustomNormal: 0
     - _Matcap3EmissionStrength: 0
@@ -1675,7 +1679,7 @@ Material:
     - _Matcap4ApplyToAlphaEnabled: 0
     - _Matcap4ApplyToAlphaSourceBlend: 0
     - _Matcap4BaseColorMix: 0
-    - _Matcap4Border: 0.43
+    - _Matcap4Border: 0.5
     - _Matcap4ColorThemeIndex: 0
     - _Matcap4EmissionStrength: 0
     - _Matcap4Enable: 0
@@ -2088,6 +2092,7 @@ Material:
     - _Rim2MainStrength: 0.5
     - _Rim2MaskChannel: 0
     - _Rim2MaskInvert: 0
+    - _Rim2MaskOnlyMask: 0
     - _Rim2MaskUV: 0
     - _Rim2NormalStrength: 0.65
     - _Rim2Power: 1
@@ -2146,6 +2151,7 @@ Material:
     - _RimMainStrength: 0
     - _RimMaskChannel: 0
     - _RimMaskInvert: 0
+    - _RimMaskOnlyMask: 0
     - _RimMaskUV: 0
     - _RimNormalStrength: 1
     - _RimPoi2BlendMode: 1
@@ -2238,11 +2244,15 @@ Material:
     - _ShadowBorderRange: 0
     - _ShadowColorTexUV: 0
     - _ShadowEnvStrength: 0
+    - _ShadowFlatBlur: 1
+    - _ShadowFlatBorder: 1
     - _ShadowMainStrength: 0
+    - _ShadowMaskType: 0
     - _ShadowOffset: 0
     - _ShadowPostAO: 0
     - _ShadowReceive: 1
     - _ShadowStrength: 1
+    - _ShadowStrengthMaskUV: 0
     - _Shape1Depth: 0.1
     - _Shape1Duration: 0.1
     - _Shape2Depth: 0.2
@@ -2398,6 +2408,25 @@ Material:
     - _UDIMDiscardRow3_2: 0
     - _UDIMDiscardRow3_3: 1
     - _UDIMDiscardUV: 1
+    - _UDIMFaceDiscardFace: 0
+    - _UDIMFaceDiscardHelpbox: 0
+    - _UDIMFaceDiscardRow0_0: 0
+    - _UDIMFaceDiscardRow0_1: 0
+    - _UDIMFaceDiscardRow0_2: 0
+    - _UDIMFaceDiscardRow0_3: 0
+    - _UDIMFaceDiscardRow1_0: 0
+    - _UDIMFaceDiscardRow1_1: 0
+    - _UDIMFaceDiscardRow1_2: 0
+    - _UDIMFaceDiscardRow1_3: 0
+    - _UDIMFaceDiscardRow2_0: 0
+    - _UDIMFaceDiscardRow2_1: 0
+    - _UDIMFaceDiscardRow2_2: 0
+    - _UDIMFaceDiscardRow2_3: 0
+    - _UDIMFaceDiscardRow3_0: 0
+    - _UDIMFaceDiscardRow3_1: 0
+    - _UDIMFaceDiscardRow3_2: 0
+    - _UDIMFaceDiscardRow3_3: 0
+    - _UDIMFaceDiscardUV: 0
     - _UVModLocalPos0: 0
     - _UVModLocalPos1: 1
     - _UVModWorldPos0: 0
@@ -2677,6 +2706,7 @@ Material:
     - m_end_tps_penetrator: 0
     - m_end_truchet: 0
     - m_end_udimdiscardOptions: 0
+    - m_end_udimfacediscardOptions: 0
     - m_end_uvDistortion: 0
     - m_end_uvLocalWorld: 0
     - m_end_uvPanosphere: 0
@@ -2751,8 +2781,8 @@ Material:
     - m_start_LTCGI: 1
     - m_start_MainVertexColors: 0
     - m_start_Matcap2: 1
-    - m_start_Matcap3: 0
-    - m_start_Matcap4: 0
+    - m_start_Matcap3: 1
+    - m_start_Matcap4: 1
     - m_start_OutlineAudioLink: 0
     - m_start_OutlineStencil: 0
     - m_start_OutlineStencilPassBackOptions: 0
@@ -2829,6 +2859,7 @@ Material:
     - m_start_tps_penetrator: 0
     - m_start_truchet: 0
     - m_start_udimdiscardOptions: 1
+    - m_start_udimfacediscardOptions: 0
     - m_start_uvDistortion: 0
     - m_start_uvLocalWorld: 0
     - m_start_uvPanosphere: 0
@@ -2974,6 +3005,7 @@ Material:
     - s_end_MultilayerMath3rdLayer: 0
     - s_end_MultilayerMathBorder: 1
     - s_end_MultilayerMathBorderMap: 1
+    - s_end_MultilayerShadowMap: 0
     - s_end_OutlineAlphaDistanceFade: 0
     - s_end_OutlineColorAdjust: 0
     - s_end_OutlineFixedSize: 0
@@ -3176,6 +3208,7 @@ Material:
     - s_start_MultilayerMath3rdLayer: 0
     - s_start_MultilayerMathBorder: 1
     - s_start_MultilayerMathBorderMap: 0
+    - s_start_MultilayerShadowMap: 0
     - s_start_OutlineAlphaDistanceFade: 0
     - s_start_OutlineColorAdjust: 0
     - s_start_OutlineFixedSize: 1
@@ -3337,7 +3370,7 @@ Material:
     - _BackFaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackFaceMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _BackFaceTexturePan: {r: 0, g: 0, b: 0, a: 0}
-    - _BacklightColor: {r: 0.6792453, g: 0.63794947, b: 0.55535775, a: 1}
+    - _BacklightColor: {r: 0.5408804, g: 0.5118008, b: 0.4507336, a: 1}
     - _BacklightColorTexPan: {r: 0, g: 0, b: 0, a: 0}
     - _BlackLightMasking0Range: {r: 0.1, g: 0.5, b: 0, a: 0}
     - _BlackLightMasking1Range: {r: 0.1, g: 0.5, b: 0, a: 0}
@@ -3642,6 +3675,7 @@ Material:
     - _ShadowBorderMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowColor: {r: 0.8862745, g: 0.78431374, b: 0.8980392, a: 1}
     - _ShadowColorTexPan: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowStrengthMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _SkinThicknessMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _SphericalDissolveCenter: {r: 0, g: 0, b: 0, a: 1}
     - _SssColorBleedAoWeights: {r: 0.4, g: 0.15, b: 0.13, a: 0}

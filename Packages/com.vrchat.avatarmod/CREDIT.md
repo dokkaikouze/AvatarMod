@@ -29,3 +29,7 @@ https://github.com/anatawa12/AvatarOptimizer
 Prefabulous
 Haï~ 様
 https://docs.hai-vr.dev/docs/products/prefabulous
+
+Unity用シェーダー【Macheiyora】
+にしおかSMITH 様
+https://booth.pm/ja/items/3767387

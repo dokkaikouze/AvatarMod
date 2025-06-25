@@ -73,6 +73,7 @@ MonoBehaviour:
     referencePath: 
     targetObject: {fileID: 0}
   layerPriority: 1
+  mergeAnimatorMode: 0
 --- !u!114 &1216097752875793660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +151,6 @@ MonoBehaviour:
   - transform: {fileID: 0}
     scaleFactor: 1
     applyCondition: 1
-    defaultScaleFactorAssigned: 1
   globalScaleFactor: 1
 --- !u!114 &4357366309041734856
 MonoBehaviour:
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 3340071890587018389}
   - component: {fileID: 4424335630928599327}
   m_Layer: 0
-  m_Name: "[Option] \u30DE\u30C6\u30EA\u30A2\u30EB\u5909\u66F4"
+  m_Name: "[Option] RenderQueue\u5909\u66F4"
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -940,7 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameters:
-  - nameOrPrefix: AvatarMod/MaterialChange
+  - nameOrPrefix: AvatarMod/RenderQueueChange
     remapTo: 
     internalParameter: 0
     isPrefix: 0
@@ -1600,6 +1600,7 @@ MonoBehaviour:
     referencePath: 
     targetObject: {fileID: 0}
   layerPriority: -1
+  mergeAnimatorMode: 0
 --- !u!114 &7696635483234050896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1978,19 +1979,15 @@ MonoBehaviour:
   - transform: {fileID: 0}
     scaleFactor: 1
     applyCondition: 1
-    defaultScaleFactorAssigned: 1
   - transform: {fileID: 0}
     scaleFactor: 0
     applyCondition: 2
-    defaultScaleFactorAssigned: 1
   - transform: {fileID: 0}
     scaleFactor: 0
     applyCondition: 2
-    defaultScaleFactorAssigned: 1
   - transform: {fileID: 0}
     scaleFactor: 0
     applyCondition: 2
-    defaultScaleFactorAssigned: 1
   globalScaleFactor: 1
 --- !u!114 &5004937914471142961
 MonoBehaviour:
@@ -2013,6 +2010,7 @@ MonoBehaviour:
     referencePath: 
     targetObject: {fileID: 0}
   layerPriority: 0
+  mergeAnimatorMode: 0
 --- !u!1 &8868229807182453775
 GameObject:
   m_ObjectHideFlags: 0

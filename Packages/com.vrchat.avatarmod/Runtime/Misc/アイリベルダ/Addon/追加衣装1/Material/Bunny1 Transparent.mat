@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bunny1 Transparent
-  m_Shader: {fileID: 4800000, guid: f79ede9988efa4f45b52f30685f250ab, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6ff4a4cbee46a7041836914f7009c0fb, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -22,7 +22,6 @@ Material:
   - POI_MATCAP0
   - POI_MATCAP0_CUSTOM_NORMAL
   - POI_RIM2
-  - POI_SSAO
   - POI_STYLIZED_StylizedSpecular
   - POI_UDIMDISCARD
   - VIGNETTE_MASKED
@@ -39,12 +38,12 @@ Material:
   stringTagMap:
     AllLockedGUIDS: 6b1615c905f7a0b4cb72b9c1591a0106
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT POI_ANISOTROPICS POI_BACKLIGHT POI_CLEARCOAT
-      POI_ENVIRORIM POI_LTCGI POI_MATCAP0 POI_MATCAP0_CUSTOM_NORMAL POI_RIM2 POI_SSAO
-      POI_STYLIZED_StylizedSpecular POI_UDIMDISCARD VIGNETTE_MASKED _EMISSION _LIGHTINGMODE_MULTILAYER_MATH
-      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _SUNDISK_SIMPLE
-    OriginalShader: .poiyomi/Poiyomi Pro
-    OriginalShaderGUID: 77f45810ea400c74e929db1f8ea09c47
-    RenderType: Transparent
+      POI_ENVIRORIM POI_LTCGI POI_MATCAP0 POI_MATCAP0_CUSTOM_NORMAL POI_RIM2 POI_STYLIZED_StylizedSpecular
+      POI_UDIMDISCARD VIGNETTE_MASKED _EMISSION _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _SUNDISK_SIMPLE
+    OriginalShader: .poiyomi/Poiyomi Toon
+    OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
+    RenderType: Opaque
     VRCFallback: ToonTransparent
     _AnisoAddAnimated: 1
     _ClearCoatStrengthAnimated: 1
@@ -225,14 +224,6 @@ Material:
         m_Texture: {fileID: 2800000, guid: 60f0bf62f4fe6634c91d0b3cbc65ada7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SSAOColorMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SSAOMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _Set_HighColorMask:
         m_Texture: {fileID: 2800000, guid: 60f0bf62f4fe6634c91d0b3cbc65ada7, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -265,15 +256,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _TPS_BakedMesh:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - GeometryShader_Enabled: 1
     - Instancing: 0
     - Tessellation_Enabled: 1
+    - VertexBasicsMaskUV: 0
     - _1st2nd_Shades_Feather: 0.0001
     - _1stShadeMapMask_Inverse: 0
     - _1st_ShadeMapUV: 0
@@ -1456,6 +1444,7 @@ Material:
     - _GreenTextureStochastic: 0
     - _GreenTextureUV: 0
     - _HeightMapUV: 0
+    - _HeightOffset: 0
     - _HeightStepsMax: 128
     - _HeightStepsMin: 10
     - _HeightStrength: 0.4247461
@@ -1528,6 +1517,7 @@ Material:
     - _LightingDetailShadowStrengthG: 0
     - _LightingDetailShadowStrengthR: 1
     - _LightingDirectionMode: 0
+    - _LightingEnableLightVolumes: 1
     - _LightingForceColorEnabled: 0
     - _LightingForcedColorThemeIndex: 0
     - _LightingGradientEnd: 0.5
@@ -1941,6 +1931,10 @@ Material:
     - _PPPosterizationAmount: 4
     - _PPSaturation: 1
     - _PanoUseBothEyes: 1
+    - _ParallaxAnisotropic: 1
+    - _ParallaxAnisotropyScale: 1
+    - _ParallaxBinarySteps: 8
+    - _ParallaxConeRatio: 1
     - _ParallaxInternalBlendMode: 0
     - _ParallaxInternalHeightFromAlpha: 0
     - _ParallaxInternalHeightmapMode: 0
@@ -1960,6 +1954,8 @@ Material:
     - _ParallaxInternalMinDepth: 0
     - _ParallaxInternalMinFade: 1
     - _ParallaxInternalSurfaceBlendMode: 8
+    - _ParallaxMipBias: 0
+    - _ParallaxRelaxedCone: 1
     - _ParallaxUV: 0
     - _PathALAutoCorrelator: 0
     - _PathALAutoCorrelatorA: 0
@@ -2084,6 +2080,7 @@ Material:
     - _ReflectionCubeOverride: 0
     - _ReflectionNormalStrength: 1
     - _RenderingAOBlockerEnabled: 0
+    - _RenderingAOBlockerFlipNormal: 0
     - _RenderingAOBlockerNote: 0
     - _RenderingAOBlockerUVChannel: 0
     - _RenderingEarlyZEnabled: 1
@@ -2532,8 +2529,10 @@ Material:
     - _VertexAudioLinkEnabled: 0
     - _VertexBarrelAlpha: 0
     - _VertexBarrelHeight: 0
+    - _VertexBarrelMaskChannel: 0
     - _VertexBarrelMode: 0
     - _VertexBarrelWidth: 0.2
+    - _VertexBasicsMaskChannel: 0
     - _VertexGlitchDensity: 10
     - _VertexGlitchFrequency: 1
     - _VertexGlitchMapPanSpeed: 10
@@ -2563,11 +2562,13 @@ Material:
     - _VertexManipulationHeight: 0
     - _VertexManipulationHeightBand: 0
     - _VertexManipulationHeightBias: 0
+    - _VertexManipulationHeightMapChannel: 0
     - _VertexManipulationHeightMaskChannel: 0
     - _VertexManipulationHeightMaskUV: 0
     - _VertexManipulationsEnabled: 0
     - _VertexRoundingDivision: 0.02
     - _VertexRoundingEnabled: 0
+    - _VertexRoundingMaskChannel: 0
     - _VertexRoundingRangeBand: 0
     - _VertexRoundingSpace: 0
     - _VertexSpectrumMotion: 0
@@ -2575,14 +2576,30 @@ Material:
     - _VertexSpectrumUVDirection: 0
     - _VertexSphereAlpha: 0
     - _VertexSphereHeight: 1
+    - _VertexSphereMaskChannel: 0
     - _VertexSphereMode: 0
     - _VertexSphereRadius: 1
     - _VertexTornadoBaseHeight: 0
+    - _VertexTornadoFunnelShape: 1
     - _VertexTornadoIntensity: 100
+    - _VertexTornadoMaskChannel: 0
     - _VertexTornadoMode: 0
     - _VertexTornadoRadius: 0.2
     - _VertexTornadoSpeed: 5
     - _VertexTornadoTopHeight: 1
+    - _VertexTornadoVerticalPull: 0
+    - _VertexWindDetailAmplitude: 0.05
+    - _VertexWindDetailFrequency: 5
+    - _VertexWindDetailSpeed: 2.5
+    - _VertexWindEnabled: 0
+    - _VertexWindMaskChannel: 0
+    - _VertexWindNoiseChannel: 0
+    - _VertexWindNoiseScale: 10
+    - _VertexWindNoiseSpeed: 0.5
+    - _VertexWindNoiseStrength: 0.5
+    - _VertexWindPrimaryAmplitude: 0.1
+    - _VertexWindPrimaryFrequency: 1
+    - _VertexWindPrimarySpeed: 1
     - _VertexWorldTranslationALBand: 0
     - _VideoBacklight: 1
     - _VideoCRTPixelEnergizedTime: 1.9
@@ -3152,6 +3169,7 @@ Material:
     - s_end_VertexScale: 0
     - s_end_VertexSphereMode: 0
     - s_end_VertexTornadoMode: 0
+    - s_end_VertexWind: 0
     - s_end_WorldTranslation: 0
     - s_end_brdfadvanced: 0
     - s_end_decal1_position: 0
@@ -3169,6 +3187,7 @@ Material:
     - s_end_matcap3ApplyToAlpha: 0
     - s_end_matcapApplyToAlpha: 0
     - s_end_outline_al_color: 0
+    - s_end_parallaxAdvanced: 0
     - s_end_vertexRounding: 0
     - s_start_ALAlpha: 0
     - s_start_ALDecalAudioModsOptions: 1
@@ -3370,6 +3389,7 @@ Material:
     - s_start_VertexScale: 0
     - s_start_VertexSphereMode: 0
     - s_start_VertexTornadoMode: 0
+    - s_start_VertexWind: 0
     - s_start_WorldTranslation: 0
     - s_start_brdfadvanced: 0
     - s_start_decal1_position: 1
@@ -3387,6 +3407,7 @@ Material:
     - s_start_matcap3ApplyToAlpha: 0
     - s_start_matcapApplyToAlpha: 0
     - s_start_outline_al_color: 0
+    - s_start_parallaxAdvanced: 0
     - s_start_vertexRounding: 0
     - s_start_vertexRoundingAL: 0
     - shader_is_using_thry_editor: 69
@@ -3864,6 +3885,7 @@ Material:
     - _TruchetMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _TruchetPanOffset: {r: 0, g: 0, b: 0, a: 0}
     - _TruchetTexPan: {r: 0, g: 0, b: 0, a: 0}
+    - _VertexBasicsMaskUVPan: {r: 0, g: 0, b: 0, a: 0}
     - _VertexLocalRotationAL: {r: 0, g: 0, b: 0, a: 1}
     - _VertexLocalRotationCTALSpeed: {r: 0, g: 0, b: 0, a: 1}
     - _VertexLocalScaleALMax: {r: 0, g: 0, b: 0, a: 0}
@@ -3882,6 +3904,8 @@ Material:
     - _VertexSpectrumOffsetMax: {r: 0, g: 0.1, b: 0, a: 1}
     - _VertexSpectrumOffsetMin: {r: 0, g: 0, b: 0, a: 1}
     - _VertexSphereCenter: {r: 0, g: 0, b: 0, a: 1}
+    - _VertexWindDetailDirection: {r: 0, g: 1, b: 0, a: 0}
+    - _VertexWindPrimaryDirection: {r: 1, g: 0, b: 0, a: 0}
     - _VertexWorldTranslationALMax: {r: 0, g: 0, b: 0, a: 1}
     - _VertexWorldTranslationALMin: {r: 0, g: 0, b: 0, a: 1}
     - _VideoMaskTexturePan: {r: 0, g: 0, b: 0, a: 0}

@@ -323,6 +323,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "idv.jlchntoz.avautils": {
+      "version": "file:idv.jlchntoz.avautils",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "io.github.azukimochi.light-limit-changer": {
       "version": "file:io.github.azukimochi.light-limit-changer",
       "depth": 0,
@@ -371,7 +377,9 @@
       "version": "file:nadena.dev.ndmf",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "com.unity.modules.animation": "1.0.0"
+      }
     },
     "net.narazaka.vrchat.floor-adjuster": {
       "version": "file:net.narazaka.vrchat.floor-adjuster",

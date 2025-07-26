@@ -5017,7 +5017,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 0.2857143
-      value: 0.002
+      value: 0.0012
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5175,7 +5175,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 0.2857143
-      value: 0.004
+      value: 0.0024
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5843,7 +5843,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 0.2857143
-      value: 0.002
+      value: 0.0012
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6001,7 +6001,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 0.2857143
-      value: 0.004
+      value: 0.0024
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6808,6 +6808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1516436236270573932}
+  - component: {fileID: 3962885144141108682}
   m_Layer: 0
   m_Name: Hips_Weight_L
   m_TagString: Untagged
@@ -6824,12 +6825,121 @@ Transform:
   m_GameObject: {fileID: 4719780164722508681}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010871368, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000000007450581, y: 0.000000022351756, z: 0.00000005960465}
+  m_LocalPosition: {x: -0.000000007450581, y: 0.000000022351742, z: 0.00000005960465}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1397303596381233328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3962885144141108682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719780164722508681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1116338486, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 1
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 7959495234337964164}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 1
+  latestValidExecutionGroupIndex: 1
+  PositionAtRest: {x: -0.000000007450581, y: 0.000000022351742, z: 0.00000005960465}
+  PositionOffset: {x: 0.033604473, y: -0.039789345, z: 0.040518634}
+  AffectsPositionX: 1
+  AffectsPositionY: 1
+  AffectsPositionZ: 0
 --- !u!1 &4832083273429755037
 GameObject:
   m_ObjectHideFlags: 0
@@ -8554,7 +8664,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9195361512253451499}
-  - component: {fileID: 842069058562054261}
   m_Layer: 0
   m_Name: CheekRoot_R
   m_TagString: Untagged
@@ -8578,19 +8687,6 @@ Transform:
   - {fileID: 1651390318411747772}
   m_Father: {fileID: 8695664008257819382}
   m_LocalEulerAnglesHint: {x: 180, y: 270, z: -90}
---- !u!114 &842069058562054261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6610594763377834067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8d5b07828ba4eefb9acc305478369d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_groupedBones: []
 --- !u!1 &6642414555821608563
 GameObject:
   m_ObjectHideFlags: 0
@@ -9781,6 +9877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9074962647337611267}
+  - component: {fileID: 2101445576354903276}
   m_Layer: 0
   m_Name: Hips_Weight_R
   m_TagString: Untagged
@@ -9797,12 +9894,121 @@ Transform:
   m_GameObject: {fileID: 7629407939944571466}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000010871368, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000000007450581, y: 0.000000022351756, z: 0.00000005960465}
+  m_LocalPosition: {x: 0.000000007450581, y: 0.000000022351742, z: 0.00000005960465}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1601023782988753526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2101445576354903276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7629407939944571466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1116338486, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  GlobalWeight: 1
+  TargetTransform: {fileID: 0}
+  SolveInLocalSpace: 0
+  FreezeToWorld: 0
+  RebakeOffsetsWhenUnfrozen: 0
+  Locked: 1
+  Sources:
+    source0:
+      SourceTransform: {fileID: 8134179470192321454}
+      Weight: 1
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source1:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source2:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source3:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source4:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source5:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source6:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source7:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source8:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source9:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source10:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source11:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source12:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source13:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source14:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    source15:
+      SourceTransform: {fileID: 0}
+      Weight: 0
+      ParentPositionOffset: {x: 0, y: 0, z: 0}
+      ParentRotationOffset: {x: 0, y: 0, z: 0}
+    totalLength: 1
+    overflowList: []
+  cachedExecutionGroupIndex: 1
+  latestValidExecutionGroupIndex: 1
+  PositionAtRest: {x: 0.000000007450581, y: 0.000000022351742, z: 0.00000005960465}
+  PositionOffset: {x: -0.033604473, y: -0.039789345, z: 0.040518634}
+  AffectsPositionX: 1
+  AffectsPositionY: 1
+  AffectsPositionZ: 0
 --- !u!1 &7790457020540819557
 GameObject:
   m_ObjectHideFlags: 0
@@ -12046,7 +12252,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 797702141732640053}
-  - component: {fileID: 14769061669060258}
   m_Layer: 0
   m_Name: CheekRoot_L
   m_TagString: Untagged
@@ -12070,19 +12275,6 @@ Transform:
   - {fileID: 3472215492335272410}
   m_Father: {fileID: 8695664008257819382}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
---- !u!114 &14769061669060258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9183132890633677647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8d5b07828ba4eefb9acc305478369d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_groupedBones: []
 --- !u!1001 &672714942137010156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29642,6 +29834,12 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2858009475103767516}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &7959495234337964164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5322268253788289880, guid: 5b19403b0a5b0bf4e914f5251538d049,
+    type: 3}
+  m_PrefabInstance: {fileID: 2858009475103767516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7963818513870603845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3950612592838476391, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -30390,6 +30588,12 @@ SkinnedMeshRenderer:
 --- !u!137 &8076798757958656703 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -2900531650734352029, guid: 5b19403b0a5b0bf4e914f5251538d049,
+    type: 3}
+  m_PrefabInstance: {fileID: 2858009475103767516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8134179470192321454 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2933011760114558862, guid: 5b19403b0a5b0bf4e914f5251538d049,
     type: 3}
   m_PrefabInstance: {fileID: 2858009475103767516}
   m_PrefabAsset: {fileID: 0}

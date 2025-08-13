@@ -2,7 +2,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 {
 	Properties
 	{
-		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.2.67</color>", Float) = 0
+		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.2.69</color>", Float) = 0
 		[HideInInspector] shader_is_using_thry_editor ("", Float) = 0
 		[HideInInspector] shader_locale ("0db0b86376c3dca4b9a6828ef8615fe0", Float) = 0
 		[HideInInspector] footer_youtube ("{texture:{name:icon-youtube,height:16},action:{type:URL,data:https://www.youtube.com/poiyomi},hover:YOUTUBE}", Float) = 0
@@ -50,19 +50,19 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		_Color ("Color & Alpha--{reference_property:_ColorThemeIndex}", Color) = (1, 1, 1, 1)
 		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _ColorThemeIndex ("", Int) = 0
 		[sRGBWarning(true)]_MainTex ("Texture--{reference_properties:[_MainTexPan, _MainTexUV, _MainPixelMode, _MainTexStochastic, _MainIgnoreTexAlpha]}", 2D) = "white" { }
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _MainTexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _MainTexUV ("UV", Int) = 0
 		[HideInInspector][Vector2]_MainTexPan ("Panning", Vector) = (0, 0, 0, 0)
 		[HideInInspector][ToggleUI]_MainPixelMode ("Pixel Mode", Float) = 0
 		[HideInInspector][ToggleUI]_MainTexStochastic ("Stochastic Sampling", Float) = 0
 		[HideInInspector][ToggleUI]_MainIgnoreTexAlpha ("Ignore Alpha", Float) = 0
 		[Normal]_BumpMap ("Normal Map--{reference_properties:[_BumpMapPan, _BumpMapUV, _BumpScale, _BumpMapStochastic]}", 2D) = "bump" { }
 		[HideInInspector][Vector2]_BumpMapPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _BumpMapUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _BumpMapUV ("UV", Int) = 0
 		[HideInInspector]_BumpScale ("Intensity", Range(0, 10)) = 1
 		[HideInInspector][ToggleUI]_BumpMapStochastic ("Stochastic Sampling", Float) = 0
 		[sRGBWarning]_AlphaMask ("Alpha Map--{reference_properties:[_AlphaMaskPan, _AlphaMaskUV, _AlphaMaskInvert, _MainAlphaMaskMode, _AlphaMaskBlendStrength, _AlphaMaskValue], alts:[_AlphaMap]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_AlphaMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _AlphaMaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _AlphaMaskUV ("UV", Int) = 0
 		[HideInInspector][ThryWideEnum(Off, 0, Replace, 1, Multiply, 2, Add, 3, Subtract, 4)]_MainAlphaMaskMode ("Blend Mode", Int) = 2
 		[HideInInspector]_AlphaMaskBlendStrength ("Blend Strength", Float) = 1
 		[HideInInspector]_AlphaMaskValue ("Blend Offset", Float) = 0
@@ -83,7 +83,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector] m_start_PoiLightData ("Light Data--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/shading/light-data},hover:Documentation}}", Float) = 0
 		[sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingAOMaps ("AO Maps (expand)--{reference_properties:[_LightingAOMapsPan, _LightingAOMapsUV,_LightDataAOStrengthR,_LightDataAOStrengthG,_LightDataAOStrengthB,_LightDataAOStrengthA, _LightDataAOGlobalMaskR]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_LightingAOMapsPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _LightingAOMapsUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _LightingAOMapsUV ("UV", Int) = 0
 		[HideInInspector]_LightDataAOStrengthR ("R Strength", Range(0, 1)) = 1
 		[HideInInspector]_LightDataAOStrengthG ("G Strength", Range(0, 1)) = 0
 		[HideInInspector]_LightDataAOStrengthB ("B Strength", Range(0, 1)) = 0
@@ -92,7 +92,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _LightDataAOGlobalMaskBlendTypeR ("Blending", Range(0, 1)) = 2
 		[sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingDetailShadowMaps ("Shadow Map (expand)--{reference_properties:[_LightingDetailShadowMapsPan, _LightingDetailShadowMapsUV,_LightingDetailShadowStrengthR,_LightingDetailShadowStrengthG,_LightingDetailShadowStrengthB,_LightingDetailShadowStrengthA,_LightingAddDetailShadowStrengthR,_LightingAddDetailShadowStrengthG,_LightingAddDetailShadowStrengthB,_LightingAddDetailShadowStrengthA, _LightDataDetailShadowGlobalMaskR]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_LightingDetailShadowMapsPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _LightingDetailShadowMapsUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _LightingDetailShadowMapsUV ("UV", Int) = 0
 		[HideInInspector]_LightingDetailShadowStrengthR ("R Strength", Range(0, 1)) = 1
 		[HideInInspector]_LightingDetailShadowStrengthG ("G Strength", Range(0, 1)) = 0
 		[HideInInspector]_LightingDetailShadowStrengthB ("B Strength", Range(0, 1)) = 0
@@ -105,7 +105,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _LightDataDetailShadowGlobalMaskBlendTypeR ("Blending", Range(0, 1)) = 2
 		[sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingShadowMasks ("Shadow Masks (expand)--{reference_properties:[_LightingShadowMasksPan, _LightingShadowMasksUV,_LightingShadowMaskStrengthR,_LightingShadowMaskStrengthG,_LightingShadowMaskStrengthB,_LightingShadowMaskStrengthA, _LightDataShadowMaskGlobalMaskR]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_LightingShadowMasksPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _LightingShadowMasksUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _LightingShadowMasksUV ("UV", Int) = 0
 		[HideInInspector]_LightingShadowMaskStrengthR ("R Strength", Range(0, 1)) = 1
 		[HideInInspector]_LightingShadowMaskStrengthG ("G Strength", Range(0, 1)) = 0
 		[HideInInspector]_LightingShadowMaskStrengthB ("B Strength", Range(0, 1)) = 0
@@ -118,7 +118,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector] s_start_LightDataSDF ("Signed Distance fields--{persistent_expand:true,default_expand:true, condition_showS:(_LightingMapMode==4)}", Float) = 1
 		[sRGBWarning][ThryRGBAPacker(R, G, Nothing, Nothing, Linear, false)]_LightDataSDFMap ("SDF Map (expand)--{reference_properties:[_LightDataSDFMapPan, _LightDataSDFMapUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_LightDataSDFMapPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _LightDataSDFMapUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _LightDataSDFMapUV ("UV", Int) = 0
 		_LightDataSDFMapLOD ("LOD", Range(0, 1)) = 0
 		_LightDataSDFBlendY ("Blend Y Direction", Range(0.001, 2)) = 1
 		[HideInInspector] s_end_LightDataSDF ("Signed Distance fields", Float) = 1
@@ -161,10 +161,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector] s_start_MultilayerMath1stLayer ("Shadow Layer 1--{persistent_expand:true,default_expand:true, condition_showS:(_LightingMode==1)}", Float) = 1
 		[sRGBWarning(true)]_ShadowColorTex ("Color Tex--{reference_properties:[_ShadowColorTexPan, _ShadowColorTexUV], condition_showS:(_LightingMode==1)}", 2D) = "black" { }
 		[HideInInspector][Vector2]_ShadowColorTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _ShadowColorTexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _ShadowColorTexUV ("UV", Int) = 0
 		_ShadowColor ("Color--{condition_showS:(_LightingMode==1)}", Color) = (0.7, 0.75, 0.85, 1.0)
 		[HideInInspector][Vector2]_MultilayerMathBlurMapPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _MultilayerMathBlurMapUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _MultilayerMathBlurMapUV ("UV", Int) = 0
 		_ShadowBorder ("Border--{condition_showS:(_LightingMode==1)}", Range(0, 1)) = 0.5
 		_ShadowBlur ("Blur--{condition_showS:(_LightingMode==1)}", Range(0, 1)) = 0.1
 		_ShadowReceive ("Receive Shadow--{condition_showS:(_LightingMode==1)}", Range(0, 1)) = 0
@@ -172,7 +172,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector] s_start_MultilayerMath2ndLayer ("Shadow Layer 2--{persistent_expand:true,default_expand:false, condition_showS:(_LightingMode==1)}", Float) = 0
 		[sRGBWarning(true)]_Shadow2ndColorTex ("Color Tex--{reference_properties:[_Shadow2ndColorTexPan, _Shadow2ndColorTexUV], condition_showS:(_LightingMode==1)}", 2D) = "black" { }
 		[HideInInspector][Vector2]_Shadow2ndColorTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _Shadow2ndColorTexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Shadow2ndColorTexUV ("UV", Int) = 0
 		_Shadow2ndColor ("Color--{condition_showS:(_LightingMode==1)}", Color) = (0, 0, 0, 0)
 		_Shadow2ndBorder ("Border--{condition_showS:(_LightingMode==1)}", Range(0, 1)) = 0.5
 		_Shadow2ndBlur ("Blur--{condition_showS:(_LightingMode==1)}", Range(0, 1)) = 0.3
@@ -181,7 +181,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector] s_start_MultilayerMath3rdLayer ("Shadow Layer 3--{persistent_expand:true,default_expand:false, condition_showS:(_LightingMode==1)}", Float) = 0
 		[sRGBWarning(true)]_Shadow3rdColorTex ("Color Tex--{reference_properties:[_Shadow3rdColorTexPan, _Shadow3rdColorTexUV], condition_showS:(_LightingMode==1)}", 2D) = "black" { }
 		[HideInInspector][Vector2]_Shadow3rdColorTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _Shadow3rdColorTexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Shadow3rdColorTexUV ("UV", Int) = 0
 		_Shadow3rdColor ("Color--{condition_showS:(_LightingMode==1)}", Color) = (0, 0, 0, 0)
 		_Shadow3rdBorder ("Border--{condition_showS:(_LightingMode==1)}", Range(0, 1)) = 0.25
 		_Shadow3rdBlur ("Blur--{condition_showS:(_LightingMode==1)}", Range(0, 1)) = 0.1
@@ -195,7 +195,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[ThryWideEnum(Strength, 0, Flat, 1)] _ShadowMaskType ("Map Type", Int) = 0
 		_ShadowStrengthMask ("Color Tex--{reference_properties:[_ShadowStrengthMaskPan, _ShadowStrengthMaskUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_ShadowStrengthMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _ShadowStrengthMaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _ShadowStrengthMaskUV ("UV", Int) = 0
 		_ShadowFlatBorder ("Border--{condition_showS:(_ShadowMaskType==1)}", Range(-2, 2)) = 1
 		_ShadowFlatBlur ("Blur--{condition_showS:(_ShadowMaskType==1)}", Range(0.001, 2)) = 1
 		[HideInInspector] s_end_MultilayerShadowMap ("Shadow Map}", Float) = 0
@@ -203,7 +203,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector][ToggleUI] _ShadowBorderMapToggle ("Shadow Border Map Toggle", Float) = 0
 		_ShadowBorderMask ("AO Map--{reference_properties:[_ShadowBorderMaskPan, _ShadowBorderMaskUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_ShadowBorderMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _ShadowBorderMaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _ShadowBorderMaskUV ("UV", Int) = 0
 		_ShadowBorderMaskLOD ("Border Map LOD", Range(0, 1)) = 0
 		[ToggleUI]_ShadowPostAO ("Ignore Border Properties", Float) = 0
 		[VectorToSliders(1st Min, n0.01, p1.01, 1st Max, n0.01, p1.01, 2nd Min, n0.01, p1.01, 2nd Max, n0.01, p1.01)]_ShadowAOShift ("Shadow AO Shift", Vector) = (0, 1, 0, 1)
@@ -233,18 +233,18 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[KeywordEnum(Poiyomi, UTS2, LilToon)] _RimStyle ("Style", Float) = 0
 		[sRGBWarning]_Set_RimLightMask ("Set_RimLightMask--{reference_properties:[_Set_RimLightMaskPan, _Set_RimLightMaskUV, _Set_RimLightMaskChannel], condition_showS:_RimStyle==1}", 2D) = "white" { }
 		[HideInInspector][Vector2]_Set_RimLightMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _Set_RimLightMaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Set_RimLightMaskUV ("UV", Int) = 0
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_Set_RimLightMaskChannel ("Channel", Float) = 1
 		[sRGBWarning][ThryRGBAPacker(Mask, Bias, linear, false)]_RimMask ("Mask & Bias--{reference_properties:[_RimMaskPan, _RimMaskUV, _RimMaskChannel, _RimMaskInvert, _RimBiasIntensity], condition_showS:_RimStyle==0}", 2D) = "white" { }
 		[HideInInspector][Vector2]_RimMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _RimMaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _RimMaskUV ("UV", Int) = 0
 		[HideInInspector][ToggleUI]_RimMaskInvert ("Invert Mask", Float) = 0
 		[HideInInspector]_RimBiasIntensity ("Bias Intensity", Range(0, 1)) = 0
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_RimMaskChannel ("Channel", Float) = 0
 		[HideInInspector] s_start_RimLight0Color ("Color & Blending--{persistent_expand:true,default_expand:true, condition_showS:_RimStyle==0||_RimStyle==1}", Float) = 1
 		[sRGBWarning(true)]_RimTex ("Rim Texture--{reference_properties:[_RimTexPan, _RimTexUV], condition_showS:_RimStyle==0}", 2D) = "white" { }
 		[HideInInspector][Vector2]_RimTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _RimTexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _RimTexUV ("UV", Int) = 0
 		_RimLightColor (" Color--{condition_showS:_RimStyle==0||_RimStyle==1,reference_property:_RimLightColorThemeIndex}", Color) = (1, 1, 1, 1)
 		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _RimLightColorThemeIndex ("", Int) = 0
 		[ThryWideEnum(Add, 0, Replace, 1, Multiply, 2, Mixed, 3, Screen, 4)] _RimPoiBlendMode ("Blend Mode--{ condition_showS:_RimStyle==0}", Int) = 0
@@ -286,7 +286,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HDR][Gamma]_RimColor ("Rim Color--{condition_showS:_RimStyle==2,reference_property:_RimLightColorThemeIndex}", Color) = (0.66, 0.5, 0.48, 1)
 		[sRGBWarning(true)] _RimColorTex ("Color / Mask--{condition_showS:_RimStyle==2,reference_properties:[_RimColorTexPan,  _RimMaskOnlyMask, _RimColorTexUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2] _RimColorTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _RimColorTexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _RimColorTexUV ("UV", Int) = 0
 		[HideInInspector][ToggleUI]_RimMaskOnlyMask ("Mask Only", Float) = 0
 		_RimMainStrength ("Main Color Blend--{condition_showS:_RimStyle==2}", Range(0, 1)) = 0
 		_RimNormalStrength ("Normal Strength--{condition_showS:_RimStyle==2}", Range(0, 1)) = 1.0
@@ -337,18 +337,18 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[KeywordEnum(Poiyomi, UTS2, LilToon)] _Rim2Style ("Style", Float) = 0
 		[sRGBWarning]_Set_Rim2LightMask ("Set_RimLightMask--{reference_properties:[_Set_Rim2LightMaskPan, _Set_Rim2LightMaskUV, _Set_Rim2LightMaskChannel], condition_showS:_Rim2Style==1}", 2D) = "white" { }
 		[HideInInspector][Vector2]_Set_Rim2LightMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _Set_Rim2LightMaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Set_Rim2LightMaskUV ("UV", Int) = 0
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_Set_Rim2LightMaskChannel ("Channel", Float) = 1
 		[sRGBWarning][ThryRGBAPacker(Mask, Bias, linear, false)]_Rim2Mask ("Mask & Bias--{reference_properties:[_Rim2MaskPan, _Rim2MaskUV, _Rim2MaskChannel, _Rim2MaskInvert, _Rim2BiasIntensity], condition_showS:_Rim2Style==0}", 2D) = "white" { }
 		[HideInInspector][Vector2]_Rim2MaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _Rim2MaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Rim2MaskUV ("UV", Int) = 0
 		[HideInInspector][ToggleUI]_Rim2MaskInvert ("Invert Mask", Float) = 0
 		[HideInInspector]_Rim2BiasIntensity ("Bias Intensity", Range(0, 1)) = 0
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_Rim2MaskChannel ("Channel", Float) = 0
 		[HideInInspector] s_start_RimLight1Color ("Color & Blending--{persistent_expand:true,default_expand:true, condition_showS:_Rim2Style==0||_Rim2Style==1}", Float) = 1
 		[sRGBWarning(true)]_Rim2Tex ("Rim Texture--{reference_properties:[_Rim2TexPan, _Rim2TexUV], condition_showS:_Rim2Style==0}", 2D) = "white" { }
 		[HideInInspector][Vector2]_Rim2TexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _Rim2TexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Rim2TexUV ("UV", Int) = 0
 		_Rim2LightColor (" Color--{condition_showS:_Rim2Style==0||_Rim2Style==1,reference_property:_Rim2LightColorThemeIndex}", Color) = (1, 1, 1, 1)
 		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _Rim2LightColorThemeIndex ("", Int) = 0
 		[ThryWideEnum(Add, 0, Replace, 1, Multiply, 2, Mixed, 3, Screen, 4)] _RimPoi2BlendMode ("Blend Mode--{ condition_showS:_Rim2Style==0}", Int) = 0
@@ -390,7 +390,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HDR][Gamma]_Rim2Color ("Rim Color--{condition_showS:_Rim2Style==2,reference_property:_Rim2LightColorThemeIndex}", Color) = (0.66, 0.5, 0.48, 1)
 		[sRGBWarning(true)] _Rim2ColorTex ("Color / Mask--{condition_showS:_Rim2Style==2,reference_properties:[_Rim2ColorTexPan, _Rim2ColorTexUV, _Rim2MaskOnlyMask]}", 2D) = "white" { }
 		[HideInInspector][Vector2] _Rim2ColorTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _Rim2ColorTexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Rim2ColorTexUV ("UV", Int) = 0
 		[HideInInspector][ToggleUI]_Rim2MaskOnlyMask ("Mask Only", Float) = 0
 		_Rim2MainStrength ("Main Color Blend--{condition_showS:_Rim2Style==2}", Range(0, 1)) = 0
 		_Rim2NormalStrength ("Normal Strength--{condition_showS:_Rim2Style==2}", Range(0, 1)) = 1.0
@@ -451,7 +451,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[Space(8)]
 		[sRGBWarning][ThryRGBAPacker(ClearCoat Mask, Smoothness Map, Reflection Mask, Specular Mask, linear, false)]_ClearCoatMaps ("Packed Maps [Click to Expand]--{reference_properties:[_ClearCoatMapsPan, _ClearCoatMapsUV, _ClearCoatMapsStochastic, _ClearCoatMapsClearCoatMaskChannel, _ClearCoatMapsRoughnessChannel, _ClearCoatMapsReflectionMaskChannel, _ClearCoatMapsSpecularMaskChannel, _ClearCoatMaskInvert, _ClearCoatSmoothnessMapInvert, _ClearCoatReflectionMaskInvert, _ClearCoatSpecularMaskInvert]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_ClearCoatMapsPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)]_ClearCoatMapsUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)]_ClearCoatMapsUV ("UV", Int) = 0
 		[HideInInspector][ToggleUI]_ClearCoatMapsStochastic ("Stochastic Sampling", Float) = 0
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3, White, 4)]_ClearCoatMapsClearCoatMaskChannel ("ClearCoat Mask Channel", Float) = 0
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3, White, 4)]_ClearCoatMapsRoughnessChannel ("Smoothness Channel", Float) = 1
@@ -491,7 +491,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector][ThryToggle(POI_ENVIRORIM)]_EnableEnvironmentalRim ("Enable", Float) = 0
 		[sRGBWarning]_RimEnviroMask ("Mask--{reference_properties:[_RimEnviroMaskPan, _RimEnviroMaskUV, _RimEnviroChannel]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_RimEnviroMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)]_RimEnviroMaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)]_RimEnviroMaskUV ("UV", Int) = 0
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_RimEnviroChannel ("Channel", Float) = 0
 		_RimEnviroBlur ("Blur", Range(0, 1)) = 0.7
 		_RimEnviroWidth ("Rim Width", Range(0, 1)) = 0.45
@@ -505,12 +505,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector] s_start_StylizedReflectionMode0 ("Unity Chan Specular--{persistent_expand:true,default_expand:true, condition_showS:(_StylizedReflectionMode==0)}", Float) = 1
 		[sRGBWarning(true)][ThryTexture]_HighColor_Tex ("Specular Map--{reference_properties:[_HighColor_TexPan, _HighColor_TexUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_HighColor_TexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)]_HighColor_TexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)]_HighColor_TexUV ("UV", Int) = 0
 		_HighColor ("Tint--{reference_property:_HighColorThemeIndex}", Color) = (1, 1, 1, 1)
 		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _HighColorThemeIndex ("", Int) = 0
 		[sRGBWarning]_Set_HighColorMask ("Mask--{reference_properties:[_Set_HighColorMaskPan, _Set_HighColorMaskUV, _Set_HighColorMaskChannel, _Tweak_HighColorMaskLevel, _StylizedSpecularInvertMask]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_Set_HighColorMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)]_Set_HighColorMaskUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)]_Set_HighColorMaskUV ("UV", Int) = 0
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_Set_HighColorMaskChannel ("Channel", Float) = 1
 		[HideInInspector]_Tweak_HighColorMaskLevel ("Mask Level", Range(-1, 1)) = 0
 		[HideInInspector][ToggleUI]_StylizedSpecularInvertMask ("Invert Mask", Float) = 0
@@ -570,7 +570,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HDR][Gamma] _BacklightColor ("Color", Color) = (0.85, 0.8, 0.7, 1.0)
 		[sRGBWarning(true)] _BacklightColorTex ("Texture--{reference_properties:[_BacklightColorTexPan, _BacklightColorTexUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2] _BacklightColorTexPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _BacklightColorTexUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _BacklightColorTexUV ("UV", Int) = 0
 		_BacklightMainStrength ("Main Color Blend", Range(0, 1)) = 0
 		_BacklightNormalStrength ("Normal Strength", Range(0, 1)) = 1.0
 		_BacklightBorder ("Border", Range(0, 1)) = 0.35
@@ -605,7 +605,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_OutlineMaskChannel ("Channel", Float) = 0
 		[sRGBWarning(true)]_OutlineTexture ("Outline Texture--{reference_properties:[_OutlineTexturePan, _OutlineTextureUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_OutlineTexturePan ("Outline Texture Pan", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _OutlineTextureUV ("UV", Int) = 0
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _OutlineTextureUV ("UV", Int) = 0
 		_LineColor ("Color--{reference_property:_LineColorThemeIndex}", Color) = (1, 1, 1, 1)
 		_OutlineRimLightBlend ("Rim Light Blend--{condition_show:_OutlineExpansionMode==2}", Range(0, 1)) = 0
 		[Vector2]_OutlinePersonaDirection ("Directional Offset--{condition_show:_OutlineExpansionMode==3}", Vector) = (1, 0, 0, 0)
@@ -900,6 +900,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			#pragma skip_variants _ADDITIONAL_LIGHT_SHADOWS
 			#pragma skip_variants PROBE_VOLUMES_OFF PROBE_VOLUMES_L1 PROBE_VOLUMES_L2
 			#pragma skip_variants _SCREEN_SPACE_OCCLUSION
+			#pragma vertex vert
+			#pragma fragment frag
 			#include "UnityCG.cginc"
 			#include "AutoLight.cginc"
 			#ifndef VRC_LIGHT_VOLUMES_INCLUDED
@@ -978,7 +980,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 absDir = abs(dir);
 				float2 uv;
 				uint face;
-				 if (absDir.x >= absDir.y && absDir.x >= absDir.z) {
+				if (absDir.x >= absDir.y && absDir.x >= absDir.z) {
 					face = dir.x > 0 ? 0 : 1;
 					uv = float2((dir.x > 0 ? -dir.z : dir.z), -dir.y) * rcp(absDir.x);
 				} else if (absDir.y >= absDir.z) {
@@ -1045,7 +1047,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 normal = LV_MultiplyVectorByQuaternion(float3(0, 0, 1), rotationQuat);
 				 if (dot(normal, lightToWorldPos) < 0.0) return;
 				float sqCutoffDist = sqMaxDist - dot(lightToWorldPos, lightToWorldPos);
-				color.rgb *= saturate(sqCutoffDist / sqMaxDist) * LV_PI;
+				color.rgb *= saturate(sqCutoffDist / sqMaxDist) * LV_PI * occlusion;
 				float2 halfSize = size * 0.5f;
 				float3 xAxis = LV_MultiplyVectorByQuaternion(float3(1, 0, 0), rotationQuat);
 				float3 yAxis = cross(normal, xAxis);
@@ -1057,10 +1059,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float4 areaLightSH = LV_ProjectQuadLightIrradianceSH(worldPos, verts);
 				float lenL1 = length(areaLightSH.xyz);
 				if (lenL1 > areaLightSH.w) areaLightSH.xyz *= areaLightSH.w / lenL1;
-				L0  += areaLightSH.w * color.rgb * occlusion;
-				L1r += areaLightSH.xyz * color.r * occlusion;
-				L1g += areaLightSH.xyz * color.g * occlusion;
-				L1b += areaLightSH.xyz * color.b * occlusion;
+				L0  += areaLightSH.w * color.rgb;
+				L1r += areaLightSH.xyz * color.r;
+				L1g += areaLightSH.xyz * color.g;
+				L1b += areaLightSH.xyz * color.b;
 				count++;
 			}
 			float3 LV_PointLightAttenuation(float sqdist, float sqlightSize, float3 color, float brightnessCutoff, float sqMaxDist) {
@@ -1070,27 +1072,19 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			float LV_PointLightSolidAngle(float sqdist, float sqlightSize) {
 				return saturate(sqrt(sqdist / (sqlightSize + sqdist)));
 			}
-			void LV_SphereLight(float3 worldPos, float3 centerPos, float sqlightSize, float3 color, float occlusion, float sqMaxDist, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
-				float3 dir = centerPos - worldPos;
-				float sqdist = max(dot(dir, dir), 1e-6);
+			void LV_SphereLight(float sqdist, float3 dirN, float sqlightSize, float3 color, float occlusion, float sqMaxDist, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
 				float3 att = LV_PointLightAttenuation(sqdist, sqlightSize, color, _UdonLightBrightnessCutoff, sqMaxDist);
 				float3 l0 = att * occlusion;
-				float3 l1 = normalize(dir) * LV_PointLightSolidAngle(sqdist, sqlightSize);
+				float3 l1 = dirN * LV_PointLightSolidAngle(sqdist, sqlightSize);
 				L0 += l0;
 				L1r += l0.r * l1;
 				L1g += l0.g * l1;
 				L1b += l0.b * l1;
 				count++;
 			}
-			void LV_SphereSpotLight(float3 worldPos, float3 centerPos, float sqlightSize, float3 color, float3 lightDir, float cosAngle, float coneFalloff, float occlusion, float sqMaxDist, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
-				float3 dir = centerPos - worldPos;
-				float sqdist = max(dot(dir, dir), 1e-6);
-				float3 dirN = normalize(dir);
-				float spotMask = dot(lightDir, -dirN) - cosAngle;
-				 if (spotMask < 0) return; // Culling by spot angle
-				float3 att = LV_PointLightAttenuation(sqdist, sqlightSize, color, _UdonLightBrightnessCutoff, sqMaxDist);
+			void LV_SphereSpotLight(float sqdist, float3 dirN, float sqlightSize, float3 att, float spotMask, float cosAngle, float coneFalloff, float occlusion, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
 				float smoothedCone = LV_Smoothstep01(saturate(spotMask * coneFalloff));
-				float3 l0 = att * occlusion * smoothedCone;
+				float3 l0 = att * (occlusion * smoothedCone);
 				float3 l1 = dirN * LV_PointLightSolidAngle(sqdist, sqlightSize * saturate(1 - cosAngle));
 				L0 += l0;
 				L1r += l0.r * l1;
@@ -1098,25 +1092,35 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				L1b += l0.b * l1;
 				count++;
 			}
-			void LV_SphereSpotLightCookie(float3 worldPos, float3 centerPos, float sqlightSize, float3 color, float4 lightRot, float tanAngle, uint customId, float occlusion, float sqMaxDist, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
-				float3 dir = centerPos - worldPos;
-				float sqdist = max(dot(dir, dir), 1e-6);
-				float3 dirN = normalize(dir);
+			void LV_SphereSpotLightCookie(float sqdist, float3 dirN, float sqlightSize, float3 att, float4 lightRot, float tanAngle, uint customId, float occlusion, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
 				float3 localDir = LV_MultiplyVectorByQuaternion(-dirN, lightRot);
-				 if (localDir.z <= 0.0) return; // Culling by direction
 				float2 uv = localDir.xy * rcp(localDir.z * tanAngle);
-				 if (abs(uv.x) > 1.0 || abs(uv.y) > 1.0) return; // Culling by UV
-				float3 att = LV_PointLightAttenuation(sqdist, sqlightSize, color, _UdonLightBrightnessCutoff, sqMaxDist);
+				 if (
+				localDir.z <= 0.0 || // Culling by direction
+				abs(uv.x) > 1.0 || abs(uv.y) > 1.0 // Culling by UV
+				) return;
 				uint id = (uint) _UdonPointLightVolumeCubeCount * 5 - customId - 1;
 				float3 uvid = float3(uv * 0.5 + 0.5, id);
 				float angleSize = saturate(rsqrt(1 + tanAngle * tanAngle));
 				float4 cookie = LV_SAMPLE(_UdonPointLightVolumeTexture, uvid);
-				float3 l0 = att * occlusion * cookie.rgb * cookie.a;
+				float3 l0 = att * cookie.rgb * (cookie.a * occlusion);
 				float3 l1 = dirN * LV_PointLightSolidAngle(sqdist, sqlightSize * (1 - angleSize));
 				L0 += l0;
 				L1r += l0.r * l1;
 				L1g += l0.g * l1;
 				L1b += l0.b * l1;
+				count++;
+			}
+			void LV_SphereSpotLightAttenuationLUT(float sqdist, float3 dirN, float sqlightSize, float3 color, float spotMask, float cosAngle, uint customId, float occlusion, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
+				float dirRadius = sqdist * abs(sqlightSize);
+				float spot = 1 - saturate(spotMask * rcp(1 - cosAngle));
+				uint id = (uint) _UdonPointLightVolumeCubeCount * 5 + customId - 1;
+				float3 uvid = float3(sqrt(float2(spot, dirRadius)), id);
+				float3 att = color.rgb * LV_SAMPLE(_UdonPointLightVolumeTexture, uvid).xyz * occlusion;
+				L0 += att;
+				L1r += dirN * att.r;
+				L1g += dirN * att.g;
+				L1b += dirN * att.b;
 				count++;
 			}
 			void LV_PointLight(uint id, float3 worldPos, float4 occlusion, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
@@ -1128,63 +1132,53 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 dir = pos.xyz - worldPos;
 				float sqlen = max(dot(dir, dir), 1e-6);
 				 if (sqlen > sqrRange) return; // Early distance based culling
+				float3 dirN = dir * rsqrt(sqlen);
 				float lightOcclusion = 1;
-				 if (_UdonLightVolumeOcclusionCount != 0 && shadowId >= 0) {
-					lightOcclusion = dot(1, float4(shadowId == 0, shadowId == 1, shadowId == 2, shadowId == 3) * occlusion);
+				if (_UdonLightVolumeOcclusionCount != 0 && shadowId >= 0) {
+					lightOcclusion = dot(occlusion, float4(shadowId == 0, shadowId == 1, shadowId == 2, shadowId == 3));
 				}
 				float4 color = _UdonPointLightVolumeColor[id]; // Color, angle
+				float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
 				 if (pos.w < 0) { // It is a spot light
 					float angle = color.w;
-					float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
+					float spotMask = dot(ldir, -dirN) - angle;
+					 if(customId >= 0 && spotMask < 0) return; // Spot cone based culling
 					 if (customId > 0) {  // If it uses Attenuation LUT
-						float invSqRange = abs(pos.w); // Sign of range defines if it's point light (positive) or a spot light (negative)
-						float3 dirN = dir * rsqrt(sqlen);
-						float dirRadius = sqlen * invSqRange;
-						float spotMask = dot(ldir.xyz, -dirN) - angle;
-						if(spotMask < 0) return; // Spot cone based culling
-						float spot = 1 - saturate(spotMask * rcp(1 - angle));
-						uint id = (uint) _UdonPointLightVolumeCubeCount * 5 + customId - 1;
-						float3 uvid = float3(sqrt(float2(spot, dirRadius)), id);
-						float3 att = color.rgb * LV_SAMPLE(_UdonPointLightVolumeTexture, uvid).xyz;
-						L0 += att * lightOcclusion;
-						L1r += dirN * att.r * lightOcclusion;
-						L1g += dirN * att.g * lightOcclusion;
-						L1b += dirN * att.b * lightOcclusion;
-						count++;
-					} else if (customId < 0) { // If uses cookie
-						LV_SphereSpotLightCookie(worldPos, pos.xyz, -pos.w, color.rgb, ldir, angle, customId, lightOcclusion, sqrRange, L0, L1r, L1g, L1b, count);
+						LV_SphereSpotLightAttenuationLUT(sqlen, dirN, -pos.w, color.rgb, spotMask, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
 					} else { // If it uses default parametric attenuation
-						LV_SphereSpotLight(worldPos, pos.xyz, -pos.w, color.rgb, ldir.xyz, angle, ldir.w, lightOcclusion, sqrRange, L0, L1r, L1g, L1b, count);
+						float3 att = LV_PointLightAttenuation(sqlen, -pos.w, color, _UdonLightBrightnessCutoff, sqrRange);
+						 if (customId < 0) { // If uses cookie
+							LV_SphereSpotLightCookie(sqlen, dirN, -pos.w, att, ldir, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
+						} else { // If it uses default parametric attenuation
+							LV_SphereSpotLight(sqlen, dirN, -pos.w, att, spotMask, angle, ldir.w, lightOcclusion, L0, L1r, L1g, L1b, count);
+						}
 					}
 				} else if (color.w <= 1.5f) { // It is a point light
-					 if (customId < 0) { // If it uses a cubemap
-						float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
-						float3 dirN = dir * rsqrt(sqlen);
-						uint id = -customId - 1; // Cubemap ID starts from zero and should not take in count texture array slices count.
-						float3 cubeColor = LV_SampleCubemapArray(id, LV_MultiplyVectorByQuaternion(dirN, ldir)).xyz;
+					 if (customId > 0) { // Using LUT
+						float invSqRange = abs(pos.w); // Sign of range defines if it's point light (positive) or a spot light (negative)
+						float dirRadius = sqlen * invSqRange;
+						uint id = (uint) _UdonPointLightVolumeCubeCount * 5 + customId;
+						float3 uvid = float3(sqrt(float2(0, dirRadius)), id);
+						float3 att = color.rgb * LV_SAMPLE(_UdonPointLightVolumeTexture, uvid).xyz * lightOcclusion;
+						L0 += att;
+						L1r += dirN * att.r;
+						L1g += dirN * att.g;
+						L1b += dirN * att.b;
+						count++;
+					} else { // If it uses default parametric attenuation
 						float3 l0 = 0, l1r = 0, l1g = 0, l1b = 0;
-						LV_SphereLight(worldPos, pos.xyz, pos.w, color.rgb, lightOcclusion, sqrRange, l0, l1r, l1g, l1b, count);
+						LV_SphereLight(sqlen, dirN, pos.w, color.rgb, lightOcclusion, sqrRange, l0, l1r, l1g, l1b, count);
+						float3 cubeColor = 1;
+						 if (customId < 0) { // If it uses a cubemap
+							uint id = -customId - 1; // Cubemap ID starts from zero and should not take in count texture array slices count.
+							cubeColor = LV_SampleCubemapArray(id, LV_MultiplyVectorByQuaternion(dirN, ldir)).xyz;
+						}
 						L0 += l0 * cubeColor;
 						L1r += l1r * cubeColor.r;
 						L1g += l1g * cubeColor.g;
 						L1b += l1b * cubeColor.b;
-					} else if (customId > 0) { // Using LUT
-						float invSqRange = abs(pos.w); // Sign of range defines if it's point light (positive) or a spot light (negative)
-						float3 dirN = dir * rsqrt(sqlen);
-						float dirRadius = sqlen * invSqRange;
-						uint id = (uint) _UdonPointLightVolumeCubeCount * 5 + customId;
-						float3 uvid = float3(sqrt(float2(0, dirRadius)), id);
-						float3 att = color.rgb * LV_SAMPLE(_UdonPointLightVolumeTexture, uvid).xyz;
-						L0 += att * lightOcclusion;
-						L1r += dirN * att.r * lightOcclusion;
-						L1g += dirN * att.g * lightOcclusion;
-						L1b += dirN * att.b * lightOcclusion;
-						count++;
-					} else { // If it uses default parametric attenuation
-						LV_SphereLight(worldPos, pos.xyz, pos.w, color.rgb, lightOcclusion, sqrRange, L0, L1r, L1g, L1b, count);
 					}
 				} else { // It is an area light
-					float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
 					LV_QuadLight(worldPos, pos.xyz, ldir, float2(pos.w, color.w - 2.0f), color.rgb, sqrRange, lightOcclusion, L0, L1r, L1g, L1b, count);
 				}
 			}
@@ -1261,12 +1255,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				 if (pointCount == 0) return;
 				uint maxOverdraw = min((uint) _UdonLightVolumeAdditiveMaxOverdraw, VRCLV_MAX_LIGHTS_COUNT);
 				uint pcount = 0; // Point lights counter
-				[loop] for (uint pid = 0; pid < VRCLV_MAX_LIGHTS_COUNT; pid++) {
-					 if (pid < pointCount && pcount < maxOverdraw) {
-						LV_PointLight(pid, worldPos, occlusion, L0, L1r, L1g, L1b, pcount);
-					} else {
-						return; // Stop if we reached the end of lights or max overdraw count
-					}
+				[loop] for (uint pid = 0; pid < pointCount && pcount < maxOverdraw; pid++) {
+					LV_PointLight(pid, worldPos, occlusion, L0, L1r, L1g, L1b, pcount);
 				}
 			}
 			void LV_LightVolumeSH(float3 worldPos, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, out float4 occlusion) {
@@ -1288,8 +1278,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				bool isNoA = true;
 				bool isNoB = true;
 				uint addVolumesCount = 0;
-				[loop] for (uint id = 0; id < VRCLV_MAX_VOLUMES_COUNT; id++) {
-					 if (id >= volumesCount) break;
+				[loop] for (uint id = 0; id < volumesCount; id++) {
 					localUVW = LV_LocalFromVolume(id, worldPos);
 					 if (LV_PointLocalAABB(localUVW)) { // Intersection test
 						 if (id < additiveCount) { // Sampling additive volumes
@@ -1369,8 +1358,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				bool isNoB = true;
 				uint addVolumesCount = 0;
 				uint count = min(_UdonLightVolumeOcclusionCount == 0 ? additiveCount : volumesCount, VRCLV_MAX_VOLUMES_COUNT); // Only use all volumes if occlusion volumes are enabled
-				[loop] for (uint id = 0; id < VRCLV_MAX_VOLUMES_COUNT; id++) {
-					 if(id >= count) break;
+				[loop] for (uint id = 0; id < count; id++) {
 					localUVW = LV_LocalFromVolume(id, worldPos);
 					 if (LV_PointLocalAABB(localUVW)) { // Intersection test
 						 if (id < additiveCount) { // Sampling additive volumes
@@ -1494,8 +1482,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				return _UdonLightVolumeVersion == 0 ? _UdonLightVolumeEnabled : _UdonLightVolumeVersion;
 			}
 			#endif
-			#pragma vertex vert
-			#pragma fragment frag
 			SamplerState sampler_linear_clamp;
 			SamplerState sampler_linear_repeat;
 			SamplerState sampler_trilinear_clamp;
@@ -2160,7 +2146,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : SV_VertexID;
+				uint vertexId : TEXCOORD4;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -2192,7 +2178,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float isFrontFace;
 				float4 vertexColor;
 				float4 lightmapUV;
-				float2 uv[9];
+				float2 uv[10];
 				float2 parallaxUV;
 				float2 dx;
 				float2 dy;
@@ -2232,6 +2218,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			struct PoiLight
 			{
 				float3 direction;
+				float nDotVCentered;
 				float attenuation;
 				float attenuationStrength;
 				float3 directColor;
@@ -3752,13 +3739,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 					#endif
 				}
 			}
-			VertexOut vert(
-			#ifndef POI_TESSELLATED
-			appdata v
-			#else
-			tessAppData v
-			#endif
-			)
+			VertexOut vert(appdata v)
 			{
 				UNITY_SETUP_INSTANCE_ID(v);
 				VertexOut o;
@@ -6008,6 +5989,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				poiMesh.uv[5] = calculateWorldUV(poiMesh);
 				poiMesh.uv[6] = calculatePolarCoordinate(poiMesh);
 				poiMesh.uv[8] = calculatelocalUV(poiMesh);
+				float3 worldViewUp = normalize(float3(0, 1, 0) - poiCam.viewDir * dot(poiCam.viewDir, float3(0, 1, 0)));
+				float3 worldViewRight = normalize(cross(poiCam.viewDir, worldViewUp));
+				poiMesh.uv[9] = float2(dot(worldViewRight, poiMesh.normals[0]), dot(worldViewUp, poiMesh.normals[0])) * 0.5 + 0.5;
 				poiMods.globalMask[0] = 1;
 				poiMods.globalMask[1] = 1;
 				poiMods.globalMask[2] = 1;
@@ -6225,7 +6209,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float lightMapMode = 0.0;
 				if (0.0 == 0)
 				{
-					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + 0.2 * PoiSHAr.xyz + 0.7 * PoiSHAg.xyz + 0.1 * PoiSHAb.xyz;
+					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + 0.2 * PoiSHAr.xyz + 0.333333 * PoiSHAg.xyz + 0.333333 * PoiSHAb.xyz + 0.333333;
 				}
 				if (0.0 == 1 || 0.0 == 2)
 				{
@@ -6239,7 +6223,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 					}
 					if (lightMapMode == 0)
 					{
-						lightMapMode == 1;
+						lightMapMode = 1;
 					}
 				}
 				if (0.0 == 3) // UTS
@@ -6295,6 +6279,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				poiLight.nDotLSaturated = saturate(poiLight.nDotL);
 				poiLight.nDotLNormalized = (poiLight.nDotL + 1) * 0.5;
 				poiLight.nDotV = abs(dot(poiMesh.normals[1], poiCam.viewDir));
+				poiLight.nDotVCentered = abs(dot(poiMesh.normals[1], normalize(getCameraPosition() - i.worldPos.xyz)));
 				poiLight.vertexNDotV = abs(dot(poiMesh.normals[0], poiCam.viewDir));
 				poiLight.nDotH = dot(poiMesh.normals[1], poiLight.halfDir);
 				poiLight.vertexNDotH = max(0.00001, dot(poiMesh.normals[0], poiLight.halfDir));
@@ -6744,10 +6729,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			#pragma skip_variants _ADDITIONAL_LIGHT_SHADOWS
 			#pragma skip_variants PROBE_VOLUMES_OFF PROBE_VOLUMES_L1 PROBE_VOLUMES_L2
 			#pragma skip_variants _SCREEN_SPACE_OCCLUSION
-			#include "UnityCG.cginc"
-			#include "AutoLight.cginc"
 			#pragma vertex vert
 			#pragma fragment frag
+			#include "UnityCG.cginc"
+			#include "AutoLight.cginc"
 			SamplerState sampler_linear_clamp;
 			SamplerState sampler_linear_repeat;
 			SamplerState sampler_trilinear_clamp;
@@ -7383,7 +7368,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : SV_VertexID;
+				uint vertexId : TEXCOORD4;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -7415,7 +7400,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float isFrontFace;
 				float4 vertexColor;
 				float4 lightmapUV;
-				float2 uv[9];
+				float2 uv[10];
 				float2 parallaxUV;
 				float2 dx;
 				float2 dy;
@@ -7455,6 +7440,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			struct PoiLight
 			{
 				float3 direction;
+				float nDotVCentered;
 				float attenuation;
 				float attenuationStrength;
 				float3 directColor;
@@ -8975,13 +8961,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 					#endif
 				}
 			}
-			VertexOut vert(
-			#ifndef POI_TESSELLATED
-			appdata v
-			#else
-			tessAppData v
-			#endif
-			)
+			VertexOut vert(appdata v)
 			{
 				UNITY_SETUP_INSTANCE_ID(v);
 				VertexOut o;
@@ -10358,6 +10338,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				poiMesh.uv[5] = calculateWorldUV(poiMesh);
 				poiMesh.uv[6] = calculatePolarCoordinate(poiMesh);
 				poiMesh.uv[8] = calculatelocalUV(poiMesh);
+				float3 worldViewUp = normalize(float3(0, 1, 0) - poiCam.viewDir * dot(poiCam.viewDir, float3(0, 1, 0)));
+				float3 worldViewRight = normalize(cross(poiCam.viewDir, worldViewUp));
+				poiMesh.uv[9] = float2(dot(worldViewRight, poiMesh.normals[0]), dot(worldViewUp, poiMesh.normals[0])) * 0.5 + 0.5;
 				poiMods.globalMask[0] = 1;
 				poiMods.globalMask[1] = 1;
 				poiMods.globalMask[2] = 1;
@@ -10575,7 +10558,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float lightMapMode = 0.0;
 				if (0.0 == 0)
 				{
-					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + 0.2 * PoiSHAr.xyz + 0.7 * PoiSHAg.xyz + 0.1 * PoiSHAb.xyz;
+					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + 0.2 * PoiSHAr.xyz + 0.333333 * PoiSHAg.xyz + 0.333333 * PoiSHAb.xyz + 0.333333;
 				}
 				if (0.0 == 1 || 0.0 == 2)
 				{
@@ -10589,7 +10572,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 					}
 					if (lightMapMode == 0)
 					{
-						lightMapMode == 1;
+						lightMapMode = 1;
 					}
 				}
 				if (0.0 == 3) // UTS
@@ -10645,6 +10628,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				poiLight.nDotLSaturated = saturate(poiLight.nDotL);
 				poiLight.nDotLNormalized = (poiLight.nDotL + 1) * 0.5;
 				poiLight.nDotV = abs(dot(poiMesh.normals[1], poiCam.viewDir));
+				poiLight.nDotVCentered = abs(dot(poiMesh.normals[1], normalize(getCameraPosition() - i.worldPos.xyz)));
 				poiLight.vertexNDotV = abs(dot(poiMesh.normals[0], poiCam.viewDir));
 				poiLight.nDotH = dot(poiMesh.normals[1], poiLight.halfDir);
 				poiLight.vertexNDotH = max(0.00001, dot(poiMesh.normals[0], poiLight.halfDir));
@@ -11041,6 +11025,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			#pragma skip_variants _ADDITIONAL_LIGHT_SHADOWS
 			#pragma skip_variants PROBE_VOLUMES_OFF PROBE_VOLUMES_L1 PROBE_VOLUMES_L2
 			#pragma skip_variants _SCREEN_SPACE_OCCLUSION
+			#pragma vertex vert
+			#pragma fragment frag
 			#include "UnityCG.cginc"
 			#include "AutoLight.cginc"
 			#ifndef VRC_LIGHT_VOLUMES_INCLUDED
@@ -11119,7 +11105,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 absDir = abs(dir);
 				float2 uv;
 				uint face;
-				 if (absDir.x >= absDir.y && absDir.x >= absDir.z) {
+				if (absDir.x >= absDir.y && absDir.x >= absDir.z) {
 					face = dir.x > 0 ? 0 : 1;
 					uv = float2((dir.x > 0 ? -dir.z : dir.z), -dir.y) * rcp(absDir.x);
 				} else if (absDir.y >= absDir.z) {
@@ -11186,7 +11172,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 normal = LV_MultiplyVectorByQuaternion(float3(0, 0, 1), rotationQuat);
 				 if (dot(normal, lightToWorldPos) < 0.0) return;
 				float sqCutoffDist = sqMaxDist - dot(lightToWorldPos, lightToWorldPos);
-				color.rgb *= saturate(sqCutoffDist / sqMaxDist) * LV_PI;
+				color.rgb *= saturate(sqCutoffDist / sqMaxDist) * LV_PI * occlusion;
 				float2 halfSize = size * 0.5f;
 				float3 xAxis = LV_MultiplyVectorByQuaternion(float3(1, 0, 0), rotationQuat);
 				float3 yAxis = cross(normal, xAxis);
@@ -11198,10 +11184,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float4 areaLightSH = LV_ProjectQuadLightIrradianceSH(worldPos, verts);
 				float lenL1 = length(areaLightSH.xyz);
 				if (lenL1 > areaLightSH.w) areaLightSH.xyz *= areaLightSH.w / lenL1;
-				L0  += areaLightSH.w * color.rgb * occlusion;
-				L1r += areaLightSH.xyz * color.r * occlusion;
-				L1g += areaLightSH.xyz * color.g * occlusion;
-				L1b += areaLightSH.xyz * color.b * occlusion;
+				L0  += areaLightSH.w * color.rgb;
+				L1r += areaLightSH.xyz * color.r;
+				L1g += areaLightSH.xyz * color.g;
+				L1b += areaLightSH.xyz * color.b;
 				count++;
 			}
 			float3 LV_PointLightAttenuation(float sqdist, float sqlightSize, float3 color, float brightnessCutoff, float sqMaxDist) {
@@ -11211,27 +11197,19 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			float LV_PointLightSolidAngle(float sqdist, float sqlightSize) {
 				return saturate(sqrt(sqdist / (sqlightSize + sqdist)));
 			}
-			void LV_SphereLight(float3 worldPos, float3 centerPos, float sqlightSize, float3 color, float occlusion, float sqMaxDist, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
-				float3 dir = centerPos - worldPos;
-				float sqdist = max(dot(dir, dir), 1e-6);
+			void LV_SphereLight(float sqdist, float3 dirN, float sqlightSize, float3 color, float occlusion, float sqMaxDist, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
 				float3 att = LV_PointLightAttenuation(sqdist, sqlightSize, color, _UdonLightBrightnessCutoff, sqMaxDist);
 				float3 l0 = att * occlusion;
-				float3 l1 = normalize(dir) * LV_PointLightSolidAngle(sqdist, sqlightSize);
+				float3 l1 = dirN * LV_PointLightSolidAngle(sqdist, sqlightSize);
 				L0 += l0;
 				L1r += l0.r * l1;
 				L1g += l0.g * l1;
 				L1b += l0.b * l1;
 				count++;
 			}
-			void LV_SphereSpotLight(float3 worldPos, float3 centerPos, float sqlightSize, float3 color, float3 lightDir, float cosAngle, float coneFalloff, float occlusion, float sqMaxDist, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
-				float3 dir = centerPos - worldPos;
-				float sqdist = max(dot(dir, dir), 1e-6);
-				float3 dirN = normalize(dir);
-				float spotMask = dot(lightDir, -dirN) - cosAngle;
-				 if (spotMask < 0) return; // Culling by spot angle
-				float3 att = LV_PointLightAttenuation(sqdist, sqlightSize, color, _UdonLightBrightnessCutoff, sqMaxDist);
+			void LV_SphereSpotLight(float sqdist, float3 dirN, float sqlightSize, float3 att, float spotMask, float cosAngle, float coneFalloff, float occlusion, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
 				float smoothedCone = LV_Smoothstep01(saturate(spotMask * coneFalloff));
-				float3 l0 = att * occlusion * smoothedCone;
+				float3 l0 = att * (occlusion * smoothedCone);
 				float3 l1 = dirN * LV_PointLightSolidAngle(sqdist, sqlightSize * saturate(1 - cosAngle));
 				L0 += l0;
 				L1r += l0.r * l1;
@@ -11239,25 +11217,35 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				L1b += l0.b * l1;
 				count++;
 			}
-			void LV_SphereSpotLightCookie(float3 worldPos, float3 centerPos, float sqlightSize, float3 color, float4 lightRot, float tanAngle, uint customId, float occlusion, float sqMaxDist, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
-				float3 dir = centerPos - worldPos;
-				float sqdist = max(dot(dir, dir), 1e-6);
-				float3 dirN = normalize(dir);
+			void LV_SphereSpotLightCookie(float sqdist, float3 dirN, float sqlightSize, float3 att, float4 lightRot, float tanAngle, uint customId, float occlusion, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
 				float3 localDir = LV_MultiplyVectorByQuaternion(-dirN, lightRot);
-				 if (localDir.z <= 0.0) return; // Culling by direction
 				float2 uv = localDir.xy * rcp(localDir.z * tanAngle);
-				 if (abs(uv.x) > 1.0 || abs(uv.y) > 1.0) return; // Culling by UV
-				float3 att = LV_PointLightAttenuation(sqdist, sqlightSize, color, _UdonLightBrightnessCutoff, sqMaxDist);
+				 if (
+				localDir.z <= 0.0 || // Culling by direction
+				abs(uv.x) > 1.0 || abs(uv.y) > 1.0 // Culling by UV
+				) return;
 				uint id = (uint) _UdonPointLightVolumeCubeCount * 5 - customId - 1;
 				float3 uvid = float3(uv * 0.5 + 0.5, id);
 				float angleSize = saturate(rsqrt(1 + tanAngle * tanAngle));
 				float4 cookie = LV_SAMPLE(_UdonPointLightVolumeTexture, uvid);
-				float3 l0 = att * occlusion * cookie.rgb * cookie.a;
+				float3 l0 = att * cookie.rgb * (cookie.a * occlusion);
 				float3 l1 = dirN * LV_PointLightSolidAngle(sqdist, sqlightSize * (1 - angleSize));
 				L0 += l0;
 				L1r += l0.r * l1;
 				L1g += l0.g * l1;
 				L1b += l0.b * l1;
+				count++;
+			}
+			void LV_SphereSpotLightAttenuationLUT(float sqdist, float3 dirN, float sqlightSize, float3 color, float spotMask, float cosAngle, uint customId, float occlusion, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
+				float dirRadius = sqdist * abs(sqlightSize);
+				float spot = 1 - saturate(spotMask * rcp(1 - cosAngle));
+				uint id = (uint) _UdonPointLightVolumeCubeCount * 5 + customId - 1;
+				float3 uvid = float3(sqrt(float2(spot, dirRadius)), id);
+				float3 att = color.rgb * LV_SAMPLE(_UdonPointLightVolumeTexture, uvid).xyz * occlusion;
+				L0 += att;
+				L1r += dirN * att.r;
+				L1g += dirN * att.g;
+				L1b += dirN * att.b;
 				count++;
 			}
 			void LV_PointLight(uint id, float3 worldPos, float4 occlusion, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, inout uint count) {
@@ -11269,63 +11257,53 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 dir = pos.xyz - worldPos;
 				float sqlen = max(dot(dir, dir), 1e-6);
 				 if (sqlen > sqrRange) return; // Early distance based culling
+				float3 dirN = dir * rsqrt(sqlen);
 				float lightOcclusion = 1;
-				 if (_UdonLightVolumeOcclusionCount != 0 && shadowId >= 0) {
-					lightOcclusion = dot(1, float4(shadowId == 0, shadowId == 1, shadowId == 2, shadowId == 3) * occlusion);
+				if (_UdonLightVolumeOcclusionCount != 0 && shadowId >= 0) {
+					lightOcclusion = dot(occlusion, float4(shadowId == 0, shadowId == 1, shadowId == 2, shadowId == 3));
 				}
 				float4 color = _UdonPointLightVolumeColor[id]; // Color, angle
+				float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
 				 if (pos.w < 0) { // It is a spot light
 					float angle = color.w;
-					float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
+					float spotMask = dot(ldir, -dirN) - angle;
+					 if(customId >= 0 && spotMask < 0) return; // Spot cone based culling
 					 if (customId > 0) {  // If it uses Attenuation LUT
-						float invSqRange = abs(pos.w); // Sign of range defines if it's point light (positive) or a spot light (negative)
-						float3 dirN = dir * rsqrt(sqlen);
-						float dirRadius = sqlen * invSqRange;
-						float spotMask = dot(ldir.xyz, -dirN) - angle;
-						if(spotMask < 0) return; // Spot cone based culling
-						float spot = 1 - saturate(spotMask * rcp(1 - angle));
-						uint id = (uint) _UdonPointLightVolumeCubeCount * 5 + customId - 1;
-						float3 uvid = float3(sqrt(float2(spot, dirRadius)), id);
-						float3 att = color.rgb * LV_SAMPLE(_UdonPointLightVolumeTexture, uvid).xyz;
-						L0 += att * lightOcclusion;
-						L1r += dirN * att.r * lightOcclusion;
-						L1g += dirN * att.g * lightOcclusion;
-						L1b += dirN * att.b * lightOcclusion;
-						count++;
-					} else if (customId < 0) { // If uses cookie
-						LV_SphereSpotLightCookie(worldPos, pos.xyz, -pos.w, color.rgb, ldir, angle, customId, lightOcclusion, sqrRange, L0, L1r, L1g, L1b, count);
+						LV_SphereSpotLightAttenuationLUT(sqlen, dirN, -pos.w, color.rgb, spotMask, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
 					} else { // If it uses default parametric attenuation
-						LV_SphereSpotLight(worldPos, pos.xyz, -pos.w, color.rgb, ldir.xyz, angle, ldir.w, lightOcclusion, sqrRange, L0, L1r, L1g, L1b, count);
+						float3 att = LV_PointLightAttenuation(sqlen, -pos.w, color, _UdonLightBrightnessCutoff, sqrRange);
+						 if (customId < 0) { // If uses cookie
+							LV_SphereSpotLightCookie(sqlen, dirN, -pos.w, att, ldir, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
+						} else { // If it uses default parametric attenuation
+							LV_SphereSpotLight(sqlen, dirN, -pos.w, att, spotMask, angle, ldir.w, lightOcclusion, L0, L1r, L1g, L1b, count);
+						}
 					}
 				} else if (color.w <= 1.5f) { // It is a point light
-					 if (customId < 0) { // If it uses a cubemap
-						float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
-						float3 dirN = dir * rsqrt(sqlen);
-						uint id = -customId - 1; // Cubemap ID starts from zero and should not take in count texture array slices count.
-						float3 cubeColor = LV_SampleCubemapArray(id, LV_MultiplyVectorByQuaternion(dirN, ldir)).xyz;
+					 if (customId > 0) { // Using LUT
+						float invSqRange = abs(pos.w); // Sign of range defines if it's point light (positive) or a spot light (negative)
+						float dirRadius = sqlen * invSqRange;
+						uint id = (uint) _UdonPointLightVolumeCubeCount * 5 + customId;
+						float3 uvid = float3(sqrt(float2(0, dirRadius)), id);
+						float3 att = color.rgb * LV_SAMPLE(_UdonPointLightVolumeTexture, uvid).xyz * lightOcclusion;
+						L0 += att;
+						L1r += dirN * att.r;
+						L1g += dirN * att.g;
+						L1b += dirN * att.b;
+						count++;
+					} else { // If it uses default parametric attenuation
 						float3 l0 = 0, l1r = 0, l1g = 0, l1b = 0;
-						LV_SphereLight(worldPos, pos.xyz, pos.w, color.rgb, lightOcclusion, sqrRange, l0, l1r, l1g, l1b, count);
+						LV_SphereLight(sqlen, dirN, pos.w, color.rgb, lightOcclusion, sqrRange, l0, l1r, l1g, l1b, count);
+						float3 cubeColor = 1;
+						 if (customId < 0) { // If it uses a cubemap
+							uint id = -customId - 1; // Cubemap ID starts from zero and should not take in count texture array slices count.
+							cubeColor = LV_SampleCubemapArray(id, LV_MultiplyVectorByQuaternion(dirN, ldir)).xyz;
+						}
 						L0 += l0 * cubeColor;
 						L1r += l1r * cubeColor.r;
 						L1g += l1g * cubeColor.g;
 						L1b += l1b * cubeColor.b;
-					} else if (customId > 0) { // Using LUT
-						float invSqRange = abs(pos.w); // Sign of range defines if it's point light (positive) or a spot light (negative)
-						float3 dirN = dir * rsqrt(sqlen);
-						float dirRadius = sqlen * invSqRange;
-						uint id = (uint) _UdonPointLightVolumeCubeCount * 5 + customId;
-						float3 uvid = float3(sqrt(float2(0, dirRadius)), id);
-						float3 att = color.rgb * LV_SAMPLE(_UdonPointLightVolumeTexture, uvid).xyz;
-						L0 += att * lightOcclusion;
-						L1r += dirN * att.r * lightOcclusion;
-						L1g += dirN * att.g * lightOcclusion;
-						L1b += dirN * att.b * lightOcclusion;
-						count++;
-					} else { // If it uses default parametric attenuation
-						LV_SphereLight(worldPos, pos.xyz, pos.w, color.rgb, lightOcclusion, sqrRange, L0, L1r, L1g, L1b, count);
 					}
 				} else { // It is an area light
-					float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
 					LV_QuadLight(worldPos, pos.xyz, ldir, float2(pos.w, color.w - 2.0f), color.rgb, sqrRange, lightOcclusion, L0, L1r, L1g, L1b, count);
 				}
 			}
@@ -11402,12 +11380,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				 if (pointCount == 0) return;
 				uint maxOverdraw = min((uint) _UdonLightVolumeAdditiveMaxOverdraw, VRCLV_MAX_LIGHTS_COUNT);
 				uint pcount = 0; // Point lights counter
-				[loop] for (uint pid = 0; pid < VRCLV_MAX_LIGHTS_COUNT; pid++) {
-					 if (pid < pointCount && pcount < maxOverdraw) {
-						LV_PointLight(pid, worldPos, occlusion, L0, L1r, L1g, L1b, pcount);
-					} else {
-						return; // Stop if we reached the end of lights or max overdraw count
-					}
+				[loop] for (uint pid = 0; pid < pointCount && pcount < maxOverdraw; pid++) {
+					LV_PointLight(pid, worldPos, occlusion, L0, L1r, L1g, L1b, pcount);
 				}
 			}
 			void LV_LightVolumeSH(float3 worldPos, inout float3 L0, inout float3 L1r, inout float3 L1g, inout float3 L1b, out float4 occlusion) {
@@ -11429,8 +11403,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				bool isNoA = true;
 				bool isNoB = true;
 				uint addVolumesCount = 0;
-				[loop] for (uint id = 0; id < VRCLV_MAX_VOLUMES_COUNT; id++) {
-					 if (id >= volumesCount) break;
+				[loop] for (uint id = 0; id < volumesCount; id++) {
 					localUVW = LV_LocalFromVolume(id, worldPos);
 					 if (LV_PointLocalAABB(localUVW)) { // Intersection test
 						 if (id < additiveCount) { // Sampling additive volumes
@@ -11510,8 +11483,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				bool isNoB = true;
 				uint addVolumesCount = 0;
 				uint count = min(_UdonLightVolumeOcclusionCount == 0 ? additiveCount : volumesCount, VRCLV_MAX_VOLUMES_COUNT); // Only use all volumes if occlusion volumes are enabled
-				[loop] for (uint id = 0; id < VRCLV_MAX_VOLUMES_COUNT; id++) {
-					 if(id >= count) break;
+				[loop] for (uint id = 0; id < count; id++) {
 					localUVW = LV_LocalFromVolume(id, worldPos);
 					 if (LV_PointLocalAABB(localUVW)) { // Intersection test
 						 if (id < additiveCount) { // Sampling additive volumes
@@ -11635,8 +11607,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				return _UdonLightVolumeVersion == 0 ? _UdonLightVolumeEnabled : _UdonLightVolumeVersion;
 			}
 			#endif
-			#pragma vertex vert
-			#pragma fragment frag
 			SamplerState sampler_linear_clamp;
 			SamplerState sampler_linear_repeat;
 			SamplerState sampler_trilinear_clamp;
@@ -12085,7 +12055,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : SV_VertexID;
+				uint vertexId : TEXCOORD4;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -12117,7 +12087,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float isFrontFace;
 				float4 vertexColor;
 				float4 lightmapUV;
-				float2 uv[9];
+				float2 uv[10];
 				float2 parallaxUV;
 				float2 dx;
 				float2 dy;
@@ -12157,6 +12127,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			struct PoiLight
 			{
 				float3 direction;
+				float nDotVCentered;
 				float attenuation;
 				float attenuationStrength;
 				float3 directColor;
@@ -13677,13 +13648,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 					#endif
 				}
 			}
-			VertexOut vert(
-			#ifndef POI_TESSELLATED
-			appdata v
-			#else
-			tessAppData v
-			#endif
-			)
+			VertexOut vert(appdata v)
 			{
 				UNITY_SETUP_INSTANCE_ID(v);
 				VertexOut o;
@@ -14380,6 +14345,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				poiMesh.uv[5] = calculateWorldUV(poiMesh);
 				poiMesh.uv[6] = calculatePolarCoordinate(poiMesh);
 				poiMesh.uv[8] = calculatelocalUV(poiMesh);
+				float3 worldViewUp = normalize(float3(0, 1, 0) - poiCam.viewDir * dot(poiCam.viewDir, float3(0, 1, 0)));
+				float3 worldViewRight = normalize(cross(poiCam.viewDir, worldViewUp));
+				poiMesh.uv[9] = float2(dot(worldViewRight, poiMesh.normals[0]), dot(worldViewUp, poiMesh.normals[0])) * 0.5 + 0.5;
 				poiMods.globalMask[0] = 1;
 				poiMods.globalMask[1] = 1;
 				poiMods.globalMask[2] = 1;
@@ -14597,7 +14565,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float lightMapMode = 0.0;
 				if (0.0 == 0)
 				{
-					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + 0.2 * PoiSHAr.xyz + 0.7 * PoiSHAg.xyz + 0.1 * PoiSHAb.xyz;
+					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + 0.2 * PoiSHAr.xyz + 0.333333 * PoiSHAg.xyz + 0.333333 * PoiSHAb.xyz + 0.333333;
 				}
 				if (0.0 == 1 || 0.0 == 2)
 				{
@@ -14611,7 +14579,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 					}
 					if (lightMapMode == 0)
 					{
-						lightMapMode == 1;
+						lightMapMode = 1;
 					}
 				}
 				if (0.0 == 3) // UTS
@@ -14667,6 +14635,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				poiLight.nDotLSaturated = saturate(poiLight.nDotL);
 				poiLight.nDotLNormalized = (poiLight.nDotL + 1) * 0.5;
 				poiLight.nDotV = abs(dot(poiMesh.normals[1], poiCam.viewDir));
+				poiLight.nDotVCentered = abs(dot(poiMesh.normals[1], normalize(getCameraPosition() - i.worldPos.xyz)));
 				poiLight.vertexNDotV = abs(dot(poiMesh.normals[0], poiCam.viewDir));
 				poiLight.nDotH = dot(poiMesh.normals[1], poiLight.halfDir);
 				poiLight.vertexNDotH = max(0.00001, dot(poiMesh.normals[0], poiLight.halfDir));
@@ -14957,10 +14926,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			#pragma skip_variants _ADDITIONAL_LIGHT_SHADOWS
 			#pragma skip_variants PROBE_VOLUMES_OFF PROBE_VOLUMES_L1 PROBE_VOLUMES_L2
 			#pragma skip_variants _SCREEN_SPACE_OCCLUSION
-			#include "UnityCG.cginc"
-			#include "AutoLight.cginc"
 			#pragma vertex vert
 			#pragma fragment frag
+			#include "UnityCG.cginc"
+			#include "AutoLight.cginc"
 			SamplerState sampler_linear_clamp;
 			SamplerState sampler_linear_repeat;
 			SamplerState sampler_trilinear_clamp;
@@ -15170,7 +15139,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : SV_VertexID;
+				uint vertexId : TEXCOORD4;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -15202,7 +15171,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float isFrontFace;
 				float4 vertexColor;
 				float4 lightmapUV;
-				float2 uv[9];
+				float2 uv[10];
 				float2 parallaxUV;
 				float2 dx;
 				float2 dy;
@@ -15242,6 +15211,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			struct PoiLight
 			{
 				float3 direction;
+				float nDotVCentered;
 				float attenuation;
 				float attenuationStrength;
 				float3 directColor;
@@ -16762,13 +16732,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 					#endif
 				}
 			}
-			VertexOut vert(
-			#ifndef POI_TESSELLATED
-			appdata v
-			#else
-			tessAppData v
-			#endif
-			)
+			VertexOut vert(appdata v)
 			{
 				UNITY_SETUP_INSTANCE_ID(v);
 				VertexOut o;
@@ -17147,6 +17111,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				poiMesh.uv[5] = calculateWorldUV(poiMesh);
 				poiMesh.uv[6] = calculatePolarCoordinate(poiMesh);
 				poiMesh.uv[8] = calculatelocalUV(poiMesh);
+				float3 worldViewUp = normalize(float3(0, 1, 0) - poiCam.viewDir * dot(poiCam.viewDir, float3(0, 1, 0)));
+				float3 worldViewRight = normalize(cross(poiCam.viewDir, worldViewUp));
+				poiMesh.uv[9] = float2(dot(worldViewRight, poiMesh.normals[0]), dot(worldViewUp, poiMesh.normals[0])) * 0.5 + 0.5;
 				poiMods.globalMask[0] = 1;
 				poiMods.globalMask[1] = 1;
 				poiMods.globalMask[2] = 1;

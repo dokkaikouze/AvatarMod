@@ -3775,7 +3775,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 worldOffset = float3(0, 0, 0);
 				#ifdef POI_PASS_OUTLINE
 				float4 outlineMaskTex = tex2Dlod(_OutlineMask, float4(poiUV(vertexUV(v, 0.0), float4(1,1,0,0)) + _Time.x * float4(0,0,0,0), 0, 0));
-				float outlineMask = outlineMaskTex[0.0];
+				float outlineMask = outlineMaskTex[1.0];
 				float outLineZOffset = abs(lerp(1, outlineMaskTex[0.0], 1.0) - 0.0);
 				if (0.0 > 0)
 				{
@@ -8997,7 +8997,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 worldOffset = float3(0, 0, 0);
 				#ifdef POI_PASS_OUTLINE
 				float4 outlineMaskTex = tex2Dlod(_OutlineMask, float4(poiUV(vertexUV(v, 0.0), float4(1,1,0,0)) + _Time.x * float4(0,0,0,0), 0, 0));
-				float outlineMask = outlineMaskTex[0.0];
+				float outlineMask = outlineMaskTex[1.0];
 				float outLineZOffset = abs(lerp(1, outlineMaskTex[0.0], 1.0) - 0.0);
 				if (0.0 > 0)
 				{
@@ -13684,7 +13684,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 worldOffset = float3(0, 0, 0);
 				#ifdef POI_PASS_OUTLINE
 				float4 outlineMaskTex = tex2Dlod(_OutlineMask, float4(poiUV(vertexUV(v, 0.0), float4(1,1,0,0)) + _Time.x * float4(0,0,0,0), 0, 0));
-				float outlineMask = outlineMaskTex[0.0];
+				float outlineMask = outlineMaskTex[1.0];
 				float outLineZOffset = abs(lerp(1, outlineMaskTex[0.0], 1.0) - 0.0);
 				if (0.0 > 0)
 				{
@@ -13853,7 +13853,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			void applyOutlineColor(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiLight poiLight, in PoiMods poiMods, in PoiCam poiCam)
 			{
 				clip(1.0 - 0.01);
-				float OutlineMask = tex2D(_OutlineMask, TRANSFORM_TEX(poiMesh.uv[0.0], _OutlineMask) + _Time.x * float4(0,0,0,0))[0.0];
+				float OutlineMask = tex2D(_OutlineMask, TRANSFORM_TEX(poiMesh.uv[0.0], _OutlineMask) + _Time.x * float4(0,0,0,0))[1.0];
 				if (0.0 > 0)
 				{
 					OutlineMask *= lerp(1, poiMesh.vertexColor[0.0 - 1], 1.0);
@@ -16768,7 +16768,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				float3 worldOffset = float3(0, 0, 0);
 				#ifdef POI_PASS_OUTLINE
 				float4 outlineMaskTex = tex2Dlod(_OutlineMask, float4(poiUV(vertexUV(v, 0.0), float4(1,1,0,0)) + _Time.x * float4(0,0,0,0), 0, 0));
-				float outlineMask = outlineMaskTex[0.0];
+				float outlineMask = outlineMaskTex[1.0];
 				float outLineZOffset = abs(lerp(1, outlineMaskTex[0.0], 1.0) - 0.0);
 				if (0.0 > 0)
 				{

@@ -6043,7 +6043,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				float3 normal1 = lerp(poiMesh.normals[0], poiMesh.normals[1], 1.0);
 				#ifdef POI_MATCAP1_CUSTOM_NORMAL
 				#if defined(PROP_MATCAP1NORMALMAP) || !defined(OPTIMIZER_ENABLED)
-				normal1 = calculateNormal(poiMesh.normals[1.0], poiMesh, _Matcap1NormalMap, float4(40,40,0,0), float4(0,0,0,0), 0.0, 0.3);
+				normal1 = calculateNormal(poiMesh.normals[1.0], poiMesh, _Matcap1NormalMap, _Matcap1NormalMap_ST, float4(0,0,0,0), 0.0, _Matcap1NormalMapScale);
 				#endif
 				#endif
 				#if defined(PROP_MATCAP2) || !defined(OPTIMIZER_ENABLED)
@@ -11475,7 +11475,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				float3 normal1 = lerp(poiMesh.normals[0], poiMesh.normals[1], 1.0);
 				#ifdef POI_MATCAP1_CUSTOM_NORMAL
 				#if defined(PROP_MATCAP1NORMALMAP) || !defined(OPTIMIZER_ENABLED)
-				normal1 = calculateNormal(poiMesh.normals[1.0], poiMesh, _Matcap1NormalMap, float4(40,40,0,0), float4(0,0,0,0), 0.0, 0.3);
+				normal1 = calculateNormal(poiMesh.normals[1.0], poiMesh, _Matcap1NormalMap, _Matcap1NormalMap_ST, float4(0,0,0,0), 0.0, _Matcap1NormalMapScale);
 				#endif
 				#endif
 				#if defined(PROP_MATCAP2) || !defined(OPTIMIZER_ENABLED)

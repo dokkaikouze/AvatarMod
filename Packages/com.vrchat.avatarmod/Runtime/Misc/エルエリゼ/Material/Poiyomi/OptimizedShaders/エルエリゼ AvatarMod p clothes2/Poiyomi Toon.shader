@@ -421,6 +421,86 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
 		_Matcap1ALChronoPanSpeed ("Chrono Pan Speed--{condition_showS:(_Matcap2UVMode==3)}", Float) = 0
 		[HideInInspector] s_end_Matcap1AudioLink ("Audio Link", Float) = 0
 		[HideInInspector] m_end_Matcap2 ("Matcap 1", Float) = 0
+		[HideInInspector] m_start_Matcap4 (" Matcap 3--{reference_property:_Matcap4Enable,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/shading/matcap},hover:Documentation}}", Float) = 0
+		[HideInInspector][ThryToggle(POI_MATCAP3)]_Matcap4Enable ("Enable Matcap 3", Float) = 0
+		[ThryWideEnum(UTS Style, 0, Top Pinch, 1, Double Sided, 2,Gradient, 3, Light Direction, 4)] _Matcap4UVMode ("UV Mode", Int) = 1
+		_Matcap4Color ("Color--{reference_property:_Matcap4ColorThemeIndex}", Color) = (1, 1, 1, 1)
+		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _Matcap4ColorThemeIndex ("", Int) = 0
+		[sRGBWarning(true)][Gradient]_Matcap4 ("Matcap--{reference_properties:[_Matcap4UVToBlend,_MatCap4thBlendUV1,_Matcap4Pan,_Matcap4Border,_Matcap4Rotation]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_Matcap4Pan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Matcap4UVToBlend ("UV To Blend", Int) = 1
+		[HideInInspector][VectorToSliders(Blend UV X, 0.0, 1.0, Blend UV Y, 0.0, 1.0)]_MatCap4thBlendUV1 ("UV Blend", Vector) = (0, 0, 0, 0)
+		[HideInInspector]_Matcap4Border ("Border", Range(0, 5)) = 0.5
+		[HideInInspector]_Matcap4Rotation ("Rotation", Range(-1, 1)) = 0
+		_Matcap4Intensity ("Intensity", Range(0, 5)) = 1
+		_Matcap4EmissionStrength ("Emission Strength", Range(0, 20)) = 0
+		_Matcap4BaseColorMix ("Base Color Mix", Range(0, 1)) = 0
+		_Matcap4LightColorMix ("Light Color Mix", Range(0, 1)) = 0
+		_Matcap4Normal ("Normal Strength", Range(0, 1)) = 1
+		[HideInInspector] s_start_Matcap3Masking ("Masking--{persistent_expand:true,default_expand:true}", Float) = 1
+		[sRGBWarning][ThryRGBAPacker(R Mask, G Nothing, B Nothing, A Smoothness, linear, false)]_Matcap4Mask ("Mask--{reference_properties:[_Matcap4MaskPan, _Matcap4MaskUV, _Matcap4MaskChannel, _Matcap4MaskInvert]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_Matcap4MaskPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Matcap4MaskUV ("UV", Int) = 0
+		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_Matcap4MaskChannel ("Channel", Float) = 0
+		[HideInInspector][ToggleUI]_Matcap4MaskInvert ("Invert", Float) = 0
+		_Matcap4LightMask ("Hide in Shadow", Range(0, 1)) = 0
+		[ToggleUI]_Matcap4CircleMaskEnabled ("Circle Mask", Float) = 0
+		_Matcap4CircleMaskBorder ("Radius--{condition_showS:(_Matcap4CircleMaskEnabled==1)}", Range(0,.5)) = .45
+		_Matcap4CircleMaskBlur ("Blur--{condition_showS:(_Matcap4CircleMaskEnabled==1)}", Range(0,1)) = .1
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Matcap4MaskGlobalMask ("Global Mask--{reference_property:_Matcap4MaskGlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)]_Matcap4MaskGlobalMaskBlendType ("Blending", Range(0, 1)) = 2
+		[HideInInspector] s_end_Matcap3Masking ("Masking", Float) = 0
+		[HideInInspector] s_start_Matcap3Blending ("Blending--{persistent_expand:true,default_expand:true}", Float) = 1
+		_Matcap4Replace ("Replace", Range(0, 1)) = 0
+		_Matcap4Multiply ("Multiply", Range(0, 1)) = 0
+		_Matcap4Add ("Add", Range(0, 1)) = 0
+		_Matcap4Mixed ("Mixed", Range(0, 1)) = 0
+		_Matcap4Screen ("Screen", Range(0, 1)) = 0
+		_Matcap4AddToLight ("Unlit Add", Range(0, 1)) = 0
+		[HideInInspector] s_end_Matcap3Blending ("Blending", Float) = 0
+		[HideInInspector] s_start_Matcap3Normal ("Custom Normal Map--{reference_property:_Matcap3CustomNormal,persistent_expand:true}", Float) = 0
+		[HideInInspector][ThryToggle(POI_MATCAP3_CUSTOM_NORMAL, true)] _Matcap3CustomNormal ("Custom Normal", Float) = 0
+		[Normal]_Matcap3NormalMap ("Normal Map--{reference_properties:[_Matcap3NormalMapPan, _Matcap3NormalMapUV, _Matcap3NormalMapScale]}", 2D) = "bump" { }
+		[HideInInspector][Vector2]_Matcap3NormalMapPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _Matcap3NormalMapUV ("UV", Int) = 0
+		[HideInInspector]_Matcap3NormalMapScale ("Intensity", Range(0, 10)) = 1
+		[HideInInspector] s_end_Matcap3Normal ("", Float) = 0
+		[HideInInspector] s_start_Matcap3HueShift ("Hue Shift--{reference_property:_Matcap4HueShiftEnabled,persistent_expand:true}", Float) = 0
+		[HideInInspector][ToggleUI] _Matcap4HueShiftEnabled ("Hue Shift", Float) = 0
+		[ThryWideEnum(OKLab, 0, HSV, 1)] _Matcap4HueShiftColorSpace ("Color Space", Int) = 0
+		[ThryWideEnum(Hue Select, 0, Hue Shift, 1)] _Matcap4HueSelectOrShift ("Select or Shift", Int) = 1
+		_Matcap4HueShiftSpeed ("Shift Speed", Float) = 0
+		_Matcap4HueShift ("Hue Shift", Range(0, 1)) = 0
+		[HideInInspector] s_end_Matcap3HueShift ("", Float) = 0
+		[HideInInspector] s_start_Matcap3Smoothness ("Blur / Smoothness--{persistent_expand:true,default_expand:false}", Float) = 0
+		_Matcap4Smoothness ("Smoothness", Range(0, 1)) = 1
+		[ToggleUI]_Matcap4MaskSmoothnessApply ("Apply Mask for Smoothness", Float) = 0
+		[Enum(R, 0, G, 1, B, 2, A, 3)]_Matcap4MaskSmoothnessChannel ("Mask Channel for Smoothness", Int) = 3
+		[HideInInspector] s_end_Matcap3Smoothness ("", Float) = 0
+		[HideInInspector] s_start_matcap3ApplyToAlpha ("Alpha Options--{persistent_expand:true,default_expand:false}", Float) = 0
+		_Matcap4AlphaOverride ("Override Alpha", Range(0, 1)) = 0
+		[ToggleUI] _Matcap4ApplyToAlphaEnabled ("Intensity To Alpha", Float) = 0
+		[ThryWideEnum(Greyscale, 0, Max, 1)] _Matcap4ApplyToAlphaSourceBlend ("Source Blend--{condition_showS:(_Matcap4ApplyToAlphaEnabled==1)}", Int) = 0
+		[ThryWideEnum(Add, 0, Multiply, 1)] _Matcap4ApplyToAlphaBlendType ("Blend Type--{condition_showS:(_Matcap4ApplyToAlphaEnabled==1)}", Int) = 0
+		_Matcap4ApplyToAlphaBlending ("Blending--{condition_showS:(_Matcap4ApplyToAlphaEnabled==1)}", Range(0, 1)) = 1.0
+		[HideInInspector] s_end_matcap3ApplyToAlpha ("", Float) = 0
+		[HideInInspector] s_start_Matcap4TPSMaskGroup ("Matcap TPS Mask--{reference_property:_Matcap4TPSDepthEnabled,persistent_expand:true,default_expand:false, condition_showS:(_TPSPenetratorEnabled==1)}", Float) = 0
+		[HideInInspector][ThryToggleUI(true)] _Matcap4TPSDepthEnabled ("TPS Depth Mask Enabled", Float) = 0
+		_Matcap4TPSMaskStrength ("TPS Mask Strength", Range(0, 1)) = 1
+		[HideInInspector] s_end_Matcap4TPSMaskGroup ("", Float) = 0
+		[HideInInspector] s_start_Matcap3AudioLink ("Audio Link ♫--{reference_property:_Matcap3ALEnabled,persistent_expand:true,default_expand:false, condition_showS:(_EnableAudioLink==1)}", Float) = 0
+		[HideInInspector][ToggleUI] _Matcap3ALEnabled ("Enable Audio Link", Float) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _Matcap3ALAlphaAddBand ("Alpha Band", Int) = 0
+		[VectorLabel(Min, Max)]_Matcap3ALAlphaAdd ("Alpha Mod", Vector) = (0, 0, 0, 0)
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _Matcap3ALEmissionAddBand ("Emission Band", Int) = 0
+		[VectorLabel(Min, Max)]_Matcap3ALEmissionAdd ("Emission Mod", Vector) = (0, 0, 0, 0)
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _Matcap3ALIntensityAddBand ("Intensity Band", Int) = 0
+		[VectorLabel(Min, Max)]_Matcap3ALIntensityAdd ("Intensity Mod", Vector) = (0, 0, 0, 0)
+		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_Matcap3ALChronoPanType ("Chrono Pan Type--{condition_showS:(_Matcap4UVMode==3)}", Int) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3, Volume, 4)] _Matcap3ALChronoPanBand ("Chrono Pan Band--{condition_showS:(_Matcap4UVMode==3)}", Int) = 0
+		_Matcap3ALChronoPanSpeed ("Chrono Pan Speed--{condition_showS:(_Matcap4UVMode==3)}", Float) = 0
+		[HideInInspector] s_end_Matcap3AudioLink ("Audio Link", Float) = 0
+		[HideInInspector] m_end_Matcap4 ("Matcap 4", Float) = 0
 		[HideInInspector] m_start_rim2LightOptions (" Rim Lighting 1--{reference_property:_EnableRim2Lighting,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/shading/rim-lighting},hover:Documentation}}", Float) = 0
 		[HideInInspector][ThryToggle(POI_RIM2)]_EnableRim2Lighting ("Enable Rim2 Lighting", Float) = 0
 		[KeywordEnum(Poiyomi, UTS2, LilToon)] _Rim2Style ("Style", Float) = 0
@@ -1013,6 +1093,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
  #define POI_ENVIRORIM 
  #define POI_LTCGI 
  #define POI_MATCAP0 
+ #define POI_MATCAP3 
  #define POI_RIM2 
  #define POI_STYLIZED_StylizedSpecular 
  #define POI_UDIMDISCARD 
@@ -1026,6 +1107,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
  #define PROP_MATCAPMASK 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
+ #define PROP_MATCAP4 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma multi_compile_fwdbase
@@ -2185,6 +2267,70 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
 			float _Matcap1ALChronoPanType;
 			float _Matcap1ALChronoPanBand;
 			float _Matcap1ALChronoPanSpeed;
+			#endif
+			#ifdef POI_MATCAP3
+			#if defined(PROP_MATCAP4) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _Matcap4;
+			float4 _Matcap4_ST;
+			float4 _Matcap4_TexelSize;
+			float2 _Matcap4Pan;
+			float _Matcap4UV;
+			#endif
+			#if defined(PROP_MATCAP4MASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _Matcap4Mask;
+			float4 _Matcap4Mask_ST;
+			float2 _Matcap4MaskPan;
+			float _Matcap4MaskUV;
+			float _Matcap4MaskChannel;
+			#endif
+			float _Matcap4UVToBlend;
+			float4 _MatCap4thBlendUV1;
+			float _Matcap4UVMode;
+			float _Matcap4MaskInvert;
+			float _Matcap4MaskGlobalMask;
+			float _Matcap4MaskGlobalMaskBlendType;
+			float _Matcap4Border;
+			float _Matcap4Rotation;
+			float _Matcap4Smoothness;
+			float _Matcap4MaskSmoothnessChannel;
+			float _Matcap4MaskSmoothnessApply;
+			float4 _Matcap4Color;
+			float _Matcap4BaseColorMix;
+			float _Matcap4LightColorMix;
+			float _Matcap4ColorThemeIndex;
+			float _Matcap4Intensity;
+			float _Matcap4Replace;
+			float _Matcap4Multiply;
+			float _Matcap4Add;
+			float _Matcap4AddToLight;
+			float _Matcap4Mixed;
+			float _Matcap4Screen;
+			float _Matcap4AlphaOverride;
+			float _Matcap4Enable;
+			float _Matcap4LightMask;
+			float _Matcap4EmissionStrength;
+			float _Matcap4Normal;
+			float _Matcap4HueShiftEnabled;
+			float _Matcap4HueShiftColorSpace;
+			float _Matcap4HueSelectOrShift;
+			float _Matcap4HueShiftSpeed;
+			float _Matcap4HueShift;
+			int _Matcap4ApplyToAlphaEnabled;
+			int _Matcap4ApplyToAlphaSourceBlend;
+			int _Matcap4ApplyToAlphaBlendType;
+			float _Matcap4ApplyToAlphaBlending;
+			float _Matcap4TPSDepthEnabled;
+			float _Matcap4TPSMaskStrength;
+			float _Matcap3ALEnabled;
+			float _Matcap3ALAlphaAddBand;
+			float4 _Matcap3ALAlphaAdd;
+			float _Matcap3ALEmissionAddBand;
+			float4 _Matcap3ALEmissionAdd;
+			float _Matcap3ALIntensityAddBand;
+			float4 _Matcap3ALIntensityAdd;
+			float _Matcap3ALChronoPanType;
+			float _Matcap3ALChronoPanBand;
+			float _Matcap3ALChronoPanSpeed;
 			#endif
 			struct MatcapAudioLinkData
 			{
@@ -5788,6 +5934,94 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
 				}
 				blendMatcap(poiLight, poiFragData, poiMods, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, matcap2, matcap2Mask, 0.0, 0.0, 0.0, 2.0, matcapALD);
 				#endif
+				#ifdef POI_MATCAP3
+				matcapALD.matcapALEnabled = 0.0;
+				matcapALD.matcapALAlphaAddBand = 0.0;
+				matcapALD.matcapALAlphaAdd = float4(0,0,0,0);
+				matcapALD.matcapALEmissionAddBand = 0.0;
+				matcapALD.matcapALEmissionAdd = float4(0,0,0,0);
+				matcapALD.matcapALIntensityAddBand = 0.0;
+				matcapALD.matcapALIntensityAdd = float4(0,0,0,0);
+				matcapALD.matcapALChronoPanType = 0.0;
+				matcapALD.matcapALChronoPanBand = 0.0;
+				matcapALD.matcapALChronoPanSpeed = 0.0;
+				float3 normal3 = lerp(poiMesh.normals[0], poiMesh.normals[1], 1.0);
+				#if defined(PROP_MATCAP4) || !defined(OPTIMIZER_ENABLED)
+				getMatcapUV(matcapUV, float4(0,0,0,0).xy, 3.0, 1.0, float4(0,0,0,0).xy, 0.0, 0.5, normal3, poiCam, poiLight, poiMesh, 1.0, matcapALD);
+				float mipCount4 = 9;
+				if (float4(0.0078125,0.0078125,128,128).z == 8192) mipCount4 = 13;
+				if (float4(0.0078125,0.0078125,128,128).z == 4096) mipCount4 = 12;
+				if (float4(0.0078125,0.0078125,128,128).z == 2048) mipCount4 = 11;
+				if (float4(0.0078125,0.0078125,128,128).z == 1024) mipCount4 = 10;
+				if (float4(0.0078125,0.0078125,128,128).z == 512) mipCount4 = 9;
+				if (float4(0.0078125,0.0078125,128,128).z == 256) mipCount4 = 8;
+				if (float4(0.0078125,0.0078125,128,128).z == 128) mipCount4 = 7;
+				if (float4(0.0078125,0.0078125,128,128).z == 64) mipCount4 = 6;
+				if (float4(0.0078125,0.0078125,128,128).z == 32) mipCount4 = 5;
+				float matcap4Smoothness = 1.0;
+				if (0.0)
+				{
+					#if defined(PROP_MATCAP4MASK) || !defined(OPTIMIZER_ENABLED)
+					matcap4Smoothness *= POI2D_SAMPLER_PAN(_Matcap4Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[3.0];
+					#endif
+				}
+				matcap4Smoothness = (1 - matcap4Smoothness) * mipCount4;
+				matcap4 = UNITY_SAMPLE_TEX2D_SAMPLER_LOD(_Matcap4, _trilinear_repeat, TRANSFORM_TEX(matcapUV, _Matcap4), matcap4Smoothness) * float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
+				#else
+				matcap4 = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
+				#endif
+				matcap4.rgb *= lerp(1, poiLight.directColor, 0.0);
+				matcapIntensity = 0.25;
+				#ifdef POI_AUDIOLINK
+				if (matcapALD.matcapALEnabled > 0)
+				{
+					matcapIntensity += lerp(matcapALD.matcapALIntensityAdd.x, matcapALD.matcapALIntensityAdd.y, poiMods.audioLink[matcapALD.matcapALIntensityAddBand]);
+					matcapIntensity = max(0, matcapIntensity);
+				}
+				#endif
+				matcap4.rgb *= matcapIntensity;
+				#ifndef POI_GRABPASS
+				matcap4.rgb = lerp(matcap4.rgb, matcap4.rgb * poiFragData.baseColor.rgb, 0.0);
+				#endif
+				#if defined(PROP_MATCAP4MASK) || !defined(OPTIMIZER_ENABLED)
+				matcap4Mask = POI2D_SAMPLER_PAN(_Matcap4Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[0.0];
+				#else
+				matcap4Mask = 1;
+				#endif
+				if (0.0)
+				{
+					matcap4Mask = 1 - matcap4Mask;
+				}
+				#ifdef TPS_Penetrator
+				if (0.0)
+				{
+					matcap4Mask = lerp(0, matcap4Mask * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), 1.0);
+				}
+				#endif
+				poiFragData.alpha *= lerp(1, matcap4.a, matcap4Mask * 0.0);
+				if (0.0)
+				{
+					matcap4.rgb = hueShift(matcap4.rgb, 0.0 + _Time.x * 0.0, 0.0, 1.0);
+				}
+				if (0)
+				{
+					float matcap4AlphaApplyValue = dot(matcap4.rgb, float3(0.299, 0.587, 0.114)); // Greyscale
+					if (0 == 1) // Max
+					{
+						matcap4AlphaApplyValue = poiMax(matcap4.rgb);
+					}
+					if (0 == 0) // Add
+					{
+						poiFragData.alpha += lerp(0, matcap4AlphaApplyValue, 1.0);
+						poiFragData.alpha = saturate(poiFragData.alpha);
+					}
+					if (0 == 1) // Multiply
+					{
+						poiFragData.alpha *= lerp(1, matcap4AlphaApplyValue, 1.0);
+					}
+				}
+				blendMatcap(poiLight, poiFragData, poiMods, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, matcap4, matcap4Mask, 0.0, 0.6, 0.0, 2.0, matcapALD);
+				#endif
 			}
 			#endif
 			#if defined(_GLOSSYREFLECTIONS_OFF) || defined(POI_RIM2)
@@ -7357,6 +7591,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
  #define POI_ENVIRORIM 
  #define POI_LTCGI 
  #define POI_MATCAP0 
+ #define POI_MATCAP3 
  #define POI_RIM2 
  #define POI_STYLIZED_StylizedSpecular 
  #define POI_UDIMDISCARD 
@@ -7370,6 +7605,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
  #define PROP_MATCAPMASK 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
+ #define PROP_MATCAP4 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma multi_compile_fwdadd_fullshadows
@@ -7939,6 +8175,70 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
 			float _Matcap1ALChronoPanType;
 			float _Matcap1ALChronoPanBand;
 			float _Matcap1ALChronoPanSpeed;
+			#endif
+			#ifdef POI_MATCAP3
+			#if defined(PROP_MATCAP4) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _Matcap4;
+			float4 _Matcap4_ST;
+			float4 _Matcap4_TexelSize;
+			float2 _Matcap4Pan;
+			float _Matcap4UV;
+			#endif
+			#if defined(PROP_MATCAP4MASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _Matcap4Mask;
+			float4 _Matcap4Mask_ST;
+			float2 _Matcap4MaskPan;
+			float _Matcap4MaskUV;
+			float _Matcap4MaskChannel;
+			#endif
+			float _Matcap4UVToBlend;
+			float4 _MatCap4thBlendUV1;
+			float _Matcap4UVMode;
+			float _Matcap4MaskInvert;
+			float _Matcap4MaskGlobalMask;
+			float _Matcap4MaskGlobalMaskBlendType;
+			float _Matcap4Border;
+			float _Matcap4Rotation;
+			float _Matcap4Smoothness;
+			float _Matcap4MaskSmoothnessChannel;
+			float _Matcap4MaskSmoothnessApply;
+			float4 _Matcap4Color;
+			float _Matcap4BaseColorMix;
+			float _Matcap4LightColorMix;
+			float _Matcap4ColorThemeIndex;
+			float _Matcap4Intensity;
+			float _Matcap4Replace;
+			float _Matcap4Multiply;
+			float _Matcap4Add;
+			float _Matcap4AddToLight;
+			float _Matcap4Mixed;
+			float _Matcap4Screen;
+			float _Matcap4AlphaOverride;
+			float _Matcap4Enable;
+			float _Matcap4LightMask;
+			float _Matcap4EmissionStrength;
+			float _Matcap4Normal;
+			float _Matcap4HueShiftEnabled;
+			float _Matcap4HueShiftColorSpace;
+			float _Matcap4HueSelectOrShift;
+			float _Matcap4HueShiftSpeed;
+			float _Matcap4HueShift;
+			int _Matcap4ApplyToAlphaEnabled;
+			int _Matcap4ApplyToAlphaSourceBlend;
+			int _Matcap4ApplyToAlphaBlendType;
+			float _Matcap4ApplyToAlphaBlending;
+			float _Matcap4TPSDepthEnabled;
+			float _Matcap4TPSMaskStrength;
+			float _Matcap3ALEnabled;
+			float _Matcap3ALAlphaAddBand;
+			float4 _Matcap3ALAlphaAdd;
+			float _Matcap3ALEmissionAddBand;
+			float4 _Matcap3ALEmissionAdd;
+			float _Matcap3ALIntensityAddBand;
+			float4 _Matcap3ALIntensityAdd;
+			float _Matcap3ALChronoPanType;
+			float _Matcap3ALChronoPanBand;
+			float _Matcap3ALChronoPanSpeed;
 			#endif
 			struct MatcapAudioLinkData
 			{
@@ -10681,6 +10981,94 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
 				}
 				blendMatcap(poiLight, poiFragData, poiMods, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, matcap2, matcap2Mask, 0.0, 0.0, 0.0, 2.0, matcapALD);
 				#endif
+				#ifdef POI_MATCAP3
+				matcapALD.matcapALEnabled = 0.0;
+				matcapALD.matcapALAlphaAddBand = 0.0;
+				matcapALD.matcapALAlphaAdd = float4(0,0,0,0);
+				matcapALD.matcapALEmissionAddBand = 0.0;
+				matcapALD.matcapALEmissionAdd = float4(0,0,0,0);
+				matcapALD.matcapALIntensityAddBand = 0.0;
+				matcapALD.matcapALIntensityAdd = float4(0,0,0,0);
+				matcapALD.matcapALChronoPanType = 0.0;
+				matcapALD.matcapALChronoPanBand = 0.0;
+				matcapALD.matcapALChronoPanSpeed = 0.0;
+				float3 normal3 = lerp(poiMesh.normals[0], poiMesh.normals[1], 1.0);
+				#if defined(PROP_MATCAP4) || !defined(OPTIMIZER_ENABLED)
+				getMatcapUV(matcapUV, float4(0,0,0,0).xy, 3.0, 1.0, float4(0,0,0,0).xy, 0.0, 0.5, normal3, poiCam, poiLight, poiMesh, 1.0, matcapALD);
+				float mipCount4 = 9;
+				if (float4(0.0078125,0.0078125,128,128).z == 8192) mipCount4 = 13;
+				if (float4(0.0078125,0.0078125,128,128).z == 4096) mipCount4 = 12;
+				if (float4(0.0078125,0.0078125,128,128).z == 2048) mipCount4 = 11;
+				if (float4(0.0078125,0.0078125,128,128).z == 1024) mipCount4 = 10;
+				if (float4(0.0078125,0.0078125,128,128).z == 512) mipCount4 = 9;
+				if (float4(0.0078125,0.0078125,128,128).z == 256) mipCount4 = 8;
+				if (float4(0.0078125,0.0078125,128,128).z == 128) mipCount4 = 7;
+				if (float4(0.0078125,0.0078125,128,128).z == 64) mipCount4 = 6;
+				if (float4(0.0078125,0.0078125,128,128).z == 32) mipCount4 = 5;
+				float matcap4Smoothness = 1.0;
+				if (0.0)
+				{
+					#if defined(PROP_MATCAP4MASK) || !defined(OPTIMIZER_ENABLED)
+					matcap4Smoothness *= POI2D_SAMPLER_PAN(_Matcap4Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[3.0];
+					#endif
+				}
+				matcap4Smoothness = (1 - matcap4Smoothness) * mipCount4;
+				matcap4 = UNITY_SAMPLE_TEX2D_SAMPLER_LOD(_Matcap4, _trilinear_repeat, TRANSFORM_TEX(matcapUV, _Matcap4), matcap4Smoothness) * float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
+				#else
+				matcap4 = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
+				#endif
+				matcap4.rgb *= lerp(1, poiLight.directColor, 0.0);
+				matcapIntensity = 0.25;
+				#ifdef POI_AUDIOLINK
+				if (matcapALD.matcapALEnabled > 0)
+				{
+					matcapIntensity += lerp(matcapALD.matcapALIntensityAdd.x, matcapALD.matcapALIntensityAdd.y, poiMods.audioLink[matcapALD.matcapALIntensityAddBand]);
+					matcapIntensity = max(0, matcapIntensity);
+				}
+				#endif
+				matcap4.rgb *= matcapIntensity;
+				#ifndef POI_GRABPASS
+				matcap4.rgb = lerp(matcap4.rgb, matcap4.rgb * poiFragData.baseColor.rgb, 0.0);
+				#endif
+				#if defined(PROP_MATCAP4MASK) || !defined(OPTIMIZER_ENABLED)
+				matcap4Mask = POI2D_SAMPLER_PAN(_Matcap4Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[0.0];
+				#else
+				matcap4Mask = 1;
+				#endif
+				if (0.0)
+				{
+					matcap4Mask = 1 - matcap4Mask;
+				}
+				#ifdef TPS_Penetrator
+				if (0.0)
+				{
+					matcap4Mask = lerp(0, matcap4Mask * TPSBufferedDepth(poiMesh.localPos, poiMesh.vertexColor), 1.0);
+				}
+				#endif
+				poiFragData.alpha *= lerp(1, matcap4.a, matcap4Mask * 0.0);
+				if (0.0)
+				{
+					matcap4.rgb = hueShift(matcap4.rgb, 0.0 + _Time.x * 0.0, 0.0, 1.0);
+				}
+				if (0)
+				{
+					float matcap4AlphaApplyValue = dot(matcap4.rgb, float3(0.299, 0.587, 0.114)); // Greyscale
+					if (0 == 1) // Max
+					{
+						matcap4AlphaApplyValue = poiMax(matcap4.rgb);
+					}
+					if (0 == 0) // Add
+					{
+						poiFragData.alpha += lerp(0, matcap4AlphaApplyValue, 1.0);
+						poiFragData.alpha = saturate(poiFragData.alpha);
+					}
+					if (0 == 1) // Multiply
+					{
+						poiFragData.alpha *= lerp(1, matcap4AlphaApplyValue, 1.0);
+					}
+				}
+				blendMatcap(poiLight, poiFragData, poiMods, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, matcap4, matcap4Mask, 0.0, 0.6, 0.0, 2.0, matcapALD);
+				#endif
 			}
 			#endif
 			#if defined(_GLOSSYREFLECTIONS_OFF) || defined(POI_RIM2)
@@ -12166,6 +12554,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
  #define POI_ENVIRORIM 
  #define POI_LTCGI 
  #define POI_MATCAP0 
+ #define POI_MATCAP3 
  #define POI_RIM2 
  #define POI_STYLIZED_StylizedSpecular 
  #define POI_UDIMDISCARD 
@@ -12179,6 +12568,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
  #define PROP_MATCAPMASK 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
+ #define PROP_MATCAP4 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma multi_compile_fwdbase
@@ -16162,6 +16552,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
  #define POI_ENVIRORIM 
  #define POI_LTCGI 
  #define POI_MATCAP0 
+ #define POI_MATCAP3 
  #define POI_RIM2 
  #define POI_STYLIZED_StylizedSpecular 
  #define POI_UDIMDISCARD 
@@ -16175,6 +16566,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/64cf5b52399ff1044b92626c92456086"
  #define PROP_MATCAPMASK 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
+ #define PROP_MATCAP4 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma multi_compile_instancing

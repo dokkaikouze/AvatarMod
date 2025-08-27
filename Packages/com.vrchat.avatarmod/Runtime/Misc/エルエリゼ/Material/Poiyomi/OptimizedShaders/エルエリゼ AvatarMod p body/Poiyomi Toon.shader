@@ -6150,7 +6150,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				if (0.0)
 				{
 					#if defined(PROP_MATCAP3MASK) || !defined(OPTIMIZER_ENABLED)
-					matcap3Smoothness *= POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[3.0];
+					matcap3Smoothness *= POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[3.0];
 					#endif
 				}
 				matcap3Smoothness = (1 - matcap3Smoothness) * mipCount3;
@@ -6172,7 +6172,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				matcap3.rgb = lerp(matcap3.rgb, matcap3.rgb * poiFragData.baseColor.rgb, 0.0);
 				#endif
 				#if defined(PROP_MATCAP3MASK) || !defined(OPTIMIZER_ENABLED)
-				matcap3Mask = POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[2.0];
+				matcap3Mask = POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[2.0];
 				#else
 				matcap3Mask = 1;
 				#endif
@@ -11582,7 +11582,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				if (0.0)
 				{
 					#if defined(PROP_MATCAP3MASK) || !defined(OPTIMIZER_ENABLED)
-					matcap3Smoothness *= POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[3.0];
+					matcap3Smoothness *= POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[3.0];
 					#endif
 				}
 				matcap3Smoothness = (1 - matcap3Smoothness) * mipCount3;
@@ -11604,7 +11604,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				matcap3.rgb = lerp(matcap3.rgb, matcap3.rgb * poiFragData.baseColor.rgb, 0.0);
 				#endif
 				#if defined(PROP_MATCAP3MASK) || !defined(OPTIMIZER_ENABLED)
-				matcap3Mask = POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[2.0];
+				matcap3Mask = POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[2.0];
 				#else
 				matcap3Mask = 1;
 				#endif

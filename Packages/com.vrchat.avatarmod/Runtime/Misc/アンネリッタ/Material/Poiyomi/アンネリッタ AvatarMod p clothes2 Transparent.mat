@@ -60,6 +60,9 @@ Material:
     _UDIMDiscardRow3_2Animated: 1
     _UDIMDiscardRow3_3Animated: 1
     _stripped_tex__ClothDFG: 76d65cbce584df7449699fb8406f60ea
+    _stripped_tex__Matcap2: 570acd1a44022084b8ac3e5b4ef1b62a
+    _stripped_tex__Matcap2Mask: 9443091e82db6c944babe8c36ff5fe6b
+    _stripped_tex__OutlineMask: 9ed9ace957604ff4ebd99d6c1834018b
     _stripped_tex__SkinLUT: d13510bb2be49aa40a66a0101efb6a36
     _stripped_tex__ToonRamp: 61bd594533da4fc42bd46ef93ba5a4f6
   disabledShaderPasses: []
@@ -123,15 +126,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Matcap1NormalMap:
+    - _Matcap3NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Matcap2:
-        m_Texture: {fileID: 2800000, guid: 570acd1a44022084b8ac3e5b4ef1b62a, type: 3}
+    - _Matcap4:
+        m_Texture: {fileID: 2800000, guid: 44b698f59585d4d4db6f85bb79f97351, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Matcap2Mask:
+    - _Matcap4Mask:
         m_Texture: {fileID: 2800000, guid: 9443091e82db6c944babe8c36ff5fe6b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -144,14 +147,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MultilayerMathBlurMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineMask:
-        m_Texture: {fileID: 2800000, guid: 9ed9ace957604ff4ebd99d6c1834018b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -1019,7 +1014,7 @@ Material:
     - _EnableGITDEmission2: 0
     - _EnableGITDEmission3: 0
     - _EnableMirrorOptions: 0
-    - _EnableOutlines: 1
+    - _EnableOutlines: 0
     - _EnablePathRemapping: 0
     - _EnablePathing: 0
     - _EnableRim2Lighting: 1
@@ -1604,7 +1599,7 @@ Material:
     - _Matcap2ColorThemeIndex: 0
     - _Matcap2CustomNormal: 0
     - _Matcap2EmissionStrength: 0
-    - _Matcap2Enable: 1
+    - _Matcap2Enable: 0
     - _Matcap2HueSelectOrShift: 1
     - _Matcap2HueShift: 0
     - _Matcap2HueShiftColorSpace: 0
@@ -1700,23 +1695,23 @@ Material:
     - _Matcap4CircleMaskEnabled: 0
     - _Matcap4ColorThemeIndex: 0
     - _Matcap4EmissionStrength: 0
-    - _Matcap4Enable: 0
+    - _Matcap4Enable: 1
     - _Matcap4HueSelectOrShift: 1
     - _Matcap4HueShift: 0
     - _Matcap4HueShiftColorSpace: 0
     - _Matcap4HueShiftEnabled: 0
     - _Matcap4HueShiftSpeed: 0
-    - _Matcap4Intensity: 1
+    - _Matcap4Intensity: 0.15
     - _Matcap4LightColorMix: 0
     - _Matcap4LightMask: 0
     - _Matcap4MaskChannel: 0
     - _Matcap4MaskGlobalMask: 0
     - _Matcap4MaskGlobalMaskBlendType: 2
-    - _Matcap4MaskInvert: 0
+    - _Matcap4MaskInvert: 1
     - _Matcap4MaskSmoothnessApply: 0
     - _Matcap4MaskSmoothnessChannel: 3
     - _Matcap4MaskUV: 0
-    - _Matcap4Mixed: 0
+    - _Matcap4Mixed: 0.225
     - _Matcap4Multiply: 0
     - _Matcap4Normal: 1
     - _Matcap4Replace: 0
@@ -1726,7 +1721,7 @@ Material:
     - _Matcap4SmoothnessEnabled: 0
     - _Matcap4TPSDepthEnabled: 0
     - _Matcap4TPSMaskStrength: 1
-    - _Matcap4UVMode: 1
+    - _Matcap4UVMode: 3
     - _Matcap4UVToBlend: 1
     - _MatcapAdd: 0.13
     - _MatcapAddToLight: 0
@@ -2637,7 +2632,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 1
+    - m_OutlineCategory: 0
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2790,14 +2785,14 @@ Material:
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 1
-    - m_mainCategory: 1
+    - m_mainCategory: 0
     - m_modifierCategory: 1
     - m_renderingCategory: 1
     - m_specialFXCategory: 1
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
     - m_start_Alpha: 0
-    - m_start_Aniso: 1
+    - m_start_Aniso: 0
     - m_start_BeatsaberBloomFog: 0
     - m_start_BeatsaberOptions: 0
     - m_start_BlackLightMasking: 0
@@ -2854,7 +2849,7 @@ Material:
     - m_start_LTCGI: 1
     - m_start_MainVertexColors: 0
     - m_start_Matcap2: 1
-    - m_start_Matcap3: 1
+    - m_start_Matcap3: 0
     - m_start_Matcap4: 1
     - m_start_OutlineAudioLink: 0
     - m_start_OutlineStencil: 0
@@ -2865,7 +2860,7 @@ Material:
     - m_start_PoiGlobalCategory: 1
     - m_start_PoiLightData: 0
     - m_start_PoiPostProcessingCategory: 1
-    - m_start_PoiShading: 1
+    - m_start_PoiShading: 0
     - m_start_PoiUVCategory: 0
     - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
@@ -2911,7 +2906,7 @@ Material:
     - m_start_flipBook: 0
     - m_start_glitter: 1
     - m_start_internalparallax: 0
-    - m_start_matcap: 1
+    - m_start_matcap: 0
     - m_start_mirrorOptions: 0
     - m_start_normalCorrect: 0
     - m_start_outlineAlphaBlending: 0

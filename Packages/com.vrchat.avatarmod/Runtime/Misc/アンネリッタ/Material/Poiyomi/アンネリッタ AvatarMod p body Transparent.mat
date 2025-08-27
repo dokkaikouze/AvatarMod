@@ -12,7 +12,10 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _LIGHTINGMODE_MULTILAYER_MATH
+  - _RIM2STYLE_POIYOMI
+  - _STOCHASTICMODE_DELIOT_HEITZ
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -60,6 +63,11 @@ Material:
     _UDIMDiscardRow3_3Animated: 1
     _UDIMDiscardUVAnimated: 1
     _stripped_tex__ClothDFG: 76d65cbce584df7449699fb8406f60ea
+    _stripped_tex__GlitterMask: bad90fdab9ac5b24e8dfbf095516a9dc
+    _stripped_tex__GlitterTexture: f5b49da3e7065f14894d289de4144039
+    _stripped_tex__Matcap3: af947fd2b53de3448926e0e94d0a2ea1
+    _stripped_tex__Matcap3Mask: bad90fdab9ac5b24e8dfbf095516a9dc
+    _stripped_tex__OutlineMask: cfc6cc6d5cb3b6241988659d79fe06b8
     _stripped_tex__SkinLUT: d13510bb2be49aa40a66a0101efb6a36
     _stripped_tex__ToonRamp: 61bd594533da4fc42bd46ef93ba5a4f6
   disabledShaderPasses: []
@@ -85,18 +93,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ClearCoatMaps:
         m_Texture: {fileID: 2800000, guid: bad90fdab9ac5b24e8dfbf095516a9dc, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _GlitterColorMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _GlitterMask:
-        m_Texture: {fileID: 2800000, guid: bad90fdab9ac5b24e8dfbf095516a9dc, type: 3}
-        m_Scale: {x: 0.5, y: 0.5}
-        m_Offset: {x: 0, y: -0.5}
-    - _GlitterTexture:
-        m_Texture: {fileID: 2800000, guid: f5b49da3e7065f14894d289de4144039, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HighColor_Tex:
@@ -143,18 +139,6 @@ Material:
         m_Texture: {fileID: 2800000, guid: bad90fdab9ac5b24e8dfbf095516a9dc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Matcap2NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Matcap3:
-        m_Texture: {fileID: 2800000, guid: af947fd2b53de3448926e0e94d0a2ea1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Matcap3Mask:
-        m_Texture: {fileID: 2800000, guid: bad90fdab9ac5b24e8dfbf095516a9dc, type: 3}
-        m_Scale: {x: 0.5, y: 0.5}
-        m_Offset: {x: 0, y: 0.5}
     - _Matcap3NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -176,14 +160,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MultilayerMathBlurMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineMask:
-        m_Texture: {fileID: 2800000, guid: cfc6cc6d5cb3b6241988659d79fe06b8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -1051,7 +1027,7 @@ Material:
     - _EnableGITDEmission2: 0
     - _EnableGITDEmission3: 0
     - _EnableMirrorOptions: 0
-    - _EnableOutlines: 1
+    - _EnableOutlines: 0
     - _EnablePathRemapping: 0
     - _EnablePathing: 0
     - _EnableRim2Lighting: 1
@@ -1153,7 +1129,7 @@ Material:
     - _GlitterColorMapUV: 0
     - _GlitterColorThemeIndex: 0
     - _GlitterContrast: 300
-    - _GlitterEnable: 1
+    - _GlitterEnable: 0
     - _GlitterFrequency: 1400
     - _GlitterHideInShadow: 0.9
     - _GlitterHueSelectOrShift: 1
@@ -1688,7 +1664,7 @@ Material:
     - _Matcap3ColorThemeIndex: 0
     - _Matcap3CustomNormal: 0
     - _Matcap3EmissionStrength: 0
-    - _Matcap3Enable: 1
+    - _Matcap3Enable: 0
     - _Matcap3HueSelectOrShift: 1
     - _Matcap3HueShift: 0
     - _Matcap3HueShiftColorSpace: 0
@@ -2669,7 +2645,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 1
+    - m_OutlineCategory: 0
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2828,8 +2804,8 @@ Material:
     - m_specialFXCategory: 1
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
-    - m_start_Alpha: 1
-    - m_start_Aniso: 1
+    - m_start_Alpha: 0
+    - m_start_Aniso: 0
     - m_start_BeatsaberBloomFog: 0
     - m_start_BeatsaberOptions: 0
     - m_start_BlackLightMasking: 0
@@ -2886,7 +2862,7 @@ Material:
     - m_start_LTCGI: 1
     - m_start_MainVertexColors: 0
     - m_start_Matcap2: 1
-    - m_start_Matcap3: 1
+    - m_start_Matcap3: 0
     - m_start_Matcap4: 1
     - m_start_OutlineAudioLink: 0
     - m_start_OutlineStencil: 0
@@ -2895,9 +2871,9 @@ Material:
     - m_start_PPAnimations: 1
     - m_start_PathAudioLink: 0
     - m_start_PoiGlobalCategory: 1
-    - m_start_PoiLightData: 1
+    - m_start_PoiLightData: 0
     - m_start_PoiPostProcessingCategory: 1
-    - m_start_PoiShading: 1
+    - m_start_PoiShading: 0
     - m_start_PoiUVCategory: 0
     - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
@@ -2941,7 +2917,7 @@ Material:
     - m_start_emission3Options: 0
     - m_start_emissionOptions: 1
     - m_start_flipBook: 0
-    - m_start_glitter: 1
+    - m_start_glitter: 0
     - m_start_internalparallax: 0
     - m_start_matcap: 1
     - m_start_mirrorOptions: 0

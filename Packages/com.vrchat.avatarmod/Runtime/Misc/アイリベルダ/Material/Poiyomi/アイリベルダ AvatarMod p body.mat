@@ -114,8 +114,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _GlitterMask:
         m_Texture: {fileID: 2800000, guid: 9c389fbf5736adb47a6fba061a27d6ff, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0.5}
     - _GlitterTexture:
         m_Texture: {fileID: 2800000, guid: f5b49da3e7065f14894d289de4144039, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -154,7 +154,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Matcap1NormalMap:
         m_Texture: {fileID: 2800000, guid: 62828f1416813f048a5827ea5f9c03c9, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 35, y: 35}
         m_Offset: {x: 0, y: 0}
     - _Matcap2:
         m_Texture: {fileID: 2800000, guid: 7d1b6109701e22844802da2c2a31c75f, type: 3}
@@ -174,8 +174,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Matcap3Mask:
         m_Texture: {fileID: 2800000, guid: 9c389fbf5736adb47a6fba061a27d6ff, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0.5}
     - _MatcapMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -2819,7 +2819,7 @@ Material:
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 1
-    - m_mainCategory: 0
+    - m_mainCategory: 1
     - m_modifierCategory: 1
     - m_renderingCategory: 1
     - m_specialFXCategory: 1
@@ -2882,8 +2882,8 @@ Material:
     - m_start_GlobalThemes: 1
     - m_start_LTCGI: 1
     - m_start_MainVertexColors: 0
-    - m_start_Matcap2: 0
-    - m_start_Matcap3: 0
+    - m_start_Matcap2: 1
+    - m_start_Matcap3: 1
     - m_start_Matcap4: 0
     - m_start_OutlineAudioLink: 0
     - m_start_OutlineStencil: 0
@@ -2894,7 +2894,7 @@ Material:
     - m_start_PoiGlobalCategory: 1
     - m_start_PoiLightData: 0
     - m_start_PoiPostProcessingCategory: 1
-    - m_start_PoiShading: 0
+    - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 0
     - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
@@ -2923,10 +2923,10 @@ Material:
     - m_start_audioLink: 0
     - m_start_audioLinkOverrides: 0
     - m_start_backFace: 0
-    - m_start_backlight: 0
+    - m_start_backlight: 1
     - m_start_blending: 0
     - m_start_brdf: 0
-    - m_start_clearCoat: 0
+    - m_start_clearCoat: 1
     - m_start_clearcoatadvanced: 1
     - m_start_clearcoatglobalmask: 0
     - m_start_depthFX: 0
@@ -2940,7 +2940,7 @@ Material:
     - m_start_flipBook: 0
     - m_start_glitter: 1
     - m_start_internalparallax: 0
-    - m_start_matcap: 0
+    - m_start_matcap: 1
     - m_start_mirrorOptions: 0
     - m_start_normalCorrect: 0
     - m_start_outlineAlphaBlending: 0
@@ -2955,10 +2955,10 @@ Material:
     - m_start_ralivAdvanced: 0
     - m_start_ralivOriface: 0
     - m_start_ralivPenetrator: 0
-    - m_start_reflectionRim: 0
-    - m_start_rim2LightOptions: 0
+    - m_start_reflectionRim: 1
+    - m_start_rim2LightOptions: 1
     - m_start_rimLight1Options: 0
-    - m_start_stylizedSpec: 0
+    - m_start_stylizedSpec: 1
     - m_start_subsurfaceScattering: 0
     - m_start_tps_penetrator: 0
     - m_start_truchet: 0
@@ -3313,9 +3313,9 @@ Material:
     - s_start_Matcap0Blending: 1
     - s_start_Matcap0Masking: 1
     - s_start_Matcap1AudioLink: 0
-    - s_start_Matcap1Blending: 1
+    - s_start_Matcap1Blending: 0
     - s_start_Matcap1HueShift: 0
-    - s_start_Matcap1Masking: 1
+    - s_start_Matcap1Masking: 0
     - s_start_Matcap1Normal: 1
     - s_start_Matcap1Smoothness: 0
     - s_start_Matcap2AudioLink: 0

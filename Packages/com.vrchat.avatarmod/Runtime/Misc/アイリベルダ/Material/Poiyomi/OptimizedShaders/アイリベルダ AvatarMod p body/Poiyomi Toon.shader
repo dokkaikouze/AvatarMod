@@ -5895,7 +5895,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				float3 normal1 = lerp(poiMesh.normals[0], poiMesh.normals[1], 1.0);
 				#ifdef POI_MATCAP1_CUSTOM_NORMAL
 				#if defined(PROP_MATCAP1NORMALMAP) || !defined(OPTIMIZER_ENABLED)
-				normal1 = calculateNormal(poiMesh.normals[1.0], poiMesh, _Matcap1NormalMap, float4(1,1,0,0), float4(0,0,0,0), 0.0, 0.3);
+				normal1 = calculateNormal(poiMesh.normals[1.0], poiMesh, _Matcap1NormalMap, float4(35,35,0,0), float4(0,0,0,0), 0.0, 0.3);
 				#endif
 				#endif
 				#if defined(PROP_MATCAP2) || !defined(OPTIMIZER_ENABLED)
@@ -6002,7 +6002,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				if (0.0)
 				{
 					#if defined(PROP_MATCAP3MASK) || !defined(OPTIMIZER_ENABLED)
-					matcap3Smoothness *= POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[3.0];
+					matcap3Smoothness *= POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[3.0];
 					#endif
 				}
 				matcap3Smoothness = (1 - matcap3Smoothness) * mipCount3;
@@ -6024,7 +6024,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				matcap3.rgb = lerp(matcap3.rgb, matcap3.rgb * poiFragData.baseColor.rgb, 0.0);
 				#endif
 				#if defined(PROP_MATCAP3MASK) || !defined(OPTIMIZER_ENABLED)
-				matcap3Mask = POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[1.0];
+				matcap3Mask = POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[1.0];
 				#else
 				matcap3Mask = 1;
 				#endif
@@ -6407,7 +6407,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 					#endif
 					glitterColor *= glitterTexture.rgb;
 					#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-					float glitterMask = POI2D_SAMPLER_PAN(_GlitterMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[1.0];
+					float glitterMask = POI2D_SAMPLER_PAN(_GlitterMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[1.0];
 					#else
 					float glitterMask = 1;
 					#endif
@@ -11171,7 +11171,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				float3 normal1 = lerp(poiMesh.normals[0], poiMesh.normals[1], 1.0);
 				#ifdef POI_MATCAP1_CUSTOM_NORMAL
 				#if defined(PROP_MATCAP1NORMALMAP) || !defined(OPTIMIZER_ENABLED)
-				normal1 = calculateNormal(poiMesh.normals[1.0], poiMesh, _Matcap1NormalMap, float4(1,1,0,0), float4(0,0,0,0), 0.0, 0.3);
+				normal1 = calculateNormal(poiMesh.normals[1.0], poiMesh, _Matcap1NormalMap, float4(35,35,0,0), float4(0,0,0,0), 0.0, 0.3);
 				#endif
 				#endif
 				#if defined(PROP_MATCAP2) || !defined(OPTIMIZER_ENABLED)
@@ -11278,7 +11278,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				if (0.0)
 				{
 					#if defined(PROP_MATCAP3MASK) || !defined(OPTIMIZER_ENABLED)
-					matcap3Smoothness *= POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[3.0];
+					matcap3Smoothness *= POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[3.0];
 					#endif
 				}
 				matcap3Smoothness = (1 - matcap3Smoothness) * mipCount3;
@@ -11300,7 +11300,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				matcap3.rgb = lerp(matcap3.rgb, matcap3.rgb * poiFragData.baseColor.rgb, 0.0);
 				#endif
 				#if defined(PROP_MATCAP3MASK) || !defined(OPTIMIZER_ENABLED)
-				matcap3Mask = POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[1.0];
+				matcap3Mask = POI2D_SAMPLER_PAN(_Matcap3Mask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[1.0];
 				#else
 				matcap3Mask = 1;
 				#endif
@@ -11683,7 +11683,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 					#endif
 					glitterColor *= glitterTexture.rgb;
 					#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-					float glitterMask = POI2D_SAMPLER_PAN(_GlitterMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[1.0];
+					float glitterMask = POI2D_SAMPLER_PAN(_GlitterMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(0.5,0.5,0,0.5)), float4(0,0,0,0))[1.0];
 					#else
 					float glitterMask = 1;
 					#endif

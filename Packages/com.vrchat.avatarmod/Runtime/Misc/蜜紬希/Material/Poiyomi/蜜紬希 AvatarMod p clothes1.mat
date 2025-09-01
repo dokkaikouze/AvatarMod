@@ -32,7 +32,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 2450
   stringTagMap:
     AllLockedGUIDS: c255b96d9a2db554184759586d49fa0f
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT COLOR_GRADING_HDR_3D POI_ANISOTROPICS
@@ -41,7 +41,7 @@ Material:
       _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
-    RenderType: Opaque
+    RenderType: TransparentCutout
     VRCFallback: ToonDoubleSided
     _AnisoAddAnimated: 1
     _ClearCoatStrengthAnimated: 1
@@ -1826,7 +1826,7 @@ Material:
     - _MochieSpecularStrengthGlobalMask: 0
     - _MochieSpecularStrengthGlobalMaskBlendType: 2
     - _MochieSpecularTintThemeIndex: 0
-    - _Mode: 0
+    - _Mode: 1
     - _ModelAngleMax: 90
     - _ModelAngleMin: 45
     - _MultilayerMathBlurMapUV: 0
@@ -1849,7 +1849,7 @@ Material:
     - _OutlineClipAtZeroWidth: 1
     - _OutlineCull: 1
     - _OutlineDstBlend: 0
-    - _OutlineDstBlendAlpha: 0
+    - _OutlineDstBlendAlpha: 1
     - _OutlineEmission: 0
     - _OutlineExpansionMode: 1
     - _OutlineFixWidth: 0.5
@@ -2658,7 +2658,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 0
+    - m_OutlineCategory: 1
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2810,7 +2810,7 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 1
+    - m_lightingCategory: 0
     - m_mainCategory: 1
     - m_modifierCategory: 1
     - m_renderingCategory: 1
@@ -3351,8 +3351,8 @@ Material:
     - s_start_OutlineColorAdjust: 0
     - s_start_OutlineFixedSize: 1
     - s_start_OutlineLighting: 1
-    - s_start_OutlineRenderingOptions: 0
-    - s_start_OutlineZOffset: 0
+    - s_start_OutlineRenderingOptions: 1
+    - s_start_OutlineZOffset: 1
     - s_start_PBRSecondSpecular: 0
     - s_start_PBRSplitMaskSample: 0
     - s_start_ParallaxInternalHueShift: 0

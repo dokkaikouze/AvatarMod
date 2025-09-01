@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5077675285912645034}
   - component: {fileID: 1216097752875793660}
   - component: {fileID: 8535449522456090183}
+  - component: {fileID: 4045242108564431531}
   m_Layer: 0
   m_Name: AvatarMod
   m_TagString: Untagged
@@ -102,6 +103,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameters: []
+--- !u!114 &4045242108564431531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132170323504508268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c938d7d8a741df99f2eda501b3a6fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_mmdWorldSupport: 0
 --- !u!1 &1998699434946656706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2044,16 @@ MonoBehaviour:
     saved: 0
     hasExplicitDefaultValue: 0
     m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: AvatarMod/WriteDefaults
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 0
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 0
 --- !u!114 &600558828867362666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,7 +2096,7 @@ MonoBehaviour:
   layerType: 7
   deleteAttachedAnimator: 0
   pathMode: 1
-  matchAvatarWriteDefaults: 0
+  matchAvatarWriteDefaults: 1
   relativePathRoot:
     referencePath: 
     targetObject: {fileID: 0}

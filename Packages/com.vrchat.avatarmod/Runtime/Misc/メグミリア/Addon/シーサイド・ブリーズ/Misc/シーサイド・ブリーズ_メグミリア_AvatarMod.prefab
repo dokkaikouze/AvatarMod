@@ -1810,12 +1810,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4190327723883358168}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &208816479122356578 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -5133305715504701766, guid: 01c9973f0feee9648b860445711e7c54,
-    type: 3}
-  m_PrefabInstance: {fileID: 4190327723883358168}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &252164777162046749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5091083695413912891, guid: 01c9973f0feee9648b860445711e7c54,
@@ -2286,7 +2280,7 @@ MonoBehaviour:
   foldout_gizmos: 0
   version: 1
   integrationType: 1
-  rootTransform: {fileID: 208816479122356578}
+  rootTransform: {fileID: 0}
   ignoreTransforms: []
   ignoreOtherPhysBones: 0
   endpointPosition: {x: 0, y: 0.02, z: 0}
@@ -2411,8 +2405,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  isAnimated: 0
-  resetWhenDisabled: 0
+  isAnimated: 1
+  resetWhenDisabled: 1
   parameter: 
   showGizmos: 1
   boneOpacity: 0.5
@@ -3736,8 +3730,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  isAnimated: 0
-  resetWhenDisabled: 0
+  isAnimated: 1
+  resetWhenDisabled: 1
   parameter: 
   showGizmos: 1
   boneOpacity: 0.5

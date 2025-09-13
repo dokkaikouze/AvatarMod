@@ -46,13 +46,11 @@ Transform:
   - {fileID: 8671806998749701562}
   - {fileID: 9168173551053590435}
   - {fileID: 7717255857094848245}
-  - {fileID: 9011177354898359651}
-  - {fileID: 4589898547983733021}
   - {fileID: 374135049225153483}
   - {fileID: 7025555150047312939}
   - {fileID: 5173247130510561977}
   - {fileID: 6148820846169115403}
-  - {fileID: 8107853258197352793}
+  - {fileID: 8709149003400045710}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5077675285912645034
@@ -117,6 +115,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_mmdWorldSupport: 0
+--- !u!1 &1517844821258427464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8709149003400045710}
+  m_Layer: 0
+  m_Name: '[Poiyomi]'
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8709149003400045710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517844821258427464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8107853258197352793}
+  - {fileID: 4589898547983733021}
+  - {fileID: 9011177354898359651}
+  m_Father: {fileID: 6461410430392657849}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1998699434946656706
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,11 +296,11 @@ GameObject:
   - component: {fileID: 1429736397223523571}
   m_Layer: 0
   m_Name: '[Option Poiyomi] LTCGI'
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4589898547983733021
 Transform:
   m_ObjectHideFlags: 0
@@ -277,12 +309,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2389709404210130813}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6461410430392657849}
+  m_Father: {fileID: 8709149003400045710}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6143468199767562005
 MonoBehaviour:
@@ -882,7 +914,7 @@ GameObject:
   - component: {fileID: 3604106177943035813}
   - component: {fileID: 4145454958367915740}
   m_Layer: 0
-  m_Name: '[Option Poiyomi] SSAO'
+  m_Name: '[Option PoiyomiPro] SSAO'
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -896,12 +928,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3608455487256187912}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6461410430392657849}
+  m_Father: {fileID: 8709149003400045710}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3604106177943035813
 MonoBehaviour:
@@ -2583,12 +2615,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9218580421906185188}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6461410430392657849}
+  m_Father: {fileID: 8709149003400045710}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5291296345068875439
 MonoBehaviour:

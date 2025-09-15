@@ -1195,7 +1195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5179746655000511329}
-  - component: {fileID: 7200847436775344580}
+  - component: {fileID: 5844484704744164330}
   m_Layer: 0
   m_Name: lilToon
   m_TagString: Untagged
@@ -1218,7 +1218,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5173247130510561977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7200847436775344580
+--- !u!114 &5844484704744164330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1227,14 +1227,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 5490250154468740146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 229dd561ca024a6588e388160921a70f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BlendTree: {fileID: 0}
-  PathMode: 1
-  RelativePathRoot:
+  animator: {fileID: 0}
+  layerType: 5
+  deleteAttachedAnimator: 1
+  pathMode: 1
+  matchAvatarWriteDefaults: 0
+  relativePathRoot:
     referencePath: 
     targetObject: {fileID: 0}
+  layerPriority: 2
+  mergeAnimatorMode: 0
 --- !u!1 &5610640479461771885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,7 +1614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8959051061887537118}
-  - component: {fileID: 454124066290321870}
+  - component: {fileID: 3282873756863486032}
   m_Layer: 0
   m_Name: Poiyomi
   m_TagString: Untagged
@@ -1632,7 +1637,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5173247130510561977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &454124066290321870
+--- !u!114 &3282873756863486032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1641,14 +1646,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6391534825765421747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 229dd561ca024a6588e388160921a70f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BlendTree: {fileID: 0}
-  PathMode: 1
-  RelativePathRoot:
+  animator: {fileID: 0}
+  layerType: 5
+  deleteAttachedAnimator: 1
+  pathMode: 1
+  matchAvatarWriteDefaults: 0
+  relativePathRoot:
     referencePath: 
     targetObject: {fileID: 0}
+  layerPriority: 2
+  mergeAnimatorMode: 0
 --- !u!1 &7451172289923407987
 GameObject:
   m_ObjectHideFlags: 0

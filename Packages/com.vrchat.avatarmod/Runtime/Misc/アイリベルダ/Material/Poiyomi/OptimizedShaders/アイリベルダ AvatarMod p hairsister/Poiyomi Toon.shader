@@ -2,7 +2,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 {
 	Properties
 	{
-		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.2.73</color>", Float) = 0
+		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.2.76</color>", Float) = 0
 		[HideInInspector] shader_is_using_thry_editor ("", Float) = 0
 		[HideInInspector] shader_locale ("0db0b86376c3dca4b9a6828ef8615fe0", Float) = 0
 		[HideInInspector] footer_youtube ("{texture:{name:icon-youtube,height:16},action:{type:URL,data:https://www.youtube.com/poiyomi},hover:YOUTUBE}", Float) = 0
@@ -775,7 +775,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 		[ToggleUI]_FXProximityColorBackFace ("Force BackFace Color", Float) = 0
 		[HideInInspector] m_end_FXProximityColor ("", Float) = 0
 		[HideInInspector] m_vertexCategory ("Vertex Options", Float) = 0
-		[HideInInspector] m_start_Uzumore (" View Clip Prevention (Uzumore)--{reference_property:_UzumoreCategoryToggle,button_author:{text:sigmal00,action:{type:URL,data:https://github.com/sigmal00},hover:GitHub}}", Float) = 0
+		[HideInInspector] m_start_Uzumore (" View Clip Prevention (Uzumore)--{reference_property:_UzumoreCategoryToggle,button_author:{text:sigmal00,action:{type:URL,data:https://github.com/sigmal00},hover:GitHub}}, button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/vertex-options/view-clip-prevention},hover:Documentation}}", Float) = 0
 		[HideInInspector][ThryToggle(POI_UZUMORE)] _UzumoreCategoryToggle (" View Clip Prevention (Uzumore)", Float) = 0
 		[Toggle] _UzumoreEnabled ("Animation Toggle", Float) = 1
 		_UzumoreAmount ("Push Amount (m)", Float) = 0.1
@@ -1163,7 +1163,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : TEXCOORD4;
+				#ifndef POI_TESSELLATED
+				uint vertexId : SV_VertexID;
+				#endif
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -1870,63 +1872,52 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 			}
 			inline float poiRand(float2 co)
 			{
-				uint2 p = (uint2)(co * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p.x += p.y * 1664525u;
-				p.y += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float)p.x * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(co.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.x + p3.y) * p3.z);
 			}
 			inline float4 poiRand4(float2 seed)
 			{
-				uint4 p = (uint4)(seed.xyxy * float4(1000.0, 1337.0, 2341.0, 3571.0));
-				p = p * 1664525u + 1013904223u;
-				p.xyzw += p.yzwx * 1664525u;
-				p.xyzw += p.zwxy * 1664525u;
-				p ^= p >> 16u;
-				return (float4)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				float2 a = frac((p3.xx + p3.yz) * p3.zy);
+				float2 s2 = seed + 37.0;
+				float3 q3 = frac(float3(s2.xyx) * 0.1031);
+				q3 += dot(q3, q3.yzx + 33.33);
+				float2 b = frac((q3.xx + q3.yz) * q3.zy);
+				return float4(a, b);
 			}
 			inline float2 poiRand2(float seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float2 x = float2(seed, seed * 1.3);
+				float3 p3 = frac(float3(x.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float2 poiRand2(float2 seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float poiRand3(float seed)
 			{
-				uint p = (uint)(seed * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p += (p >> 16u);
-				p ^= p >> 16u;
-				return (float)p * (1.0 / 4294967296.0);
+				float p = frac(seed * 0.1031);
+				p *= p + 33.33;
+				p *= p + p;
+				return frac(p);
 			}
 			inline float3 poiRand3(float2 seed)
 			{
-				uint3 p = (uint3)(seed.xyxy * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3(float3 seed)
 			{
-				uint3 p = (uint3)(seed * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(seed * 0.1031);
+				p3 += dot(p3, p3.zyx + 31.32);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3Range(float2 Seed, float Range)
 			{
@@ -3291,12 +3282,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
 				 if (pos.w < 0) { // It is a spot light
 					float angle = color.w;
-					float spotMask = dot(ldir, -dirN) - angle;
+					float spotMask = dot(ldir.xyz, -dirN) - angle;
 					 if(customId >= 0 && spotMask < 0) return; // Spot cone based culling
 					 if (customId > 0) {  // If it uses Attenuation LUT
 						LV_SphereSpotLightAttenuationLUT(sqlen, dirN, -pos.w, color.rgb, spotMask, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
 					} else { // If it uses default parametric attenuation
-						float3 att = LV_PointLightAttenuation(sqlen, -pos.w, color, _UdonLightBrightnessCutoff, sqrRange);
+						float3 att = LV_PointLightAttenuation(sqlen, -pos.w, color.rgb, _UdonLightBrightnessCutoff, sqrRange);
 						 if (customId < 0) { // If uses cookie
 							LV_SphereSpotLightCookie(sqlen, dirN, -pos.w, att, ldir, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
 						} else { // If it uses default parametric attenuation
@@ -4411,7 +4402,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : TEXCOORD4;
+				#ifndef POI_TESSELLATED
+				uint vertexId : SV_VertexID;
+				#endif
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -5118,63 +5111,52 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 			}
 			inline float poiRand(float2 co)
 			{
-				uint2 p = (uint2)(co * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p.x += p.y * 1664525u;
-				p.y += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float)p.x * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(co.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.x + p3.y) * p3.z);
 			}
 			inline float4 poiRand4(float2 seed)
 			{
-				uint4 p = (uint4)(seed.xyxy * float4(1000.0, 1337.0, 2341.0, 3571.0));
-				p = p * 1664525u + 1013904223u;
-				p.xyzw += p.yzwx * 1664525u;
-				p.xyzw += p.zwxy * 1664525u;
-				p ^= p >> 16u;
-				return (float4)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				float2 a = frac((p3.xx + p3.yz) * p3.zy);
+				float2 s2 = seed + 37.0;
+				float3 q3 = frac(float3(s2.xyx) * 0.1031);
+				q3 += dot(q3, q3.yzx + 33.33);
+				float2 b = frac((q3.xx + q3.yz) * q3.zy);
+				return float4(a, b);
 			}
 			inline float2 poiRand2(float seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float2 x = float2(seed, seed * 1.3);
+				float3 p3 = frac(float3(x.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float2 poiRand2(float2 seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float poiRand3(float seed)
 			{
-				uint p = (uint)(seed * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p += (p >> 16u);
-				p ^= p >> 16u;
-				return (float)p * (1.0 / 4294967296.0);
+				float p = frac(seed * 0.1031);
+				p *= p + 33.33;
+				p *= p + p;
+				return frac(p);
 			}
 			inline float3 poiRand3(float2 seed)
 			{
-				uint3 p = (uint3)(seed.xyxy * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3(float3 seed)
 			{
-				uint3 p = (uint3)(seed * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(seed * 0.1031);
+				p3 += dot(p3, p3.zyx + 31.32);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3Range(float2 Seed, float Range)
 			{
@@ -7620,16 +7602,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				#if defined(PROP_MATCAP) || !defined(OPTIMIZER_ENABLED)
 				getMatcapUV(matcapUV, float4(0,0,0,0).xy, 1.0, 1.0, float4(0,0,0,0).xy, 0.0, 0.5, normal0, poiCam, poiLight, poiMesh, 1.0, matcapALD);
 				matcapUV = TRANSFORM_TEX(matcapUV, _Matcap);
-				float mipCount0 = 9;
-				if (float4(0.0078125,0.0078125,128,128).z == 8192) mipCount0 = 13;
-				if (float4(0.0078125,0.0078125,128,128).z == 4096) mipCount0 = 12;
-				if (float4(0.0078125,0.0078125,128,128).z == 2048) mipCount0 = 11;
-				if (float4(0.0078125,0.0078125,128,128).z == 1024) mipCount0 = 10;
-				if (float4(0.0078125,0.0078125,128,128).z == 512) mipCount0 = 9;
-				if (float4(0.0078125,0.0078125,128,128).z == 256) mipCount0 = 8;
-				if (float4(0.0078125,0.0078125,128,128).z == 128) mipCount0 = 7;
-				if (float4(0.0078125,0.0078125,128,128).z == 64) mipCount0 = 6;
-				if (float4(0.0078125,0.0078125,128,128).z == 32) mipCount0 = 5;
+				float mipCount0 = floor(log2(max(float4(0.0078125,0.0078125,128,128).z, float4(0.0078125,0.0078125,128,128).w)));
 				float matcapSmoothness = 1.0;
 				if (0.0)
 				{
@@ -10141,7 +10114,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : TEXCOORD4;
+				#ifndef POI_TESSELLATED
+				uint vertexId : SV_VertexID;
+				#endif
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -10848,63 +10823,52 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 			}
 			inline float poiRand(float2 co)
 			{
-				uint2 p = (uint2)(co * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p.x += p.y * 1664525u;
-				p.y += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float)p.x * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(co.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.x + p3.y) * p3.z);
 			}
 			inline float4 poiRand4(float2 seed)
 			{
-				uint4 p = (uint4)(seed.xyxy * float4(1000.0, 1337.0, 2341.0, 3571.0));
-				p = p * 1664525u + 1013904223u;
-				p.xyzw += p.yzwx * 1664525u;
-				p.xyzw += p.zwxy * 1664525u;
-				p ^= p >> 16u;
-				return (float4)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				float2 a = frac((p3.xx + p3.yz) * p3.zy);
+				float2 s2 = seed + 37.0;
+				float3 q3 = frac(float3(s2.xyx) * 0.1031);
+				q3 += dot(q3, q3.yzx + 33.33);
+				float2 b = frac((q3.xx + q3.yz) * q3.zy);
+				return float4(a, b);
 			}
 			inline float2 poiRand2(float seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float2 x = float2(seed, seed * 1.3);
+				float3 p3 = frac(float3(x.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float2 poiRand2(float2 seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float poiRand3(float seed)
 			{
-				uint p = (uint)(seed * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p += (p >> 16u);
-				p ^= p >> 16u;
-				return (float)p * (1.0 / 4294967296.0);
+				float p = frac(seed * 0.1031);
+				p *= p + 33.33;
+				p *= p + p;
+				return frac(p);
 			}
 			inline float3 poiRand3(float2 seed)
 			{
-				uint3 p = (uint3)(seed.xyxy * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3(float3 seed)
 			{
-				uint3 p = (uint3)(seed * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(seed * 0.1031);
+				p3 += dot(p3, p3.zyx + 31.32);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3Range(float2 Seed, float Range)
 			{
@@ -12507,16 +12471,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				#if defined(PROP_MATCAP) || !defined(OPTIMIZER_ENABLED)
 				getMatcapUV(matcapUV, float4(0,0,0,0).xy, 1.0, 1.0, float4(0,0,0,0).xy, 0.0, 0.5, normal0, poiCam, poiLight, poiMesh, 1.0, matcapALD);
 				matcapUV = TRANSFORM_TEX(matcapUV, _Matcap);
-				float mipCount0 = 9;
-				if (float4(0.0078125,0.0078125,128,128).z == 8192) mipCount0 = 13;
-				if (float4(0.0078125,0.0078125,128,128).z == 4096) mipCount0 = 12;
-				if (float4(0.0078125,0.0078125,128,128).z == 2048) mipCount0 = 11;
-				if (float4(0.0078125,0.0078125,128,128).z == 1024) mipCount0 = 10;
-				if (float4(0.0078125,0.0078125,128,128).z == 512) mipCount0 = 9;
-				if (float4(0.0078125,0.0078125,128,128).z == 256) mipCount0 = 8;
-				if (float4(0.0078125,0.0078125,128,128).z == 128) mipCount0 = 7;
-				if (float4(0.0078125,0.0078125,128,128).z == 64) mipCount0 = 6;
-				if (float4(0.0078125,0.0078125,128,128).z == 32) mipCount0 = 5;
+				float mipCount0 = floor(log2(max(float4(0.0078125,0.0078125,128,128).z, float4(0.0078125,0.0078125,128,128).w)));
 				float matcapSmoothness = 1.0;
 				if (0.0)
 				{
@@ -14432,12 +14387,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
 				 if (pos.w < 0) { // It is a spot light
 					float angle = color.w;
-					float spotMask = dot(ldir, -dirN) - angle;
+					float spotMask = dot(ldir.xyz, -dirN) - angle;
 					 if(customId >= 0 && spotMask < 0) return; // Spot cone based culling
 					 if (customId > 0) {  // If it uses Attenuation LUT
 						LV_SphereSpotLightAttenuationLUT(sqlen, dirN, -pos.w, color.rgb, spotMask, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
 					} else { // If it uses default parametric attenuation
-						float3 att = LV_PointLightAttenuation(sqlen, -pos.w, color, _UdonLightBrightnessCutoff, sqrRange);
+						float3 att = LV_PointLightAttenuation(sqlen, -pos.w, color.rgb, _UdonLightBrightnessCutoff, sqrRange);
 						 if (customId < 0) { // If uses cookie
 							LV_SphereSpotLightCookie(sqlen, dirN, -pos.w, att, ldir, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
 						} else { // If it uses default parametric attenuation
@@ -15236,7 +15191,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : TEXCOORD4;
+				#ifndef POI_TESSELLATED
+				uint vertexId : SV_VertexID;
+				#endif
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -15943,63 +15900,52 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 			}
 			inline float poiRand(float2 co)
 			{
-				uint2 p = (uint2)(co * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p.x += p.y * 1664525u;
-				p.y += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float)p.x * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(co.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.x + p3.y) * p3.z);
 			}
 			inline float4 poiRand4(float2 seed)
 			{
-				uint4 p = (uint4)(seed.xyxy * float4(1000.0, 1337.0, 2341.0, 3571.0));
-				p = p * 1664525u + 1013904223u;
-				p.xyzw += p.yzwx * 1664525u;
-				p.xyzw += p.zwxy * 1664525u;
-				p ^= p >> 16u;
-				return (float4)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				float2 a = frac((p3.xx + p3.yz) * p3.zy);
+				float2 s2 = seed + 37.0;
+				float3 q3 = frac(float3(s2.xyx) * 0.1031);
+				q3 += dot(q3, q3.yzx + 33.33);
+				float2 b = frac((q3.xx + q3.yz) * q3.zy);
+				return float4(a, b);
 			}
 			inline float2 poiRand2(float seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float2 x = float2(seed, seed * 1.3);
+				float3 p3 = frac(float3(x.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float2 poiRand2(float2 seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float poiRand3(float seed)
 			{
-				uint p = (uint)(seed * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p += (p >> 16u);
-				p ^= p >> 16u;
-				return (float)p * (1.0 / 4294967296.0);
+				float p = frac(seed * 0.1031);
+				p *= p + 33.33;
+				p *= p + p;
+				return frac(p);
 			}
 			inline float3 poiRand3(float2 seed)
 			{
-				uint3 p = (uint3)(seed.xyxy * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3(float3 seed)
 			{
-				uint3 p = (uint3)(seed * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(seed * 0.1031);
+				p3 += dot(p3, p3.zyx + 31.32);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3Range(float2 Seed, float Range)
 			{
@@ -18412,7 +18358,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
-				uint vertexId : TEXCOORD4;
+				#ifndef POI_TESSELLATED
+				uint vertexId : SV_VertexID;
+				#endif
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 			struct VertexOut
@@ -19119,63 +19067,52 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/2df1f8f80b5c62f4caf72db4dc5f8eeb"
 			}
 			inline float poiRand(float2 co)
 			{
-				uint2 p = (uint2)(co * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p.x += p.y * 1664525u;
-				p.y += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float)p.x * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(co.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.x + p3.y) * p3.z);
 			}
 			inline float4 poiRand4(float2 seed)
 			{
-				uint4 p = (uint4)(seed.xyxy * float4(1000.0, 1337.0, 2341.0, 3571.0));
-				p = p * 1664525u + 1013904223u;
-				p.xyzw += p.yzwx * 1664525u;
-				p.xyzw += p.zwxy * 1664525u;
-				p ^= p >> 16u;
-				return (float4)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				float2 a = frac((p3.xx + p3.yz) * p3.zy);
+				float2 s2 = seed + 37.0;
+				float3 q3 = frac(float3(s2.xyx) * 0.1031);
+				q3 += dot(q3, q3.yzx + 33.33);
+				float2 b = frac((q3.xx + q3.yz) * q3.zy);
+				return float4(a, b);
 			}
 			inline float2 poiRand2(float seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float2 x = float2(seed, seed * 1.3);
+				float3 p3 = frac(float3(x.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float2 poiRand2(float2 seed)
 			{
-				uint2 p = (uint2)(seed * float2(1000.0, 1337.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p ^= p >> 16u;
-				return (float2)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
 			inline float poiRand3(float seed)
 			{
-				uint p = (uint)(seed * 1000.0);
-				p = p * 1664525u + 1013904223u;
-				p += (p >> 16u);
-				p ^= p >> 16u;
-				return (float)p * (1.0 / 4294967296.0);
+				float p = frac(seed * 0.1031);
+				p *= p + 33.33;
+				p *= p + p;
+				return frac(p);
 			}
 			inline float3 poiRand3(float2 seed)
 			{
-				uint3 p = (uint3)(seed.xyxy * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3(float3 seed)
 			{
-				uint3 p = (uint3)(seed * float3(1000.0, 1337.0, 2341.0));
-				p = p * 1664525u + 1013904223u;
-				p.xy += p.yx * 1664525u;
-				p.z += p.x * 1664525u;
-				p ^= p >> 16u;
-				return (float3)p * (1.0 / 4294967296.0);
+				float3 p3 = frac(seed * 0.1031);
+				p3 += dot(p3, p3.zyx + 31.32);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
 			}
 			inline float3 poiRand3Range(float2 Seed, float Range)
 			{

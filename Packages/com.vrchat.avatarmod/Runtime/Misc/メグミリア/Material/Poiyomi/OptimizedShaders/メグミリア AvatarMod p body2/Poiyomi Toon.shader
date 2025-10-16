@@ -8030,10 +8030,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/e325333dfb1e15a4da96afabf4cdb82e"
 				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.2788943,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
+					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.5028866,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
 					if (0.0)
 					{
-						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.2788943,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
+						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.5028866,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
@@ -13404,10 +13404,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/e325333dfb1e15a4da96afabf4cdb82e"
 				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.2788943,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
+					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.5028866,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
 					if (0.0)
 					{
-						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.2788943,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
+						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.5028866,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
@@ -17526,10 +17526,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/e325333dfb1e15a4da96afabf4cdb82e"
 				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.2788943,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
+					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.5028866,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
 					if (0.0)
 					{
-						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.2788943,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
+						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.5028866,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)

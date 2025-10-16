@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u871C\u7D2C\u5E0C AvatarMod p clothes1"
-  m_Shader: {fileID: 4800000, guid: 555d4d13657e45f4a97234a0cb9b0116, type: 3}
+  m_Shader: {fileID: 4800000, guid: fb026294e9a9d734cbd28a26d1f884e6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -19,6 +19,7 @@ Material:
   - POI_BACKLIGHT
   - POI_CLEARCOAT
   - POI_ENVIRORIM
+  - POI_GLOBALMASK_TEXTURES
   - POI_LTCGI
   - POI_MATCAP0
   - POI_RIM2
@@ -30,7 +31,6 @@ Material:
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
-  - _UZUMOREENABLED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -38,9 +38,10 @@ Material:
   stringTagMap:
     AllLockedGUIDS: c255b96d9a2db554184759586d49fa0f
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT COLOR_GRADING_HDR_3D POI_ANISOTROPICS
-      POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM POI_LTCGI POI_MATCAP0 POI_RIM2 POI_STYLIZED_StylizedSpecular
-      POI_UDIMDISCARD POI_UZUMORE VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI
-      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _UZUMOREENABLED_ON
+      POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM POI_GLOBALMASK_TEXTURES POI_LTCGI
+      POI_MATCAP0 POI_RIM2 POI_STYLIZED_StylizedSpecular POI_UDIMDISCARD POI_UZUMORE
+      VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI
+      _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
     RenderType: TransparentCutout
@@ -112,6 +113,22 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ClearCoatMaps:
+        m_Texture: {fileID: 2800000, guid: 71fd2099351fed8438fe87f8351f0092, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _GlobalMaskTexture0:
+        m_Texture: {fileID: 2800000, guid: 71fd2099351fed8438fe87f8351f0092, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _GlobalMaskTexture1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlobalMaskTexture2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlobalMaskTexture3:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -204,8 +221,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set_HighColorMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 71fd2099351fed8438fe87f8351f0092, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0, y: 0}
     - _Set_Rim2LightMask:
         m_Texture: {fileID: 0}
@@ -360,7 +377,7 @@ Material:
     - _Aniso1ToonMode: 0
     - _AnisoAdd: 0.5
     - _AnisoColorMapUV: 0
-    - _AnisoGlobalMask: 0
+    - _AnisoGlobalMask: 3
     - _AnisoGlobalMaskBlendType: 2
     - _AnisoHideInShadow: 0.9
     - _AnisoReplace: 0
@@ -544,7 +561,7 @@ Material:
     - _ClearCoatGlobalMask: 0
     - _ClearCoatGlobalMaskBlendType: 2
     - _ClearCoatLitFallback: 1
-    - _ClearCoatMapsClearCoatMaskChannel: 3
+    - _ClearCoatMapsClearCoatMaskChannel: 2
     - _ClearCoatMapsReflectionMaskChannel: 4
     - _ClearCoatMapsRoughnessChannel: 4
     - _ClearCoatMapsSpecularMaskChannel: 4
@@ -1370,7 +1387,7 @@ Material:
     - _GlobalMaskTexture2UV: 0
     - _GlobalMaskTexture3Split: 0
     - _GlobalMaskTexture3UV: 0
-    - _GlobalMaskTexturesEnable: 0
+    - _GlobalMaskTexturesEnable: 1
     - _GlobalMaskToggleOff_0: 0
     - _GlobalMaskToggleOff_1: 0
     - _GlobalMaskToggleOff_10: 0
@@ -2287,7 +2304,7 @@ Material:
     - _ScrollingEmission1: 0
     - _ScrollingEmission2: 0
     - _ScrollingEmission3: 0
-    - _Set_HighColorMaskChannel: 1
+    - _Set_HighColorMaskChannel: 2
     - _Set_HighColorMaskUV: 0
     - _Set_Rim2LightMaskChannel: 1
     - _Set_Rim2LightMaskUV: 0
@@ -2670,7 +2687,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 1
+    - m_OutlineCategory: 0
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2823,8 +2840,8 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 0
-    - m_mainCategory: 1
+    - m_lightingCategory: 1
+    - m_mainCategory: 0
     - m_modifierCategory: 1
     - m_renderingCategory: 1
     - m_specialFXCategory: 1
@@ -2855,7 +2872,7 @@ Material:
     - m_start_FXProximityColor: 1
     - m_start_FlipbookAudioLink: 0
     - m_start_Gameboy: 0
-    - m_start_GlobalMask: 0
+    - m_start_GlobalMask: 1
     - m_start_GlobalMaskDistanceM_0: 0
     - m_start_GlobalMaskDistanceM_1: 0
     - m_start_GlobalMaskDistanceM_10: 0
@@ -2878,7 +2895,7 @@ Material:
     - m_start_GlobalMaskModifiersDistance: 0
     - m_start_GlobalMaskModifiersMirror: 0
     - m_start_GlobalMaskOptions: 0
-    - m_start_GlobalMaskTextures: 0
+    - m_start_GlobalMaskTextures: 1
     - m_start_GlobalMaskVertexColors: 0
     - m_start_GlobalThemeColor0: 0
     - m_start_GlobalThemeColor1: 0
@@ -2896,10 +2913,10 @@ Material:
     - m_start_OutlineStencilPassFrontOptions: 0
     - m_start_PPAnimations: 1
     - m_start_PathAudioLink: 0
-    - m_start_PoiGlobalCategory: 0
+    - m_start_PoiGlobalCategory: 1
     - m_start_PoiLightData: 0
     - m_start_PoiPostProcessingCategory: 1
-    - m_start_PoiShading: 1
+    - m_start_PoiShading: 0
     - m_start_PoiUVCategory: 0
     - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
@@ -2946,7 +2963,7 @@ Material:
     - m_start_flipBook: 0
     - m_start_glitter: 0
     - m_start_internalparallax: 0
-    - m_start_matcap: 1
+    - m_start_matcap: 0
     - m_start_mirrorOptions: 0
     - m_start_normalCorrect: 0
     - m_start_outlineAlphaBlending: 0
@@ -3237,7 +3254,7 @@ Material:
     - s_start_AlphaDithering: 0
     - s_start_AlphaFresnel: 0
     - s_start_AlphaToCoverage: 0
-    - s_start_AnisoBottomLayer: 0
+    - s_start_AnisoBottomLayer: 1
     - s_start_AnisoTopLayer: 1
     - s_start_AudioLinkBandOverrides: 1
     - s_start_BRDFTPSMaskGroup: 0

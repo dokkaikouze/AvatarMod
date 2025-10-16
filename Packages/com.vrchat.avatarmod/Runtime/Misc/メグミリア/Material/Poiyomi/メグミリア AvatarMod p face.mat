@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u30E1\u30B0\u30DF\u30EA\u30A2 AvatarMod p face"
-  m_Shader: {fileID: 4800000, guid: 1f95327e3d0feab44971e2e17a95b951, type: 3}
+  m_Shader: {fileID: 4800000, guid: 63a31e37a7dfdd9409da007b499a5da4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -28,7 +28,6 @@ Material:
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
-  - _UZUMOREENABLED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -38,7 +37,7 @@ Material:
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM
       POI_LTCGI POI_MATCAP0 POI_NORMALCORRECT POI_RIM2 POI_STYLIZED_StylizedSpecular
       POI_UZUMORE VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI
-      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _UZUMOREENABLED_ON
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
     RenderType: Opaque
@@ -2063,7 +2062,7 @@ Material:
     - _ReflectionCubeEnableLighting: 1
     - _ReflectionCubeOverride: 0
     - _ReflectionNormalStrength: 1
-    - _RenderingAOBlockerEnabled: 0
+    - _RenderingAOBlockerEnabled: 1
     - _RenderingAOBlockerFlipNormal: 0
     - _RenderingAOBlockerNote: 0
     - _RenderingAOBlockerUVChannel: 0
@@ -2904,7 +2903,7 @@ Material:
     - m_start_Uzumore: 1
     - m_start_VideoSettings: 0
     - m_start_VoronoiAudioLink: 0
-    - m_start_WorldAOBlocker: 0
+    - m_start_WorldAOBlocker: 1
     - m_start_alphaBlending: 0
     - m_start_audioLink: 0
     - m_start_audioLinkOverrides: 0
@@ -3620,7 +3619,7 @@ Material:
     - _EmissiveScroll_Direction2: {r: 0, g: -10, b: 0, a: 0}
     - _EmissiveScroll_Direction3: {r: 0, g: -10, b: 0, a: 0}
     - _FXProximityColorMaxColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FXProximityColorMinColor: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
+    - _FXProximityColorMinColor: {r: 0.7372549, g: 0.5647059, b: 0.5647059, a: 1}
     - _FlipbookColor: {r: 1, g: 1, b: 1, a: 1}
     - _FlipbookCrossfadeRange: {r: 0.75, g: 1, b: 0, a: 1}
     - _FlipbookMaskPan: {r: 0, g: 0, b: 0, a: 0}

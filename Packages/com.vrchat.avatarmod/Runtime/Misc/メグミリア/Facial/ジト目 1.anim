@@ -28,13 +28,34 @@ AnimationClip:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CombineMesh effect2
+    classID: 1
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3057\u3044\u305F\u3051"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -55,7 +76,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30FC\u30C8"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -76,7 +97,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30FC\u30C82"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -97,7 +118,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30FC\u30C83"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -118,7 +139,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30FC\u30C83\u7E2E\u5C0F"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -139,7 +160,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -160,7 +181,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -181,7 +202,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -202,7 +223,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -223,7 +244,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0B(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -244,7 +265,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0B(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -265,7 +286,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -286,7 +307,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -307,7 +328,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -328,7 +349,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -349,7 +370,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -370,7 +391,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -391,7 +412,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -412,7 +433,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -433,7 +454,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -454,7 +475,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -475,7 +496,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -496,7 +517,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -517,7 +538,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -538,7 +559,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B3(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -559,7 +580,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B3(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -580,7 +601,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304B\u306A\u308A\u56F0\u308B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -601,7 +622,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304B\u306A\u308A\u56F0\u308B(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -622,7 +643,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304B\u306A\u308A\u56F0\u308B(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -643,7 +664,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3057\u304B\u3081\u7709"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -664,7 +685,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3057\u304B\u3081\u7709(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -685,7 +706,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3057\u304B\u3081\u7709(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -706,7 +727,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u771F\u9762\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -727,7 +748,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u771F\u9762\u76EE(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -748,7 +769,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u771F\u9762\u76EE(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -769,7 +790,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -790,7 +811,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -811,7 +832,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -832,7 +853,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -853,7 +874,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -874,7 +895,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -895,7 +916,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A1"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -916,7 +937,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A1(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -937,7 +958,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A1(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -958,7 +979,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A12"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -979,7 +1000,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A12(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1000,7 +1021,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A12(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1021,7 +1042,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30B7\u30E3\u30AD\u30FC\u30F3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1042,7 +1063,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30B7\u30E3\u30AD\u30FC\u30F3(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1063,7 +1084,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30B7\u30E3\u30AD\u30FC\u30F3(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1084,7 +1105,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u5E73\u884C\u7709"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1105,7 +1126,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u5E73\u884C\u7709(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1126,7 +1147,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u5E73\u884C\u7709(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1147,7 +1168,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7709\u592A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1168,7 +1189,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7709\u592A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1189,7 +1210,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7709\u592A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1210,7 +1231,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7709\u6D88\u3057"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1231,7 +1252,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3042"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1252,7 +1273,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30422"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1273,7 +1294,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30423"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1294,7 +1315,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3044"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1315,7 +1336,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3046"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1336,7 +1357,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3048"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1357,7 +1378,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3048\u30FC"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1378,7 +1399,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1399,7 +1420,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304A2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1420,7 +1441,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304A3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1441,7 +1462,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304A4"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1462,7 +1483,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u039B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1483,7 +1504,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3080\u3063"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1504,7 +1525,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25B2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1525,7 +1546,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u03C9"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1546,7 +1567,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u03C9\u25A1"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1567,7 +1588,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u03C9\u4E0A\u5507"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1588,7 +1609,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u03B5"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1609,7 +1630,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30ED"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1630,7 +1651,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30EF"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1651,7 +1672,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30EF2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1672,7 +1693,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30EF3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1693,7 +1714,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3093"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1714,7 +1735,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306F\u3093\u3063\uFF01"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1735,7 +1756,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306F\u3093\u3063\uFF01\u9006"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1756,7 +1777,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u307A\u308D\u3063"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1777,7 +1798,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3079\u308D\u30632"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1798,7 +1819,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3089\u3081\u3047"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1819,7 +1840,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3089\u3081\u30472"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1840,7 +1861,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3050\u306C\u306C"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1861,7 +1882,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u8584\u7B11\u3044"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1882,7 +1903,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u8584\u7B11\u30442"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1903,7 +1924,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3078\u3089"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1924,7 +1945,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3084\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1945,7 +1966,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3063\u3053\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1966,7 +1987,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3063\u3053\u308A2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -1987,7 +2008,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3075\u306B\u3083"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2008,7 +2029,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3075\u306B\u30832"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2029,7 +2050,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0A\u3052"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2050,7 +2071,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0A\u3052(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2071,7 +2092,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0A\u3052(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2092,7 +2113,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0B\u3052"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2113,7 +2134,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0B\u3052(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2134,7 +2155,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0B\u3052(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2155,7 +2176,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u5E83\u3052"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2176,7 +2197,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u5E83\u3052(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2197,7 +2218,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u5E83\u3052(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2218,7 +2239,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u72ED\u3081"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2239,7 +2260,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u72ED\u3081(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2260,7 +2281,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u72ED\u3081(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2281,7 +2302,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u4E0A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2302,7 +2323,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u4E0B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2323,7 +2344,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u9699\u9593\u9589\u3058"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2344,7 +2365,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u516B\u91CD\u6B6F\u304F\u3061"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2365,7 +2386,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u516B\u91CD\u6B6F\u304F\u3061(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2386,7 +2407,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u516B\u91CD\u6B6F\u304F\u3061(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2407,7 +2428,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2428,7 +2449,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2449,7 +2470,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2470,7 +2491,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2491,7 +2512,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0B(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2512,7 +2533,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0B(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2533,7 +2554,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6B6F\u30AE\u30B6\u30AE\u30B6"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2554,7 +2575,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u820C\u7D30"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2575,7 +2596,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u820C\u5E83"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2596,7 +2617,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u820C\u8584"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2617,7 +2638,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7B11\u3044"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2638,7 +2659,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30A6\u30A3\u30F3\u30AF"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2659,7 +2680,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30A6\u30A3\u30F3\u30AF\u53F3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2680,7 +2701,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30A6\u30A3\u30F3\u30AF\uFF12"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2701,7 +2722,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30A6\u30A3\u30F3\u30AF\uFF12\u53F3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2722,7 +2743,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3073\u3063\u304F\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2743,7 +2764,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3073\u3063\u304F\u308A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2764,7 +2785,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3073\u3063\u304F\u308A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2785,7 +2806,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306F\u3045"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2806,7 +2827,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25CB\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2827,7 +2848,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE1"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2848,7 +2869,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE1(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2869,7 +2890,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE1(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2890,7 +2911,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2911,7 +2932,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2932,7 +2953,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2953,7 +2974,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3064\u308A\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2974,7 +2995,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3064\u308A\u76EE(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -2995,7 +3016,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3064\u308A\u76EE(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3016,7 +3037,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3037,7 +3058,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F\u2192\u305F\u308C\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3058,7 +3079,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F\u2192\u3064\u308A\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3079,7 +3100,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3100,7 +3121,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3121,7 +3142,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3142,7 +3163,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u306C\uFF01"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3163,7 +3184,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3093\u307E\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3184,7 +3205,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3093\u307E\u308A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3205,7 +3226,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3093\u307E\u308A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3226,7 +3247,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306E\u3063\u307A\u3089"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3247,7 +3268,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30B5\u30A4\u30B3\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3268,7 +3289,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u9F3B\u7DDA\u6D88\u3057"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3289,7 +3310,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C0\u30DF\u30FC"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3310,7 +3331,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5C0F"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3331,7 +3352,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5C0F(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3352,7 +3373,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5C0F(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3373,7 +3394,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5927"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3394,7 +3415,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5927(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3415,7 +3436,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5927(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3436,7 +3457,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u7E26\u9577"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3457,7 +3478,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u7E26\u9577(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3478,7 +3499,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u7E26\u9577(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3499,7 +3520,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u6A2A\u9577"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3520,7 +3541,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u6A2A\u9577(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3541,7 +3562,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u6A2A\u9577(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3562,7 +3583,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25CB\u76EE\u2192\u5C0F"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3583,7 +3604,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25CB\u76EE\u2192\u7E26\u9577"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3604,7 +3625,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25CB\u76EE\u2192\u6A2A\u9577"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3625,7 +3646,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6050\u308D\u3057\u3044\u5B50\uFF01"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3646,7 +3667,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30A4\u30E9\u30A4\u30C8\u6D88"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -3667,31 +3688,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30A4\u30E9\u30A4\u30C8\u5927"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: CombineMesh effect2
-    classID: 1
-    script: {fileID: 0}
-    flags: 0
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -3701,7 +3701,16 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2073732236
+      path: 3268285313
+      attribute: 2086281974
+      script: {fileID: 0}
+      typeID: 1
+      customType: 0
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 85228391
       attribute: 3337944558
       script: {fileID: 0}
       typeID: 137
@@ -3710,7 +3719,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 788745613
       script: {fileID: 0}
       typeID: 137
@@ -3719,7 +3728,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2314420957
       script: {fileID: 0}
       typeID: 137
@@ -3728,7 +3737,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4277432907
       script: {fileID: 0}
       typeID: 137
@@ -3737,7 +3746,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1371018002
       script: {fileID: 0}
       typeID: 137
@@ -3746,7 +3755,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1893461984
       script: {fileID: 0}
       typeID: 137
@@ -3755,7 +3764,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4146786387
       script: {fileID: 0}
       typeID: 137
@@ -3764,7 +3773,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 220581168
       script: {fileID: 0}
       typeID: 137
@@ -3773,7 +3782,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 131915638
       script: {fileID: 0}
       typeID: 137
@@ -3782,7 +3791,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4142439012
       script: {fileID: 0}
       typeID: 137
@@ -3791,7 +3800,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 216508167
       script: {fileID: 0}
       typeID: 137
@@ -3800,7 +3809,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2014068367
       script: {fileID: 0}
       typeID: 137
@@ -3809,7 +3818,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3835391406
       script: {fileID: 0}
       typeID: 137
@@ -3818,7 +3827,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 513036493
       script: {fileID: 0}
       typeID: 137
@@ -3827,7 +3836,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1739205762
       script: {fileID: 0}
       typeID: 137
@@ -3836,7 +3845,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2727116045
       script: {fileID: 0}
       typeID: 137
@@ -3845,7 +3854,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1484996718
       script: {fileID: 0}
       typeID: 137
@@ -3854,7 +3863,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2492775825
       script: {fileID: 0}
       typeID: 137
@@ -3863,7 +3872,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1147890803
       script: {fileID: 0}
       typeID: 137
@@ -3872,7 +3881,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3194245392
       script: {fileID: 0}
       typeID: 137
@@ -3881,7 +3890,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2638842210
       script: {fileID: 0}
       typeID: 137
@@ -3890,7 +3899,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1515070309
       script: {fileID: 0}
       typeID: 137
@@ -3899,7 +3908,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2688622086
       script: {fileID: 0}
       typeID: 137
@@ -3908,7 +3917,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3931027956
       script: {fileID: 0}
       typeID: 137
@@ -3917,7 +3926,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1535920466
       script: {fileID: 0}
       typeID: 137
@@ -3926,7 +3935,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2709746737
       script: {fileID: 0}
       typeID: 137
@@ -3935,7 +3944,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3208871870
       script: {fileID: 0}
       typeID: 137
@@ -3944,7 +3953,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 589159509
       script: {fileID: 0}
       typeID: 137
@@ -3953,7 +3962,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3641893174
       script: {fileID: 0}
       typeID: 137
@@ -3962,7 +3971,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 752061421
       script: {fileID: 0}
       typeID: 137
@@ -3971,7 +3980,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 140212055
       script: {fileID: 0}
       typeID: 137
@@ -3980,7 +3989,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4065610292
       script: {fileID: 0}
       typeID: 137
@@ -3989,7 +3998,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 691551385
       script: {fileID: 0}
       typeID: 137
@@ -3998,7 +4007,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 370010209
       script: {fileID: 0}
       typeID: 137
@@ -4007,7 +4016,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3959608578
       script: {fileID: 0}
       typeID: 137
@@ -4016,7 +4025,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 592505626
       script: {fileID: 0}
       typeID: 137
@@ -4025,7 +4034,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 504655606
       script: {fileID: 0}
       typeID: 137
@@ -4034,7 +4043,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3826996117
       script: {fileID: 0}
       typeID: 137
@@ -4043,7 +4052,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3885242268
       script: {fileID: 0}
       typeID: 137
@@ -4052,7 +4061,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3351653320
       script: {fileID: 0}
       typeID: 137
@@ -4061,7 +4070,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1036588715
       script: {fileID: 0}
       typeID: 137
@@ -4070,7 +4079,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2195173098
       script: {fileID: 0}
       typeID: 137
@@ -4079,7 +4088,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 203332563
       script: {fileID: 0}
       typeID: 137
@@ -4088,7 +4097,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4128351920
       script: {fileID: 0}
       typeID: 137
@@ -4097,7 +4106,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1518887621
       script: {fileID: 0}
       typeID: 137
@@ -4106,7 +4115,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2362504570
       script: {fileID: 0}
       typeID: 137
@@ -4115,7 +4124,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1994377241
       script: {fileID: 0}
       typeID: 137
@@ -4124,7 +4133,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 226792081
       script: {fileID: 0}
       typeID: 137
@@ -4133,7 +4142,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4021995578
       script: {fileID: 0}
       typeID: 137
@@ -4142,7 +4151,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 364246361
       script: {fileID: 0}
       typeID: 137
@@ -4151,7 +4160,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3144570438
       script: {fileID: 0}
       typeID: 137
@@ -4160,7 +4169,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3184143265
       script: {fileID: 0}
       typeID: 137
@@ -4169,7 +4178,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1204098754
       script: {fileID: 0}
       typeID: 137
@@ -4178,7 +4187,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1835374697
       script: {fileID: 0}
       typeID: 137
@@ -4187,7 +4196,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3540658800
       script: {fileID: 0}
       typeID: 137
@@ -4196,7 +4205,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 688199443
       script: {fileID: 0}
       typeID: 137
@@ -4205,7 +4214,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1306504440
       script: {fileID: 0}
       typeID: 137
@@ -4214,7 +4223,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1976302829
       script: {fileID: 0}
       typeID: 137
@@ -4223,7 +4232,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3290164020
       script: {fileID: 0}
       typeID: 137
@@ -4232,7 +4241,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3005012898
       script: {fileID: 0}
       typeID: 137
@@ -4241,7 +4250,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2628278744
       script: {fileID: 0}
       typeID: 137
@@ -4250,7 +4259,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1923496180
       script: {fileID: 0}
       typeID: 137
@@ -4259,7 +4268,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2501776883
       script: {fileID: 0}
       typeID: 137
@@ -4268,7 +4277,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4238644655
       script: {fileID: 0}
       typeID: 137
@@ -4277,7 +4286,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2064676063
       script: {fileID: 0}
       typeID: 137
@@ -4286,7 +4295,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 214065468
       script: {fileID: 0}
       typeID: 137
@@ -4295,7 +4304,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2076529066
       script: {fileID: 0}
       typeID: 137
@@ -4304,7 +4313,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3852583945
       script: {fileID: 0}
       typeID: 137
@@ -4313,7 +4322,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1937613555
       script: {fileID: 0}
       typeID: 137
@@ -4322,7 +4331,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3247352039
       script: {fileID: 0}
       typeID: 137
@@ -4331,7 +4340,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1465066208
       script: {fileID: 0}
       typeID: 137
@@ -4340,7 +4349,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2581586682
       script: {fileID: 0}
       typeID: 137
@@ -4349,7 +4358,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 295357322
       script: {fileID: 0}
       typeID: 137
@@ -4358,7 +4367,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1031021083
       script: {fileID: 0}
       typeID: 137
@@ -4367,7 +4376,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2947264316
       script: {fileID: 0}
       typeID: 137
@@ -4376,7 +4385,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3962348342
       script: {fileID: 0}
       typeID: 137
@@ -4385,7 +4394,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 35832346
       script: {fileID: 0}
       typeID: 137
@@ -4394,7 +4403,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3887424949
       script: {fileID: 0}
       typeID: 137
@@ -4403,7 +4412,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2427606307
       script: {fileID: 0}
       typeID: 137
@@ -4412,7 +4421,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 878088156
       script: {fileID: 0}
       typeID: 137
@@ -4421,7 +4430,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1436449830
       script: {fileID: 0}
       typeID: 137
@@ -4430,7 +4439,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3470212829
       script: {fileID: 0}
       typeID: 137
@@ -4439,7 +4448,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2080435635
       script: {fileID: 0}
       typeID: 137
@@ -4448,7 +4457,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3327023925
       script: {fileID: 0}
       typeID: 137
@@ -4457,7 +4466,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 500240118
       script: {fileID: 0}
       typeID: 137
@@ -4466,7 +4475,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1310079018
       script: {fileID: 0}
       typeID: 137
@@ -4475,7 +4484,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3629917307
       script: {fileID: 0}
       typeID: 137
@@ -4484,7 +4493,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 718412652
       script: {fileID: 0}
       typeID: 137
@@ -4493,7 +4502,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1593524581
       script: {fileID: 0}
       typeID: 137
@@ -4502,7 +4511,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3446313631
       script: {fileID: 0}
       typeID: 137
@@ -4511,7 +4520,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2839477996
       script: {fileID: 0}
       typeID: 137
@@ -4520,7 +4529,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1438629341
       script: {fileID: 0}
       typeID: 137
@@ -4529,7 +4538,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3806506969
       script: {fileID: 0}
       typeID: 137
@@ -4538,7 +4547,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1492280419
       script: {fileID: 0}
       typeID: 137
@@ -4547,7 +4556,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3459677323
       script: {fileID: 0}
       typeID: 137
@@ -4556,7 +4565,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3961459178
       script: {fileID: 0}
       typeID: 137
@@ -4565,7 +4574,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1472224006
       script: {fileID: 0}
       typeID: 137
@@ -4574,7 +4583,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2916050533
       script: {fileID: 0}
       typeID: 137
@@ -4583,7 +4592,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1419998863
       script: {fileID: 0}
       typeID: 137
@@ -4592,7 +4601,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2627504291
       script: {fileID: 0}
       typeID: 137
@@ -4601,7 +4610,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1720956352
       script: {fileID: 0}
       typeID: 137
@@ -4610,7 +4619,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 546037413
       script: {fileID: 0}
       typeID: 137
@@ -4619,7 +4628,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 737811321
       script: {fileID: 0}
       typeID: 137
@@ -4628,7 +4637,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3522504218
       script: {fileID: 0}
       typeID: 137
@@ -4637,7 +4646,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 511452296
       script: {fileID: 0}
       typeID: 137
@@ -4646,7 +4655,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1454924899
       script: {fileID: 0}
       typeID: 137
@@ -4655,7 +4664,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2897697024
       script: {fileID: 0}
       typeID: 137
@@ -4664,7 +4673,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 347704520
       script: {fileID: 0}
       typeID: 137
@@ -4673,7 +4682,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1673444446
       script: {fileID: 0}
       typeID: 137
@@ -4682,7 +4691,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1761622319
       script: {fileID: 0}
       typeID: 137
@@ -4691,7 +4700,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3422251131
       script: {fileID: 0}
       typeID: 137
@@ -4700,7 +4709,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 373493281
       script: {fileID: 0}
       typeID: 137
@@ -4709,7 +4718,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3964416834
       script: {fileID: 0}
       typeID: 137
@@ -4718,7 +4727,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 680936605
       script: {fileID: 0}
       typeID: 137
@@ -4727,7 +4736,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 750769605
       script: {fileID: 0}
       typeID: 137
@@ -4736,7 +4745,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3601918118
       script: {fileID: 0}
       typeID: 137
@@ -4745,7 +4754,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1603367947
       script: {fileID: 0}
       typeID: 137
@@ -4754,7 +4763,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 763215858
       script: {fileID: 0}
       typeID: 137
@@ -4763,7 +4772,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3614605969
       script: {fileID: 0}
       typeID: 137
@@ -4772,7 +4781,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3026156205
       script: {fileID: 0}
       typeID: 137
@@ -4781,7 +4790,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2326385801
       script: {fileID: 0}
       typeID: 137
@@ -4790,7 +4799,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2826849407
       script: {fileID: 0}
       typeID: 137
@@ -4799,7 +4808,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 133374241
       script: {fileID: 0}
       typeID: 137
@@ -4808,7 +4817,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1765932549
       script: {fileID: 0}
       typeID: 137
@@ -4817,7 +4826,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 651853718
       script: {fileID: 0}
       typeID: 137
@@ -4826,7 +4835,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2300852092
       script: {fileID: 0}
       typeID: 137
@@ -4835,7 +4844,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1018283972
       script: {fileID: 0}
       typeID: 137
@@ -4844,7 +4853,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 274747864
       script: {fileID: 0}
       typeID: 137
@@ -4853,7 +4862,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2064225510
       script: {fileID: 0}
       typeID: 137
@@ -4862,7 +4871,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1722283187
       script: {fileID: 0}
       typeID: 137
@@ -4871,7 +4880,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2628307408
       script: {fileID: 0}
       typeID: 137
@@ -4880,7 +4889,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2893211810
       script: {fileID: 0}
       typeID: 137
@@ -4889,7 +4898,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3158755851
       script: {fileID: 0}
       typeID: 137
@@ -4898,7 +4907,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3461575969
       script: {fileID: 0}
       typeID: 137
@@ -4907,7 +4916,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 890360462
       script: {fileID: 0}
       typeID: 137
@@ -4916,7 +4925,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3474911213
       script: {fileID: 0}
       typeID: 137
@@ -4925,7 +4934,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1465525403
       script: {fileID: 0}
       typeID: 137
@@ -4934,7 +4943,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 928476375
       script: {fileID: 0}
       typeID: 137
@@ -4943,7 +4952,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3445117364
       script: {fileID: 0}
       typeID: 137
@@ -4952,7 +4961,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 530783267
       script: {fileID: 0}
       typeID: 137
@@ -4961,7 +4970,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 860469248
       script: {fileID: 0}
       typeID: 137
@@ -4970,7 +4979,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3376842083
       script: {fileID: 0}
       typeID: 137
@@ -4979,7 +4988,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1701728247
       script: {fileID: 0}
       typeID: 137
@@ -4988,7 +4997,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1605058675
       script: {fileID: 0}
       typeID: 137
@@ -4997,7 +5006,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3500469767
       script: {fileID: 0}
       typeID: 137
@@ -5006,7 +5015,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 963229693
       script: {fileID: 0}
       typeID: 137
@@ -5015,7 +5024,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1844841531
       script: {fileID: 0}
       typeID: 137
@@ -5024,7 +5033,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2549690712
       script: {fileID: 0}
       typeID: 137
@@ -5033,7 +5042,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4066522056
       script: {fileID: 0}
       typeID: 137
@@ -5042,7 +5051,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 554395791
       script: {fileID: 0}
       typeID: 137
@@ -5051,7 +5060,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1720959080
       script: {fileID: 0}
       typeID: 137
@@ -5060,7 +5069,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2627534091
       script: {fileID: 0}
       typeID: 137
@@ -5069,7 +5078,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4154836887
       script: {fileID: 0}
       typeID: 137
@@ -5078,7 +5087,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4186596113
       script: {fileID: 0}
       typeID: 137
@@ -5087,7 +5096,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3566347161
       script: {fileID: 0}
       typeID: 137
@@ -5096,7 +5105,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1249429761
       script: {fileID: 0}
       typeID: 137
@@ -5105,7 +5114,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3986280670
       script: {fileID: 0}
       typeID: 137
@@ -5114,7 +5123,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 9001809
       script: {fileID: 0}
       typeID: 137
@@ -5123,7 +5132,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4203111986
       script: {fileID: 0}
       typeID: 137
@@ -5132,7 +5141,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4135759729
       script: {fileID: 0}
       typeID: 137
@@ -5141,7 +5150,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3920399553
       script: {fileID: 0}
       typeID: 137
@@ -5150,7 +5159,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 329494946
       script: {fileID: 0}
       typeID: 137
@@ -5159,7 +5168,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 792696347
       script: {fileID: 0}
       typeID: 137
@@ -5168,7 +5177,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 700145241
       script: {fileID: 0}
       typeID: 137
@@ -5177,7 +5186,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3551814458
       script: {fileID: 0}
       typeID: 137
@@ -5186,7 +5195,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3461705092
       script: {fileID: 0}
       typeID: 137
@@ -5195,7 +5204,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 4111270514
       script: {fileID: 0}
       typeID: 137
@@ -5204,7 +5213,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 251805457
       script: {fileID: 0}
       typeID: 137
@@ -5213,7 +5222,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1309889881
       script: {fileID: 0}
       typeID: 137
@@ -5222,7 +5231,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 2161941901
       script: {fileID: 0}
       typeID: 137
@@ -5231,7 +5240,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1639343634
       script: {fileID: 0}
       typeID: 137
@@ -5240,7 +5249,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 1992791214
       script: {fileID: 0}
       typeID: 137
@@ -5249,7 +5258,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 3299094187
       script: {fileID: 0}
       typeID: 137
@@ -5258,20 +5267,11 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2073732236
+      path: 85228391
       attribute: 365419896
       script: {fileID: 0}
       typeID: 137
       customType: 20
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 3268285313
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
@@ -5308,13 +5308,34 @@ AnimationClip:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CombineMesh effect2
+    classID: 1
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3057\u3044\u305F\u3051"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5335,7 +5356,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30FC\u30C8"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5356,7 +5377,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30FC\u30C82"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5377,7 +5398,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30FC\u30C83"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5398,7 +5419,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30FC\u30C83\u7E2E\u5C0F"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5419,7 +5440,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5440,7 +5461,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5461,7 +5482,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5482,7 +5503,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5503,7 +5524,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0B(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5524,7 +5545,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u4E0B(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5545,7 +5566,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5566,7 +5587,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5587,7 +5608,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5608,7 +5629,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5629,7 +5650,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5650,7 +5671,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6012\u308A2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5671,7 +5692,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5692,7 +5713,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5713,7 +5734,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5734,7 +5755,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5755,7 +5776,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5776,7 +5797,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5797,7 +5818,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5818,7 +5839,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B3(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5839,7 +5860,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u56F0\u308B3(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5860,7 +5881,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304B\u306A\u308A\u56F0\u308B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5881,7 +5902,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304B\u306A\u308A\u56F0\u308B(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5902,7 +5923,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304B\u306A\u308A\u56F0\u308B(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5923,7 +5944,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3057\u304B\u3081\u7709"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5944,7 +5965,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3057\u304B\u3081\u7709(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5965,7 +5986,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3057\u304B\u3081\u7709(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -5986,7 +6007,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u771F\u9762\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6007,7 +6028,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u771F\u9762\u76EE(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6028,7 +6049,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u771F\u9762\u76EE(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6049,7 +6070,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6070,7 +6091,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6091,7 +6112,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6112,7 +6133,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6133,7 +6154,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6154,7 +6175,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3053\u308A2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6175,7 +6196,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A1"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6196,7 +6217,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A1(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6217,7 +6238,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A1(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6238,7 +6259,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A12"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6259,7 +6280,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A12(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6280,7 +6301,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C9\u30E4\u30A12(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6301,7 +6322,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30B7\u30E3\u30AD\u30FC\u30F3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6322,7 +6343,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30B7\u30E3\u30AD\u30FC\u30F3(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6343,7 +6364,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30B7\u30E3\u30AD\u30FC\u30F3(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6364,7 +6385,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u5E73\u884C\u7709"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6385,7 +6406,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u5E73\u884C\u7709(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6406,7 +6427,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u5E73\u884C\u7709(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6427,7 +6448,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7709\u592A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6448,7 +6469,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7709\u592A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6469,7 +6490,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7709\u592A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6490,7 +6511,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7709\u6D88\u3057"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6511,7 +6532,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3042"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6532,7 +6553,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30422"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6553,7 +6574,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30423"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6574,7 +6595,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3044"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6595,7 +6616,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3046"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6616,7 +6637,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3048"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6637,7 +6658,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3048\u30FC"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6658,7 +6679,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6679,7 +6700,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304A2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6700,7 +6721,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304A3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6721,7 +6742,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u304A4"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6742,7 +6763,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u039B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6763,7 +6784,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3080\u3063"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6784,7 +6805,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25B2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6805,7 +6826,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u03C9"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6826,7 +6847,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u03C9\u25A1"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6847,7 +6868,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u03C9\u4E0A\u5507"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6868,7 +6889,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u03B5"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6889,7 +6910,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30ED"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6910,7 +6931,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30EF"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6931,7 +6952,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30EF2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6952,7 +6973,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30EF3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6973,7 +6994,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3093"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -6994,7 +7015,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306F\u3093\u3063\uFF01"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7015,7 +7036,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306F\u3093\u3063\uFF01\u9006"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7036,7 +7057,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u307A\u308D\u3063"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7057,7 +7078,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3079\u308D\u30632"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7078,7 +7099,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3089\u3081\u3047"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7099,7 +7120,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3089\u3081\u30472"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7120,7 +7141,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3050\u306C\u306C"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7141,7 +7162,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u8584\u7B11\u3044"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7162,7 +7183,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u8584\u7B11\u30442"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7183,7 +7204,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3078\u3089"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7204,7 +7225,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3084\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7225,7 +7246,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3063\u3053\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7246,7 +7267,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3063\u3053\u308A2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7267,7 +7288,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3075\u306B\u3083"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7288,7 +7309,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3075\u306B\u30832"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7309,7 +7330,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0A\u3052"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7330,7 +7351,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0A\u3052(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7351,7 +7372,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0A\u3052(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7372,7 +7393,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0B\u3052"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7393,7 +7414,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0B\u3052(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7414,7 +7435,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u4E0B\u3052(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7435,7 +7456,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u5E83\u3052"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7456,7 +7477,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u5E83\u3052(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7477,7 +7498,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u5E83\u3052(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7498,7 +7519,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u72ED\u3081"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7519,7 +7540,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u72ED\u3081(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7540,7 +7561,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u89D2\u72ED\u3081(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7561,7 +7582,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u4E0A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7582,7 +7603,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u4E0B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7603,7 +7624,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u53E3\u9699\u9593\u9589\u3058"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7624,7 +7645,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u516B\u91CD\u6B6F\u304F\u3061"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7645,7 +7666,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u516B\u91CD\u6B6F\u304F\u3061(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7666,7 +7687,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u516B\u91CD\u6B6F\u304F\u3061(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7687,7 +7708,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7708,7 +7729,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7729,7 +7750,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7750,7 +7771,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0B"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7771,7 +7792,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0B(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7792,7 +7813,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u72AC\u6B6F\u4E0B(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7813,7 +7834,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6B6F\u30AE\u30B6\u30AE\u30B6"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7834,7 +7855,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u820C\u7D30"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7855,7 +7876,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u820C\u5E83"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7876,7 +7897,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u820C\u8584"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7897,7 +7918,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u7B11\u3044"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7918,7 +7939,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30A6\u30A3\u30F3\u30AF"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7939,7 +7960,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30A6\u30A3\u30F3\u30AF\u53F3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7960,7 +7981,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30A6\u30A3\u30F3\u30AF\uFF12"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -7981,7 +8002,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30A6\u30A3\u30F3\u30AF\uFF12\u53F3"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8002,7 +8023,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3073\u3063\u304F\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8023,7 +8044,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3073\u3063\u304F\u308A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8044,7 +8065,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3073\u3063\u304F\u308A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8065,7 +8086,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306F\u3045"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8086,7 +8107,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25CB\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8107,7 +8128,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE1"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8128,7 +8149,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE1(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8149,7 +8170,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE1(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8170,7 +8191,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8191,7 +8212,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8212,7 +8233,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3058\u3068\u76EE2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8233,7 +8254,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3064\u308A\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8254,7 +8275,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3064\u308A\u76EE(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8275,7 +8296,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u3064\u308A\u76EE(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8296,7 +8317,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8317,7 +8338,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F\u2192\u305F\u308C\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8338,7 +8359,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F\u2192\u3064\u308A\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8359,7 +8380,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F2"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8380,7 +8401,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F2(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8401,7 +8422,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u3054\u307F2(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8422,7 +8443,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306A\u306C\uFF01"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8443,7 +8464,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3093\u307E\u308A"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8464,7 +8485,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3093\u307E\u308A(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8485,7 +8506,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306B\u3093\u307E\u308A(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8506,7 +8527,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u306E\u3063\u307A\u3089"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8527,7 +8548,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30B5\u30A4\u30B3\u76EE"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8548,7 +8569,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u9F3B\u7DDA\u6D88\u3057"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8569,7 +8590,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30C0\u30DF\u30FC"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8590,7 +8611,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5C0F"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8611,7 +8632,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5C0F(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8632,7 +8653,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5C0F(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8653,7 +8674,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5927"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8674,7 +8695,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5927(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8695,7 +8716,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u5927(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8716,7 +8737,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u7E26\u9577"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8737,7 +8758,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u7E26\u9577(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8758,7 +8779,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u7E26\u9577(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8779,7 +8800,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u6A2A\u9577"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8800,7 +8821,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u6A2A\u9577(R"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8821,7 +8842,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u77B3\u6A2A\u9577(L"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8842,7 +8863,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25CB\u76EE\u2192\u5C0F"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8863,7 +8884,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25CB\u76EE\u2192\u7E26\u9577"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8884,7 +8905,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u25CB\u76EE\u2192\u6A2A\u9577"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8905,7 +8926,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u6050\u308D\u3057\u3044\u5B50\uFF01"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8926,7 +8947,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30A4\u30E9\u30A4\u30C8\u6D88"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
@@ -8947,31 +8968,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: "blendShape.\u30CF\u30A4\u30E9\u30A4\u30C8\u5927"
-    path: Body
+    path: face
     classID: 137
     script: {fileID: 0}
     flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: CombineMesh effect2
-    classID: 1
-    script: {fileID: 0}
-    flags: 0
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0

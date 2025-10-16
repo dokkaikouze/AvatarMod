@@ -638,6 +638,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac251e84d7fc10a4fbe040eec2bb0cc2, type: 2}
     - target: {fileID: -8030253132253059182, guid: 01c9973f0feee9648b860445711e7c54,
         type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8030253132253059182, guid: 01c9973f0feee9648b860445711e7c54,
+        type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[1]
       value: 0
       objectReference: {fileID: 0}
@@ -1727,6 +1732,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8979574627313712662}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 01c9973f0feee9648b860445711e7c54,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6828800102816371843}
     - targetCorrespondingSourceObject: {fileID: 7036213049465896255, guid: 01c9973f0feee9648b860445711e7c54,
         type: 3}
       insertIndex: -1
@@ -3036,6 +3045,23 @@ MonoBehaviour:
     targetObject: {fileID: 0}
   layerPriority: 2
   mergeAnimatorMode: 0
+--- !u!114 &6828800102816371843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3955956030994963081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a74462b75cb4197a426e5ca29a57b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendShapes:
+  - Nipple_ON - Reverted
+  limitToSpecificMeshes: 0
+  renderers: []
+  eraseCustomSplitNormals: 0
 --- !u!1 &3968207447931158144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 952211684178991448, guid: 01c9973f0feee9648b860445711e7c54,

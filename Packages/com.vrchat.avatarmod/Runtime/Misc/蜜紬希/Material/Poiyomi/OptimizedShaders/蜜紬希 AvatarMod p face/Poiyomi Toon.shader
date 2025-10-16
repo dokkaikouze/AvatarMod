@@ -780,6 +780,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 		[DoNotAnimate][ToggleUI]_FlipBackfaceNormals ("Flip Backface Normals", Int) = 1
 		[DoNotAnimate][HideInInspector] Instancing ("Instancing", Float) = 0 //add this property for instancing variants settings to be shown
 		[ToggleUI] _RenderingEarlyZEnabled ("Early Z", Float) = 0
+		[HideInInspector] m_start_WorldAOBlocker (" World AO Blocker--{reference_property:_RenderingAOBlockerEnabled}", Float) = 0
+		[Helpbox(1)] _RenderingAOBlockerNote ("Meshes in this UV space render only to depth and act as a blocking volume for effects like ambient occlusion. This section effects the uv tile directly to the left of the default uv. (U -1→0, V 0→1)", Int) = 0
+		[HideInInspector][ToggleUI] _RenderingAOBlockerEnabled ("Enabled", Float) = 0
+		[ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3)]_RenderingAOBlockerUVChannel ("UV Channel", Int) = 0
+		[ToggleUI] _RenderingAOBlockerFlipNormal ("Flip Normal", Float) = 0
+		[HideInInspector] m_end_WorldAOBlocker ("World AO Blocker", Float) = 0
 		[HideInInspector] m_start_blending ("Blending--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/rendering/blending},hover:Documentation}}", Float) = 0
 		[DoNotAnimate][Enum(Thry.BlendOp)] _BlendOp ("RGB Blend Op", Int) = 0
 		[DoNotAnimate][Enum(UnityEngine.Rendering.BlendMode)] _SrcBlend ("RGB Source Blend", Int) = 1
@@ -1734,6 +1740,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			int _FlipBackfaceNormals;
 			float _AddBlendOp;
 			float _Cull;
+			float _RenderingAOBlockerEnabled;
+			float _RenderingAOBlockerUVChannel;
+			float _RenderingAOBlockerFlipNormal;
 			float4 _GlobalThemeColor0;
 			float4 _GlobalThemeColor1;
 			float4 _GlobalThemeColor2;
@@ -3841,6 +3850,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				vertexAudioLink[2] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 2))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 2))[0];
 				vertexAudioLink[3] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 3))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 3))[0];
 				vertexAudioLink[4] = AudioLinkData(ALPASS_GENERALVU + float2(8, 0))[0];
+				#endif
+				#ifndef POI_PASS_SHADOW
+				if (1.0)
+				{
+					float2 blockerUV = 0;
+					blockerUV += (v.uv0.xy * (0.0 == 0));
+					blockerUV += (v.uv1.xy * (0.0 == 1));
+					blockerUV += (v.uv2.xy * (0.0 == 2));
+					blockerUV += (v.uv3.xy * (0.0 == 3));
+					if (blockerUV.x < 0 && blockerUV.x > - 1 && blockerUV.y < 1 && blockerUV.y > 0)
+					{
+						return (VertexOut)POI_NAN;
+					}
+				}
 				#endif
 				#ifdef POI_UZUMORE
 				if (_UzumoreEnabled)
@@ -6753,10 +6776,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.2788943,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
+					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.5028866,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
 					if (0.0)
 					{
-						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.2788943,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
+						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.5028866,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
@@ -7078,6 +7101,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			int _FlipBackfaceNormals;
 			float _AddBlendOp;
 			float _Cull;
+			float _RenderingAOBlockerEnabled;
+			float _RenderingAOBlockerUVChannel;
+			float _RenderingAOBlockerFlipNormal;
 			float4 _GlobalThemeColor0;
 			float4 _GlobalThemeColor1;
 			float4 _GlobalThemeColor2;
@@ -9157,6 +9183,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				vertexAudioLink[3] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 3))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 3))[0];
 				vertexAudioLink[4] = AudioLinkData(ALPASS_GENERALVU + float2(8, 0))[0];
 				#endif
+				#ifndef POI_PASS_SHADOW
+				if (1.0)
+				{
+					float2 blockerUV = 0;
+					blockerUV += (v.uv0.xy * (0.0 == 0));
+					blockerUV += (v.uv1.xy * (0.0 == 1));
+					blockerUV += (v.uv2.xy * (0.0 == 2));
+					blockerUV += (v.uv3.xy * (0.0 == 3));
+					if (blockerUV.x < 0 && blockerUV.x > - 1 && blockerUV.y < 1 && blockerUV.y > 0)
+					{
+						return (VertexOut)POI_NAN;
+					}
+				}
+				#endif
 				#ifdef POI_UZUMORE
 				if (_UzumoreEnabled)
 				{
@@ -11139,10 +11179,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.2788943,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
+					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.5028866,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
 					if (0.0)
 					{
-						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.2788943,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
+						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.5028866,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
@@ -12045,6 +12085,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			int _FlipBackfaceNormals;
 			float _AddBlendOp;
 			float _Cull;
+			float _RenderingAOBlockerEnabled;
+			float _RenderingAOBlockerUVChannel;
+			float _RenderingAOBlockerFlipNormal;
 			#ifdef POI_PASS_OUTLINE
 			float _OutlineExpansionMode;
 			float4 _OutlinePersonaDirection;
@@ -13946,6 +13989,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				vertexAudioLink[3] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 3))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 3))[0];
 				vertexAudioLink[4] = AudioLinkData(ALPASS_GENERALVU + float2(8, 0))[0];
 				#endif
+				#ifndef POI_PASS_SHADOW
+				if (1.0)
+				{
+					float2 blockerUV = 0;
+					blockerUV += (v.uv0.xy * (0.0 == 0));
+					blockerUV += (v.uv1.xy * (0.0 == 1));
+					blockerUV += (v.uv2.xy * (0.0 == 2));
+					blockerUV += (v.uv3.xy * (0.0 == 3));
+					if (blockerUV.x < 0 && blockerUV.x > - 1 && blockerUV.y < 1 && blockerUV.y > 0)
+					{
+						return (VertexOut)POI_NAN;
+					}
+				}
+				#endif
 				#ifdef POI_UZUMORE
 				if (_UzumoreEnabled)
 				{
@@ -15157,10 +15214,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.2788943,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
+					poiFragData.finalColor *= lerp(poiThemeColor(poiMods, float4(0.5028866,0.2788943,0.2788943,1).rgb, 0.0), poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), smoothstep(0.009, 0.07, distance(position, poiCam.worldPos)));
 					if (0.0)
 					{
-						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.2788943,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
+						poiFragData.finalColor = lerp(poiFragData.finalColor * float4(0.5028866,0.2788943,0.2788943,1).rgb, poiFragData.finalColor, saturate(poiMesh.isFrontFace));
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
@@ -15398,6 +15455,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 			int _FlipBackfaceNormals;
 			float _AddBlendOp;
 			float _Cull;
+			float _RenderingAOBlockerEnabled;
+			float _RenderingAOBlockerUVChannel;
+			float _RenderingAOBlockerFlipNormal;
 			int _GlobalMaskVertexColorLinearSpace;
 			float _StereoEnabled;
 			float _PolarUV;
@@ -17126,6 +17186,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				vertexAudioLink[2] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 2))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 2))[0];
 				vertexAudioLink[3] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 3))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 3))[0];
 				vertexAudioLink[4] = AudioLinkData(ALPASS_GENERALVU + float2(8, 0))[0];
+				#endif
+				#ifndef POI_PASS_SHADOW
+				if (1.0)
+				{
+					float2 blockerUV = 0;
+					blockerUV += (v.uv0.xy * (0.0 == 0));
+					blockerUV += (v.uv1.xy * (0.0 == 1));
+					blockerUV += (v.uv2.xy * (0.0 == 2));
+					blockerUV += (v.uv3.xy * (0.0 == 3));
+					if (blockerUV.x < 0 && blockerUV.x > - 1 && blockerUV.y < 1 && blockerUV.y > 0)
+					{
+						return (VertexOut)POI_NAN;
+					}
+				}
 				#endif
 				#ifdef POI_UZUMORE
 				if (_UzumoreEnabled)

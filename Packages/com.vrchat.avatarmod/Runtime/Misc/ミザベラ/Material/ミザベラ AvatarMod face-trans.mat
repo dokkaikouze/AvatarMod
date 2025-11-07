@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u30DF\u30B6\u30D9\u30E9 AvatarMod face-trans"
+  m_Shader: {fileID: 4800000, guid: 165365ab7100a044ca85fc8c33548a62, type: 3}
+  m_Parent: {fileID: 2100000, guid: 97c4d8961fab8b64995998af3e2b7320, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    VRCFallback: UnlitTransparent
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MatCapBlendMask:
+        m_Texture: {fileID: 2800000, guid: 520d7498f2e91f049bc3e15fd392e67e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionColorTex:
+        m_Texture: {fileID: 2800000, guid: e048b073c6bfb56438cc9083bde024ca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ApplyReflection: 1
+    - _GSAAStrength: 0.15
+    - _Reflectance: 0.5499999
+    - _RimShadeBorder: 0.871
+    - _Shadow2ndBlur: 0.1
+    - _Shadow2ndBorder: 0.16
+    - _Shadow2ndReceive: 0
+    - _ShadowBlur: 0.4
+    - _ShadowBorder: 0.2
+    - _ShadowBorderRange: 0.003
+    - _ShadowMainStrength: 0.3
+    - _ShadowPostAO: 1
+    - _ShadowReceive: 0
+    - _ShadowStrength: 0.5
+    - _Smoothness: 0.297
+    - _SpecularToon: 0
+    - _UseReflection: 1
+    - _UseRimShade: 1
+    m_Colors:
+    - _DistanceFade: {r: 0.09, g: 0.025, b: 1, a: 0}
+    - _DistanceFadeColor: {r: 0.25490192, g: 0.25490192, b: 0.25490192, a: 1}
+    - _ReflectionColor: {r: 1, g: 1, b: 1, a: 0}
+    - _RimShadeColor: {r: 0.6289307, g: 0.6289307, b: 0.6289307, a: 0.2509804}
+    - _Shadow2ndColor: {r: 0.737255, g: 0.6627451, b: 0.6862744, a: 1}
+    - _ShadowBorderColor: {r: 1, g: 0.52156854, b: 0.46666652, a: 1}
+    - _ShadowColor: {r: 0.89411765, g: 0.83137256, b: 0.8509804, a: 1}
+  m_BuildTextureStacks: []

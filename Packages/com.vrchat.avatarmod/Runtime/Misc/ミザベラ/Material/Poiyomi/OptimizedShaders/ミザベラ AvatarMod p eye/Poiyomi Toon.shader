@@ -5997,7 +5997,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/fa5fb4a1cc4c83a42ae6d5415a6ae433"
 				if (2.0)
 				{
 					#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
-					float alphaMask = POI2D_SAMPLER_PAN(_AlphaMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(4,4,0,0)), float4(0,0,0,0).xy).r;
+					float alphaMask = POI2D_SAMPLER_PAN(_AlphaMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(8,8,0,0)), float4(0,0,0,0).xy).r;
 					#else
 					float alphaMask = 1;
 					#endif
@@ -9891,7 +9891,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/fa5fb4a1cc4c83a42ae6d5415a6ae433"
 				if (2.0)
 				{
 					#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
-					float alphaMask = POI2D_SAMPLER_PAN(_AlphaMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(4,4,0,0)), float4(0,0,0,0).xy).r;
+					float alphaMask = POI2D_SAMPLER_PAN(_AlphaMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(8,8,0,0)), float4(0,0,0,0).xy).r;
 					#else
 					float alphaMask = 1;
 					#endif
@@ -12291,7 +12291,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/fa5fb4a1cc4c83a42ae6d5415a6ae433"
 				if (2.0)
 				{
 					#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
-					float alphaMask = POI2D_SAMPLER_PAN(_AlphaMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(4,4,0,0)), float4(0,0,0,0).xy).r;
+					float alphaMask = POI2D_SAMPLER_PAN(_AlphaMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(8,8,0,0)), float4(0,0,0,0).xy).r;
 					#else
 					float alphaMask = 1;
 					#endif

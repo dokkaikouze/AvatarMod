@@ -30,7 +30,6 @@ Material:
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
-  - _UZUMOREENABLED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -40,7 +39,7 @@ Material:
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT COLOR_GRADING_HDR_3D POI_ANISOTROPICS
       POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM POI_LTCGI POI_MATCAP0 POI_RIM2 POI_STYLIZED_StylizedSpecular
       POI_UDIMDISCARD POI_UZUMORE VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI
-      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _UZUMOREENABLED_ON
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
     RenderType: Opaque
@@ -70,12 +69,15 @@ Material:
     _UDIMDiscardRow0_1Animated: 1
     _UDIMDiscardRow0_2Animated: 1
     _UDIMDiscardRow0_3Animated: 1
+    _UDIMDiscardRow1_0Animated: 1
     _UDIMDiscardRow1_1Animated: 1
     _UDIMDiscardRow1_2Animated: 1
     _UDIMDiscardRow1_3Animated: 1
+    _UDIMDiscardRow2_0Animated: 1
     _UDIMDiscardRow2_1Animated: 1
     _UDIMDiscardRow2_2Animated: 1
     _UDIMDiscardRow2_3Animated: 1
+    _UDIMDiscardRow3_0Animated: 1
     _UDIMDiscardRow3_1Animated: 1
     _UDIMDiscardRow3_2Animated: 1
     _UDIMDiscardRow3_3Animated: 1
@@ -2667,7 +2669,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 1
+    - m_OutlineCategory: 0
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0

@@ -3999,10 +3999,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/3fd8e3fc943cdd949a6c667fcf1f2636"
 				if(0.0 == 0) // Discard Vertices instead of just pixels
 				{
 					float2 udim = 0;
-					udim += (v.uv0.xy * (_UDIMDiscardUV == 0));
-					udim += (v.uv1.xy * (_UDIMDiscardUV == 1));
-					udim += (v.uv2.xy * (_UDIMDiscardUV == 2));
-					udim += (v.uv3.xy * (_UDIMDiscardUV == 3));
+					udim += (v.uv0.xy * (1.0 == 0));
+					udim += (v.uv1.xy * (1.0 == 1));
+					udim += (v.uv2.xy * (1.0 == 2));
+					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
 					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
@@ -4284,7 +4284,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/3fd8e3fc943cdd949a6c667fcf1f2636"
 			{
 				if(0.0 == 1) // Don't run if in vertex mode
 				{
-					float2 udim = floor(vertexUV(i, _UDIMDiscardUV));
+					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
 					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
@@ -9664,10 +9664,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/3fd8e3fc943cdd949a6c667fcf1f2636"
 				if(0.0 == 0) // Discard Vertices instead of just pixels
 				{
 					float2 udim = 0;
-					udim += (v.uv0.xy * (_UDIMDiscardUV == 0));
-					udim += (v.uv1.xy * (_UDIMDiscardUV == 1));
-					udim += (v.uv2.xy * (_UDIMDiscardUV == 2));
-					udim += (v.uv3.xy * (_UDIMDiscardUV == 3));
+					udim += (v.uv0.xy * (1.0 == 0));
+					udim += (v.uv1.xy * (1.0 == 1));
+					udim += (v.uv2.xy * (1.0 == 2));
+					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
 					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
@@ -9949,7 +9949,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/3fd8e3fc943cdd949a6c667fcf1f2636"
 			{
 				if(0.0 == 1) // Don't run if in vertex mode
 				{
-					float2 udim = floor(vertexUV(i, _UDIMDiscardUV));
+					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
 					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
@@ -14758,10 +14758,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/3fd8e3fc943cdd949a6c667fcf1f2636"
 				if(0.0 == 0) // Discard Vertices instead of just pixels
 				{
 					float2 udim = 0;
-					udim += (v.uv0.xy * (_UDIMDiscardUV == 0));
-					udim += (v.uv1.xy * (_UDIMDiscardUV == 1));
-					udim += (v.uv2.xy * (_UDIMDiscardUV == 2));
-					udim += (v.uv3.xy * (_UDIMDiscardUV == 3));
+					udim += (v.uv0.xy * (1.0 == 0));
+					udim += (v.uv1.xy * (1.0 == 1));
+					udim += (v.uv2.xy * (1.0 == 2));
+					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
 					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
@@ -15107,7 +15107,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/3fd8e3fc943cdd949a6c667fcf1f2636"
 			{
 				if(0.0 == 1) // Don't run if in vertex mode
 				{
-					float2 udim = floor(vertexUV(i, _UDIMDiscardUV));
+					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
 					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
@@ -18030,10 +18030,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/3fd8e3fc943cdd949a6c667fcf1f2636"
 				if(0.0 == 0) // Discard Vertices instead of just pixels
 				{
 					float2 udim = 0;
-					udim += (v.uv0.xy * (_UDIMDiscardUV == 0));
-					udim += (v.uv1.xy * (_UDIMDiscardUV == 1));
-					udim += (v.uv2.xy * (_UDIMDiscardUV == 2));
-					udim += (v.uv3.xy * (_UDIMDiscardUV == 3));
+					udim += (v.uv0.xy * (1.0 == 0));
+					udim += (v.uv1.xy * (1.0 == 1));
+					udim += (v.uv2.xy * (1.0 == 2));
+					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
 					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
@@ -18302,7 +18302,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/3fd8e3fc943cdd949a6c667fcf1f2636"
 			{
 				if(0.0 == 1) // Don't run if in vertex mode
 				{
-					float2 udim = floor(vertexUV(i, _UDIMDiscardUV));
+					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
 					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);

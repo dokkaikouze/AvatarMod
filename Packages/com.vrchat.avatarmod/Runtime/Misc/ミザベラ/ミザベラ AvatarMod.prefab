@@ -8316,7 +8316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7623073952663819087}
   m_Layer: 0
-  m_Name: RightSleeveRoot_Const
+  m_Name: RightSleeveRoot_dummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8696,7 +8696,7 @@ MonoBehaviour:
   removeEmptyRendererObject: 1
   skipEnablementMismatchedRenderers: 0
   copyEnablementAnimation: 0
-  blendShapeMode: 1
+  blendShapeMode: 0
 --- !u!1 &6001469900484925806
 GameObject:
   m_ObjectHideFlags: 0
@@ -8895,6 +8895,7 @@ GameObject:
   - component: {fileID: 4062079147156551065}
   - component: {fileID: 7641523257490673093}
   - component: {fileID: 5348498822294585076}
+  - component: {fileID: 6811441524626920677}
   m_Layer: 0
   m_Name: CombineMesh body
   m_TagString: Untagged
@@ -9045,7 +9046,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: cc836d61aebeabf4eb3ad607586a6b03, type: 2}
+  menuToAppend: {fileID: 11400000, guid: d1205aef6401a604d93dcd702a49216c, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 6756e5eb013ea3146823783d8c532ec1, type: 2}
+--- !u!114 &6811441524626920677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6146663796920212728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 4b802dc40adcdf64bac2d5779f8b31f7, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6756e5eb013ea3146823783d8c532ec1, type: 2}
 --- !u!1 &6150273789570971117
 GameObject:
@@ -9519,6 +9534,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2800185038938530855}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7203113110348550860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4365202330642762581}
+  m_Layer: 0
+  m_Name: "\u895F2"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4365202330642762581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203113110348550860}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5390731194743274466}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7258292333993878662
 GameObject:
   m_ObjectHideFlags: 0
@@ -9560,7 +9606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2480626334018862325}
   m_Layer: 0
-  m_Name: LeftSleeveRoot_Const
+  m_Name: LeftSleeveRoot_dummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10095,6 +10141,9 @@ GameObject:
   - component: {fileID: 5261441084927179934}
   - component: {fileID: 6692094574927971228}
   - component: {fileID: 3399828346089953961}
+  - component: {fileID: 3676322039878701382}
+  - component: {fileID: 1855653497677010904}
+  - component: {fileID: 6337755920373817911}
   m_Layer: 0
   m_Name: CombineMesh Clothes1
   m_TagString: Untagged
@@ -10243,6 +10292,48 @@ MonoBehaviour:
   skipEnablementMismatchedRenderers: 0
   copyEnablementAnimation: 0
   blendShapeMode: 1
+--- !u!114 &3676322039878701382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7736559263868350520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 0ee12950e84dfce46b267ad06d25c5fe, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
+--- !u!114 &1855653497677010904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7736559263868350520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: cc836d61aebeabf4eb3ad607586a6b03, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
+--- !u!114 &6337755920373817911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7736559263868350520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 168b76ec89f598f4fb8f8e1ef4225b7e, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 2e0f8766fd249824982b8f7d19229a3f, type: 2}
 --- !u!1 &7770659223282591230
 GameObject:
   m_ObjectHideFlags: 0
@@ -10618,9 +10709,6 @@ GameObject:
   - component: {fileID: 1868021875828589785}
   - component: {fileID: 6092303610930902677}
   - component: {fileID: 7823724738874507189}
-  - component: {fileID: 908363330619363770}
-  - component: {fileID: 525541809827659638}
-  - component: {fileID: 871224218418820854}
   m_Layer: 0
   m_Name: CombineMesh Clothes3
   m_TagString: Untagged
@@ -10757,48 +10845,6 @@ MonoBehaviour:
   skipEnablementMismatchedRenderers: 0
   copyEnablementAnimation: 0
   blendShapeMode: 1
---- !u!114 &908363330619363770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7994432536887303506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: 186df6be79235914db77aa91efe3af46, type: 2}
-  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
---- !u!114 &525541809827659638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7994432536887303506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: bd73eea09aeda2a4482f9cadcc38a8b9, type: 2}
-  installTargetMenu: {fileID: 11400000, guid: 2e0f8766fd249824982b8f7d19229a3f, type: 2}
---- !u!114 &871224218418820854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7994432536887303506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: 8681c4fd11ca689479bbf96e5ad7ad1e, type: 2}
-  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
 --- !u!1 &8047133171857107510
 GameObject:
   m_ObjectHideFlags: 0
@@ -12946,7 +12992,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1257441494271299008}
+  - {fileID: 4696323321955138707}
   m_Father: {fileID: 4407261042821734804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9217339415653453329
@@ -12980,104 +13026,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9001898283883810127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4163855238912362038
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4407261042821734804}
-    m_Modifications:
-    - target: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_Name
-      value: AvatarMod
-      objectReference: {fileID: 0}
-    - target: {fileID: 503367460359505191, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: menuToAppend
-      value: 
-      objectReference: {fileID: 11400000, guid: 44288038914e7814190b58166070d226,
-        type: 2}
-    - target: {fileID: 503367460359505191, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: installTargetMenu
-      value: 
-      objectReference: {fileID: 11400000, guid: 0ba8037451b4bfa47bab37c3b14b8b80,
-        type: 2}
-    - target: {fileID: 1216097752875793660, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: menuToAppend
-      value: 
-      objectReference: {fileID: 11400000, guid: 749b7996a00a8cc41bc54a3a40946573,
-        type: 2}
-    - target: {fileID: 5077675285912645034, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 9100000, guid: f73967ac925701641b169b98fe3d0ebe, type: 2}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 27f61b51d12a5574e970fbd647d9fc9e, type: 3}
---- !u!4 &6945525661096976783 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4163855238912362038}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &5635937754690228261
+--- !u!1001 &2191347335783653750
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13145,11 +13094,1180 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f63717bbf29d3234baebac83b4263eb7, type: 3}
---- !u!4 &1257441494271299008 stripped
+--- !u!4 &4696323321955138707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6865047033186000357, guid: f63717bbf29d3234baebac83b4263eb7,
     type: 3}
-  m_PrefabInstance: {fileID: 5635937754690228261}
+  m_PrefabInstance: {fileID: 2191347335783653750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4163855238912362038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4407261042821734804}
+    m_Modifications:
+    - target: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_Name
+      value: AvatarMod
+      objectReference: {fileID: 0}
+    - target: {fileID: 503367460359505191, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: menuToAppend
+      value: 
+      objectReference: {fileID: 11400000, guid: 44288038914e7814190b58166070d226,
+        type: 2}
+    - target: {fileID: 503367460359505191, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: installTargetMenu
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ba8037451b4bfa47bab37c3b14b8b80,
+        type: 2}
+    - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[0].transform
+      value: 
+      objectReference: {fileID: 3513467285572926670}
+    - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[1].transform
+      value: 
+      objectReference: {fileID: 9068669076884618504}
+    - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[2].transform
+      value: 
+      objectReference: {fileID: 5942352928819981256}
+    - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[3].transform
+      value: 
+      objectReference: {fileID: 2228659146235560182}
+    - target: {fileID: 645036837491524337, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 645036837491524337, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 9046612494893319049}
+    - target: {fileID: 645036837491524337, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 4121146974962942207}
+    - target: {fileID: 645036837491524337, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2712134252387195027}
+    - target: {fileID: 645036837491524337, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 941919161624250894}
+    - target: {fileID: 645036837491524337, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 7496773772366285848}
+    - target: {fileID: 645036837491524337, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[5]
+      value: 
+      objectReference: {fileID: 7612501278559316295}
+    - target: {fileID: 929171390393004991, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 929171390393004991, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 7188776930001567019}
+    - target: {fileID: 984571366924449625, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 984571366924449625, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 7033000075151978631}
+    - target: {fileID: 984571366924449625, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 85229761370258934}
+    - target: {fileID: 1069674075832504457, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069674075832504457, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 690361148700249411}
+    - target: {fileID: 1069674075832504457, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 658927306432229033}
+    - target: {fileID: 1216097752875793660, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: menuToAppend
+      value: 
+      objectReference: {fileID: 11400000, guid: 749b7996a00a8cc41bc54a3a40946573,
+        type: 2}
+    - target: {fileID: 2173161821161108603, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173161821161108603, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 5228281576954521660}
+    - target: {fileID: 2173161821161108603, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 344712858071261819}
+    - target: {fileID: 2173161821161108603, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 6953096024300437636}
+    - target: {fileID: 2908247022029497441, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908247022029497441, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 7188776930001567019}
+    - target: {fileID: 2908247022029497441, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2305913795766358935}
+    - target: {fileID: 2908247022029497441, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 4754278879996511183}
+    - target: {fileID: 2908247022029497441, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 5152669296727301444}
+    - target: {fileID: 2913773756306359930, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913773756306359930, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 7494675883988127294}
+    - target: {fileID: 2913773756306359930, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 85229761370258934}
+    - target: {fileID: 2913773756306359930, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2239332500639427617}
+    - target: {fileID: 2980512848699676479, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980512848699676479, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 3419036514777163787}
+    - target: {fileID: 2980512848699676479, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 4263891509713742379}
+    - target: {fileID: 3047042887394110600, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3047042887394110600, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 7899222961262356363}
+    - target: {fileID: 3047042887394110600, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 5982182294191256044}
+    - target: {fileID: 3206876136988409903, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206876136988409903, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1306872455403638861}
+    - target: {fileID: 3206876136988409903, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 3282167294907281276}
+    - target: {fileID: 3206876136988409903, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 4420254242574370785}
+    - target: {fileID: 3206876136988409903, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 9214616149998213197}
+    - target: {fileID: 3206876136988409903, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 3486894298777064610}
+    - target: {fileID: 3650960585346190366, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650960585346190366, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1303144442100294899}
+    - target: {fileID: 3650960585346190366, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 7987280204901534987}
+    - target: {fileID: 3650960585346190366, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 5204019282224264495}
+    - target: {fileID: 3650960585346190366, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 6310166517790537184}
+    - target: {fileID: 3650960585346190366, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 2305967507453893571}
+    - target: {fileID: 3650960585346190366, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[5]
+      value: 
+      objectReference: {fileID: 5233750550661808492}
+    - target: {fileID: 3650960585346190366, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[6]
+      value: 
+      objectReference: {fileID: 72021184629187976}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[0].transform
+      value: 
+      objectReference: {fileID: 505305527757661761}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[1].transform
+      value: 
+      objectReference: {fileID: 3823460676823316924}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[2].transform
+      value: 
+      objectReference: {fileID: 3220300586777551224}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[3].transform
+      value: 
+      objectReference: {fileID: 2977156013334341520}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[1].scaleFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[2].scaleFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[3].scaleFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[1].applyCondition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[2].applyCondition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737529282930754510, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: targetBones.Array.data[3].applyCondition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968287169773904945, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968287169773904945, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 4126777242474324607}
+    - target: {fileID: 3968287169773904945, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 6601697140089551852}
+    - target: {fileID: 3968287169773904945, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 1590276491630592622}
+    - target: {fileID: 4133665996455459183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133665996455459183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 6726652681990489452}
+    - target: {fileID: 4133665996455459183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 3486894298777064610}
+    - target: {fileID: 4133665996455459183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2827170067387639069}
+    - target: {fileID: 4133665996455459183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 609768203791610446}
+    - target: {fileID: 4133665996455459183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 9214616149998213197}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 3284765864528380807}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 9146696338490304036}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 7977898219820173253}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 1125575160835198888}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 4817740334894629951}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[5]
+      value: 
+      objectReference: {fileID: 6821154589408971507}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[6]
+      value: 
+      objectReference: {fileID: 3095161001297275448}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[7]
+      value: 
+      objectReference: {fileID: 118387120814958609}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[8]
+      value: 
+      objectReference: {fileID: 7653420817001960408}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[9]
+      value: 
+      objectReference: {fileID: 7246214586314025600}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[10]
+      value: 
+      objectReference: {fileID: 7408764148223107864}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[11]
+      value: 
+      objectReference: {fileID: 1381821360847572367}
+    - target: {fileID: 4149831198212864927, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[12]
+      value: 
+      objectReference: {fileID: 8248084636408585117}
+    - target: {fileID: 4357577047149961638, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357577047149961638, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 23387109803336765}
+    - target: {fileID: 4357577047149961638, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 5204019282224264495}
+    - target: {fileID: 4357577047149961638, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 6310166517790537184}
+    - target: {fileID: 4538805934580594749, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538805934580594749, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 715682514204568740}
+    - target: {fileID: 4538805934580594749, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 8847977080915176349}
+    - target: {fileID: 4575243450181466681, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575243450181466681, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 5013654583015206055}
+    - target: {fileID: 4575243450181466681, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2602964128002033835}
+    - target: {fileID: 4575243450181466681, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 8747131209705462344}
+    - target: {fileID: 4575243450181466681, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 4451047958218452798}
+    - target: {fileID: 4575243450181466681, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 2343799056398750841}
+    - target: {fileID: 4844075016690387290, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844075016690387290, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1218946859745835220}
+    - target: {fileID: 4844075016690387290, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 306385918286776348}
+    - target: {fileID: 4847231908935029666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847231908935029666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 5632882823844116877}
+    - target: {fileID: 4847231908935029666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 9146696338490304036}
+    - target: {fileID: 4961758526316407214, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961758526316407214, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 306385918286776348}
+    - target: {fileID: 4961758526316407214, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 1590276491630592622}
+    - target: {fileID: 4961758526316407214, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 558097000044229490}
+    - target: {fileID: 4961758526316407214, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 3329146817608490133}
+    - target: {fileID: 4961758526316407214, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 2189378262923578326}
+    - target: {fileID: 4961758526316407214, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[5]
+      value: 
+      objectReference: {fileID: 6469878527049073475}
+    - target: {fileID: 5077675285912645034, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 9100000, guid: f73967ac925701641b169b98fe3d0ebe, type: 2}
+    - target: {fileID: 5510680657968332981, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5510680657968332981, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 5756506157863147501}
+    - target: {fileID: 5510680657968332981, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2326953857881959282}
+    - target: {fileID: 5510680657968332981, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 4436331687337612291}
+    - target: {fileID: 5510680657968332981, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 4599578676055358451}
+    - target: {fileID: 6311553309359668771, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6311553309359668771, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 511690798377694585}
+    - target: {fileID: 6311553309359668771, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 5982182294191256044}
+    - target: {fileID: 6311553309359668771, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 7603792077399728494}
+    - target: {fileID: 6311553309359668771, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 1569194456448857600}
+    - target: {fileID: 6367611657331381099, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367611657331381099, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 5481382976813656251}
+    - target: {fileID: 6367611657331381099, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 591196511315471250}
+    - target: {fileID: 6367611657331381099, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 4263891509713742379}
+    - target: {fileID: 6367611657331381099, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 4036005928015785621}
+    - target: {fileID: 6367611657331381099, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 1517842532551743262}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596248226052840277, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596248226052840277, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1411752556098168080}
+    - target: {fileID: 6596248226052840277, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2602964128002033835}
+    - target: {fileID: 7131959894556212851, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131959894556212851, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 5060637612811281728}
+    - target: {fileID: 7900120506419512912, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900120506419512912, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 658927306432229033}
+    - target: {fileID: 7900120506419512912, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 5233422957549604758}
+    - target: {fileID: 7900120506419512912, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 1085634219518174142}
+    - target: {fileID: 7900120506419512912, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 6221570845237604779}
+    - target: {fileID: 8171386936753514947, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171386936753514947, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 7999959585349146678}
+    - target: {fileID: 8171386936753514947, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 3666755588927490346}
+    - target: {fileID: 8171386936753514947, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 6601697140089551852}
+    - target: {fileID: 8171386936753514947, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 6620862353780348527}
+    - target: {fileID: 8278707185650147951, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8278707185650147951, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 3632131285573986443}
+    - target: {fileID: 8278707185650147951, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 1226861379794622106}
+    - target: {fileID: 8278707185650147951, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 5760124912456399052}
+    - target: {fileID: 8278707185650147951, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 6523759340020742463}
+    - target: {fileID: 8278707185650147951, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 7496773772366285848}
+    - target: {fileID: 8278707185650147951, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[5]
+      value: 
+      objectReference: {fileID: 7612501278559316295}
+    - target: {fileID: 8278707185650147951, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[6]
+      value: 
+      objectReference: {fileID: 9046612494893319049}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].saved
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].syncType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].nameOrPrefix
+      value: AvatarMod/Costume/Costume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].hasExplicitDefaultValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].m_overrideAnimatorDefaults
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539982068101520217, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539982068101520217, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 8847977080915176349}
+    - target: {fileID: 8539982068101520217, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 5588529918507726202}
+    - target: {fileID: 8539982068101520217, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 3516627385033815837}
+    - target: {fileID: 8539982068101520217, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 1580674824490391105}
+    - target: {fileID: 8539982068101520217, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 1730908120232004986}
+    - target: {fileID: 8698097094235345787, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698097094235345787, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 3389220929991312903}
+    - target: {fileID: 8698097094235345787, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 5060637612811281728}
+    - target: {fileID: 8698097094235345787, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 5301180738562282261}
+    - target: {fileID: 8698097094235345787, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 5784264759610176049}
+    - target: {fileID: 8698097094235345787, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 5499363259819015245}
+    - target: {fileID: 8835899207905063535, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835899207905063535, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 6768286430159334269}
+    - target: {fileID: 8835899207905063535, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2182278678944231522}
+    - target: {fileID: 8835899207905063535, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 2326953857881959282}
+    - target: {fileID: 8835899207905063535, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 4436331687337612291}
+    - target: {fileID: 8835899207905063535, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 4599578676055358451}
+    - target: {fileID: 8835899207905063535, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[5]
+      value: 
+      objectReference: {fileID: 2744691703505757520}
+    - target: {fileID: 8835899207905063535, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[6]
+      value: 
+      objectReference: {fileID: 8943346683486310204}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 4451448465578960337}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 6031983763544192059}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 6953096024300437636}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 344712858071261819}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 4077913723102382041}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[5]
+      value: 
+      objectReference: {fileID: 6155708891894358053}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[6]
+      value: 
+      objectReference: {fileID: 5351651575869034766}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[7]
+      value: 
+      objectReference: {fileID: 2831266484008237182}
+    - target: {fileID: 9212249500828051318, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[8]
+      value: 
+      objectReference: {fileID: 4994262252081641211}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2202552513460054303}
+    - targetCorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1637880040165438371}
+    - targetCorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7821066578333432002}
+    - targetCorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4583757743908975962}
+    - targetCorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7098124815108937235}
+    - targetCorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3930080358443436525}
+    - targetCorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1835853664413129372}
+  m_SourcePrefab: {fileID: 100100000, guid: 27f61b51d12a5574e970fbd647d9fc9e, type: 3}
+--- !u!1 &4043507277965093722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 132170323504508268, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4163855238912362038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2202552513460054303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043507277965093722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: efed98e32263d4a4caa9ecfad1f39402, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
+--- !u!114 &1637880040165438371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043507277965093722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 5188e72032448d2469acce707bc08e39, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
+--- !u!114 &7821066578333432002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043507277965093722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 2b6cd8d55bb103348a4b3e5e683f8db1, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
+--- !u!114 &4583757743908975962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043507277965093722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: d2cede263e323794c9308fe5f43fb522, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
+--- !u!114 &7098124815108937235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043507277965093722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 5c90c00ff3884dc4db395c5c546c3278, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 56cd4737d2166554cb6886924a0de8c8, type: 2}
+--- !u!114 &3930080358443436525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043507277965093722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: f0ca376a145b22c4482facaa98d16107, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 2e0f8766fd249824982b8f7d19229a3f, type: 2}
+--- !u!114 &1835853664413129372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043507277965093722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 56e83e0fbce1a3c4aa701e1cd7310ec8, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 2e0f8766fd249824982b8f7d19229a3f, type: 2}
+--- !u!4 &6945525661096976783 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6461410430392657849, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4163855238912362038}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7881287570181394244
 PrefabInstance:
@@ -13217,27 +14335,92 @@ PrefabInstance:
     - target: {fileID: 1277437425810389351, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.084
+      value: 0.08400007
       objectReference: {fileID: 0}
     - target: {fileID: 1277437425810389351, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.0595
       objectReference: {fileID: 0}
+    - target: {fileID: 1277437425810389351, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99144435
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277437425810389351, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000002651559
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277437425810389351, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.13053024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277437425810389351, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000004086112
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277437425810389351, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -15
+      objectReference: {fileID: 0}
     - target: {fileID: 1625337568980748346, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.06740624
+      value: -0.068
       objectReference: {fileID: 0}
     - target: {fileID: 1625337568980748346, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0839998
+      value: 0.083999835
       objectReference: {fileID: 0}
     - target: {fileID: 1625337568980748346, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.050000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625337568980748346, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.965926
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625337568980748346, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000025755438
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625337568980748346, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.25881872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625337568980748346, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000007512021
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625337568980748346, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944359562423002904, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0031
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944359562423002904, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944359562423002904, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0593
       objectReference: {fileID: 0}
     - target: {fileID: 4836795252438858941, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
@@ -13274,6 +14457,31 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.059499998
       objectReference: {fileID: 0}
+    - target: {fileID: 5306615389917891041, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9914449
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306615389917891041, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306615389917891041, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.13052616
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306615389917891041, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306615389917891041, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6258933231528761724, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
       propertyPath: colliders.Array.data[0]
@@ -13289,6 +14497,16 @@ PrefabInstance:
       propertyPath: colliders.Array.data[2]
       value: 
       objectReference: {fileID: 7105607628324541910}
+    - target: {fileID: 6534168133743430802, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0051
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534168133743430802, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.071
+      objectReference: {fileID: 0}
     - target: {fileID: 7087755804581566232, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
       propertyPath: colliders.Array.data[0]
@@ -13318,6 +14536,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.050000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228714896275602837, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228714896275602837, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228714896275602837, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228714896275602837, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7228714896275602837, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7652094405575376115, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
@@ -13354,6 +14597,31 @@ PrefabInstance:
       propertyPath: colliders.Array.data[2]
       value: 
       objectReference: {fileID: 7105607628324541910}
+    - target: {fileID: 7941691836059519672, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0031
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941691836059519672, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0051
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941691836059519672, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435826734321010730, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0063
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435826734321010730, guid: 59b6c69babf7e4b47b360ff8fd702c19,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0593
+      objectReference: {fileID: 0}
     - target: {fileID: 8834629066808158540, guid: 59b6c69babf7e4b47b360ff8fd702c19,
         type: 3}
       propertyPath: colliders.Array.data[0]
@@ -13401,7 +14669,7 @@ PrefabInstance:
     - target: {fileID: 30523482470494836, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 85505160366390288, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
@@ -14301,7 +15569,7 @@ PrefabInstance:
     - target: {fileID: 2139229340988439313, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2149291668055177291, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
@@ -14826,7 +16094,7 @@ PrefabInstance:
     - target: {fileID: 2977005850112107679, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3003214291702045381, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
@@ -16023,6 +17291,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5135790407362434168, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      propertyPath: m_TagString
+      value: EditorOnly
+      objectReference: {fileID: 0}
     - target: {fileID: 5153902684812148529, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_RootBone
@@ -16326,7 +17599,7 @@ PrefabInstance:
     - target: {fileID: 5411924894456584528, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5426088264625970933, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
@@ -17126,7 +18399,7 @@ PrefabInstance:
     - target: {fileID: 6480604846381276603, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6514774685794927855, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
@@ -17383,6 +18656,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dffa5940ae24f42499ea36946cdf8c5c, type: 2}
+    - target: {fileID: 7100171733080200661, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7124249167924815347, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18046,7 +19324,7 @@ PrefabInstance:
     - target: {fileID: 8395664870285171273, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8500658141756301860, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
@@ -18056,7 +19334,7 @@ PrefabInstance:
     - target: {fileID: 8500658141756301860, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8521127949086344066, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
@@ -18433,6 +19711,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9132599611609297604, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      propertyPath: m_TagString
+      value: EditorOnly
+      objectReference: {fileID: 0}
     - target: {fileID: 9133654260467844410, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       propertyPath: m_RootBone
@@ -18654,6 +19937,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5582071275656244395}
+    - targetCorrespondingSourceObject: {fileID: 4407337080868556913, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4365202330642762581}
     - targetCorrespondingSourceObject: {fileID: 5127329677578229597, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       insertIndex: -1
@@ -19307,10 +20594,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5670663834186713189}
+    - targetCorrespondingSourceObject: {fileID: 1311396857577576293, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4200974031850893638}
     - targetCorrespondingSourceObject: {fileID: 1664583176072673296, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2038958305181041561}
+    - targetCorrespondingSourceObject: {fileID: 1664583176072673296, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1327639336463248766}
     - targetCorrespondingSourceObject: {fileID: 7728381731127672259, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       insertIndex: -1
@@ -19487,6 +20782,438 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3906430575503141934}
+    - targetCorrespondingSourceObject: {fileID: 3918803180390716052, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1988613791313055161}
+    - targetCorrespondingSourceObject: {fileID: 3918803180390716052, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3393851862862792653}
+    - targetCorrespondingSourceObject: {fileID: 1495418850602773927, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7941277083059112084}
+    - targetCorrespondingSourceObject: {fileID: 1495418850602773927, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5395167362348419288}
+    - targetCorrespondingSourceObject: {fileID: 8965302651955259741, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6798149290436847476}
+    - targetCorrespondingSourceObject: {fileID: 8965302651955259741, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4864084891776166416}
+    - targetCorrespondingSourceObject: {fileID: 1464584699376425073, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4798883747759977527}
+    - targetCorrespondingSourceObject: {fileID: 1464584699376425073, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 683919873720063893}
+    - targetCorrespondingSourceObject: {fileID: 4568091316110315045, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7891238418243002179}
+    - targetCorrespondingSourceObject: {fileID: 4568091316110315045, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4826890886537117402}
+    - targetCorrespondingSourceObject: {fileID: 7208626847014505424, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 186214313484101624}
+    - targetCorrespondingSourceObject: {fileID: 7208626847014505424, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5906294209085870080}
+    - targetCorrespondingSourceObject: {fileID: 660965271871253677, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7007156809297821638}
+    - targetCorrespondingSourceObject: {fileID: 660965271871253677, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8953718423558845039}
+    - targetCorrespondingSourceObject: {fileID: 2224817301517599462, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3849342833695267917}
+    - targetCorrespondingSourceObject: {fileID: 2224817301517599462, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7949964802715844209}
+    - targetCorrespondingSourceObject: {fileID: 8327773974693225907, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7194824879545038681}
+    - targetCorrespondingSourceObject: {fileID: 8327773974693225907, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6870352594535896868}
+    - targetCorrespondingSourceObject: {fileID: 4916569570700329610, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2032776132526892479}
+    - targetCorrespondingSourceObject: {fileID: 4916569570700329610, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5460113409452380572}
+    - targetCorrespondingSourceObject: {fileID: 1800577074554510692, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4124851804748899801}
+    - targetCorrespondingSourceObject: {fileID: 1800577074554510692, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6328252143662285276}
+    - targetCorrespondingSourceObject: {fileID: 3515705558614805137, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1890026992920266298}
+    - targetCorrespondingSourceObject: {fileID: 3515705558614805137, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 883212142487366198}
+    - targetCorrespondingSourceObject: {fileID: 629573308586455523, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5907735928769669845}
+    - targetCorrespondingSourceObject: {fileID: 629573308586455523, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6306450593617856378}
+    - targetCorrespondingSourceObject: {fileID: 7100171733080200661, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5773225452268860258}
+    - targetCorrespondingSourceObject: {fileID: 7100171733080200661, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9032846878399535526}
+    - targetCorrespondingSourceObject: {fileID: 48631136095839158, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2113826829526844198}
+    - targetCorrespondingSourceObject: {fileID: 48631136095839158, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8047646714076235126}
+    - targetCorrespondingSourceObject: {fileID: 2949062566105023521, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7327060044313540522}
+    - targetCorrespondingSourceObject: {fileID: 2949062566105023521, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3283937295306175075}
+    - targetCorrespondingSourceObject: {fileID: 3490166013327935515, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4417795282530643971}
+    - targetCorrespondingSourceObject: {fileID: 3490166013327935515, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1375366821003530877}
+    - targetCorrespondingSourceObject: {fileID: 2523184512477664077, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8468457469106488616}
+    - targetCorrespondingSourceObject: {fileID: 2523184512477664077, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7523584466464118463}
+    - targetCorrespondingSourceObject: {fileID: 6749109581629053503, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3240231295557303361}
+    - targetCorrespondingSourceObject: {fileID: 6749109581629053503, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9636951077407252}
+    - targetCorrespondingSourceObject: {fileID: 6515375694585388884, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1558748630447687327}
+    - targetCorrespondingSourceObject: {fileID: 6515375694585388884, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8837165367138152766}
+    - targetCorrespondingSourceObject: {fileID: 270113806215687615, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1932525470847896214}
+    - targetCorrespondingSourceObject: {fileID: 270113806215687615, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2654364970690714053}
+    - targetCorrespondingSourceObject: {fileID: 3200294648405670109, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 696135433489222884}
+    - targetCorrespondingSourceObject: {fileID: 3200294648405670109, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1829726574604341496}
+    - targetCorrespondingSourceObject: {fileID: 6647614868408078428, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6039436136094077592}
+    - targetCorrespondingSourceObject: {fileID: 6647614868408078428, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7322965931951660907}
+    - targetCorrespondingSourceObject: {fileID: 3685222820585621920, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3773429323692880571}
+    - targetCorrespondingSourceObject: {fileID: 3685222820585621920, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5851019422126902560}
+    - targetCorrespondingSourceObject: {fileID: 5412695406941526887, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5656561102904759131}
+    - targetCorrespondingSourceObject: {fileID: 5412695406941526887, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3666907854291255858}
+    - targetCorrespondingSourceObject: {fileID: 950586283232307783, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2374392609868292849}
+    - targetCorrespondingSourceObject: {fileID: 950586283232307783, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 937731973988033155}
+    - targetCorrespondingSourceObject: {fileID: 4367443472535364099, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2923373886285861446}
+    - targetCorrespondingSourceObject: {fileID: 4367443472535364099, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 243009474001075206}
+    - targetCorrespondingSourceObject: {fileID: 6263405206199869137, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1845687792846563539}
+    - targetCorrespondingSourceObject: {fileID: 6263405206199869137, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3710094921489366665}
+    - targetCorrespondingSourceObject: {fileID: 2474069054173701682, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7362743366345455219}
+    - targetCorrespondingSourceObject: {fileID: 2474069054173701682, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6879161793208050341}
+    - targetCorrespondingSourceObject: {fileID: 2180057749194029953, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1728287364774965585}
+    - targetCorrespondingSourceObject: {fileID: 2180057749194029953, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7866046452943652696}
+    - targetCorrespondingSourceObject: {fileID: 126436489760358042, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5838646587208636138}
+    - targetCorrespondingSourceObject: {fileID: 126436489760358042, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6118143203850127446}
+    - targetCorrespondingSourceObject: {fileID: 1900834368097552056, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8631790392370804469}
+    - targetCorrespondingSourceObject: {fileID: 1900834368097552056, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7245857080258590688}
+    - targetCorrespondingSourceObject: {fileID: 1568559121498551012, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8601133421376282310}
+    - targetCorrespondingSourceObject: {fileID: 1568559121498551012, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3594483891722747173}
+    - targetCorrespondingSourceObject: {fileID: 1772836899718051809, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 132192710439613379}
+    - targetCorrespondingSourceObject: {fileID: 1772836899718051809, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8900510229623847653}
+    - targetCorrespondingSourceObject: {fileID: 4221472218247749994, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4933640550892421551}
+    - targetCorrespondingSourceObject: {fileID: 4221472218247749994, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1822947778451502165}
+    - targetCorrespondingSourceObject: {fileID: 6090418620646084611, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3506180773897728299}
+    - targetCorrespondingSourceObject: {fileID: 6090418620646084611, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 438422973947750378}
+    - targetCorrespondingSourceObject: {fileID: 6069574907824804045, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5155369509897791873}
+    - targetCorrespondingSourceObject: {fileID: 6069574907824804045, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1802608364651332412}
+    - targetCorrespondingSourceObject: {fileID: 7604133646112352549, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4934655500110375301}
+    - targetCorrespondingSourceObject: {fileID: 7604133646112352549, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7423163732978512616}
+    - targetCorrespondingSourceObject: {fileID: 1852489759030738789, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8827942011724035368}
+    - targetCorrespondingSourceObject: {fileID: 1852489759030738789, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9101263180524059639}
+    - targetCorrespondingSourceObject: {fileID: 6580638163195928468, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 83599177472508858}
+    - targetCorrespondingSourceObject: {fileID: 6580638163195928468, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4897593714700177858}
+    - targetCorrespondingSourceObject: {fileID: 730059305310957451, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4254775255840945413}
+    - targetCorrespondingSourceObject: {fileID: 730059305310957451, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1544888614451753647}
+    - targetCorrespondingSourceObject: {fileID: 4061727146103324332, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2117357627960667775}
+    - targetCorrespondingSourceObject: {fileID: 4061727146103324332, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5480503892063718948}
+    - targetCorrespondingSourceObject: {fileID: 1033768325684686970, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3682557158865743603}
+    - targetCorrespondingSourceObject: {fileID: 1033768325684686970, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3332190877458956735}
+    - targetCorrespondingSourceObject: {fileID: 409744022468952971, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3268568291582566117}
+    - targetCorrespondingSourceObject: {fileID: 409744022468952971, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8867352552628382733}
+    - targetCorrespondingSourceObject: {fileID: 5946905968198949539, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1931594699604101103}
+    - targetCorrespondingSourceObject: {fileID: 5946905968198949539, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3292736346558158589}
+    - targetCorrespondingSourceObject: {fileID: 1945975115657534997, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4041533829202233421}
+    - targetCorrespondingSourceObject: {fileID: 1945975115657534997, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2813394555324910375}
+    - targetCorrespondingSourceObject: {fileID: 327811366209412059, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2339951378097674627}
+    - targetCorrespondingSourceObject: {fileID: 327811366209412059, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 413276957013234512}
+    - targetCorrespondingSourceObject: {fileID: 6183333521184011599, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 97945599311775273}
+    - targetCorrespondingSourceObject: {fileID: 6183333521184011599, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 691574166856175418}
+    - targetCorrespondingSourceObject: {fileID: 5816701429401006846, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1874465997785517364}
+    - targetCorrespondingSourceObject: {fileID: 5816701429401006846, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8768899837891868676}
+    - targetCorrespondingSourceObject: {fileID: 6724926991895652884, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7314866280401221065}
+    - targetCorrespondingSourceObject: {fileID: 6724926991895652884, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4364121126729773252}
+    - targetCorrespondingSourceObject: {fileID: 3149688524313086540, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1439831591650480895}
+    - targetCorrespondingSourceObject: {fileID: 3149688524313086540, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 275040956304487332}
+    - targetCorrespondingSourceObject: {fileID: 3820293681695842771, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3061605630844505091}
+    - targetCorrespondingSourceObject: {fileID: 3820293681695842771, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3362816351001436805}
+    - targetCorrespondingSourceObject: {fileID: 3207025601135905652, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4395313797569280916}
+    - targetCorrespondingSourceObject: {fileID: 3207025601135905652, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8817233998060227231}
+    - targetCorrespondingSourceObject: {fileID: 5656898779627390336, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4975786910842353979}
+    - targetCorrespondingSourceObject: {fileID: 5656898779627390336, guid: 48787d8b4845ed2418a051bcc8278a4c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3483744568538267612}
   m_SourcePrefab: {fileID: 100100000, guid: 48787d8b4845ed2418a051bcc8278a4c, type: 3}
 --- !u!4 &16934675030125745 stripped
 Transform:
@@ -19590,6 +21317,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &321878190329744928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8327773974693225907, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7194824879545038681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321878190329744928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 6b7d25c7a11ffc14abf1d8bb12477b10, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
+--- !u!114 &6870352594535896868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321878190329744928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &340809467327693985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8313491715557273394, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -19750,6 +21520,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &505305527757661761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8135344257298894290, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!137 &511690798377694585 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 8141484332532014826, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -19831,6 +21607,49 @@ MonoBehaviour:
   boneReference: 7
   subPath: Skirt2Root/RightSkirt_Root
   attachmentMode: 2
+--- !u!1 &832778419810910926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8965302651955259741, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6798149290436847476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832778419810910926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 9c5be4676dc6374478384d6af64058e4, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 696c49007685d604c995bc50aa016e54, type: 2}
+--- !u!114 &4864084891776166416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832778419810910926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &855404377264455761 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8951671113980603330, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -20039,12 +21858,98 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1436532970494959683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7208626847014505424, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &186214313484101624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436532970494959683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 4e3557e3e1456b841830ddca998c4f54, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 88485e49be6791b4c957b9c0efa13050, type: 2}
+--- !u!114 &5906294209085870080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436532970494959683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &1517842532551743262 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7130831471591308429, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1543987408718675526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7100171733080200661, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5773225452268860258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543987408718675526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 3802d90ebedd9d845843e6b5778f3bd8, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
+--- !u!114 &9032846878399535526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543987408718675526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &1546567324604745675 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7103084831056276568, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -21352,6 +23257,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2189584565658878646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7604133646112352549, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4934655500110375301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2189584565658878646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: e547171d115c7724d8c6faf764fc1245, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &7423163732978512616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2189584565658878646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30B9\u30AB\u30FC\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &2228659146235560182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7568423843813010277, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -21412,6 +23360,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2380624184271828290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6263405206199869137, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1845687792846563539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2380624184271828290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 4621927533343a941beab958f5cc9222, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &3710094921489366665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2380624184271828290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C81.T2"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &2421451127620549619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6232700633146937440, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -21433,6 +23424,49 @@ MonoBehaviour:
   boneReference: 7
   subPath: Skirt2Root/LeftSkirt_Root
   attachmentMode: 2
+--- !u!1 &2461821786709941980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6183333521184011599, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &97945599311775273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2461821786709941980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 829e3b4613b1fca4eb7692f474895657, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e682f3c7206050342889a9ea22ca98f1, type: 2}
+--- !u!114 &691574166856175418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2461821786709941980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u895F2.\u30EA\u30DC\u30F3"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &2532926304907558206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6107861590224672429, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -21466,6 +23500,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2549103063735548816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6090418620646084611, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3506180773897728299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549103063735548816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 906e5e000ac92784fb34a769bdb2daea, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &438422973947750378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549103063735548816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30D0\u30C3\u30B9\u30EB"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &2551909904125360402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6093243048952107649, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -21487,6 +23564,49 @@ MonoBehaviour:
   boneReference: 7
   subPath: Skirt2Root/LeftSkirt_Root
   attachmentMode: 2
+--- !u!1 &2584730787792059230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6069574907824804045, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5155369509897791873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584730787792059230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 4b5e33f5d2c11a0429205c4120e98774, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &1802608364651332412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584730787792059230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30D9\u30EB\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &2592187196326532490 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6060987796737375769, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -21916,6 +24036,49 @@ MonoBehaviour:
   boneReference: 8
   subPath: Breasts_Origin/BaseBreastRoot/BaseBreast_PBroot_Animation_L/BaseBreast_PBroot_AnimationSpace_L/BaseBreast_PBroot_L/BaseBreast_Vector_L/BaseBreast_SquishUpDown_L/BaseBreast_RootAnimation_L/BaseBreast_Root_L/BaseBreast_Dummy1_L/BaseBreast_Dummy1_Animation1_L/BaseBreast_Dummy1_Animation2_L/BaseBreast_Dummy1_Animation3_L
   attachmentMode: 2
+--- !u!1 &2693750388632318256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5946905968198949539, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1931594699604101103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2693750388632318256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: e4fb95f8b0e83c649b18389b45c24a74, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &3292736346558158589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2693750388632318256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u8896.\u9577"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &2712134252387195027 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5928662866259129088, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -21952,6 +24115,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2836330900792138093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5816701429401006846, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1874465997785517364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836330900792138093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: b8fb5b7555ae548489c555a25efd1f69, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &8768899837891868676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836330900792138093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/hair/\u30B1\u30E2\u8033"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &2883232405990007511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6910479321525389636, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -22000,6 +24206,49 @@ MonoBehaviour:
   boneReference: 7
   subPath: Skirt2Root/LeftSkirt_Root
   attachmentMode: 2
+--- !u!1 &3047845869202616748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6749109581629053503, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3240231295557303361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3047845869202616748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 287dfd6e798bc1f45b1591f24fdec9a4, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 88485e49be6791b4c957b9c0efa13050, type: 2}
+--- !u!114 &9636951077407252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3047845869202616748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30B1\u30E2\u30DF\u30DF\u30D4\u30A2\u30B9"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &3064093646547458818 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6728483548613308561, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -22027,12 +24276,98 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3077653668367532423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6724926991895652884, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7314866280401221065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3077653668367532423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: ca80ed7866f233c42b230c66329e39d4, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &4364121126729773252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3077653668367532423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/hair/secondary-\u30B1\u30E2\u8033.\u5185\u6BDB"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &3095161001297275448 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6706282352432021931, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3144825683537591247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6647614868408078428, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6039436136094077592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3144825683537591247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 8c30c0295bab0f84cb360afc87ab6205, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &7322965931951660907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3144825683537591247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u30DC\u30F3\u30CD\u30C3\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &3213824990797921390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6592271505194850301, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -22045,12 +24380,98 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3221946509775205383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6580638163195928468, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &83599177472508858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221946509775205383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 8181b9fe1aa22a141a2ce158dd99adb0, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &4897593714700177858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221946509775205383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30D0\u30C3\u30B9\u30EB"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &3282167294907281276 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6514774685794927855, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3282837568623752391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6515375694585388884, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1558748630447687327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3282837568623752391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: b50051141cdd7104f9fb521642c67c4e, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &8837165367138152766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3282837568623752391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u9AEA\u30EA\u30DC\u30F3"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &3284765864528380807 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6516829516844951572, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -22688,6 +25109,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3737584398519724313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4916569570700329610, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2032776132526892479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737584398519724313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 4110c55323ae0bb4f9e783097cf4c6ee, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
+--- !u!114 &5460113409452380572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737584398519724313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &3823460676823316924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4821686103044231727, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -23414,11 +25878,11 @@ MonoBehaviour:
   InheritProbeAnchor: 1
   ProbeAnchor:
     referencePath: AutoAnchorObject
-    targetObject: {fileID: 0}
+    targetObject: {fileID: 4753833120639782263}
   InheritBounds: 1
   RootBone:
     referencePath: AutoAnchorObject
-    targetObject: {fileID: 0}
+    targetObject: {fileID: 4753833120639782263}
   Bounds:
     m_Center: {x: 0, y: -0.25, z: 0}
     m_Extent: {x: 1.183397, y: 1.09, z: 1.183397}
@@ -23533,6 +25997,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4135693946197241363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5656898779627390336, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4975786910842353979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4135693946197241363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: fdfe73728568c9e4a8e5b8a54ef98871, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &3483744568538267612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4135693946197241363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/hair/\u9AEA\u30D9\u30FC\u30B9"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &4152403100817288733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5640182742125118862, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -23563,6 +26070,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4393394507488080116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5412695406941526887, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5656561102904759131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393394507488080116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: bc7579e0e1657f643a70d3ad6cd84ab3, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &3666907854291255858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393394507488080116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &4407261042821734804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5389687655176292871, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -24037,6 +26587,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4721982936122259719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3918803180390716052, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1988613791313055161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4721982936122259719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 59306578912be7f4fa310108c0ea16ef, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 696c49007685d604c995bc50aa016e54, type: 2}
+--- !u!114 &3393851862862792653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4721982936122259719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/body/\u624B"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &4754278879996511183 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 3899888300744009820, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -24049,6 +26642,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4819361844944669248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3820293681695842771, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3061605630844505091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4819361844944669248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 49b6f13dbe33e16479d1b2920e840c3a, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &3362816351001436805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4819361844944669248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/hair/\u6A2A\u9AEA2.\u3082\u307F\u3042\u30521"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &4872214179423631318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3780820505854172229, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -24449,6 +27085,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4954296512372974131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3685222820585621920, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3773429323692880571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954296512372974131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 65dd135f2a6d8a940b3a1cb50fe7684e, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &5851019422126902560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954296512372974131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u30DC\u30F3\u30CD\u30C3\u30C8.\u3072\u3055\u3057"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &4991441266353411274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3648075876003839833, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -24494,12 +27173,98 @@ MonoBehaviour:
   boneReference: 7
   subPath: Skirt2Root/Skirt2b_Root
   attachmentMode: 2
+--- !u!1 &5129586062511038722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3515705558614805137, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1890026992920266298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129586062511038722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 19359ece242415c4785ffcecd887ae6f, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
+--- !u!114 &883212142487366198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129586062511038722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u80F4\u4F53\u808C\u96A0\u3057"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &5152669296727301444 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 3486997362770441943, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5154993969030259592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3490166013327935515, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4417795282530643971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5154993969030259592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 766a6346bf0ddb445a387d999d0ca644, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e682f3c7206050342889a9ea22ca98f1, type: 2}
+--- !u!114 &1375366821003530877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5154993969030259592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: AvatarMod/Costume/Shoes
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &5168361254619546830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3484675471908826973, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -24533,6 +27298,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5224358180742800822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4568091316110315045, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7891238418243002179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224358180742800822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: a59435d7d963dba46af1a6598012790c, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 88485e49be6791b4c957b9c0efa13050, type: 2}
+--- !u!114 &4826890886537117402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224358180742800822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &5228151675536569900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4569914417363393983, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -24794,6 +27602,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5438657843585108368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4367443472535364099, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2923373886285861446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438657843585108368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 58533df65b71b6b438e6d578aef7e399, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &243009474001075206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438657843585108368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &5481382976813656251 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4320201131243340584, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -24818,6 +27669,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5579984476484635385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4221472218247749994, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4933640550892421551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579984476484635385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: fac7eab2a2e0b9741b2cde971b4930ec, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &1822947778451502165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579984476484635385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u524D\u5782\u308C"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &5588529918507726202 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4209681024475619049, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -24884,6 +27778,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5745361247488267583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4061727146103324332, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117357627960667775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5745361247488267583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 0d0e20eaad8a0854b9cbb9f435d60eef, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &5480503892063718948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5745361247488267583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u8896.\u80A9\u30B1\u30FC\u30D7"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &5756506157863147501 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4037071438187986046, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -25028,12 +27965,98 @@ MonoBehaviour:
   boneReference: 10
   subPath: HairRoot/RearHairRoot/LeftRearHair_Root
   attachmentMode: 2
+--- !u!1 &6116343760623663326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2523184512477664077, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8468457469106488616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116343760623663326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: e428e19fc05cb004199905ba050b411e, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 88485e49be6791b4c957b9c0efa13050, type: 2}
+--- !u!114 &7523584466464118463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116343760623663326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30D4\u30A2\u30B9"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &6155708891894358053 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2488450260910361526, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6174453226018344353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2474069054173701682, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7362743366345455219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6174453226018344353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 9150b054f9682b840bba2929ffabec83, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &6879161793208050341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6174453226018344353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &6190487985212148844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2453530281328322559, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -25588,12 +28611,98 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6585419369056297191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3207025601135905652, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4395313797569280916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6585419369056297191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 8d07fc6080cde9a4a8338801141084d8, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &8817233998060227231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6585419369056297191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/hair/\u6A2A\u9AEA3.\u3082\u307F\u3042\u30522"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &6594168145036233022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3199394329643524781, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6596651721887601486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3200294648405670109, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &696135433489222884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596651721887601486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 1cb697b2e329abb40a648c9820ed3f1f, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e682f3c7206050342889a9ea22ca98f1, type: 2}
+--- !u!114 &1829726574604341496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596651721887601486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30A2\u30A4\u30D1\u30C3\u30C1"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &6601697140089551852 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 3204390707018469503, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -25870,6 +28979,49 @@ MonoBehaviour:
   showGizmos: 1
   boneOpacity: 0.5
   limitOpacity: 0.5
+--- !u!1 &6651897785519415775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3149688524313086540, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1439831591650480895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651897785519415775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 693f5804edabd614db9e13451fe9a9a2, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &275040956304487332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651897785519415775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/hair/\u6A2A\u9AEA1"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &6673054425005507562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3134166040004831353, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -25906,6 +29058,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6847886012439228338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2949062566105023521, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7327060044313540522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6847886012439228338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: a98bf9f27bfced94d870f61b15863d71, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 88485e49be6791b4c957b9c0efa13050, type: 2}
+--- !u!114 &3283937295306175075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6847886012439228338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30AC\u30FC\u30BF\u30FC\u30D9\u30EB\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &6849874273457805117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2948200313172262062, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -26384,6 +29579,21 @@ MonoBehaviour:
   showGizmos: 1
   boneOpacity: 0.5
   limitOpacity: 0.5
+--- !u!114 &1327639336463248766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988585347969897347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boneReference: 8
+  subPath: "\u895F2"
+  attachmentMode: 2
 --- !u!4 &7011851439375170054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1633295348776391061, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -26396,6 +29606,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7070964747310946679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1568559121498551012, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8601133421376282310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070964747310946679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: d0209738cd4bd3943b6404f4ffd1349d, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &3594483891722747173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070964747310946679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u8170\u5F8C\u30EA\u30DC\u30F3"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &7077062111249101797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1572739998031616118, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -26414,12 +29667,98 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7144243141334271540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1495418850602773927, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7941277083059112084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7144243141334271540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 93d40f830481401488469ddf9d025c0b, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 696c49007685d604c995bc50aa016e54, type: 2}
+--- !u!114 &5395167362348419288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7144243141334271540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/body/\u8DB3\u6307"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &7154616106839150970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1490680197013732073, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7185203805155505122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1464584699376425073, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4798883747759977527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7185203805155505122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 17828f3b415019541819c8e48d84a3c6, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 696c49007685d604c995bc50aa016e54, type: 2}
+--- !u!114 &683919873720063893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7185203805155505122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &7188776930001567019 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1451868044054615736, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -27280,6 +30619,21 @@ MonoBehaviour:
   showGizmos: 1
   boneOpacity: 0.5
   limitOpacity: 0.5
+--- !u!114 &4200974031850893638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7338260119557274870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boneReference: 8
+  subPath: "\u895F2"
+  attachmentMode: 2
 --- !u!137 &7352575669993268430 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1291442726536548189, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -27425,12 +30779,98 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7567625451598801269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2224817301517599462, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3849342833695267917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7567625451598801269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: a38003e9769f86b4b8e3a3fd86c403d4, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 88485e49be6791b4c957b9c0efa13050, type: 2}
+--- !u!114 &7949964802715844209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7567625451598801269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &7603792077399728494 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2189770139750025981, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7612392014349717522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2180057749194029953, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1728287364774965585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7612392014349717522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: b8cb9924260135c47a2439f181eebd56, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &7866046452943652696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7612392014349717522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u895F"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &7612501278559316295 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2179937211169227476, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -27539,12 +30979,98 @@ MonoBehaviour:
   boneReference: 7
   subPath: Skirt1Root/LeftSkirt_Root
   attachmentMode: 2
+--- !u!1 &7846614988224312710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1945975115657534997, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4041533829202233421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7846614988224312710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 423a227f5abc5a34586bfdbe1cb5e1aa, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e682f3c7206050342889a9ea22ca98f1, type: 2}
+--- !u!114 &2813394555324910375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7846614988224312710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u895F1"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &7891285407703188324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1902421782980634871, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7891614991350426923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1900834368097552056, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8631790392370804469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891614991350426923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: fd338f484798c9c4cb00c6569f03506d, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &7245857080258590688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891614991350426923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u8170\u524D\u30EA\u30DC\u30F3"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &7899222961262356363 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1907861181691792408, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -27734,6 +31260,49 @@ MonoBehaviour:
   showGizmos: 1
   boneOpacity: 0.5
   limitOpacity: 0.5
+--- !u!1 &7949105484635215094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1852489759030738789, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8827942011724035368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949105484635215094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: a6cf66e91d456bd49b6dc66abe9a7e51, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &9101263180524059639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949105484635215094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u8170\u5F8C\u30EA\u30DC\u30F3"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &7976514175453601908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1826207093747502055, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -27764,6 +31333,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8005526035855668983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1800577074554510692, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4124851804748899801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8005526035855668983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 9cffc4ad8e451b34cbdf3c43efe7c517, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
+--- !u!114 &6328252143662285276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8005526035855668983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30B3\u30EB\u30BB\u30C3\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &8013856983488586955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1788853445483499352, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -27797,6 +31409,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8034378892741434482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1772836899718051809, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &132192710439613379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034378892741434482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 8b35fb5df4fa10e44a4897fec05f3d32, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &8900510229623847653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034378892741434482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30DA\u30D7\u30E9\u30E0"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &8056091587642116797 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1740997846438650158, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -28411,12 +32066,98 @@ MonoBehaviour:
   boneReference: 7
   subPath: Skirt1Root/RightSkirt_Root
   attachmentMode: 2
+--- !u!1 &8235408925974063128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 409744022468952971, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3268568291582566117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235408925974063128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 39c14e7f9e83d704fabeab564964c0bb, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &8867352552628382733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235408925974063128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u8896.\u624B\u9996"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &8248084636408585117 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 401574126325886990, guid: 48787d8b4845ed2418a051bcc8278a4c,
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8316220517659357256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 327811366209412059, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2339951378097674627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316220517659357256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 35e05a24475a30e488782a8fe38d69d3, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e682f3c7206050342889a9ea22ca98f1, type: 2}
+--- !u!114 &413276957013234512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316220517659357256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u895F2"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &8322506061505396007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 331792922117248692, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -28766,6 +32507,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8384044304598025772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 270113806215687615, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1932525470847896214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384044304598025772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 7ad3d27493668974184170a057b03b5b, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 824bc2c5eb04d364985abe811094e04b, type: 2}
+--- !u!114 &2654364970690714053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384044304598025772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30D8\u30A2\u30D0\u30F3\u30C9"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &8460069643441112248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 183957404692934443, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -28778,6 +32562,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8513080506429592841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 126436489760358042, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5838646587208636138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513080506429592841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 26a250a6868deca4f87b9e069787e948, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &6118143203850127446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513080506429592841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u30EA\u30DC\u30F3"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &8518185828701632164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 131471000890973495, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -28790,6 +32617,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8595538863850375205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 48631136095839158, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2113826829526844198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595538863850375205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: ecda2776543dde547af7e71de14d55d3, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
+--- !u!114 &8047646714076235126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595538863850375205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u8F2A"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &8608201572189507410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 41589526636356801, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -28808,6 +32678,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8772191959384431593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1033768325684686970, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3682557158865743603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8772191959384431593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 7f22d808e13e98240b9f4279e17b30f6, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &3332190877458956735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8772191959384431593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u8896.\u77ED"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!4 &8776590041664189630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1020363184403783469, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -28841,6 +32754,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8850859682105016788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 950586283232307783, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2374392609868292849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850859682105016788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: d513005f5d821b74ea3962b54d633e83, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: eee1c09e1af6cab4d8e22939942b3cf0, type: 2}
+--- !u!114 &937731973988033155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850859682105016788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30DC\u30EC\u30ED"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &8874405873727564394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 922536242471633401, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -29114,6 +33070,55 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9062379196963013656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 730059305310957451, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4254775255840945413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9062379196963013656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: dd84d8e000862b844bf09936adda9613, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 3c15392755484e54d9097ba0ea17e71f, type: 2}
+--- !u!114 &1544888614451753647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9062379196963013656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30B9\u30AB\u30FC\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
+--- !u!4 &9068669076884618504 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 738549342379382427, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9077330786723616227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 728616175993962096, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -29297,6 +33302,49 @@ MonoBehaviour:
   showGizmos: 1
   boneOpacity: 1
   limitOpacity: 1
+--- !u!1 &9135974766029080382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 660965271871253677, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7007156809297821638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9135974766029080382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: f062d71e2a0c7cf438aaa232540e4ae2, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 88485e49be6791b4c957b9c0efa13050, type: 2}
+--- !u!114 &8953718423558845039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9135974766029080382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &9146696338490304036 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 651384873227734455, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -29418,6 +33466,49 @@ MonoBehaviour:
   AffectsPositionX: 1
   AffectsPositionY: 1
   AffectsPositionZ: 1
+--- !u!1 &9176375998609169008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 629573308586455523, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5907735928769669845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9176375998609169008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: afd49402cd436264194b0329aacaa8ac, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
+--- !u!114 &6306450593617856378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9176375998609169008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u80A1\u9593\u96A0\u3057"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!1 &9202668615481625443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 600045919147319536, guid: 48787d8b4845ed2418a051bcc8278a4c,

@@ -32,6 +32,7 @@ Material:
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   - _SUNDISK_SIMPLE
+  - _UZUMOREENABLED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -83,7 +84,6 @@ Material:
     _UDIMDiscardRow3_1Animated: 1
     _UDIMDiscardRow3_2Animated: 1
     _UDIMDiscardRow3_3Animated: 1
-    _UDIMDiscardUVAnimated: 1
     _UzumoreEnabledAnimated: 1
     _stripped_tex__ClothDFG: 76d65cbce584df7449699fb8406f60ea
     _stripped_tex__SkinLUT: d13510bb2be49aa40a66a0101efb6a36
@@ -2503,8 +2503,8 @@ Material:
     - _UDIMDiscardRow3_0: 0
     - _UDIMDiscardRow3_1: 0
     - _UDIMDiscardRow3_2: 0
-    - _UDIMDiscardRow3_3: 0
-    - _UDIMDiscardUV: 1
+    - _UDIMDiscardRow3_3: 1
+    - _UDIMDiscardUV: 2
     - _UDIMFaceDiscardFace: 0
     - _UDIMFaceDiscardHelpbox: 0
     - _UDIMFaceDiscardRow0_0: 0
@@ -2846,10 +2846,10 @@ Material:
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 0
-    - m_mainCategory: 1
+    - m_mainCategory: 0
     - m_modifierCategory: 1
     - m_renderingCategory: 1
-    - m_specialFXCategory: 0
+    - m_specialFXCategory: 1
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
     - m_start_Alpha: 0

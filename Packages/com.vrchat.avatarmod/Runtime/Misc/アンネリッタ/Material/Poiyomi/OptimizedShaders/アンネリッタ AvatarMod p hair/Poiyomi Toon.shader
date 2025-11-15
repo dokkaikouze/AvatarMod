@@ -2951,9 +2951,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					if(shouldDiscard < 0) // Early Return skips rest of vertex shader
 					{
@@ -3109,9 +3109,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					clip(shouldDiscard); // Clip if discarded
 				}
@@ -6296,9 +6296,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					if(shouldDiscard < 0) // Early Return skips rest of vertex shader
 					{
@@ -6578,9 +6578,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					clip(shouldDiscard); // Clip if discarded
 				}
@@ -12114,9 +12114,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					if(shouldDiscard < 0) // Early Return skips rest of vertex shader
 					{
@@ -12396,9 +12396,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					clip(shouldDiscard); // Clip if discarded
 				}
@@ -17297,9 +17297,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					if(shouldDiscard < 0) // Early Return skips rest of vertex shader
 					{
@@ -17643,9 +17643,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					clip(shouldDiscard); // Clip if discarded
 				}
@@ -20570,9 +20570,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					udim += (v.uv3.xy * (1.0 == 3));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					if(shouldDiscard < 0) // Early Return skips rest of vertex shader
 					{
@@ -20839,9 +20839,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 					float2 udim = floor(vertexUV(i, 1.0));
 					float4 UDIMDiscardRows[4];
 					UDIMDiscardRows[0] = float4(_UDIMDiscardRow0_0, _UDIMDiscardRow0_1, _UDIMDiscardRow0_2, _UDIMDiscardRow0_3);
-					UDIMDiscardRows[1] = float4(0.0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
-					UDIMDiscardRows[2] = float4(0.0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
-					UDIMDiscardRows[3] = float4(0.0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
+					UDIMDiscardRows[1] = float4(_UDIMDiscardRow1_0, _UDIMDiscardRow1_1, _UDIMDiscardRow1_2, _UDIMDiscardRow1_3);
+					UDIMDiscardRows[2] = float4(_UDIMDiscardRow2_0, _UDIMDiscardRow2_1, _UDIMDiscardRow2_2, _UDIMDiscardRow2_3);
+					UDIMDiscardRows[3] = float4(_UDIMDiscardRow3_0, _UDIMDiscardRow3_1, _UDIMDiscardRow3_2, _UDIMDiscardRow3_3);
 					float shouldDiscard = shouldPerformUDIMDiscard(udim, UDIMDiscardRows);
 					clip(shouldDiscard); // Clip if discarded
 				}

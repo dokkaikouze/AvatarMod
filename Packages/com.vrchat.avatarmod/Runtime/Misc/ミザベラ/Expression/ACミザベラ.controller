@@ -6,10 +6,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30A4\u30F3\u30CA\u30FC\u306A\u3057\u3000\u30B1\u30FC\u30D7\u3042\u308A\u3000\u4E73\u9996\u30D4\u30A2\u30B9\u6709\u7121"
+  m_Name: "\u4E73\u3057\u307C\u308A\u98DF\u3044\u8FBC\u307F\u306A\u3057\u3000\u4E73\u30D9\u30EB\u30C8\u6709\u7121"
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 3835d847fca623d4389f268daac91e74, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6c379aaee63b0b3499f144092029cefa, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -17,14 +17,14 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 6c379aaee63b0b3499f144092029cefa, type: 2}
+    m_Motion: {fileID: 6002753973064835965}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -386,6 +386,34 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &-7845793408793049661
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "Costume 8 \u7D20\u4F53"
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -7791298426880883433}
+  m_StateMachineBehaviours:
+  - {fileID: 4719328042196544362}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 351420f58cce084459f20149201991a8, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &-7819913812986207138
 AnimatorState:
   serializedVersion: 6
@@ -393,7 +421,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Costume 4 \u30A4\u30F3\u30CA\u30FC2"
+  m_Name: "Costume 4 \u30DF\u30CB_\u4E73\u30D9\u30EB\u30C8\u7121\u3057"
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -414,6 +442,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-7791298426880883433
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: AvatarMod/Weight
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 2527736025074491637}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &-7779146731218108239
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -568,10 +621,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30A4\u30F3\u30CA\u30FC\u306A\u3057\u3000\u30B1\u30FC\u30D7\u306A\u3057\u3000\u4E73\u9996\u30D4\u30A2\u30B9\u6709\u7121"
+  m_Name: "\u4E73\u3057\u307C\u308A\u306A\u3057\u3000\u4E73\u30AB\u30C3\u30D7\u6709\u7121"
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 68e7b2e42b9bf294684680bc402da86a, type: 2}
+    m_Motion: {fileID: 7400000, guid: a5678ab4459dd9a428f05e39c384d76d, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -579,14 +632,14 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 58c042abebdbff040bb62c05d80d5b47, type: 2}
+    m_Motion: {fileID: 7400000, guid: 3835d847fca623d4389f268daac91e74, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -819,7 +872,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: AvatarMod/Breast/BreastsType
+    name: "AvatarMod/Costume/body/\u624B"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -831,21 +884,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/body/\u624B\u888B"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
     name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -857,19 +898,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
-    source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -891,7 +920,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -903,21 +932,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
     source: AvatarMod/Costume/Costume
     value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -929,7 +946,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
     source: AvatarMod/Costume/Costume
-    value: 0
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -939,79 +956,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -1023,7 +968,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
+    name: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -1047,7 +992,151 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
+    name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30B9\u30AB\u30FC\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30DC\u30EC\u30ED"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u9577"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30B9\u30AB\u30FC\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u895F"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u30EA\u30DC\u30F3"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u895F2"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u895F1"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u624B\u9996"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -1119,6 +1208,141 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-6615244956913911937
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 3
+    name: AvatarMod/Costume/Costume_now
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/body/\u624B"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  localOnly: 0
+  debugString: 
 --- !u!1102 &-6614419582073696948
 AnimatorState:
   serializedVersion: 6
@@ -1199,6 +1423,21 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   m_BlendParameter: AvatarMod/BTAnimation
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &-6323283662157066641
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs: []
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -1291,7 +1530,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Costume 7 \u7D20\u4F53"
+  m_Name: "Costume 7 \u30A4\u30F3\u30CA\u30FC_\u4E73\u30AB\u30C3\u30D7"
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1338,7 +1577,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: AvatarMod/Breast/BreastsType
+    name: "AvatarMod/Costume/body/\u624B"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -1350,21 +1589,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/body/\u624B\u888B"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
     name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -1376,19 +1603,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
-    source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -1410,7 +1625,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -1422,19 +1637,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -1448,7 +1651,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -1458,9 +1661,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -1470,81 +1673,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
+    name: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
-    source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -1556,7 +1687,7 @@ MonoBehaviour:
   - type: 0
     name: AvatarMod/Costume/Shoes
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -1566,7 +1697,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -1577,39 +1708,32 @@ MonoBehaviour:
     sourceMax: 1
     destMin: 0
     destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
   localOnly: 0
   debugString: 
---- !u!206 &-5405840712407722088
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30A4\u30F3\u30CA\u30FC\u3042\u308A\u3000\u30B1\u30FC\u30D7\u3042\u308A\u3000\u4E73\u9996\u30D4\u30A2\u30B9\u6709\u7121"
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 405a3ca82aa64e1488345f0deb596615, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 71dddf03e7ed1e44a8eb8749a467fe33, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-  m_BlendParameterY: Blend
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
 --- !u!1101 &-5326102749978863585
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1942,10 +2066,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u80F8\u30D1\u30BF\u30FC\u30F3"
+  m_Name: "\u80F8\u30D1\u30BF\u30FC\u30F3 \u30D6\u30E9\u30A6\u30B91"
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 4766790215881312810}
+    m_Motion: {fileID: -3532961208832167886}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -1953,20 +2077,45 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 4458311987070686143}
-    m_Threshold: 0.5
+    m_Motion: {fileID: 4766790215881312810}
+    m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: AvatarMod/Breast/BreastsType
+  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
-  m_MaxThreshold: 0.5
-  m_UseAutomaticThresholds: 1
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
+--- !u!1101 &-4100169420892573034
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: AvatarMod/Weight
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 2527736025074491637}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &-4032321593732396069
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2130,7 +2279,7 @@ AnimatorStateMachine:
     m_Position: {x: 200, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6104527689137324188}
-    m_Position: {x: 400, y: 510, z: 0}
+    m_Position: {x: 420, y: 530, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3379154873811751154}
     m_Position: {x: 780, y: 120, z: 0}
@@ -2185,6 +2334,12 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -2744814533058378108}
     m_Position: {x: 250, y: -270, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -7845793408793049661}
+    m_Position: {x: 780, y: 470, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4290130025028706497}
+    m_Position: {x: 780, y: 520, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:
@@ -2197,6 +2352,37 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 910, y: -10, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -7959588604965714526}
+--- !u!206 &-3532961208832167886
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u4E73\u3057\u307C\u308A\u6709\u7121"
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 4458311987070686143}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 5610502908257368195}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!114 &-3508916252902149263
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2231,7 +2417,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Costume 1 \u6A19\u6E961"
+  m_Name: "Costume 1 \u819D\u4E08"
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2278,21 +2464,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: AvatarMod/Breast/BreastsType
+    name: "AvatarMod/Costume/body/\u624B"
     source: AvatarMod/Costume/Costume
     value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/body/\u624B\u888B"
-    source: AvatarMod/Costume/Costume
-    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -2326,151 +2500,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
     name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -2482,7 +2512,43 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -2506,9 +2572,153 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
+    name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30B9\u30AB\u30FC\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30DC\u30EC\u30ED"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u9577"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30B9\u30AB\u30FC\u30C8"
     source: AvatarMod/Costume/Costume
     value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u895F"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u30EA\u30DC\u30F3"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u895F2"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u895F1"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u624B\u9996"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+    source: AvatarMod/Costume/Costume
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -2653,6 +2863,37 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!206 &-2100041084839877537
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u30D9\u30EB\u30C8\u30BF\u30A4\u30D7"
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 2d1edbc25a966b64fb597b6d61e68ee2, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 1462279bf7bd197438f8f6552e656664, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C81.T2"
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!1102 &-2012501617150811631
 AnimatorState:
   serializedVersion: 6
@@ -2692,7 +2933,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -6911954257765117138}
-    m_Position: {x: 370, y: 120, z: 0}
+    m_Position: {x: 390, y: 110, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -2729,7 +2970,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: AvatarMod/Breast/BreastsType
+    name: "AvatarMod/Costume/body/\u624B"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -2741,21 +2982,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/body/\u624B\u888B"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
     name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -2767,19 +2996,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
-    source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -2801,7 +3018,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -2813,19 +3030,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -2839,7 +3044,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
     source: AvatarMod/Costume/Costume
-    value: 0
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -2849,9 +3054,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
     source: AvatarMod/Costume/Costume
-    value: 0
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -2861,79 +3066,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
+    name: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -2957,9 +3090,153 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
+    name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30B9\u30AB\u30FC\u30C8"
     source: AvatarMod/Costume/Costume
     value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30DC\u30EC\u30ED"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u9577"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30B9\u30AB\u30FC\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u895F"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u30EA\u30DC\u30F3"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u895F2"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u895F1"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u624B\u9996"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+    source: AvatarMod/Costume/Costume
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -3042,37 +3319,6 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
---- !u!206 &-1429513292289892023
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: "\u98DF\u3044\u8FBC\u307F\u30A4\u30F3\u30CA\u30FC\u3042\u308A\u3000\u30B1\u30FC\u30D7\u6709\u7121"
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: de9f912c8c47f504eb28875e1eadcca9, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 689da6df54f7c19448eef4d16018b80c, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u80F8"
-  m_BlendParameterY: Blend
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
 --- !u!114 &-1383753691958285843
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3165,21 +3411,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: AvatarMod/Breast/BreastsType
+    name: "AvatarMod/Costume/body/\u624B"
     source: AvatarMod/Costume/Costume
     value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/body/\u624B\u888B"
-    source: AvatarMod/Costume/Costume
-    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -3213,21 +3447,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
     name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
     source: AvatarMod/Costume/Costume
-    value: 0
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -3237,9 +3459,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
     source: AvatarMod/Costume/Costume
-    value: 0
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -3249,21 +3471,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
     source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -3285,7 +3495,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -3297,79 +3507,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
+    name: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -3393,7 +3531,151 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
+    name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30B9\u30AB\u30FC\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30DC\u30EC\u30ED"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u9577"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30B9\u30AB\u30FC\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u895F"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u30EA\u30DC\u30F3"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u895F2"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u895F1"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u624B\u9996"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -3464,7 +3746,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/body/\u624B\u888B"
+  m_BlendParameter: "AvatarMod/Costume/body/\u624B"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -3502,577 +3784,601 @@ AnimatorController:
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Costume/Costume
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/BreastPBrootL_Squish
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/BreastPBrootR_Squish
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/BreastNakedPBrootL_Squish
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/BreastNakedPBrootR_Squish
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/flagBreast
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/flagBreastNaked
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Dance
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/DanceTemp
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Light
     m_Type: 1
     m_DefaultFloat: 0.5
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/flagLight
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: InStation
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Costume/flagCostume
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/Space
     m_Type: 1
     m_DefaultFloat: 0.5
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Reflection
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/flagReflection
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/HeadChop
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: SYNC_CN_DANCE_GIMMICK_ENABLE
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsLocal
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/First
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/RimShade
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/flagRimShade
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/BTAnimation
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Costume/Costume_now
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Shadow
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Costume/Shoes
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u30A2\u30A4\u30DE\u30B9\u30AF"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/body/\u624B"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/body/\u624B\u888B"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: "AvatarMod/Costume/body/\u80A1\u9593"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC\u30D5\u30EA\u30EB"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/body/\u8DB3\u6307"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD\u30D5\u30EA\u30EB"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u30B1\u30E2\u30DF\u30DF\u30D4\u30A2\u30B9"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
+    m_Type: 1
+    m_DefaultFloat: 1
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
+    m_Type: 1
+    m_DefaultFloat: 1
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u30AC\u30FC\u30BF\u30FC\u30D9\u30EB\u30C8"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u30B3\u30EB\u30BB\u30C3\u30C8"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u8F2A"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
+    m_Type: 1
+    m_DefaultFloat: 1
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u30D4\u30A2\u30B9"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+    m_Type: 1
+    m_DefaultFloat: 1
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u80F4\u4F53\u808C\u96A0\u3057"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes1/\u80A1\u9593\u96A0\u3057"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30A2\u30A4\u30D1\u30C3\u30C1"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30B9\u30AB\u30FC\u30C8"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30D0\u30C3\u30B9\u30EB"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u8170\u5E03"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30D9\u30EB\u30C8"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u8170\u5E03\u30D9\u30FC\u30EB"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30DA\u30D7\u30E9\u30E0"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C8\u524D"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u524D\u5782\u308C"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C8\u5F8C"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u9AEA\u30EA\u30DC\u30F3"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u5171\u901A"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u8170\u524D\u30EA\u30DC\u30F3"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u80F8"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u8170\u5F8C\u30EA\u30DC\u30F3"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u524D\u639B\u3051"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    m_Type: 1
+    m_DefaultFloat: 1
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u524D\u639B\u3051\u7A74"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C81.T2"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u982D\u5DFE"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30DC\u30EC\u30ED"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u982D\u5DFE\u30D9\u30FC\u30EB"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u30D8\u30A2\u30D0\u30F3\u30C9"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u30CD\u30C3\u30AF\u30EC\u30B9"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes2/\u895F1"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u30E2\u30D6\u524D"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/hair/\u9AEA\u30D9\u30FC\u30B9"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/clothes2/\u30E2\u30D6\u5F8C"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u4E09\u3064\u7DE8\u307F\u53F3"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u4E09\u3064\u7DE8\u307F\u5DE6"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D1-\u6A19\u6E96"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D2-\u5DE6\u7E8F\u3081"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D3-\u3071\u3063\u3064\u3093"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u524D\u9AEA.\u53F3"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u524D\u9AEA.\u5DE6"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u5F8C\u9AEA.1"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u5F8C\u9AEA.2"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u5F8C\u9AEA.\u9AEA\u7559\u3081"
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: "AvatarMod/Costume/hair/\u6A2A\u9AEA1"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u6A2A\u9AEA2"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/hair/\u6A2A\u9AEA2.\u3082\u307F\u3042\u30521"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "AvatarMod/Costume/hair/\u9AEA\u7559\u3081\u6A2A"
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/hair/\u6A2A\u9AEA3.\u3082\u307F\u3042\u30522"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/hair/\u30B1\u30E2\u8033"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/hair/secondary-\u30B1\u30E2\u8033.\u5185\u6BDB"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: "AvatarMod/\u76EEEmission"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: "AvatarMod/flag\u76EEEmission"
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/flagBTAnimation
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/Size
     m_Type: 1
     m_DefaultFloat: 0.5
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/flagSize
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/queueBTAnimation
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/syncBTAnimation
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Breast/flagSpace
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/LTCGI
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/SSAO
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/ShadowStrength
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Depth
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/flagShadowStrength
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: AvatarMod/Breast/BreastsType
-    m_Type: 1
-    m_DefaultFloat: 1
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: AvatarMod/Costume/flagDisableClothes2
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hips_L_Stretch
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hips_R_Stretch
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hips_L_Squish
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hips_R_Squish
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/WriteDefaults
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarMod/Uzumore
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30B9\u30AB\u30FC\u30C8"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30D0\u30C3\u30B9\u30EB"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u8170\u5F8C\u30EA\u30DC\u30F3"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u895F2"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u8896.\u9577"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u8896.\u77ED"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u8896.\u624B\u9996"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u8896.\u80A9\u30B1\u30FC\u30D7"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    m_Type: 1
+    m_DefaultFloat: 1
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u895F"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u30EA\u30DC\u30F3"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u895F2.\u30EA\u30DC\u30F3"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u30DC\u30F3\u30CD\u30C3\u30C8"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: "AvatarMod/Costume/clothes3/\u30DC\u30F3\u30CD\u30C3\u30C8.\u3072\u3055\u3057"
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: AvatarMod
@@ -4104,10 +4410,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u98DF\u3044\u8FBC\u307F\u30A4\u30F3\u30CA\u30FC\u306A\u3057\u3000\u30B1\u30FC\u30D7\u6709\u7121"
+  m_Name: "\u30D9\u30EB\u30C8\u30BF\u30A4\u30D7"
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: dcf94955f952f974f8bd9350a43252b8, type: 2}
+    m_Motion: {fileID: 7400000, guid: 71dddf03e7ed1e44a8eb8749a467fe33, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -4115,14 +4421,14 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 688367b1512383844b8db587ac090396, type: 2}
+    m_Motion: {fileID: 7400000, guid: a50f4cff5bec34a438bddb58bfb181b5, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u80F8"
+  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C81.T2"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -4806,6 +5112,8 @@ AnimatorState:
   - {fileID: 2719840090364412625}
   - {fileID: 5927463765284221137}
   - {fileID: -8473240052830815762}
+  - {fileID: 8409617728211690234}
+  - {fileID: 8404388657108926335}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -5072,7 +5380,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Costume 5 \u30D3\u30AD\u30CB"
+  m_Name: "Costume 5 \u30DF\u30CB_\u4E73\u30AB\u30C3\u30D7"
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -5093,6 +5401,40 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &3811065259975910309
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: AvatarMod/Costume/Costume
+    m_EventTreshold: 0.065
+  - m_ConditionMode: 4
+    m_ConditionEvent: AvatarMod/Costume/Costume
+    m_EventTreshold: 0.075
+  - m_ConditionMode: 7
+    m_ConditionEvent: AvatarMod/Costume/Costume_now
+    m_EventTreshold: 7
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsLocal
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -7845793408793049661}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &3882817886894041430
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5124,7 +5466,7 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30A4\u30F3\u30CA\u30FC\u306A\u3057\u3000\u30B1\u30FC\u30D7\u6709\u7121"
+  m_Name: "\u4E73\u3057\u307C\u308A\u30BF\u30A4\u30D72"
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: -9082053467334907356}
@@ -5135,20 +5477,82 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -7507080506181831079}
+    m_Motion: {fileID: 7161087943263505391}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u80F8"
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 0
+--- !u!1101 &4215599688276029700
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: AvatarMod/Costume/Costume
+    m_EventTreshold: 0.065
+  - m_ConditionMode: 4
+    m_ConditionEvent: AvatarMod/Costume/Costume
+    m_EventTreshold: 0.075
+  - m_ConditionMode: 7
+    m_ConditionEvent: AvatarMod/Costume/Costume_now
+    m_EventTreshold: 7
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsLocal
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 4290130025028706497}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1102 &4290130025028706497
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "Costume 9 \u8FFD\u52A0\u8863\u88C5\u7528"
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -4100169420892573034}
+  m_StateMachineBehaviours:
+  - {fileID: -6615244956913911937}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 351420f58cce084459f20149201991a8, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!114 &4353708527306721289
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5241,10 +5645,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30A4\u30F3\u30CA\u30FC\u6709\u7121"
+  m_Name: "\u30D9\u30EB\u30C8\u6709\u7121"
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -1429513292289892023}
+    m_Motion: {fileID: 7400000, guid: 405a3ca82aa64e1488345f0deb596615, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -5259,7 +5663,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
+  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -5322,13 +5726,148 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 0
+--- !u!114 &4719328042196544362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 3
+    name: AvatarMod/Costume/Costume_now
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/body/\u624B"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  localOnly: 0
+  debugString: 
 --- !u!206 &4766790215881312810
 BlendTree:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30A4\u30F3\u30CA\u30FC\u6709\u7121"
+  m_Name: "\u4E73\u3057\u307C\u308A\u30BF\u30A4\u30D7"
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 6796917707499229571}
@@ -5346,7 +5885,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -5399,7 +5938,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -6890285351746772763}
-    m_Threshold: 0.018043099
+    m_Threshold: 0.016754305
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -5407,7 +5946,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 1572832570332686063}
-    m_Threshold: 0.036086198
+    m_Threshold: 0.03350861
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -5415,39 +5954,31 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 143473567093825433}
-    m_Threshold: 0.05412929
+    m_Threshold: 0.050262913
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Breast/flagSpace
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 75ae06f6d82c89a4c9c258c3fc0deb41, type: 2}
-    m_Threshold: 0.072172396
+    m_Motion: {fileID: 7400000, guid: cbc3a6984797d8f4a8db473869bfbe0d, type: 2}
+    m_Threshold: 0.06701722
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: AvatarMod/Costume/Shoes
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 18737b53bd1670645b8ee01753f1b254, type: 2}
-    m_Threshold: 0.09021549
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD\u30D5\u30EA\u30EB"
+    m_DirectBlendParameter: "AvatarMod/Costume/body/\u624B"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: ecfab69179f88eb4e8cc4b548ea28960, type: 2}
-    m_Threshold: 0.10825858
+    m_Threshold: 0.08377153
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC\u30D5\u30EA\u30EB"
+    m_DirectBlendParameter: "AvatarMod/Costume/body/\u8DB3\u6307"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 9da4d178133789f44a2e102d6bcbb67d, type: 2}
-    m_Threshold: 0.12630169
+    m_Threshold: 0.100525826
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -5455,247 +5986,239 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 0bc23c787f5f4194e9e5f7f957823f11, type: 2}
-    m_Threshold: 0.14434479
+    m_Threshold: 0.11728013
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d951fa36f50a6794cac643264e32673a, type: 2}
-    m_Threshold: 0.16238788
+    m_Motion: {fileID: 7400000, guid: 33de92d72b0c17e479d6551c789bbccc, type: 2}
+    m_Threshold: 0.13403444
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
+    m_DirectBlendParameter: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 75ae06f6d82c89a4c9c258c3fc0deb41, type: 2}
+    m_Threshold: 0.15078874
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Costume/Shoes
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 3a61243931c27154f913baeba8be7e3c, type: 2}
+    m_Threshold: 0.16754305
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 8bd2c85455116ea44a5a948c46e107d1, type: 2}
+    m_Threshold: 0.18429735
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30AC\u30FC\u30BF\u30FC\u30D9\u30EB\u30C8"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 7611a0ba35566e04695d879e7725a8b9, type: 2}
-    m_Threshold: 0.18043098
+    m_Threshold: 0.20105165
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30B1\u30E2\u30DF\u30DF\u30D4\u30A2\u30B9"
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: bf70a7f67eb6c744abc669c229ef5d7c, type: 2}
-    m_Threshold: 0.19847408
+    m_Motion: {fileID: 7400000, guid: 9a4e9723132ba5e4b9ccb028839aa3ba, type: 2}
+    m_Threshold: 0.21780595
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30B3\u30EB\u30BB\u30C3\u30C8"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 957772cf74b6b9e4b80e237bad2a5f3f, type: 2}
-    m_Threshold: 0.21651717
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 48fdfdb65ff45ad48b110343842ae506, type: 2}
     m_Threshold: 0.23456027
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30D4\u30A2\u30B9"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 48fdfdb65ff45ad48b110343842ae506, type: 2}
+    m_Threshold: 0.25131455
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u80A1\u9593\u96A0\u3057"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: d951fa36f50a6794cac643264e32673a, type: 2}
+    m_Threshold: 0.26806888
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u80F4\u4F53\u808C\u96A0\u3057"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 2dc41546c37f79245a8b42bbe8b348a3, type: 2}
+    m_Threshold: 0.28482318
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u8F2A"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 45a852b381e471e4480692c986731c3d, type: 2}
+    m_Threshold: 0.30157748
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 49a43417ae7db95419e3258d03abb3c0, type: 2}
-    m_Threshold: 0.25260338
+    m_Threshold: 0.31833178
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2dc41546c37f79245a8b42bbe8b348a3, type: 2}
-    m_Threshold: 0.27064645
+    m_Motion: {fileID: 7400000, guid: a2cdcfe351d91034b9c0baff9ace9707, type: 2}
+    m_Threshold: 0.3350861
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d9358061835789f4a993f4634fc51115, type: 2}
-    m_Threshold: 0.28868958
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e459b74f2181c52498400c88c3fa043c, type: 2}
-    m_Threshold: 0.30673265
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u524D\u639B\u3051"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 6c41447a20a490248b45854a7602e6f4, type: 2}
-    m_Threshold: 0.32477576
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30A2\u30A4\u30DE\u30B9\u30AF"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: faf1aeae3ccb6be478b7d382d0070512, type: 2}
-    m_Threshold: 0.34281886
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u8170\u5E03\u30D9\u30FC\u30EB"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 473281934e11570489bd78331cdececa, type: 2}
-    m_Threshold: 0.36086196
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u982D\u5DFE"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 27096de2464a4e44380e98fb3e8cd63e, type: 2}
-    m_Threshold: 0.37890503
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u8170\u5E03"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 96ada187d99add24293fed6b344851e4, type: 2}
-    m_Threshold: 0.39694816
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u524D\u639B\u3051\u7A74"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ae77bbd838ba5a647acdd9031b83b5c1, type: 2}
-    m_Threshold: 0.41499123
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u5171\u901A"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: df6812a29edf3c546a48e374faf810f6, type: 2}
-    m_Threshold: 0.43303433
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30CD\u30C3\u30AF\u30EC\u30B9"
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30A2\u30A4\u30D1\u30C3\u30C1"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: d10ec19b980a9a74c80353c33e920ac2, type: 2}
-    m_Threshold: 0.45107743
+    m_Threshold: 0.3518404
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C8\u524D"
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30B9\u30AB\u30FC\u30C8"
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 59083f2a1cebc354fa7ce47fa9d47b79, type: 2}
+    m_Motion: {fileID: 7400000, guid: faf1aeae3ccb6be478b7d382d0070512, type: 2}
+    m_Threshold: 0.3685947
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30D0\u30C3\u30B9\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 1fb58998704629c4596fbdaa583ba3f5, type: 2}
+    m_Threshold: 0.38534904
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30DA\u30D7\u30E9\u30E0"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: df6812a29edf3c546a48e374faf810f6, type: 2}
+    m_Threshold: 0.4021033
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u9AEA\u30EA\u30DC\u30F3"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e459b74f2181c52498400c88c3fa043c, type: 2}
+    m_Threshold: 0.4188576
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u8170\u524D\u30EA\u30DC\u30F3"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: ae77bbd838ba5a647acdd9031b83b5c1, type: 2}
+    m_Threshold: 0.4356119
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u8170\u5F8C\u30EA\u30DC\u30F3"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 27096de2464a4e44380e98fb3e8cd63e, type: 2}
+    m_Threshold: 0.45236623
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30DC\u30EC\u30ED"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 473281934e11570489bd78331cdececa, type: 2}
     m_Threshold: 0.46912053
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u982D\u5DFE\u30D9\u30FC\u30EB"
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30D8\u30A2\u30D0\u30F3\u30C9"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 515df334f5ced574aaac2de3bb67ec84, type: 2}
-    m_Threshold: 0.48716363
+    m_Threshold: 0.48587483
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30E2\u30D6\u524D"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a2b3ebc2863386946b9a492decfeb1a6, type: 2}
-    m_Threshold: 0.50520676
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u4E09\u3064\u7DE8\u307F\u5DE6"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 4db47b8765d91584bb55b523f81ac09e, type: 2}
-    m_Threshold: 0.5232498
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D1-\u6A19\u6E96"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 7d70179e167315344990ddf20103cc4f, type: 2}
-    m_Threshold: 0.5412929
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u4E09\u3064\u7DE8\u307F\u53F3"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1fb58998704629c4596fbdaa583ba3f5, type: 2}
-    m_Threshold: 0.559336
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C8\u5F8C"
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u895F1"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: c11e56e16c0df87439bdfbee45664ee3, type: 2}
-    m_Threshold: 0.57737917
+    m_Threshold: 0.5026291
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
+    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u9AEA\u30D9\u30FC\u30B9"
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 7805bee719c9de742b061f664dfb3250, type: 2}
-    m_Threshold: 0.5954222
+    m_Motion: {fileID: 7400000, guid: 7d70179e167315344990ddf20103cc4f, type: 2}
+    m_Threshold: 0.51938343
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D3-\u3071\u3063\u3064\u3093"
+    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u6A2A\u9AEA1"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: a2b3ebc2863386946b9a492decfeb1a6, type: 2}
+    m_Threshold: 0.53613776
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u6A2A\u9AEA2.\u3082\u307F\u3042\u30521"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 4db47b8765d91584bb55b523f81ac09e, type: 2}
+    m_Threshold: 0.5528921
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u6A2A\u9AEA3.\u3082\u307F\u3042\u30522"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 6fa7510525476184b8b0b5fa143e64c5, type: 2}
-    m_Threshold: 0.6134653
+    m_Threshold: 0.56964636
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D2-\u5DE6\u7E8F\u3081"
+    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u30B1\u30E2\u8033"
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: abd625644f799e04f9ecb562eaf88961, type: 2}
-    m_Threshold: 0.6315084
+    m_Motion: {fileID: 7400000, guid: 7805bee719c9de742b061f664dfb3250, type: 2}
+    m_Threshold: 0.5864007
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u524D\u9AEA.\u53F3"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 5d158561ff2180d40bf5ae14b0a71cc7, type: 2}
-    m_Threshold: 0.6495515
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u524D\u9AEA.\u5DE6"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: adcd595814e770b4c94ebcb02543bb75, type: 2}
-    m_Threshold: 0.66759455
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u5F8C\u9AEA.2"
+    m_DirectBlendParameter: "AvatarMod/Costume/hair/secondary-\u30B1\u30E2\u8033.\u5185\u6BDB"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7738879931593177610}
-    m_Threshold: 0.6856377
+    m_Threshold: 0.60315496
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -5703,103 +6226,23 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 20600000, guid: ba1faa0614614d748ba11a849975f56b, type: 2}
-    m_Threshold: 0.7036808
+    m_Threshold: 0.6199093
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 8377d11d5ff5f4647adcbff6ee472c44, type: 2}
-    m_Threshold: 0.7217239
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 8b5b88f7c35c1504693bcef90877cfad, type: 2}
-    m_Threshold: 0.739767
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u5F8C\u9AEA.\u9AEA\u7559\u3081"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: f7e090c2c639a4143afc8bb38b8e2fa4, type: 2}
-    m_Threshold: 0.75781006
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u6A2A\u9AEA1"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 51a7d2db514f6454b8f0c95787267f97, type: 2}
-    m_Threshold: 0.77585316
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u9AEA\u7559\u3081\u6A2A"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 3446091478978797515}
-    m_Threshold: 0.7938963
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u6A2A\u9AEA2"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: -4325765146376559978}
-    m_Threshold: 0.8119394
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/hair/\u5F8C\u9AEA.1"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 45a852b381e471e4480692c986731c3d, type: 2}
-    m_Threshold: 0.82998246
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -4135691665723629989}
-    m_Threshold: 0.84802556
+    m_Threshold: 0.63666356
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 3a61243931c27154f913baeba8be7e3c, type: 2}
-    m_Threshold: 0.86606866
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e6c388b6f218b744daaed52b4f85927f, type: 2}
-    m_Threshold: 0.88411176
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -6483511104450467675}
-    m_Threshold: 0.90215486
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: -323620033615842195}
-    m_Threshold: 0.92019796
+    m_Threshold: 0.6534179
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -5807,11 +6250,139 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 20600000, guid: 22aa74d8f047ca049a76d19e78a5df64, type: 2}
-    m_Threshold: 0.93824106
+    m_Threshold: 0.6701722
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 8e18d58217aeff34aa81bd5fa6316085, type: 2}
+    m_Threshold: 0.6869265
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30B9\u30AB\u30FC\u30C8"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: ce063a18f9412fe49af7142814d18c37, type: 2}
+    m_Threshold: 0.7036808
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30D0\u30C3\u30B9\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 2a52179cf69ab2e4fbd2bb48bf543798, type: 2}
+    m_Threshold: 0.7204351
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u8170\u5F8C\u30EA\u30DC\u30F3"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 63722084a7794604589e1407e1218790, type: 2}
+    m_Threshold: 0.7371894
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u895F2"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 1283d2924cff18b4da2754d20d1beea9, type: 2}
+    m_Threshold: 0.7539437
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 69e6771ea13ba824288e873bbb9cd002, type: 2}
+    m_Threshold: 0.7706981
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u30EA\u30DC\u30F3"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 989d96f95d570514384f22a86200ed91, type: 2}
+    m_Threshold: 0.78745234
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u895F"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e9b13205f4d3eff41b801f3ab481993e, type: 2}
+    m_Threshold: 0.8042066
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u30DC\u30F3\u30CD\u30C3\u30C8"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 01540df4bd3655f4f865b9861839aa8f, type: 2}
+    m_Threshold: 0.82096094
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u30DC\u30F3\u30CD\u30C3\u30C8.\u3072\u3055\u3057"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 8160790b83fa55344ba889a403d24fd4, type: 2}
+    m_Threshold: 0.8377152
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u8896.\u624B\u9996"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 0c957050e2d38d444b31951eeb2e6c87, type: 2}
+    m_Threshold: 0.85446954
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u8896.\u77ED"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: f1776e07ba01ef042a3e9e8e539bd723, type: 2}
+    m_Threshold: 0.8712238
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u8896.\u80A9\u30B1\u30FC\u30D7"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 4d10d2412f91cc9488852ed74b720a4e, type: 2}
+    m_Threshold: 0.8879782
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u8896.\u9577"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 939709e31e69c7d40be945d708c6408f, type: 2}
+    m_Threshold: 0.90473247
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes3/\u895F2.\u30EA\u30DC\u30F3"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 97982a1311982664eba81a937e68b4ad, type: 2}
+    m_Threshold: 0.9214868
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30D9\u30EB\u30C8"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: f247924b068c41641b765194a520857e, type: 2}
+    m_Threshold: 0.93824106
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u524D\u5782\u308C"
     m_Mirror: 0
   m_BlendParameter: BreastPBrootL_Squish
   m_BlendParameterY: BreastPBrootL_Squish
@@ -5827,7 +6398,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Costume 3 \u6A19\u6E962"
+  m_Name: "Costume 3 \u30DF\u30CB"
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -5876,6 +6447,52 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!206 &5445524910343083802
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs: []
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &5610502908257368195
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u30D9\u30EB\u30C8\u6709\u7121"
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e96076b33cfaa5246b6b91e8bf00c527, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -2100041084839877537}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!1102 &5648819315315227971
 AnimatorState:
   serializedVersion: 6
@@ -5911,7 +6528,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Costume 6 \u30D3\u30AD\u30CB\uFF0B"
+  m_Name: "Costume 6 \u30A4\u30F3\u30CA\u30FC"
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -5958,7 +6575,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: AvatarMod/Breast/BreastsType
+    name: "AvatarMod/Costume/body/\u624B"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -5970,21 +6587,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/body/\u624B\u888B"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
     name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -5996,19 +6601,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
-    source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6020,7 +6613,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6030,9 +6623,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6042,21 +6635,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
     source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6078,7 +6659,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -6090,79 +6671,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
+    name: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -6186,7 +6695,31 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -6260,6 +6793,37 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!206 &6002753973064835965
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u4E73\u3057\u307C\u308A\u3042\u308A\u3000\u4E73\u30AB\u30C3\u30D7\u6709\u7121"
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 4c872132cd1d7244f82f23d9046d93ea, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 55a72599b71712b42a1a027f24b1ed3b, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!1102 &6104527689137324188
 AnimatorState:
   serializedVersion: 6
@@ -6317,6 +6881,37 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!206 &6276422147776775676
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "clothes2 \u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 545ae94e934e8f949990e1c6f8ac4aa2, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 949e5cd70515d9d4b9cfdd5922295176, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C81.T2"
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!1101 &6610787118541250645
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6373,10 +6968,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30A4\u30F3\u30CA\u30FC\u3042\u308A\u3000\u30B1\u30FC\u30D7\u6709\u7121"
+  m_Name: "\u4E73\u3057\u307C\u308A\u98DF\u3044\u8FBC\u307F\u3042\u308A\u3000\u4E73\u30D9\u30EB\u30C8\u6709\u7121"
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -5405840712407722088}
+    m_Motion: {fileID: 7400000, guid: 5f3a17a50f8e9204f9791d3b201cf205, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -6384,14 +6979,14 @@ BlendTree:
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 8176330166969734490}
+    m_Motion: {fileID: 7400000, guid: 68e7b2e42b9bf294684680bc402da86a, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: AvatarMod/Weight
     m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u80F8"
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -6415,6 +7010,37 @@ MonoBehaviour:
   blendDuration: 0
   debugString: 
   outputParamHash: 0
+--- !u!206 &7161087943263505391
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u30D6\u30E9\u30A6\u30B92"
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 55c14516356687c4e994f5fed31cd3e7, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -7507080506181831079}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!206 &7621471014975197073
 BlendTree:
   m_ObjectHideFlags: 1
@@ -6453,7 +7079,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Costume 2 \u30A4\u30F3\u30CA\u30FC1"
+  m_Name: "Costume 2 \u819D\u4E08_\u4E73\u30AB\u30C3\u30D7"
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -6569,37 +7195,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!206 &8176330166969734490
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: "\u30A4\u30F3\u30CA\u30FC\u3042\u308A\u3000\u30B1\u30FC\u30D7\u306A\u3057\u3000\u4E73\u9996\u30D4\u30A2\u30B9\u6709\u7121"
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a50f4cff5bec34a438bddb58bfb181b5, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a5678ab4459dd9a428f05e39c384d76d, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: AvatarMod/Weight
-    m_Mirror: 0
-  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-  m_BlendParameterY: Blend
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
 --- !u!114 &8201774577130477009
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6679,6 +7274,74 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &8404388657108926335
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: AvatarMod/Costume/Costume
+    m_EventTreshold: 0.085
+  - m_ConditionMode: 4
+    m_ConditionEvent: AvatarMod/Costume/Costume
+    m_EventTreshold: 0.095
+  - m_ConditionMode: 7
+    m_ConditionEvent: AvatarMod/Costume/Costume_now
+    m_EventTreshold: 9
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsLocal
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 4290130025028706497}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &8409617728211690234
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: AvatarMod/Costume/Costume
+    m_EventTreshold: 0.075
+  - m_ConditionMode: 4
+    m_ConditionEvent: AvatarMod/Costume/Costume
+    m_EventTreshold: 0.085
+  - m_ConditionMode: 7
+    m_ConditionEvent: AvatarMod/Costume/Costume_now
+    m_EventTreshold: 8
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsLocal
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -7845793408793049661}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &8429571320376978503
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6761,7 +7424,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: AvatarMod/Breast/BreastsType
+    name: "AvatarMod/Costume/body/\u624B"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -6773,21 +7436,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/body/\u624B\u888B"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
     name: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6799,19 +7450,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
-    source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6833,7 +7472,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -6845,19 +7484,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
     source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
@@ -6871,7 +7498,7 @@ MonoBehaviour:
   - type: 0
     name: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
     source: AvatarMod/Costume/Costume
-    value: 1
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6881,31 +7508,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
+    name: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30AB\u30C3\u30D7"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -6917,55 +7520,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
-    source: AvatarMod/Costume/Costume
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 1
-    sourceMin: 0
-    sourceMax: 1
-    destMin: 0
-    destMax: 100
-  - type: 0
-    name: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
+    name: "AvatarMod/Costume/clothes1/\u8F2A\u624B\u9996"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -6979,6 +7534,18 @@ MonoBehaviour:
   - type: 0
     name: AvatarMod/Costume/Shoes
     source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C81.\u30B9\u30AB\u30FC\u30C8"
+    source: AvatarMod/Costume/Costume
     value: 1
     valueMin: 0
     valueMax: 0
@@ -6989,7 +7556,139 @@ MonoBehaviour:
     destMin: 0
     destMax: 100
   - type: 0
-    name: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30D9\u30EB\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u30D6\u30E9\u30A6\u30B91.\u30DC\u30EC\u30ED"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u9577"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30B9\u30AB\u30FC\u30C82.\u30B9\u30AB\u30FC\u30C8"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u895F"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u30D6\u30E9\u30A6\u30B92.\u30EA\u30DC\u30F3"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u895F2"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes2/\u895F1"
+    source: AvatarMod/Costume/Costume
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes3/\u8896.\u624B\u9996"
+    source: AvatarMod/Costume/Costume
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 1
+    sourceMin: 0
+    sourceMax: 1
+    destMin: 0
+    destMax: 100
+  - type: 0
+    name: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9"
     source: AvatarMod/Costume/Costume
     value: 0
     valueMin: 0
@@ -7002,6 +7701,37 @@ MonoBehaviour:
     destMax: 100
   localOnly: 0
   debugString: 
+--- !u!206 &8844110690936068959
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "clothes1 \u4E73\u3057\u307C\u308A\u30D6\u30E9"
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 8377d11d5ff5f4647adcbff6ee472c44, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e6c388b6f218b744daaed52b4f85927f, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: "AvatarMod/Costume/clothes1/\u4E73\u3057\u307C\u308A\u30D6\u30E9.\u98DF\u8FBC\u3042\u308A\u7528"
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!1101 &8992647809764193677
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

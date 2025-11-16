@@ -1,6 +1,6 @@
-﻿%YAML 1.1
+%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3810204752105974766
+--- !u!1 &8172878027369132816
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6280111602062724290}
-  - component: {fileID: 3934639481762512805}
-  - component: {fileID: 8747252212911492216}
-  - component: {fileID: 901239912512408974}
-  - component: {fileID: 3483045552700681223}
-  - component: {fileID: 7781814935183091512}
+  - component: {fileID: 6865047033186000357}
+  - component: {fileID: 6703941436633997749}
+  - component: {fileID: 5079741877812521676}
+  - component: {fileID: 1572896850514566300}
+  - component: {fileID: 3133544235100073160}
+  - component: {fileID: 1736008929766965710}
   m_Layer: 0
   m_Name: FaceEmoPrefab
   m_TagString: Untagged
@@ -21,13 +21,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6280111602062724290
+--- !u!4 &6865047033186000357
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3810204752105974766}
+  m_GameObject: {fileID: 8172878027369132816}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -36,19 +36,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3934639481762512805
+--- !u!114 &6703941436633997749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3810204752105974766}
+  m_GameObject: {fileID: 8172878027369132816}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 9100000, guid: 72cea83ecf838244c898ed9b187bad6d, type: 2}
+  animator: {fileID: 9100000, guid: 5cdac420c5315734883ebd67cb07cc53, type: 2}
   layerType: 5
   deleteAttachedAnimator: 1
   pathMode: 1
@@ -58,27 +58,27 @@ MonoBehaviour:
     targetObject: {fileID: 0}
   layerPriority: 0
   mergeAnimatorMode: 0
---- !u!114 &8747252212911492216
+--- !u!114 &5079741877812521676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3810204752105974766}
+  m_GameObject: {fileID: 8172878027369132816}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: 3cae4c40df0b42b48a241ea4e9333ddb, type: 2}
+  menuToAppend: {fileID: 11400000, guid: 2f35bc3aa42f7d14bab584e09a8c8e15, type: 2}
   installTargetMenu: {fileID: 0}
---- !u!114 &901239912512408974
+--- !u!114 &1572896850514566300
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3810204752105974766}
+  m_GameObject: {fileID: 8172878027369132816}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
@@ -345,25 +345,25 @@ MonoBehaviour:
     saved: 0
     hasExplicitDefaultValue: 0
     m_overrideAnimatorDefaults: 0
---- !u!114 &3483045552700681223
+--- !u!114 &3133544235100073160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3810204752105974766}
+  m_GameObject: {fileID: 8172878027369132816}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1cec12bf093dfe4f9580f58da3ec3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7781814935183091512
+--- !u!114 &1736008929766965710
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3810204752105974766}
+  m_GameObject: {fileID: 8172878027369132816}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7295bd34fd3ed2d43a44ce3eb08bec9d, type: 3}

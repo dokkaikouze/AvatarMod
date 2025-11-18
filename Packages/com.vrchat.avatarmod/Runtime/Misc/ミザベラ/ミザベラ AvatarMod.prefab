@@ -20846,14 +20846,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7949964802715844209}
-    - targetCorrespondingSourceObject: {fileID: 8327773974693225907, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    - targetCorrespondingSourceObject: {fileID: 6308487027108317573, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7194824879545038681}
-    - targetCorrespondingSourceObject: {fileID: 8327773974693225907, guid: 48787d8b4845ed2418a051bcc8278a4c,
+      addedObject: {fileID: 1735970222480488162}
+    - targetCorrespondingSourceObject: {fileID: 6308487027108317573, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6870352594535896868}
+      addedObject: {fileID: 9158932200213823583}
     - targetCorrespondingSourceObject: {fileID: 4916569570700329610, guid: 48787d8b4845ed2418a051bcc8278a4c,
         type: 3}
       insertIndex: -1
@@ -21317,49 +21317,6 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &321878190329744928 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8327773974693225907, guid: 48787d8b4845ed2418a051bcc8278a4c,
-    type: 3}
-  m_PrefabInstance: {fileID: 8639514648654769043}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7194824879545038681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 321878190329744928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: 6b7d25c7a11ffc14abf1d8bb12477b10, type: 2}
-  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
---- !u!114 &6870352594535896868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 321878190329744928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameters:
-  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 3
-    localOnly: 0
-    defaultValue: 0
-    saved: 1
-    hasExplicitDefaultValue: 1
-    m_overrideAnimatorDefaults: 1
 --- !u!1 &340809467327693985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8313491715557273394, guid: 48787d8b4845ed2418a051bcc8278a4c,
@@ -23348,6 +23305,49 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 8639514648654769043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2335546640110871062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6308487027108317573, guid: 48787d8b4845ed2418a051bcc8278a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8639514648654769043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1735970222480488162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335546640110871062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuToAppend: {fileID: 11400000, guid: 6b7d25c7a11ffc14abf1d8bb12477b10, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: e4cde961332ade6408f8f985e741d1e3, type: 2}
+--- !u!114 &9158932200213823583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335546640110871062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u4E73\u30D9\u30EB\u30C8"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
 --- !u!137 &2343799056398750841 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6296982387659309034, guid: 48787d8b4845ed2418a051bcc8278a4c,

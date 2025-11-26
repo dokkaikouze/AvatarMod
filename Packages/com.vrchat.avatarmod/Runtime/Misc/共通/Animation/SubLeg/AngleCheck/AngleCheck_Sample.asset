@@ -1,0 +1,455 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!206 &-7267448585440598782
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_B_L
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 87d1fb201c220d84d9b9ea11cd34bf4f, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e89bfafc1c699af4e9d3690d677d777c, type: 2}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e89bfafc1c699af4e9d3690d677d777c, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_B_L_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &-6992846394401933450
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_B_L F_Check
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: -7267448585440598782}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 1843102652300916503}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Always 1
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_F_R_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 0.001
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &-6251558010023228462
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_R
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 6e17f004b1126274fad09af61f9dc398, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u900F\u3051\u308B"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e79966006d38bbf438443b695bb931a7, type: 2}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u900F\u3051\u308B"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e79966006d38bbf438443b695bb931a7, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u900F\u3051\u308B"
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_R_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &-3614378827314728966
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_F_L
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: afa0313ea1c036646944d9ef842a834d, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 6d94f5f49bc04b0428ac763f059b6132, type: 2}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 27fb6fdc4115ed94883bd2983a899b5b, type: 2}
+    m_Threshold: 0.01
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 36a46f1a68832c7498fea5d0975d515b, type: 2}
+    m_Threshold: 0.8
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_F_L_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 0.8
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &-3252826319268332399
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_B_R F_Check
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 4841101519376275074}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -1460851303277729380}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Always 1
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_F_L_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 0.001
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &-1460851303277729380
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_B_R
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 9329170f1eefa1b42844907a5f711f6f, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 4d0566a6137812545aaa70dee4d61080, type: 2}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 4d0566a6137812545aaa70dee4d61080, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_B_R_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &20600000
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_Sample
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 1076494582117701990}
+    m_Threshold: 0.12244898
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -6251558010023228462}
+    m_Threshold: 0.24489796
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -3614378827314728966}
+    m_Threshold: 0.36734694
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7575182090556860260}
+    m_Threshold: 0.48979592
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -6992846394401933450}
+    m_Threshold: 0.6122449
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -3252826319268332399}
+    m_Threshold: 0.7346939
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: Blend
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0.12244898
+  m_MaxThreshold: 0.7346939
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 4
+--- !u!206 &1076494582117701990
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_L
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 741586f5db1fa8a43b3c641c1889a7e4, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u900F\u3051\u308B"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 68952833ea9e51343b8f514c159a095a, type: 2}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u900F\u3051\u308B"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 68952833ea9e51343b8f514c159a095a, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u900F\u3051\u308B"
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_L_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &1843102652300916503
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_B_L
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 87d1fb201c220d84d9b9ea11cd34bf4f, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: aaa0bf1b442eda441b5fe9f7f82714f5, type: 2}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: aaa0bf1b442eda441b5fe9f7f82714f5, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_B_L_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &4841101519376275074
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_B_R
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 9329170f1eefa1b42844907a5f711f6f, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 7b0d96fa4cd7fc64eb801299931b3d74, type: 2}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 7b0d96fa4cd7fc64eb801299931b3d74, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_B_R_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &7575182090556860260
+BlendTree:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AngleCheck_F_R
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: b1c8599382520aa40a33f2e3410fde05, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: d144702a8e183aa4b8416b554dffd6cc, type: 2}
+    m_Threshold: 0.001
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: b828a99a690654143bad547746dc3ced, type: 2}
+    m_Threshold: 0.01
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: "\u30D0\u30B9\u30BF\u30AA\u30EB/\u30D0\u30B9\u30BF\u30AA\u30EB"
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: f80dd3c45377c1346863694ff4466d8d, type: 2}
+    m_Threshold: 0.8
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: AvatarMod/Weight
+    m_Mirror: 0
+  m_BlendParameter: AvatarMod/AngleCheck/Leg_F_R_Squish
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 0.8
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0

@@ -6684,18 +6684,18 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 			void poiClearCoat(inout PoiFragData poiFragData, in PoiCam poiCam, inout PoiLight poiLight, in PoiMesh poiMesh, in PoiMods poiMods)
 			{
 				float clearCoatMask = _ClearCoatStrength;
-				float smoothness = 0.4;
-				float reflectionMask = 0.25;
-				float specularMask = 0.833;
+				float smoothness = 0.833;
+				float reflectionMask = 0.276;
+				float specularMask = 0.638;
 				#if defined(PROP_CLEARCOATMAPS) || !defined(OPTIMIZER_ENABLED)
 				float4 PBRMaps = POI2D_SAMPLER_PAN_STOCHASTIC(_ClearCoatMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0), 0.0);
-				if (0.0 < 4)
+				if (1.0 < 4)
 				{
-					clearCoatMask *= PBRMaps[0.0];
+					clearCoatMask *= PBRMaps[1.0];
 				}
-				if (4.0 < 4)
+				if (1.0 < 4)
 				{
-					smoothness *= PBRMaps[4.0];
+					smoothness *= PBRMaps[1.0];
 				}
 				if (4.0 < 4)
 				{
@@ -6821,7 +6821,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 				}
 				half enviroMask = 1;
 				#if defined(PROP_RIMENVIROMASK) || !defined(OPTIMIZER_ENABLED)
-				enviroMask = POI2D_SAMPLER_PAN(_RimEnviroMask, _MainTex, poiMesh.uv[0.0], float4(0,0,0,0))[0.0];
+				enviroMask = POI2D_SAMPLER_PAN(_RimEnviroMask, _MainTex, poiMesh.uv[0.0], float4(0,0,0,0))[1.0];
 				#endif
 				float3 envRimCol = lerp(0, max(0, (enviroRimColor - 0.16) * poiFragData.baseColor), enviroRimAlpha).rgb * enviroMask * _RimEnviroIntensity;
 				poiFragData.finalColor += envRimCol;
@@ -6850,7 +6850,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow(0.538, 5)), 0.0) * 0.18;
 				}
 				#if defined(PROP_SET_HIGHCOLORMASK) || !defined(OPTIMIZER_ENABLED)
-				float specularMask = POI2D_SAMPLER_PAN(_Set_HighColorMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[0.0];
+				float specularMask = POI2D_SAMPLER_PAN(_Set_HighColorMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[1.0];
 				#else
 				float specularMask = 1;
 				#endif
@@ -7279,7 +7279,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 				float2 mainUV = poiUV(poiMesh.uv[0.0].xy, float4(1,1,0,0));
 				if (0.0)
 				{
-					mainUV = sharpSample(float4(0.0002441406,0.0002441406,4096,4096), mainUV);
+					mainUV = sharpSample(float4(0.0004882813,0.0004882813,2048,2048), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), 0.0);
 				mainTexture.a = max(mainTexture.a, 0.0);
@@ -12045,18 +12045,18 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 			void poiClearCoat(inout PoiFragData poiFragData, in PoiCam poiCam, inout PoiLight poiLight, in PoiMesh poiMesh, in PoiMods poiMods)
 			{
 				float clearCoatMask = _ClearCoatStrength;
-				float smoothness = 0.4;
-				float reflectionMask = 0.25;
-				float specularMask = 0.833;
+				float smoothness = 0.833;
+				float reflectionMask = 0.276;
+				float specularMask = 0.638;
 				#if defined(PROP_CLEARCOATMAPS) || !defined(OPTIMIZER_ENABLED)
 				float4 PBRMaps = POI2D_SAMPLER_PAN_STOCHASTIC(_ClearCoatMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0), 0.0);
-				if (0.0 < 4)
+				if (1.0 < 4)
 				{
-					clearCoatMask *= PBRMaps[0.0];
+					clearCoatMask *= PBRMaps[1.0];
 				}
-				if (4.0 < 4)
+				if (1.0 < 4)
 				{
-					smoothness *= PBRMaps[4.0];
+					smoothness *= PBRMaps[1.0];
 				}
 				if (4.0 < 4)
 				{
@@ -12181,7 +12181,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 					specMask2 += poiEdgeNonLinear(specArea, (1.0 - pow(0.538, 5)), 0.0) * 0.18;
 				}
 				#if defined(PROP_SET_HIGHCOLORMASK) || !defined(OPTIMIZER_ENABLED)
-				float specularMask = POI2D_SAMPLER_PAN(_Set_HighColorMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[0.0];
+				float specularMask = POI2D_SAMPLER_PAN(_Set_HighColorMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[1.0];
 				#else
 				float specularMask = 1;
 				#endif
@@ -12610,7 +12610,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 				float2 mainUV = poiUV(poiMesh.uv[0.0].xy, float4(1,1,0,0));
 				if (0.0)
 				{
-					mainUV = sharpSample(float4(0.0002441406,0.0002441406,4096,4096), mainUV);
+					mainUV = sharpSample(float4(0.0004882813,0.0004882813,2048,2048), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), 0.0);
 				mainTexture.a = max(mainTexture.a, 0.0);
@@ -16787,7 +16787,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 				float2 mainUV = poiUV(poiMesh.uv[0.0].xy, float4(1,1,0,0));
 				if (0.0)
 				{
-					mainUV = sharpSample(float4(0.0002441406,0.0002441406,4096,4096), mainUV);
+					mainUV = sharpSample(float4(0.0004882813,0.0004882813,2048,2048), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), 0.0);
 				mainTexture.a = max(mainTexture.a, 0.0);
@@ -19754,7 +19754,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/d06a38e6840d10340baa682a46d83673"
 				float2 mainUV = poiUV(poiMesh.uv[0.0].xy, float4(1,1,0,0));
 				if (0.0)
 				{
-					mainUV = sharpSample(float4(0.0002441406,0.0002441406,4096,4096), mainUV);
+					mainUV = sharpSample(float4(0.0004882813,0.0004882813,2048,2048), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), 0.0);
 				mainTexture.a = max(mainTexture.a, 0.0);

@@ -32,7 +32,6 @@ Material:
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   - _SUNDISK_SIMPLE
-  - _UZUMOREENABLED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -566,25 +565,25 @@ Material:
     - _ClearCoatGlobalMask: 0
     - _ClearCoatGlobalMaskBlendType: 2
     - _ClearCoatLitFallback: 1
-    - _ClearCoatMapsClearCoatMaskChannel: 0
+    - _ClearCoatMapsClearCoatMaskChannel: 1
     - _ClearCoatMapsReflectionMaskChannel: 4
-    - _ClearCoatMapsRoughnessChannel: 4
+    - _ClearCoatMapsRoughnessChannel: 1
     - _ClearCoatMapsSpecularMaskChannel: 4
     - _ClearCoatMapsStochastic: 0
     - _ClearCoatMapsUV: 0
     - _ClearCoatMaskInvert: 0
     - _ClearCoatNormalSelect: 1
     - _ClearCoatReflectionMaskInvert: 0
-    - _ClearCoatReflectionStrength: 0.25
+    - _ClearCoatReflectionStrength: 0.276
     - _ClearCoatReflectionStrengthGlobalMask: 0
     - _ClearCoatReflectionStrengthGlobalMaskBlendType: 2
     - _ClearCoatReflectionTintThemeIndex: 0
-    - _ClearCoatSmoothness: 0.4
+    - _ClearCoatSmoothness: 0.833
     - _ClearCoatSmoothnessGlobalMask: 0
     - _ClearCoatSmoothnessGlobalMaskBlendType: 2
     - _ClearCoatSmoothnessMapInvert: 0
     - _ClearCoatSpecularMaskInvert: 0
-    - _ClearCoatSpecularStrength: 0.833
+    - _ClearCoatSpecularStrength: 0.638
     - _ClearCoatSpecularStrengthGlobalMask: 0
     - _ClearCoatSpecularStrengthGlobalMaskBlendType: 2
     - _ClearCoatSpecularTintThemeIndex: 0
@@ -2221,7 +2220,7 @@ Material:
     - _RimDirStrength: 0
     - _RimEnableLighting: 1
     - _RimEnviroBlur: 0.17
-    - _RimEnviroChannel: 0
+    - _RimEnviroChannel: 1
     - _RimEnviroIntensity: 0.4
     - _RimEnviroMaskUV: 0
     - _RimEnviroMinBrightness: 0.16
@@ -2309,7 +2308,7 @@ Material:
     - _ScrollingEmission1: 0
     - _ScrollingEmission2: 0
     - _ScrollingEmission3: 0
-    - _Set_HighColorMaskChannel: 0
+    - _Set_HighColorMaskChannel: 1
     - _Set_HighColorMaskUV: 0
     - _Set_Rim2LightMaskChannel: 1
     - _Set_Rim2LightMaskUV: 0
@@ -2845,7 +2844,7 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 0
+    - m_lightingCategory: 1
     - m_mainCategory: 0
     - m_modifierCategory: 1
     - m_renderingCategory: 1
@@ -2909,8 +2908,8 @@ Material:
     - m_start_GlobalThemes: 1
     - m_start_LTCGI: 1
     - m_start_MainVertexColors: 0
-    - m_start_Matcap2: 1
-    - m_start_Matcap3: 1
+    - m_start_Matcap2: 0
+    - m_start_Matcap3: 0
     - m_start_Matcap4: 0
     - m_start_OutlineAudioLink: 0
     - m_start_OutlineStencil: 0
@@ -2968,7 +2967,7 @@ Material:
     - m_start_flipBook: 0
     - m_start_glitter: 1
     - m_start_internalparallax: 0
-    - m_start_matcap: 1
+    - m_start_matcap: 0
     - m_start_mirrorOptions: 0
     - m_start_normalCorrect: 0
     - m_start_outlineAlphaBlending: 0
@@ -2984,7 +2983,7 @@ Material:
     - m_start_ralivOriface: 0
     - m_start_ralivPenetrator: 0
     - m_start_reflectionRim: 1
-    - m_start_rim2LightOptions: 1
+    - m_start_rim2LightOptions: 0
     - m_start_rimLight1Options: 0
     - m_start_stylizedSpec: 1
     - m_start_subsurfaceScattering: 0

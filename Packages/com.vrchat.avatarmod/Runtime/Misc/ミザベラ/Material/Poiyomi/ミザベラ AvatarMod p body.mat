@@ -15,9 +15,11 @@ Material:
   m_InvalidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
   - COLOR_GRADING_HDR_3D
+  - POI_ANISOTROPICS
   - POI_BACKLIGHT
   - POI_CLEARCOAT
   - POI_ENVIRORIM
+  - POI_GLOBALMASK_TEXTURES
   - POI_LTCGI
   - POI_MATCAP0
   - POI_MATCAP1_CUSTOM_NORMAL
@@ -38,10 +40,11 @@ Material:
   m_CustomRenderQueue: 2000
   stringTagMap:
     AllLockedGUIDS: d06a38e6840d10340baa682a46d83673
-    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT COLOR_GRADING_HDR_3D POI_BACKLIGHT POI_CLEARCOAT
-      POI_ENVIRORIM POI_LTCGI POI_MATCAP0 POI_MATCAP1_CUSTOM_NORMAL POI_MATCAP2 POI_RIM2
-      POI_STYLIZED_StylizedSpecular POI_UDIMDISCARD POI_UZUMORE VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH
-      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _SUNDISK_SIMPLE
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT COLOR_GRADING_HDR_3D POI_ANISOTROPICS
+      POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM POI_GLOBALMASK_TEXTURES POI_LTCGI
+      POI_MATCAP0 POI_MATCAP1_CUSTOM_NORMAL POI_MATCAP2 POI_RIM2 POI_STYLIZED_StylizedSpecular
+      POI_UDIMDISCARD POI_UZUMORE VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _SUNDISK_SIMPLE
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
     RenderType: Opaque
@@ -96,6 +99,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _AnisoColorMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BacklightColorTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -122,6 +129,22 @@ Material:
         m_Offset: {x: 0.5, y: -0.5}
     - _GlitterTexture:
         m_Texture: {fileID: 2800000, guid: f5b49da3e7065f14894d289de4144039, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlobalMaskTexture0:
+        m_Texture: {fileID: 2800000, guid: cc851f441d3aa9d45950d27658f60a37, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0.5}
+    - _GlobalMaskTexture1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlobalMaskTexture2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlobalMaskTexture3:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HighColor_Tex:
@@ -362,30 +385,30 @@ Material:
     - _AngleMinAlpha: 0
     - _AngleType: 0
     - _Aniso0Blur: 0
-    - _Aniso0Edge: 1
+    - _Aniso0Edge: 0.5
     - _Aniso0Offset: 0
     - _Aniso0OffsetMapStrength: 0
-    - _Aniso0Power: 0.431
-    - _Aniso0Strength: 0.048
+    - _Aniso0Power: 0.04
+    - _Aniso0Strength: 0.11
     - _Aniso0SwitchDirection: 1
     - _Aniso0TintIndex: 0
     - _Aniso0ToonMode: 0
     - _Aniso1Blur: 0
-    - _Aniso1Edge: 1
+    - _Aniso1Edge: 0.5
     - _Aniso1Offset: 0
     - _Aniso1OffsetMapStrength: 0
-    - _Aniso1Power: 0.259
-    - _Aniso1Strength: 0.266
+    - _Aniso1Power: 0.1
+    - _Aniso1Strength: 0.45
     - _Aniso1SwitchDirection: 0
     - _Aniso1TintIndex: 0
     - _Aniso1ToonMode: 0
     - _AnisoAdd: 0.5
     - _AnisoColorMapUV: 0
-    - _AnisoGlobalMask: 0
+    - _AnisoGlobalMask: 3
     - _AnisoGlobalMaskBlendType: 2
     - _AnisoHideInShadow: 0.9
     - _AnisoReplace: 0
-    - _AnisoUseBaseColor: 1
+    - _AnisoUseBaseColor: 0.85
     - _AnisoUseLightColor: 1
     - _Anisotropy: 0
     - _AnisotropyMapChannel: 0
@@ -1049,7 +1072,7 @@ Material:
     - _EmissiveScroll_Width2: 10
     - _EmissiveScroll_Width3: 10
     - _EnableALDecal: 0
-    - _EnableAniso: 0
+    - _EnableAniso: 1
     - _EnableAudioLink: 0
     - _EnableDepthBulge: 0
     - _EnableDepthRimLighting: 0
@@ -1391,7 +1414,7 @@ Material:
     - _GlobalMaskTexture2UV: 0
     - _GlobalMaskTexture3Split: 0
     - _GlobalMaskTexture3UV: 0
-    - _GlobalMaskTexturesEnable: 0
+    - _GlobalMaskTexturesEnable: 1
     - _GlobalMaskToggleOff_0: 0
     - _GlobalMaskToggleOff_1: 0
     - _GlobalMaskToggleOff_10: 0
@@ -2848,11 +2871,11 @@ Material:
     - m_mainCategory: 0
     - m_modifierCategory: 1
     - m_renderingCategory: 1
-    - m_specialFXCategory: 1
+    - m_specialFXCategory: 0
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
     - m_start_Alpha: 0
-    - m_start_Aniso: 0
+    - m_start_Aniso: 1
     - m_start_BeatsaberBloomFog: 0
     - m_start_BeatsaberOptions: 0
     - m_start_BlackLightMasking: 0
@@ -2899,17 +2922,17 @@ Material:
     - m_start_GlobalMaskModifiersDistance: 0
     - m_start_GlobalMaskModifiersMirror: 0
     - m_start_GlobalMaskOptions: 0
-    - m_start_GlobalMaskTextures: 0
+    - m_start_GlobalMaskTextures: 1
     - m_start_GlobalMaskVertexColors: 0
     - m_start_GlobalThemeColor0: 0
     - m_start_GlobalThemeColor1: 0
     - m_start_GlobalThemeColor2: 0
     - m_start_GlobalThemeColor3: 0
-    - m_start_GlobalThemes: 1
-    - m_start_LTCGI: 1
+    - m_start_GlobalThemes: 0
+    - m_start_LTCGI: 0
     - m_start_MainVertexColors: 0
     - m_start_Matcap2: 0
-    - m_start_Matcap3: 0
+    - m_start_Matcap3: 1
     - m_start_Matcap4: 0
     - m_start_OutlineAudioLink: 0
     - m_start_OutlineStencil: 0
@@ -2950,7 +2973,7 @@ Material:
     - m_start_audioLink: 0
     - m_start_audioLinkOverrides: 0
     - m_start_backFace: 0
-    - m_start_backlight: 1
+    - m_start_backlight: 0
     - m_start_blending: 0
     - m_start_brdf: 0
     - m_start_clearCoat: 1
@@ -2982,10 +3005,10 @@ Material:
     - m_start_ralivAdvanced: 0
     - m_start_ralivOriface: 0
     - m_start_ralivPenetrator: 0
-    - m_start_reflectionRim: 1
+    - m_start_reflectionRim: 0
     - m_start_rim2LightOptions: 0
     - m_start_rimLight1Options: 0
-    - m_start_stylizedSpec: 1
+    - m_start_stylizedSpec: 0
     - m_start_subsurfaceScattering: 0
     - m_start_tps_penetrator: 0
     - m_start_truchet: 0
@@ -3002,7 +3025,7 @@ Material:
     - m_start_voronoi: 0
     - m_start_voronoiRandom: 0
     - m_thirdpartyCategory: 0
-    - m_vertexCategory: 1
+    - m_vertexCategory: 0
     - s_end_ALAlpha: 0
     - s_end_ALDecalAudioModsOptions: 0
     - s_end_ALDecalBand: 0

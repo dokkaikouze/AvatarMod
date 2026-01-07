@@ -21981,12 +21981,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &7265077670031310428 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4073110492322382985, guid: 91887a5da23677249bbd34ddd063742c,
-    type: 3}
-  m_PrefabInstance: {fileID: 2570387914150348075}
-  m_PrefabAsset: {fileID: 0}
 --- !u!137 &7314427279909042642 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5055795171518856441, guid: 91887a5da23677249bbd34ddd063742c,
@@ -23176,6 +23170,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
+      propertyPath: targetBones.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
       propertyPath: targetBones.Array.data[0].transform
       value: 
       objectReference: {fileID: 3011369099983323034}
@@ -23183,7 +23182,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetBones.Array.data[1].transform
       value: 
-      objectReference: {fileID: 7265077670031310428}
+      objectReference: {fileID: 1172182926521799053}
     - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: targetBones.Array.data[2].transform

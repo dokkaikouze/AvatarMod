@@ -13218,6 +13218,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
+      propertyPath: targetBones.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
       propertyPath: targetBones.Array.data[0].transform
       value: 
       objectReference: {fileID: 3299135714921726317}
@@ -13225,7 +13230,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetBones.Array.data[1].transform
       value: 
-      objectReference: {fileID: 6976313247757992107}
+      objectReference: {fileID: 1460859942020657018}
     - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: targetBones.Array.data[2].transform
@@ -26067,8 +26072,8 @@ MonoBehaviour:
     transform: {fileID: 6324475409425188417}
     radius: 0.13337916
     height: 0.47392008
-    position: {x: -1.3954961e-14, y: 0.01519262, z: -0.030539498}
-    rotation: {x: -0.06457497, y: 0, z: 3.0395232e-14, w: 0.9979129}
+    position: {x: 0, y: 0.01519262, z: -0.030539498}
+    rotation: {x: -0.06457497, y: 0, z: 0, w: 0.9979129}
   collider_footR:
     isMirrored: 1
     state: 0
@@ -26089,18 +26094,18 @@ MonoBehaviour:
     isMirrored: 1
     state: 0
     transform: {fileID: 5061210679842278952}
-    radius: 0.015494757
-    height: 0.06197903
-    position: {x: 0.0005279536, y: 0.052676678, z: -0.0005522118}
-    rotation: {x: 0.0059688822, y: 0, z: 0.70349777, w: 0.71067244}
+    radius: 0.015494746
+    height: 0.061978985
+    position: {x: 0.0005279536, y: 0.052676633, z: -0.00055216113}
+    rotation: {x: 0.005968891, y: 0, z: 0.70349777, w: 0.71067244}
   collider_handL:
     isMirrored: 1
     state: 0
     transform: {fileID: 4724775399563476553}
-    radius: 0.015494757
-    height: 0.06197903
-    position: {x: -0.0005279536, y: 0.052676678, z: -0.0005522118}
-    rotation: {x: 0.0059688822, y: 0, z: -0.70349777, w: 0.71067244}
+    radius: 0.015494746
+    height: 0.061978985
+    position: {x: -0.0005279536, y: 0.052676633, z: -0.00055216113}
+    rotation: {x: 0.005968891, y: 0, z: -0.70349777, w: 0.71067244}
   collider_fingerIndexL:
     isMirrored: 1
     state: 0
@@ -26113,24 +26118,24 @@ MonoBehaviour:
     isMirrored: 1
     state: 0
     transform: {fileID: 4754856742221583183}
-    radius: 0.0076667727
-    height: 0.038333863
+    radius: 0.0076667243
+    height: 0.03833362
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   collider_fingerRingL:
     isMirrored: 1
     state: 0
     transform: {fileID: 6053647644335174793}
-    radius: 0.0072756456
-    height: 0.036378227
+    radius: 0.0072755963
+    height: 0.03637798
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   collider_fingerLittleL:
     isMirrored: 1
     state: 0
     transform: {fileID: 3942499360939432973}
-    radius: 0.006559459
-    height: 0.032797296
+    radius: 0.006559392
+    height: 0.03279696
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   collider_fingerIndexR:
@@ -26145,24 +26150,24 @@ MonoBehaviour:
     isMirrored: 1
     state: 0
     transform: {fileID: 4263652676090129155}
-    radius: 0.0076667727
-    height: 0.038333863
+    radius: 0.0076667243
+    height: 0.03833362
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   collider_fingerRingR:
     isMirrored: 1
     state: 0
     transform: {fileID: 2508785229637776631}
-    radius: 0.0072756456
-    height: 0.036378227
+    radius: 0.0072755963
+    height: 0.03637798
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   collider_fingerLittleR:
     isMirrored: 1
     state: 0
     transform: {fileID: 3253028302187168321}
-    radius: 0.006559459
-    height: 0.032797296
+    radius: 0.006559392
+    height: 0.03279696
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!114 &5711809584803165173
@@ -29710,12 +29715,6 @@ MonoBehaviour:
 --- !u!137 &6937673639454371605 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5183116587829712073, guid: 5b19403b0a5b0bf4e914f5251538d049,
-    type: 3}
-  m_PrefabInstance: {fileID: 2858009475103767516}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6976313247757992107 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4073110492322382985, guid: 5b19403b0a5b0bf4e914f5251538d049,
     type: 3}
   m_PrefabInstance: {fileID: 2858009475103767516}
   m_PrefabAsset: {fileID: 0}

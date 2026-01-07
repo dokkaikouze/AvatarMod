@@ -9388,6 +9388,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
+      propertyPath: targetBones.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
       propertyPath: targetBones.Array.data[0].transform
       value: 
       objectReference: {fileID: 3938328407904931787}
@@ -9395,7 +9400,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetBones.Array.data[1].transform
       value: 
-      objectReference: {fileID: 8917115485087174157}
+      objectReference: {fileID: 1092447019496841692}
     - target: {fileID: 600558828867362666, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
       propertyPath: targetBones.Array.data[2].transform
@@ -17535,6 +17540,12 @@ MonoBehaviour:
   boneReference: 10
   subPath: HairOrigin/HairGroupBack
   attachmentMode: 2
+--- !u!4 &1092447019496841692 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3742407835892290726, guid: a6015051120e8734b86465c188897b9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4379349176487818618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1136744001816018435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5548412226312336519, guid: a6015051120e8734b86465c188897b9e,
@@ -23400,12 +23411,6 @@ SkinnedMeshRenderer:
 --- !u!137 &8876557886717827893 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -4041615070533865905, guid: a6015051120e8734b86465c188897b9e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4379349176487818618}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8917115485087174157 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4073110492322382985, guid: a6015051120e8734b86465c188897b9e,
     type: 3}
   m_PrefabInstance: {fileID: 4379349176487818618}
   m_PrefabAsset: {fileID: 0}

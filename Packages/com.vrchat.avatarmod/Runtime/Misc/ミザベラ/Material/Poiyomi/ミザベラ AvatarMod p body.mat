@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u30DF\u30B6\u30D9\u30E9 AvatarMod p body"
-  m_Shader: {fileID: 4800000, guid: 3136bc454134f5f498483e832121ccc4, type: 3}
+  m_Shader: {fileID: 4800000, guid: 35ee39dce6afd4749976cba6b240fbe7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -34,7 +34,6 @@ Material:
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   - _SUNDISK_SIMPLE
-  - _UZUMOREENABLED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -60,6 +59,7 @@ Material:
     _LightingMinLightBrightnessAnimated: 1
     _Matcap1NormalMapAnimated: 1
     _Matcap1NormalMapScaleAnimated: 1
+    _OutlineStencilRefAnimated: 1
     _PPEmissionMultiplierAnimated: 1
     _PPFinalColorMultiplierAnimated: 1
     _PPLightingMultiplierAnimated: 1
@@ -1930,9 +1930,9 @@ Material:
     - _OutlineStencilFrontFailOp: 0
     - _OutlineStencilFrontPassOp: 0
     - _OutlineStencilFrontZFailOp: 0
-    - _OutlineStencilPassOp: 0
+    - _OutlineStencilPassOp: 2
     - _OutlineStencilReadMask: 255
-    - _OutlineStencilRef: 0
+    - _OutlineStencilRef: 178
     - _OutlineStencilType: 0
     - _OutlineStencilWriteMask: 255
     - _OutlineStencilZFailOp: 0
@@ -2715,7 +2715,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 0
+    - m_OutlineCategory: 1
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2869,10 +2869,10 @@ Material:
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 0
-    - m_mainCategory: 0
+    - m_mainCategory: 1
     - m_modifierCategory: 1
     - m_renderingCategory: 1
-    - m_specialFXCategory: 1
+    - m_specialFXCategory: 0
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
     - m_start_Alpha: 0
@@ -2885,7 +2885,7 @@ Material:
     - m_start_CenterOutDissolve: 0
     - m_start_ColorAdjust: 0
     - m_start_CubeMap: 0
-    - m_start_Decal0: 0
+    - m_start_Decal0: 1
     - m_start_Decal0AudioLink: 0
     - m_start_Decal1: 1
     - m_start_Decal1AudioLink: 0
@@ -2901,7 +2901,7 @@ Material:
     - m_start_FlipbookAudioLink: 0
     - m_start_Gameboy: 0
     - m_start_GlobalMask: 1
-    - m_start_GlobalMaskDistanceM_0: 0
+    - m_start_GlobalMaskDistanceM_0: 1
     - m_start_GlobalMaskDistanceM_1: 0
     - m_start_GlobalMaskDistanceM_10: 0
     - m_start_GlobalMaskDistanceM_11: 0
@@ -2936,7 +2936,7 @@ Material:
     - m_start_Matcap3: 1
     - m_start_Matcap4: 0
     - m_start_OutlineAudioLink: 0
-    - m_start_OutlineStencil: 0
+    - m_start_OutlineStencil: 1
     - m_start_OutlineStencilPassBackOptions: 0
     - m_start_OutlineStencilPassFrontOptions: 0
     - m_start_PPAnimations: 1
@@ -2952,7 +2952,7 @@ Material:
     - m_start_SphericalDissolve: 0
     - m_start_StencilPassBackOptions: 0
     - m_start_StencilPassFrontOptions: 0
-    - m_start_StencilPassOptions: 0
+    - m_start_StencilPassOptions: 1
     - m_start_Stochastic: 0
     - m_start_Text: 0
     - m_start_TextFPS: 0
@@ -2994,8 +2994,8 @@ Material:
     - m_start_matcap: 0
     - m_start_mirrorOptions: 0
     - m_start_normalCorrect: 0
-    - m_start_outlineAlphaBlending: 0
-    - m_start_outlineBlending: 1
+    - m_start_outlineAlphaBlending: 1
+    - m_start_outlineBlending: 0
     - m_start_parallax: 0
     - m_start_pathing: 0
     - m_start_pen_autoConfig: 0
@@ -3026,7 +3026,7 @@ Material:
     - m_start_voronoi: 0
     - m_start_voronoiRandom: 0
     - m_thirdpartyCategory: 0
-    - m_vertexCategory: 0
+    - m_vertexCategory: 1
     - s_end_ALAlpha: 0
     - s_end_ALDecalAudioModsOptions: 0
     - s_end_ALDecalBand: 0
@@ -3296,7 +3296,7 @@ Material:
     - s_start_CubeMapMasking: 1
     - s_start_Decal0ChannelSeparation: 0
     - s_start_Decal0GlobalMasking: 0
-    - s_start_Decal0HueShift: 0
+    - s_start_Decal0HueShift: 1
     - s_start_Decal0Video: 0
     - s_start_Decal1ChannelSeparation: 0
     - s_start_Decal1GlobalMasking: 0
@@ -3424,7 +3424,7 @@ Material:
     - s_start_OutlineFixedSize: 1
     - s_start_OutlineLighting: 1
     - s_start_OutlineRenderingOptions: 1
-    - s_start_OutlineZOffset: 0
+    - s_start_OutlineZOffset: 1
     - s_start_PBRSecondSpecular: 0
     - s_start_PBRSplitMaskSample: 0
     - s_start_ParallaxInternalHueShift: 0

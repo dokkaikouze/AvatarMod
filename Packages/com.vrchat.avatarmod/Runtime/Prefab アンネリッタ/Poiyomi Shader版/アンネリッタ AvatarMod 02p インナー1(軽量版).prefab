@@ -121,12 +121,12 @@ PrefabInstance:
     - target: {fileID: 1269461225798672414, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1269461225798672414, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1319234754364611276, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
@@ -147,6 +147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: EditorOnly
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450815450470200815, guid: 8543593a6f644774597a22ccfed0a8e7,
+        type: 3}
+      propertyPath: renderersSet.mainSet.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1480863796583577631, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
@@ -163,10 +168,20 @@ PrefabInstance:
       propertyPath: m_TagString
       value: EditorOnly
       objectReference: {fileID: 0}
+    - target: {fileID: 1767943822169395012, guid: 8543593a6f644774597a22ccfed0a8e7,
+        type: 3}
+      propertyPath: entireMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1844695823538672134, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
       propertyPath: m_TagString
       value: EditorOnly
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864223977628847694, guid: 8543593a6f644774597a22ccfed0a8e7,
+        type: 3}
+      propertyPath: parameters.Array.data[0].defaultValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2053545169844516740, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
@@ -611,12 +626,12 @@ PrefabInstance:
     - target: {fileID: 7923834092385620304, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7923834092385620304, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8023591485893928473, guid: 8543593a6f644774597a22ccfed0a8e7,
         type: 3}
@@ -718,7 +733,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: EditorOnly
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6953927182231007437, guid: 8543593a6f644774597a22ccfed0a8e7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

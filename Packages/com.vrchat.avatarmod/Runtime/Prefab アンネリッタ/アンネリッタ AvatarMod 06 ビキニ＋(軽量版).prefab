@@ -701,17 +701,17 @@ PrefabInstance:
     - target: {fileID: 9037467958017561495, guid: 146918bd8a2ea3746ab605a81d41c3bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00004091859
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9037467958017561495, guid: 146918bd8a2ea3746ab605a81d41c3bc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.06643069
+      value: 0.00000011920929
       objectReference: {fileID: 0}
     - target: {fileID: 9037467958017561495, guid: 146918bd8a2ea3746ab605a81d41c3bc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0016831607
+      value: -0.000000007450581
       objectReference: {fileID: 0}
     - target: {fileID: 9079812713220743327, guid: 146918bd8a2ea3746ab605a81d41c3bc,
         type: 3}
@@ -756,5 +756,104 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7532616607131107012, guid: 146918bd8a2ea3746ab605a81d41c3bc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6186507550236719145}
+    - targetCorrespondingSourceObject: {fileID: 6669109647581152420, guid: 146918bd8a2ea3746ab605a81d41c3bc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1713945760710592664}
+    - targetCorrespondingSourceObject: {fileID: 4655848723106603654, guid: 146918bd8a2ea3746ab605a81d41c3bc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2717794777222254492}
   m_SourcePrefab: {fileID: 100100000, guid: 146918bd8a2ea3746ab605a81d41c3bc, type: 3}
+--- !u!1 &712311805820717782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6669109647581152420, guid: 146918bd8a2ea3746ab605a81d41c3bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6156363738870337138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1713945760710592664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712311805820717782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/body/\u624B\u888B"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 1
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
+--- !u!1 &1581653580103806196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4655848723106603654, guid: 146918bd8a2ea3746ab605a81d41c3bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6156363738870337138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2717794777222254492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581653580103806196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 1
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
+--- !u!1 &4460523883870007478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7532616607131107012, guid: 146918bd8a2ea3746ab605a81d41c3bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6156363738870337138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6186507550236719145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4460523883870007478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 1
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1

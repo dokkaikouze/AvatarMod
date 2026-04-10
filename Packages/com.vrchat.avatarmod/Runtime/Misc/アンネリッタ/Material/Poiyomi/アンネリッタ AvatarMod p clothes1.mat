@@ -42,8 +42,9 @@ Material:
       _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
-    RenderType: Opaque
+    RenderType: TransparentCutout
     VRCFallback: ToonCutoutDoubleSided
+    _AlphaForceOpaqueAnimated: 1
     _AnisoAddAnimated: 1
     _ClearCoatStrengthAnimated: 1
     _LTCGI_AnimToggleAnimated: 1
@@ -52,6 +53,8 @@ Material:
     _LightingCapAnimated: 1
     _LightingCastedShadowsAnimated: 1
     _LightingMinLightBrightnessAnimated: 1
+    _OutlineAlphaDistanceFadeMaxAnimated: 1
+    _OutlineAlphaDistanceFadeMinAnimated: 1
     _PPEmissionMultiplierAnimated: 1
     _PPFinalColorMultiplierAnimated: 1
     _PPLightingMultiplierAnimated: 1
@@ -79,6 +82,7 @@ Material:
     _UDIMDiscardRow3_1Animated: 1
     _UDIMDiscardRow3_2Animated: 1
     _UDIMDiscardRow3_3Animated: 1
+    _UzumoreAmountAnimated: 1
     _UzumoreEnabledAnimated: 1
     _stripped_tex__ClothDFG: 76d65cbce584df7449699fb8406f60ea
     _stripped_tex__SkinLUT: d13510bb2be49aa40a66a0101efb6a36
@@ -608,7 +612,7 @@ Material:
     - _CurvatureU: 0
     - _CurvatureV: 0
     - _CustomColors: 0
-    - _Cutoff: 0
+    - _Cutoff: 0.5
     - _Decal0ApplyGlobalMaskBlendType: 0
     - _Decal0ApplyGlobalMaskIndex: 0
     - _Decal0ChannelSeparation: 0
@@ -1830,7 +1834,7 @@ Material:
     - _MochieSpecularStrengthGlobalMask: 0
     - _MochieSpecularStrengthGlobalMaskBlendType: 2
     - _MochieSpecularTintThemeIndex: 0
-    - _Mode: 0
+    - _Mode: 1
     - _ModelAngleMax: 90
     - _ModelAngleMin: 45
     - _MultilayerMathBlurMapUV: 0
@@ -1842,10 +1846,10 @@ Material:
     - _OrifaceEnabled: 0
     - _OrificeChannel: 0
     - _OutlineALColorEnabled: 0
-    - _OutlineAlphaDistanceFade: 0
-    - _OutlineAlphaDistanceFadeMax: 0
+    - _OutlineAlphaDistanceFade: 1
+    - _OutlineAlphaDistanceFadeMax: 0.031
     - _OutlineAlphaDistanceFadeMaxAlpha: 1
-    - _OutlineAlphaDistanceFadeMin: 0
+    - _OutlineAlphaDistanceFadeMin: 0.03
     - _OutlineAlphaDistanceFadeMinAlpha: 0
     - _OutlineAlphaDistanceFadeType: 1
     - _OutlineBlendOp: 0
@@ -1853,7 +1857,7 @@ Material:
     - _OutlineClipAtZeroWidth: 1
     - _OutlineCull: 1
     - _OutlineDstBlend: 0
-    - _OutlineDstBlendAlpha: 0
+    - _OutlineDstBlendAlpha: 1
     - _OutlineEmission: 0
     - _OutlineExpansionMode: 1
     - _OutlineFixWidth: 0.5
@@ -2084,7 +2088,7 @@ Material:
     - _RenderingAOBlockerFlipNormal: 0
     - _RenderingAOBlockerNote: 0
     - _RenderingAOBlockerUVChannel: 0
-    - _RenderingEarlyZEnabled: 0
+    - _RenderingEarlyZEnabled: 1
     - _RenderingReduceClipDistance: 1
     - _RgbAlphaGlobalMaskBlendType: 2
     - _RgbAlphaGlobalMaskChannel: 0
@@ -2667,7 +2671,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 0
+    - m_OutlineCategory: 1
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2821,13 +2825,13 @@ Material:
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 0
-    - m_mainCategory: 0
+    - m_mainCategory: 1
     - m_modifierCategory: 1
     - m_renderingCategory: 1
     - m_specialFXCategory: 1
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
-    - m_start_Alpha: 0
+    - m_start_Alpha: 1
     - m_start_Aniso: 1
     - m_start_BeatsaberBloomFog: 0
     - m_start_BeatsaberOptions: 0
@@ -3371,7 +3375,7 @@ Material:
     - s_start_MultilayerMathBorder: 1
     - s_start_MultilayerMathBorderMap: 0
     - s_start_MultilayerShadowMap: 0
-    - s_start_OutlineAlphaDistanceFade: 0
+    - s_start_OutlineAlphaDistanceFade: 1
     - s_start_OutlineColorAdjust: 0
     - s_start_OutlineFixedSize: 1
     - s_start_OutlineLighting: 1

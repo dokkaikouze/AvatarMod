@@ -7899,7 +7899,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
-				poiFragData.alpha = 0.0 ? 1 : poiFragData.alpha;
+				poiFragData.alpha = _AlphaForceOpaque ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
@@ -7908,11 +7908,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				poiFragData.emission = max(poiFragData.emission * _PPEmissionMultiplier, 0);
 				poiFragData.finalColor = max(poiFragData.finalColor * _PPFinalColorMultiplier, 0);
 				#endif
-				if (0.0 == POI_MODE_OPAQUE)
+				if (1.0 == POI_MODE_OPAQUE)
 				{
 				}
-				clip(poiFragData.alpha - 0.0);
-				if (0.0 == POI_MODE_CUTOUT && !0.0)
+				clip(poiFragData.alpha - 0.5);
+				if (1.0 == POI_MODE_CUTOUT && !0.0)
 				{
 					poiFragData.alpha = 1;
 				}
@@ -13173,17 +13173,17 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
-				poiFragData.alpha = 0.0 ? 1 : poiFragData.alpha;
+				poiFragData.alpha = _AlphaForceOpaque ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
 				poiFragData.finalColor += poiLight.finalLightAdd;
-				if (0.0 == POI_MODE_OPAQUE)
+				if (1.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - 0.0);
-				if (0.0 == POI_MODE_CUTOUT && !0.0)
+				clip(poiFragData.alpha - 0.5);
+				if (1.0 == POI_MODE_CUTOUT && !0.0)
 				{
 					poiFragData.alpha = 1;
 				}
@@ -13191,7 +13191,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				{
 					poiFragData.alpha = saturate(poiFragData.alpha * 10.0);
 				}
-				if (0.0 != POI_MODE_TRANSPARENT)
+				if (1.0 != POI_MODE_TRANSPARENT)
 				{
 					poiFragData.finalColor *= poiFragData.alpha;
 				}
@@ -16299,10 +16299,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				{
 					poiFragData.alpha *= col.a;
 				}
-				if (0.0)
+				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.alpha *= lerp(0.0, 1.0, smoothstep(0.0, 0.0, distance(position, poiCam.worldPos)));
+					poiFragData.alpha *= lerp(0.0, 1.0, smoothstep(_OutlineAlphaDistanceFadeMin, _OutlineAlphaDistanceFadeMax, distance(position, poiCam.worldPos)));
 				}
 				float emission = 0.0;
 				#ifdef POI_AUDIOLINK
@@ -17294,15 +17294,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 					}
 				}
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
-				poiFragData.alpha = 0.0 ? 1 : poiFragData.alpha;
+				poiFragData.alpha = _AlphaForceOpaque ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
-				if (0.0 == POI_MODE_OPAQUE)
+				if (1.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - 0.0);
+				clip(poiFragData.alpha - 0.5);
 				poiFragData.finalColor += poiFragData.emission * poiMods.globalEmission;
 				applyUnityFog(poiFragData.finalColor, i.fogData);
 				return float4(poiFragData.finalColor, poiFragData.alpha) + POI_SAFE_RGB0;
@@ -19822,15 +19822,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/4939dd3a02cc74747b713760eba4c0af"
 				ApplyBacklight(poiFragData, poiMesh, poiLight, poiCam, poiMods);
 				#endif
 				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
-				poiFragData.alpha = 0.0 ? 1 : poiFragData.alpha;
+				poiFragData.alpha = _AlphaForceOpaque ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
-				if (0.0 == POI_MODE_OPAQUE)
+				if (1.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - 0.0);
+				clip(poiFragData.alpha - 0.5);
 				applyUnityFog(poiFragData.finalColor, i.fogData);
 				return float4(poiFragData.finalColor, poiFragData.alpha) + POI_SAFE_RGB0;
 			}

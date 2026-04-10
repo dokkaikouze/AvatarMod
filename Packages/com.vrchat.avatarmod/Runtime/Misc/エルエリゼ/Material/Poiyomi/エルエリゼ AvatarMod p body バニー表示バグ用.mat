@@ -61,6 +61,8 @@ Material:
     _LightingMinLightBrightnessAnimated: 1
     _Matcap1NormalMapAnimated: 1
     _Matcap1NormalMapScaleAnimated: 1
+    _OutlineAlphaDistanceFadeMaxAnimated: 1
+    _OutlineAlphaDistanceFadeMinAnimated: 1
     _PPEmissionMultiplierAnimated: 1
     _PPFinalColorMultiplierAnimated: 1
     _PPLightingMultiplierAnimated: 1
@@ -89,6 +91,7 @@ Material:
     _UDIMDiscardRow3_2Animated: 1
     _UDIMDiscardRow3_3Animated: 1
     _UDIMDiscardUVAnimated: 1
+    _UzumoreAmountAnimated: 1
     _UzumoreEnabledAnimated: 1
     _stripped_tex__ClothDFG: 76d65cbce584df7449699fb8406f60ea
     _stripped_tex__SkinLUT: d13510bb2be49aa40a66a0101efb6a36
@@ -1908,10 +1911,10 @@ Material:
     - _OrifaceEnabled: 0
     - _OrificeChannel: 0
     - _OutlineALColorEnabled: 0
-    - _OutlineAlphaDistanceFade: 0
-    - _OutlineAlphaDistanceFadeMax: 0
+    - _OutlineAlphaDistanceFade: 1
+    - _OutlineAlphaDistanceFadeMax: 0.031
     - _OutlineAlphaDistanceFadeMaxAlpha: 1
-    - _OutlineAlphaDistanceFadeMin: 0
+    - _OutlineAlphaDistanceFadeMin: 0.03
     - _OutlineAlphaDistanceFadeMinAlpha: 0
     - _OutlineAlphaDistanceFadeType: 1
     - _OutlineBlendOp: 0
@@ -2733,7 +2736,7 @@ Material:
     - g_start_tps_pulsing: 0
     - g_start_tps_squeeze: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 0
+    - m_OutlineCategory: 1
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -2950,8 +2953,8 @@ Material:
     - m_start_GlobalThemes: 1
     - m_start_LTCGI: 1
     - m_start_MainVertexColors: 0
-    - m_start_Matcap2: 0
-    - m_start_Matcap3: 0
+    - m_start_Matcap2: 1
+    - m_start_Matcap3: 1
     - m_start_Matcap4: 1
     - m_start_OutlineAudioLink: 0
     - m_start_OutlineStencil: 0
@@ -3009,7 +3012,7 @@ Material:
     - m_start_flipBook: 0
     - m_start_glitter: 1
     - m_start_internalparallax: 0
-    - m_start_matcap: 0
+    - m_start_matcap: 1
     - m_start_mirrorOptions: 0
     - m_start_normalCorrect: 0
     - m_start_outlineAlphaBlending: 0

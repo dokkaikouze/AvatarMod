@@ -3318,7 +3318,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a10ffcf91b04f8b47a92706ce7712454"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -7684,7 +7684,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a10ffcf91b04f8b47a92706ce7712454"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -10778,7 +10778,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/a10ffcf91b04f8b47a92706ce7712454"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);

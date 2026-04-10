@@ -2908,7 +2908,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -3131,7 +3131,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 			#endif
 			float4 frag(VertexOut i, uint facing : SV_IsFrontFace) : SV_Target
 			{
-				clip(_RenderingEarlyZEnabled - 1.0);
+				clip(1.0 - 1.0);
 				UNITY_SETUP_INSTANCE_ID(i);
 				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 				return float4(1, 1, 1, 1);
@@ -6253,7 +6253,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -9550,11 +9550,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				poiFragData.emission = max(poiFragData.emission * _PPEmissionMultiplier, 0);
 				poiFragData.finalColor = max(poiFragData.finalColor * _PPFinalColorMultiplier, 0);
 				#endif
-				if (0.0 == POI_MODE_OPAQUE)
+				if (1.0 == POI_MODE_OPAQUE)
 				{
 				}
-				clip(poiFragData.alpha - 0.0);
-				if (0.0 == POI_MODE_CUTOUT && !0.0)
+				clip(poiFragData.alpha - 0.5);
+				if (1.0 == POI_MODE_CUTOUT && !0.0)
 				{
 					poiFragData.alpha = 1;
 				}
@@ -12071,7 +12071,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -14435,12 +14435,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
 				poiFragData.finalColor += poiLight.finalLightAdd;
-				if (0.0 == POI_MODE_OPAQUE)
+				if (1.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - 0.0);
-				if (0.0 == POI_MODE_CUTOUT && !0.0)
+				clip(poiFragData.alpha - 0.5);
+				if (1.0 == POI_MODE_CUTOUT && !0.0)
 				{
 					poiFragData.alpha = 1;
 				}
@@ -14448,7 +14448,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				{
 					poiFragData.alpha = saturate(poiFragData.alpha * 10.0);
 				}
-				if (0.0 != POI_MODE_TRANSPARENT)
+				if (1.0 != POI_MODE_TRANSPARENT)
 				{
 					poiFragData.finalColor *= poiFragData.alpha;
 				}
@@ -17254,7 +17254,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -17545,10 +17545,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				{
 					poiFragData.alpha *= col.a;
 				}
-				if (0.0)
+				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.alpha *= lerp(0.0, 1.0, smoothstep(0.0, 0.0, distance(position, poiCam.worldPos)));
+					poiFragData.alpha *= lerp(0.0, 1.0, smoothstep(_OutlineAlphaDistanceFadeMin, _OutlineAlphaDistanceFadeMax, distance(position, poiCam.worldPos)));
 				}
 				float emission = 0.0;
 				#ifdef POI_AUDIOLINK
@@ -18544,11 +18544,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
-				if (0.0 == POI_MODE_OPAQUE)
+				if (1.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - 0.0);
+				clip(poiFragData.alpha - 0.5);
 				poiFragData.finalColor += poiFragData.emission * poiMods.globalEmission;
 				applyUnityFog(poiFragData.finalColor, i.fogData);
 				return float4(poiFragData.finalColor, poiFragData.alpha) + POI_SAFE_RGB0;
@@ -20527,7 +20527,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -21061,11 +21061,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/27e84be7a16a99e4ab0f84722ed4c4fd"
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
-				if (0.0 == POI_MODE_OPAQUE)
+				if (1.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - 0.0);
+				clip(poiFragData.alpha - 0.5);
 				applyUnityFog(poiFragData.finalColor, i.fogData);
 				return float4(poiFragData.finalColor, poiFragData.alpha) + POI_SAFE_RGB0;
 			}

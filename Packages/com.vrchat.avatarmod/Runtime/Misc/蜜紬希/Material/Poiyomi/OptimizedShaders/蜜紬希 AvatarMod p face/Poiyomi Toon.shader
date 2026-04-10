@@ -3819,7 +3819,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -9151,7 +9151,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -13957,7 +13957,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);
@@ -14241,10 +14241,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				{
 					poiFragData.alpha *= col.a;
 				}
-				if (0.0)
+				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.alpha *= lerp(0.0, 1.0, smoothstep(0.0, 0.0, distance(position, poiCam.worldPos)));
+					poiFragData.alpha *= lerp(0.0, 1.0, smoothstep(_OutlineAlphaDistanceFadeMin, _OutlineAlphaDistanceFadeMax, distance(position, poiCam.worldPos)));
 				}
 				float emission = 0.0;
 				#ifdef POI_AUDIOLINK
@@ -17155,7 +17155,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/bee06dee97161e44d862466eff4495dd"
 				#else
 				float uzumoreMask = 1;
 				#endif
-				float maxAmount = 0.1 * uzumoreMask;
+				float maxAmount = _UzumoreAmount * uzumoreMask;
 				float maxBias = 0.001;
 				float d = sdPlane(wpos - camPos, -camDir, (near + maxBias));
 				float intrudeAmount = clamp(d, 0, maxAmount);

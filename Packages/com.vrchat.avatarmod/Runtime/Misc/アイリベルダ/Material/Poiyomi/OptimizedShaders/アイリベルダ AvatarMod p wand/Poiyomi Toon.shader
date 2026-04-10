@@ -14558,10 +14558,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/530b04177ea235f4c86f403581b9ea66"
 				{
 					poiFragData.alpha *= col.a;
 				}
-				if (0.0)
+				if (1.0)
 				{
 					float3 position = 1.0 ? poiMesh.worldPos : poiMesh.objectPosition;
-					poiFragData.alpha *= lerp(0.0, 1.0, smoothstep(0.0, 0.0, distance(position, poiCam.worldPos)));
+					poiFragData.alpha *= lerp(0.0, 1.0, smoothstep(_OutlineAlphaDistanceFadeMin, _OutlineAlphaDistanceFadeMax, distance(position, poiCam.worldPos)));
 				}
 				float emission = 0.0;
 				#ifdef POI_AUDIOLINK

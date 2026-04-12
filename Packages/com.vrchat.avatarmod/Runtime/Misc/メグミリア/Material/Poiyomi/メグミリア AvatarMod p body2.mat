@@ -23,11 +23,14 @@ Material:
   - POI_MATCAP0
   - POI_MATCAP1_CUSTOM_NORMAL
   - POI_MATCAP2
+  - POI_MATCAP3
+  - POI_MATCAP3_CUSTOM_NORMAL
   - POI_RIM2
   - POI_STYLIZED_StylizedSpecular
   - POI_UDIMDISCARD
   - POI_UZUMORE
   - VIGNETTE_MASKED
+  - _GLOSSYREFLECTIONS_OFF
   - _LIGHTINGMODE_MULTILAYER_MATH
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
@@ -41,9 +44,9 @@ Material:
     AllLockedGUIDS: e325333dfb1e15a4da96afabf4cdb82e
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT COLOR_GRADING_HDR_3D POI_ANISOTROPICS
       POI_BACKLIGHT POI_CLEARCOAT POI_ENVIRORIM POI_LTCGI POI_MATCAP0 POI_MATCAP1_CUSTOM_NORMAL
-      POI_MATCAP2 POI_RIM2 POI_STYLIZED_StylizedSpecular POI_UDIMDISCARD POI_UZUMORE
-      VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI
-      _STOCHASTICMODE_DELIOT_HEITZ _SUNDISK_SIMPLE
+      POI_MATCAP2 POI_MATCAP3 POI_MATCAP3_CUSTOM_NORMAL POI_RIM2 POI_STYLIZED_StylizedSpecular
+      POI_UDIMDISCARD POI_UZUMORE VIGNETTE_MASKED _GLOSSYREFLECTIONS_OFF _LIGHTINGMODE_MULTILAYER_MATH
+      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _SUNDISK_SIMPLE
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
     RenderType: Opaque
@@ -56,6 +59,7 @@ Material:
     _LightingCapAnimated: 1
     _LightingCastedShadowsAnimated: 1
     _LightingMinLightBrightnessAnimated: 1
+    _Matcap4IntensityAnimated: 1
     _OutlineAlphaDistanceFadeMaxAnimated: 1
     _OutlineAlphaDistanceFadeMinAnimated: 1
     _PPEmissionMultiplierAnimated: 1
@@ -184,6 +188,18 @@ Material:
         m_Texture: {fileID: 2800000, guid: 49e590a64c147a148af6cd8a5eb07a7e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Matcap3NormalMap:
+        m_Texture: {fileID: 2800000, guid: 62828f1416813f048a5827ea5f9c03c9, type: 3}
+        m_Scale: {x: 26, y: 26}
+        m_Offset: {x: 0, y: 0}
+    - _Matcap4:
+        m_Texture: {fileID: 2800000, guid: ea48be983879d514f8f500e9c1e4dcde, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Matcap4Mask:
+        m_Texture: {fileID: 2800000, guid: 49e590a64c147a148af6cd8a5eb07a7e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MatcapMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -224,8 +240,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RimColorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _RimEnviroMask:
         m_Texture: {fileID: 2800000, guid: 49e590a64c147a148af6cd8a5eb07a7e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RimMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RimTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set_HighColorMask:
@@ -233,6 +261,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set_Rim2LightMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Set_RimLightMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -323,7 +355,7 @@ Material:
     - _AddSrcBlend: 1
     - _AddSrcBlendAlpha: 0
     - _Add_Antipodean_Rim2Light: 0
-    - _Add_Antipodean_RimLight: 0
+    - _Add_Antipodean_RimLight: 1
     - _AlphaAlphaAdd: 0
     - _AlphaAngular: 0
     - _AlphaAngularGlobalMask: 0
@@ -397,7 +429,7 @@ Material:
     - _Ap_Rim2Light_FeatherOff: 0
     - _Ap_Rim2Light_Power: 0.1
     - _Ap_RimLight_FeatherOff: 0
-    - _Ap_RimLight_Power: 0.1
+    - _Ap_RimLight_Power: 0.08
     - _ApplyReflection: 0
     - _ApplySpecular: 1
     - _ApplySpecularFA: 1
@@ -1076,7 +1108,7 @@ Material:
     - _EnablePathRemapping: 0
     - _EnablePathing: 0
     - _EnableRim2Lighting: 1
-    - _EnableRimLighting: 0
+    - _EnableRimLighting: 1
     - _EnableTouchGlow: 0
     - _EnableTruchet: 0
     - _EnableUDIMDiscardOptions: 1
@@ -1505,7 +1537,7 @@ Material:
     - _LightDataSDFMapUV: 0
     - _LightDataShadowMaskGlobalMaskBlendTypeR: 2
     - _LightDataShadowMaskGlobalMaskR: 0
-    - _LightDirection_MaskOn: 0
+    - _LightDirection_MaskOn: 1
     - _LightDirection_MaskOn2: 0
     - _LightingAOMapsUV: 0
     - _LightingAddDetailShadowStrengthA: 0
@@ -1707,7 +1739,7 @@ Material:
     - _Matcap3CircleMaskBorder: 0.45
     - _Matcap3CircleMaskEnabled: 0
     - _Matcap3ColorThemeIndex: 0
-    - _Matcap3CustomNormal: 0
+    - _Matcap3CustomNormal: 1
     - _Matcap3EmissionStrength: 0
     - _Matcap3Enable: 1
     - _Matcap3HueSelectOrShift: 1
@@ -1728,7 +1760,7 @@ Material:
     - _Matcap3Mixed: 0.7
     - _Matcap3Multiply: 0
     - _Matcap3Normal: 1
-    - _Matcap3NormalMapScale: 1
+    - _Matcap3NormalMapScale: 0.3
     - _Matcap3NormalMapUV: 0
     - _Matcap3Replace: 0
     - _Matcap3Rotation: 0
@@ -1753,15 +1785,15 @@ Material:
     - _Matcap4CircleMaskEnabled: 0
     - _Matcap4ColorThemeIndex: 0
     - _Matcap4EmissionStrength: 0
-    - _Matcap4Enable: 0
+    - _Matcap4Enable: 1
     - _Matcap4HueSelectOrShift: 1
     - _Matcap4HueShift: 0
     - _Matcap4HueShiftColorSpace: 0
     - _Matcap4HueShiftEnabled: 0
     - _Matcap4HueShiftSpeed: 0
-    - _Matcap4Intensity: 1
-    - _Matcap4LightColorMix: 0
-    - _Matcap4LightMask: 0
+    - _Matcap4Intensity: 0
+    - _Matcap4LightColorMix: 0.85
+    - _Matcap4LightMask: 0.35
     - _Matcap4MaskChannel: 0
     - _Matcap4MaskGlobalMask: 0
     - _Matcap4MaskGlobalMaskBlendType: 2
@@ -1769,13 +1801,13 @@ Material:
     - _Matcap4MaskSmoothnessApply: 0
     - _Matcap4MaskSmoothnessChannel: 3
     - _Matcap4MaskUV: 0
-    - _Matcap4Mixed: 0
+    - _Matcap4Mixed: 1
     - _Matcap4Multiply: 0
     - _Matcap4Normal: 1
     - _Matcap4Replace: 0
     - _Matcap4Rotation: 0
     - _Matcap4Screen: 0
-    - _Matcap4Smoothness: 1
+    - _Matcap4Smoothness: 0.365
     - _Matcap4SmoothnessEnabled: 0
     - _Matcap4TPSDepthEnabled: 0
     - _Matcap4TPSMaskStrength: 1
@@ -2212,10 +2244,10 @@ Material:
     - _RimApplyGlobalMaskBlendType: 2
     - _RimApplyGlobalMaskIndex: 0
     - _RimBackfaceMask: 1
-    - _RimBaseColorMix: 0
+    - _RimBaseColorMix: 1
     - _RimBiasIntensity: 0
-    - _RimBlendMode: 1
-    - _RimBlendStrength: 1
+    - _RimBlendMode: 2
+    - _RimBlendStrength: 0.25
     - _RimBlur: 0.65
     - _RimBorder: 0.5
     - _RimBrightness: 1
@@ -2253,20 +2285,20 @@ Material:
     - _RimMaskUV: 0
     - _RimNormalStrength: 1
     - _RimPoi2BlendMode: 1
-    - _RimPoiBlendMode: 0
+    - _RimPoiBlendMode: 2
     - _RimPower: 1
     - _RimShadowMask: 0.5
-    - _RimShadowMaskInvert: 0
+    - _RimShadowMaskInvert: 1
     - _RimShadowMaskRampType: 0
     - _RimShadowMaskStrength: 1
     - _RimShadowToggle: 0
     - _RimShadowWidth: 0
-    - _RimSharpness: 0.25
+    - _RimSharpness: 0
     - _RimStrength: 0
     - _RimStyle: 0
     - _RimTexUV: 0
     - _RimVRParallaxStrength: 1
-    - _RimWidth: 0.8
+    - _RimWidth: 0.63
     - _RoughnessAnisotropy: 1
     - _SDFBlur: 0.1
     - _SDFShadingTextureUV: 0
@@ -2848,7 +2880,7 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 0
+    - m_lightingCategory: 1
     - m_mainCategory: 0
     - m_modifierCategory: 1
     - m_renderingCategory: 1
@@ -2988,7 +3020,7 @@ Material:
     - m_start_ralivPenetrator: 0
     - m_start_reflectionRim: 1
     - m_start_rim2LightOptions: 1
-    - m_start_rimLight1Options: 0
+    - m_start_rimLight1Options: 1
     - m_start_stylizedSpec: 1
     - m_start_subsurfaceScattering: 0
     - m_start_tps_penetrator: 0
@@ -3512,7 +3544,7 @@ Material:
     - _AnisoColorMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _AnisotropyMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _Ap_Rim2LightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Ap_RimLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Ap_RimLightColor: {r: 0, g: 0, b: 0, a: 1}
     - _AudioLinkBandOverrideSliders: {r: 0, g: 0, b: 0, a: 0}
     - _AudioLinkDecal0Alpha: {r: 0, g: 0, b: 0, a: 0}
     - _AudioLinkDecal0ChannelSeparation: {r: 0, g: 0, b: 0, a: 0}
@@ -3903,7 +3935,7 @@ Material:
     - _RimColorTexPan: {r: 0, g: 0, b: 0, a: 0}
     - _RimEnviroMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _RimIndirColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimLightColor: {r: 0.8867924, g: 0.78704685, b: 0.6999525, a: 1}
     - _RimMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _RimShadowAlpha: {r: 0, g: 0, b: 0, a: 1}
     - _RimTexPan: {r: 0, g: 0, b: 0, a: 0}

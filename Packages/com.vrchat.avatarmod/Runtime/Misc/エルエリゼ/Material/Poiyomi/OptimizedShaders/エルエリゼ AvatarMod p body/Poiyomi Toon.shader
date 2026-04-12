@@ -7017,7 +7017,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				#else
 				matcap = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
 				#endif
-				matcap.rgb *= lerp(1, poiLight.directColor, 0.0);
+				matcap.rgb *= lerp(1, poiLight.directColor, 0.15);
 				matcapIntensity = 1.0;
 				#ifdef POI_AUDIOLINK
 				if (matcapALD.matcapALEnabled > 0)
@@ -7114,7 +7114,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				#else
 				matcap2 = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
 				#endif
-				matcap2.rgb *= lerp(1, poiLight.directColor, 0.0);
+				matcap2.rgb *= lerp(1, poiLight.directColor, 0.15);
 				matcapIntensity = 0.8;
 				#ifdef POI_AUDIOLINK
 				if (matcapALD.matcapALEnabled > 0)
@@ -7202,7 +7202,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				#else
 				matcap3 = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
 				#endif
-				matcap3.rgb *= lerp(1, poiLight.directColor, 0.0);
+				matcap3.rgb *= lerp(1, poiLight.directColor, 0.15);
 				matcapIntensity = 1.0;
 				#ifdef POI_AUDIOLINK
 				if (matcapALD.matcapALEnabled > 0)
@@ -7295,7 +7295,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				#else
 				matcap4 = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
 				#endif
-				matcap4.rgb *= lerp(1, poiLight.directColor, 0.85);
+				matcap4.rgb *= lerp(1, poiLight.directColor, 0.25);
 				matcapIntensity = _Matcap4Intensity;
 				#ifdef POI_AUDIOLINK
 				if (matcapALD.matcapALEnabled > 0)
@@ -13291,7 +13291,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				#else
 				matcap = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
 				#endif
-				matcap.rgb *= lerp(1, poiLight.directColor, 0.0);
+				matcap.rgb *= lerp(1, poiLight.directColor, 0.15);
 				matcapIntensity = 1.0;
 				#ifdef POI_AUDIOLINK
 				if (matcapALD.matcapALEnabled > 0)
@@ -13388,7 +13388,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				#else
 				matcap2 = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
 				#endif
-				matcap2.rgb *= lerp(1, poiLight.directColor, 0.0);
+				matcap2.rgb *= lerp(1, poiLight.directColor, 0.15);
 				matcapIntensity = 0.8;
 				#ifdef POI_AUDIOLINK
 				if (matcapALD.matcapALEnabled > 0)
@@ -13476,7 +13476,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				#else
 				matcap3 = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
 				#endif
-				matcap3.rgb *= lerp(1, poiLight.directColor, 0.0);
+				matcap3.rgb *= lerp(1, poiLight.directColor, 0.15);
 				matcapIntensity = 1.0;
 				#ifdef POI_AUDIOLINK
 				if (matcapALD.matcapALEnabled > 0)
@@ -13569,7 +13569,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/6dcbc8166d797e44db1b0860251bf4d0"
 				#else
 				matcap4 = float4(poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0), float4(1,1,1,1).a);
 				#endif
-				matcap4.rgb *= lerp(1, poiLight.directColor, 0.85);
+				matcap4.rgb *= lerp(1, poiLight.directColor, 0.25);
 				matcapIntensity = _Matcap4Intensity;
 				#ifdef POI_AUDIOLINK
 				if (matcapALD.matcapALEnabled > 0)

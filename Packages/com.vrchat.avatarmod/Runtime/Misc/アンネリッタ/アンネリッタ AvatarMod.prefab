@@ -10903,7 +10903,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1440718333414488064}
+  - {fileID: 4433968257123904696}
   m_Father: {fileID: 2315704549790178359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8003812886882981767
@@ -25560,7 +25560,9 @@ MonoBehaviour:
   debugOptions:
     exclusions: []
     gcDebug: 0
-    noConfigureMergeBone: 0
+    noSweepComponents: 0
+    noConfigureLeafMergeBone: 0
+    noConfigureMiddleMergeBone: 0
     noActivenessAnimation: 0
     skipFreezingNonAnimatedBlendShape: 0
     skipFreezingMeaninglessBlendShape: 0
@@ -25577,8 +25579,14 @@ MonoBehaviour:
     skipRemoveEmptySubMesh: 0
     skipAnyStateToEntryExit: 0
     skipRemoveMaterialUnusedProperties: 0
+    skipRemoveMaterialUnusedTextures: 0
     skipAutoMergeBlendShape: 0
     skipRemoveUnusedSubMesh: 0
+    skipMergePhysBones: 0
+    skipCompleteGraphToEntryExit: 0
+    skipReplaceEndBoneWithEndpointPosition: 0
+    skipOptimizationWarnings: 0
+    skipMirrorIgnoreOtherPhysBonesToIgnoreTransform: 0
 --- !u!114 &1622809389143850544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32918,7 +32926,7 @@ MonoBehaviour:
   legacyLocked: 0
   LockMode: 2
   mangleNames: 1
---- !u!1001 &4961002556438492354
+--- !u!1001 &7687625432962195578
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -32986,9 +32994,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3004d09469c24cf48a41ae87c40405ff, type: 3}
---- !u!4 &1440718333414488064 stripped
+--- !u!4 &4433968257123904696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6280111602062724290, guid: 3004d09469c24cf48a41ae87c40405ff,
     type: 3}
-  m_PrefabInstance: {fileID: 4961002556438492354}
+  m_PrefabInstance: {fileID: 7687625432962195578}
   m_PrefabAsset: {fileID: 0}

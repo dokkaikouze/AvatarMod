@@ -13158,7 +13158,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4696323321955138707}
+  - {fileID: 6312168249679090260}
   m_Father: {fileID: 4407261042821734804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9217339415653453329
@@ -13192,7 +13192,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9001898283883810127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2191347335783653750
+--- !u!1001 &638623236149055409
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13260,11 +13260,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f63717bbf29d3234baebac83b4263eb7, type: 3}
---- !u!4 &4696323321955138707 stripped
+--- !u!4 &6312168249679090260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6865047033186000357, guid: f63717bbf29d3234baebac83b4263eb7,
     type: 3}
-  m_PrefabInstance: {fileID: 2191347335783653750}
+  m_PrefabInstance: {fileID: 638623236149055409}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4163855238912362038
 PrefabInstance:
@@ -26568,6 +26568,7 @@ MonoBehaviour:
     skipCompleteGraphToEntryExit: 0
     skipReplaceEndBoneWithEndpointPosition: 0
     skipOptimizationWarnings: 0
+    skipMirrorIgnoreOtherPhysBonesToIgnoreTransform: 0
 --- !u!114 &2811101075387479987
 MonoBehaviour:
   m_ObjectHideFlags: 0

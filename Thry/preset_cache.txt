@@ -100,7 +100,7 @@ Volume Bands/12-Band;0b416ffba1a7d97429ff71b7efc9230c
 Volume Bands/4-Band;c616aa2d7967623489243ae874323c90
 Volume Bands/8-Band;be96e40be3814e84fbca071cf6782a66
 Volume Bands/Reset;53395a2a59ff2f148b53eafd66967204
-Oldschool VFD;34b907ecea29f974aaf32f618e246a5b
+Oldschool VFD;e521e7368b5839d4d927e507e15593eb
 
 m_start_Alpha
 Alpha to Coverage + Dithering;11cc49b1463fe4240ae384b23baf0f67
@@ -119,7 +119,7 @@ Hue Shift/Continuous Shift;5a0731fb35950a94b8080e2fc98fd21c
 Old Timey;ed36fcd884e1f784c9d913e6fc45bdd7
 
 m_start_uvDistortion
-Distort 1;36090bb300774fa4399a2e41e5dfbae8
+Distort 1;c781c4faae2a8e7478eef8c89b376f69
 Distort 3;7a50a7b05ade5824585c295d7b29f4fe
 Flow 1;71205da691058794f8d3917649dbb715
 Flow 2;de4d74224d300984e98f1c4340c7e07e
@@ -137,7 +137,7 @@ Min Brightness/.1 (Glowstick);a5dc2b822da4d1a428581dfadf5f3dbb
 Min Brightness/0 (Correct);26af5cb87deb3ed4c8c2032134d84d5d
 "PBR";372d7ee2fdaa3914986be8eb2b0cdd0d
 Blu's Custom;0eb1ace2030fc5b4085d0ce62e18d84e
-Teeh Custom;6b98b5e879972824d913a41f992c833c
+Teeh Custom;9392d94f15870434facaa649d54973f0
 
 m_start_OutlineAudioLink
 10W;4439ffc714f4ad44ab0bd637620826d7
@@ -264,6 +264,12 @@ Inorganic/Gem;0f70a47cca5e8f74e9acad7f202e1d8a
 Default Fallback;aba6938c5cd9c794f80902ba8fa2259f
 Teeh's Fallback;d8e3c66db574ae04c8efa46fcc233130
 
+m_start_PoiShading
+Add Pass/ToonHard;6ab708189f12c864b872e8df6a2ee79b
+Add Pass/UTS Style;d6d1c75edfd0ec94ab3a549a6bdcef28
+"PBR";372d7ee2fdaa3914986be8eb2b0cdd0d
+Anthro Balanced Wrapped;0eb1ace2030fc5b4085d0ce62e18d84e
+
 m_start_blending
 Add;cde15326d0e161d46a3c9fe4ea0e93a4
 Multiply;7f0324ef5db34f44b954a644e8c8193d
@@ -285,12 +291,6 @@ Hair Realistic;2ad785830e75c9c45966229af30e7158
 m_start_CubeMap
 Add Fake Reflections;96fd1f4c49b942647b8851a0e9d7970c
 Skybox;d81ca65a9d60213408b2809b50d034ca
-
-m_start_PoiShading
-Add Pass/ToonHard;6ab708189f12c864b872e8df6a2ee79b
-Add Pass/UTS Style;d6d1c75edfd0ec94ab3a549a6bdcef28
-"PBR";372d7ee2fdaa3914986be8eb2b0cdd0d
-Anthro Balanced Wrapped;0eb1ace2030fc5b4085d0ce62e18d84e
 
 m_start_Matcap2
 AudioLink/10W;c0880ad625af101439c2010fe559c70b
@@ -355,14 +355,14 @@ Shape/Soft;eaad09f045806194f885f7ca3402a774
 Shape/Toon;ca3c16976bcbb8941bdac9151420af93
 Shape/Vague;dc8b5c6210105f244a16ac66c4bf2c9b
 
-m_start_reflectionRim
-Example;11ce4bd1b7b381f4abef3a8d553a0cc8
-
 m_start_stylizedSpec
 Default Fallback;aba6938c5cd9c794f80902ba8fa2259f
 lil Style;fffc9a264f0cea34e98d4ce8bcac38cd
 Teeh's Fallback;d8e3c66db574ae04c8efa46fcc233130
 UTS Style;520c0c3795796fb439a68661b0844ffc
+
+m_start_reflectionRim
+Example;11ce4bd1b7b381f4abef3a8d553a0cc8
 
 m_start_poiSSAO
 Masking / Write SSAO to Global Mask 4B;66f7fcad117c7004c996e76130140098

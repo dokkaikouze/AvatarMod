@@ -399,6 +399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: daf9a7373ba0f8e488a01c0f79f4ec52, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 9d285711c5c7ac04fa28d1b8781d1c39, type: 2}
 --- !u!114 &1662991422952221765
@@ -413,6 +416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Costume/Shoes
     remapTo: 
@@ -420,6 +426,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -1161,7 +1171,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.205, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &1492435788782074033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,7 +1322,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.08, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &1584426659110636268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,7 +2066,11 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!114 &1798423804861176507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2064,6 +2086,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -2741,6 +2764,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 6f4e15c4c5530bb468f02e0274207cd7, type: 2}
   installTargetMenu: {fileID: 11400000, guid: d7dcbae9240420a4796bddceb32aebb0, type: 2}
 --- !u!114 &3163430464780654516
@@ -2755,6 +2781,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 0c013954ce6e9db41846fea5765c3522, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 9d285711c5c7ac04fa28d1b8781d1c39, type: 2}
 --- !u!114 &4949975916029169113
@@ -2769,6 +2798,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Costume/Corset
     remapTo: 
@@ -2776,6 +2808,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -2786,6 +2822,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -2796,6 +2836,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -2806,6 +2850,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -3023,7 +3071,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.0225, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &3137363305074537922
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,7 +3669,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.205, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &3334189026663177549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3922,6 +3978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: d12b9274ea127634399476acb6663871, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 9d285711c5c7ac04fa28d1b8781d1c39, type: 2}
 --- !u!114 &4096700717401056223
@@ -3936,6 +3995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Hair
     remapTo: 
@@ -3943,6 +4005,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 1
     localOnly: 1
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -3953,6 +4019,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -3963,6 +4033,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -4019,7 +4093,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.08, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &3682817713282640321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4591,7 +4669,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.151, z: 0.053}
   rotation: {x: 0.4848096, y: 0, z: 0, w: 0.8746197}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &4049175421594395281
 GameObject:
   m_ObjectHideFlags: 0
@@ -7031,9 +7113,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: 
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &6646896795713887790
 GameObject:
   m_ObjectHideFlags: 0
@@ -8117,9 +8203,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: 
   attachmentMode: 1
+  matchScale: 0
 --- !u!1 &8099094603564967465
 GameObject:
   m_ObjectHideFlags: 0
@@ -8322,6 +8412,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 05317b804163df5479e43f9a16d55391, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 9d285711c5c7ac04fa28d1b8781d1c39, type: 2}
 --- !u!114 &3987620976262781384
@@ -8336,6 +8429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 1816d58e1ff3f0f44be7c530182ffa0b, type: 2}
   installTargetMenu: {fileID: 11400000, guid: d7dcbae9240420a4796bddceb32aebb0, type: 2}
 --- !u!114 &3219465121659637344
@@ -8350,6 +8446,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Costume/BreastRibbon
     remapTo: 
@@ -8357,6 +8456,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8367,6 +8470,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8377,6 +8484,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8387,6 +8498,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8397,6 +8512,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8407,6 +8526,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8417,6 +8540,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8427,6 +8554,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8437,6 +8568,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8447,6 +8582,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -8457,6 +8596,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -10530,6 +10673,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -17583,9 +17727,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt11_1_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &286581139140963245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17598,6 +17746,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &169585845026192836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2480231731423164795, guid: cd38593efa241b84fb2990309da01f7d,
@@ -17625,6 +17776,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.5
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -17767,9 +17919,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastRibbon/BreastRibbonConstraint/BreastRibbon2/BreastRibbon2_Dummy_R/BreastRibbon2a_Dummy_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &1435310257678829255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17782,6 +17938,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &546350398998079117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6366693252603239886, guid: cd38593efa241b84fb2990309da01f7d,
@@ -17800,9 +17959,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt7_1_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &7332926067648685421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17815,6 +17978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &565949234003555258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6346883422984145147, guid: cd38593efa241b84fb2990309da01f7d,
@@ -17833,9 +17999,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFrontMiddleCenter1_1
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &8552628546721909947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17848,6 +18018,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &573610013112633074 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2865467728300786253, guid: cd38593efa241b84fb2990309da01f7d,
@@ -17878,9 +18051,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastsOrigin/Breasts_PBroot_Animation_R/Breasts_PBroot_AnimationSpace_R/Breasts_PBroot_R/Breasts_Dummy1_R/Breasts_Dummy1_Animation_R/Breasts_Dummy1_Animation2_R/Breasts_Dummy1_Animation3_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!137 &680562704077339582 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -6250951342728020223, guid: cd38593efa241b84fb2990309da01f7d,
@@ -17905,9 +18082,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt9_1_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &5934688114931382618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17920,6 +18101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &708262585686702351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3019014712396840368, guid: cd38593efa241b84fb2990309da01f7d,
@@ -17938,9 +18122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt5_1_L/Skirt5_2_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &1464195270494012555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17953,6 +18141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &900097036779194797 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3191989524104367378, guid: cd38593efa241b84fb2990309da01f7d,
@@ -17971,9 +18162,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFront1_1_L/HairFront1_2_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &1181279493042278487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17986,6 +18181,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &929209618435745859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3230426505530338556, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18354,9 +18552,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastRibbon/BreastRibbonConstraint/BreastRibbon2/BreastRibbon2_Dummy_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &7382742339840330610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18369,6 +18571,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &1036636050155676681 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5885309651293183818, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18387,9 +18592,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt11_1_R/Skirt11_2_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6280093925292795628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18402,6 +18611,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &1126120409505656047 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5795789154088409008, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18420,9 +18632,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/Skirt15_1_R/Skirt15_2_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &165121114893291967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18435,6 +18651,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &1141716047291550817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3452501975478061278, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18453,9 +18672,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt5_1_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6919295828001722321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18468,6 +18691,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &1150770508363666419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3443471806736521036, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18486,9 +18712,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/Skirt15_1_L/Skirt15_2_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &2273861542241329927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18501,6 +18731,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &1163127757459542756 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 3464871731433084507, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18543,9 +18776,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt9_1_L/Skirt9_2_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &2804215370695906283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18558,6 +18795,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &1563600250550278560 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3855915637538528543, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18576,6 +18816,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 3ce8e625ce80d7c4ea2c5ed7b660e32d, type: 2}
   installTargetMenu: {fileID: 11400000, guid: b0c867ae2caae6a41a0573ca65ba84ec, type: 2}
 --- !u!114 &4265551087459110335
@@ -18590,6 +18833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Costume/EyeMask
     remapTo: 
@@ -18597,6 +18843,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 0
@@ -18637,9 +18887,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt5_1_R/Skirt5_2_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &2977520757759282237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18652,6 +18906,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &1947681460060930715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4266735157292205604, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18670,9 +18927,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastRibbon/BreastRibbonConstraint/BreastRibbon2/BreastRibbon2_Dummy_L/BreastRibbon2a_Dummy_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &3898910059944176307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18685,6 +18946,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &1965099885178715036 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -4939147948179734749, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18718,6 +18982,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -18835,9 +19100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SkirtRoot/FrontSkirt1_1
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &4944326355231227069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18850,6 +19119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &2124072123434621217 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4806527567748653666, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18868,6 +19140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 17721355cae5d3e408b71e9db82ae268, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 1698e6e997c98834194c068ac3cf2dde, type: 2}
 --- !u!1 &2126495817310130422 stripped
@@ -18888,9 +19163,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFront1_1_L/HairFront1_2_L/HairFront1_3_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &8721059664768022579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18903,6 +19182,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &2146367991236300586 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -4757878579483522155, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18927,9 +19209,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt9_1_R/Skirt9_2_R/Skirt9_4_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &7152126515226067380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18942,6 +19228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &2253782557862071621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4573119241914305018, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18960,9 +19249,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairOrigin/HairBackRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &2257922912091263891 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4567828835838662444, guid: cd38593efa241b84fb2990309da01f7d,
@@ -18981,9 +19274,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFront1_1_R/HairFront1_2_R/HairFront1_3_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6576516875882242726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18996,6 +19293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &2260800855808198581 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4570602308735435530, guid: cd38593efa241b84fb2990309da01f7d,
@@ -19020,9 +19320,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt9_1_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &202622854938923773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19035,6 +19339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &2332779814976909448 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 31034896029791287, guid: cd38593efa241b84fb2990309da01f7d,
@@ -19095,9 +19402,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SkirtRoot/FrontSkirt1_1/FrontSkirt1_2
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6504485420446399827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19110,6 +19421,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &2770001314399994372 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8772742178512042309, guid: cd38593efa241b84fb2990309da01f7d,
@@ -19128,9 +19442,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt7_1_L/Skirt7_2_L/Skirt7_4_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &8540885951507954430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19143,6 +19461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &2792233061295456215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 500446977570683752, guid: cd38593efa241b84fb2990309da01f7d,
@@ -19169,7 +19490,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.1, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &2813767931416966872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 521700630430429799, guid: cd38593efa241b84fb2990309da01f7d,
@@ -19188,9 +19513,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HeadDressPBroot/HDChm/HDChm_Dummy_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &1521521755493141666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19203,6 +19532,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &2817663904344200282 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8706677887170178843, guid: cd38593efa241b84fb2990309da01f7d,
@@ -19227,9 +19559,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt9_1_R/Skirt9_2_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &9145202858282953169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19242,6 +19578,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &2835017866627855788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8689148707320073965, guid: cd38593efa241b84fb2990309da01f7d,
@@ -19308,9 +19647,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairOrigin/HairBackRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &3188870645592463568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8326922580406772625, guid: cd38593efa241b84fb2990309da01f7d,
@@ -19332,6 +19675,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.5
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -19914,6 +20258,7 @@ MonoBehaviour:
     eyeMovement:
       confidence: 0.4
       excitement: 0.2
+    eyeGazeMode: 0
     leftEye: {fileID: 4961491997273994134}
     rightEye: {fileID: 7963795750716306849}
     eyesLookingStraight:
@@ -20455,6 +20800,13 @@ MonoBehaviour:
     height: 0.02734857
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
+  enableFaceTracking: 0
+  useAllTrackingKeys: 0
+  faceTrackingMeshes: []
+  faceTrackingBlendshapesSetList: []
+  faceTrackingParameterBehaviors: []
+  visemeDampenMode: 0
+  visemeDampenAmount: 0
 --- !u!114 &3632294995601199279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20485,6 +20837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560fdafd46c74b2db6422fdf0e7f2363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   InheritProbeAnchor: 1
   ProbeAnchor:
     referencePath: AutoAnchorObject
@@ -20532,9 +20887,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt11_1_L/Skirt11_2_L/Skirt11_4_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &8468450024310434706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20547,6 +20906,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &3348195907568289709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1028754220173427474, guid: cd38593efa241b84fb2990309da01f7d,
@@ -20577,9 +20939,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFrontMiddleCenter1_1/HairFrontMiddleCenter1_2
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &1739015045192323419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20592,6 +20958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &3475571504224969884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1155812315683479587, guid: cd38593efa241b84fb2990309da01f7d,
@@ -20661,6 +21030,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.5
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -21100,9 +21470,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt7_1_R/Skirt7_2_R/Skirt7_4_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6557414047386222064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21115,6 +21489,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &3997500781202698379 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7545771052832934860, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21175,9 +21552,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairOrigin/HairBackRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &4299673181448032565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7234345566507723382, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21199,6 +21580,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.5
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -21311,9 +21693,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: CheekRoot/CheekRoot_R/Cheek_Dummy_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &2698649539655701948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21326,6 +21712,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &4343700585281721857 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2050857845129663166, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21356,9 +21745,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairOrigin/HairBackRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!137 &4462801158241893346 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2152437983770115933, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21386,6 +21779,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.5
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -21528,9 +21922,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SkirtRoot/BackSkirt1_1
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &4393923052476267477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21543,6 +21941,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &4721467911173293207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2182003916198477784, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21576,6 +21977,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.5
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -21700,9 +22102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastRibbon/BreastRibbonConstraint/BreastRibbon2/BreastRibbon2_Dummy_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &5150290321285792504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21715,6 +22121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &4905659532692145309 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7216340732326871074, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21751,9 +22160,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HeadDressPBroot/HeadDress_L/HDRibbon1_Dummy_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &3592567012652903469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21766,6 +22179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &4961491997273994134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1951410641895098583, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21790,9 +22206,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt7_1_R/Skirt7_2_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &2084010626717530082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21805,6 +22225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &5082300599662930137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7401109105868319846, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21841,9 +22264,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairSideRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!137 &5271213057573598971 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7572500038552285764, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21880,9 +22307,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/Skirt15_1_R/Skirt15_2_R/Skirt15_4_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &3590416135411297183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21895,6 +22326,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &5383284869443209922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1547912389163446659, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21925,9 +22359,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HeadDressPBroot/HeadDress_R/HDRibbon1_Dummy_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6422947536670384589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21940,6 +22378,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &5488144800737716441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7789044195162434662, guid: cd38593efa241b84fb2990309da01f7d,
@@ -21958,9 +22399,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFront1_1_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &516149396420417491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21973,6 +22418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &5510581878316915183 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7802616056548269392, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22003,9 +22451,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFront1_1_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &2474335005626767654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22018,6 +22470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &5550952021911205213 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7870323503757111778, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22054,9 +22509,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HeadDressPBroot/HeadDress_L/HDRibbon2_Dummy_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6121032378635439923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22069,6 +22528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &5750883430046059187 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1153256917476700660, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22095,7 +22557,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.11, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!137 &5775635820468650028 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 8076888029292594323, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22123,6 +22589,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -22260,7 +22727,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.1, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &5889595194920235039 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8182472432364827808, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22279,9 +22750,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairOrigin/HairBackRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!4 &5922363597675828444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1008376805210107805, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22306,9 +22781,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastRibbon/BreastRibbonConstraint/BreastRibbon1/BreastRibbon1_Dummy_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &5202146237534058807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22321,6 +22800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &5972744578274554251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -949551987628133068, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22743,9 +23225,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SkirtRoot/BackSkirt1_1/BackSkirt1_2/BackSkirt1_4
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &7446144052123478652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22758,6 +23244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &6268020183471734464 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -662719815637075329, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22788,9 +23277,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFront1_1_R/HairFront1_2_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &4295299942522614378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22803,6 +23296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &6276774736873554998 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 8586787433472311433, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22863,9 +23359,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HeadDressPBroot/HeadDress_R/HDRibbon2_Dummy_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6239096781206688097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22878,6 +23378,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &6440672906380362531 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8741536429253953436, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22896,9 +23399,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/Skirt15_1_L/Skirt15_2_L/Skirt15_4_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &4222475046791728545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22911,6 +23418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &6446648080254513635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -484444037552573092, guid: cd38593efa241b84fb2990309da01f7d,
@@ -22961,7 +23471,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.11, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!137 &6801129760435945789 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -120603743845218942, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23004,9 +23518,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HeadDressPBroot/HDChm/HDChm_Dummy_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &89361870642970214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23019,6 +23537,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &6918984542303185938 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4626563765444225197, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23049,9 +23570,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairSideRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &7052994531311264894 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4480881675251883839, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23070,9 +23595,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt11_1_R/Skirt11_2_R/Skirt11_4_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &3209038021967201647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23085,6 +23614,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &7092998333527475401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4782423219532365942, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23407,9 +23939,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SkirtRoot/BackSkirt1_1/BackSkirt1_2
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &785472265022049188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23422,6 +23958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &7144647934407283938 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -4389017861775273891, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23446,9 +23985,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: FrontHairOrigin/HairFrontRoot/HairFrontMiddleCenter1_1/HairFrontMiddleCenter1_2/HairFrontMiddleCenter1_3
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &3864855626106906604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23461,6 +24004,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &7213429298220549725 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -4311405778812697886, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23812,9 +24358,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt7_1_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &625526596412666645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23827,6 +24377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &7534867669780457374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3989966299218336991, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23851,9 +24404,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/Skirt15_1_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &1557209111209952911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23866,6 +24423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &7629450423476777908 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5318945016785155851, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23884,9 +24444,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastsOrigin/Breasts_PBroot_Animation_R/Breasts_PBroot_AnimationSpace_R/Breasts_PBroot_R/Breasts_Dummy1_R/Breasts_Dummy2_R/Breasts_Dummy2_Animation_R/Breasts_Dummy2_Animation2_R/Breasts_Dummy2_Animation3_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &7709148124926695542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3833243137820156727, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23905,9 +24469,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastsOrigin/Breasts_PBroot_Animation_L/Breasts_PBroot_AnimationSpace_L/Breasts_PBroot_L/Breasts_Dummy1_L/Breasts_Dummy1_Animation_L/Breasts_Dummy1_Animation2_L/Breasts_Dummy1_Animation3_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &7844266144180960884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5543261041906825931, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23926,9 +24494,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastsOrigin/Breasts_PBroot_Animation_L/Breasts_PBroot_AnimationSpace_L/Breasts_PBroot_L/Breasts_Dummy1_L/Breasts_Dummy2_L/Breasts_Dummy2_Animation_L/Breasts_Dummy2_Animation2_L/Breasts_Dummy2_Animation3_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!137 &7861489906991189468 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -3663555597768455837, guid: cd38593efa241b84fb2990309da01f7d,
@@ -23959,9 +24531,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt5_1_L/Skirt5_2_L/Skirt5_4_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &1886393458139226377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23974,6 +24550,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &7963795750716306849 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3551960246506442466, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24004,9 +24583,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SkirtRoot/FrontSkirt1_1/FrontSkirt1_2/FrontSkirt1_4
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &4533339766608377419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24019,6 +24602,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &8103747217675756692 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5784798798614552619, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24037,9 +24623,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairOrigin/HairBackRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &8131421747158631380 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5830309992307066731, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24414,9 +25004,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/Skirt15_1_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6370197301755007538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24429,6 +25023,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &8246166389626305034 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -3296155165699490123, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24471,9 +25068,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: CheekRoot/CheekRoot_L/Cheek_Dummy_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &9166475752993837844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24486,6 +25087,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &8527524049502705424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6225708624454144943, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24504,9 +25108,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairOrigin/HairBackRoot
   attachmentMode: 2
+  matchScale: 0
 --- !u!1 &8529443375481857648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2995074638557551921, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24525,9 +25133,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt9_1_L/Skirt9_2_L/Skirt9_4_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &3402061205386316002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24540,6 +25152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &8585128600248891896 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6275044847744777543, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24576,9 +25191,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: BreastRibbon/BreastRibbonConstraint/BreastRibbon1/BreastRibbon1_Dummy_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &5794049071488967130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24591,6 +25210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &8686427716370709893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6394428739693541690, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24633,9 +25255,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt5_1_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &487414670750449765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24648,6 +25274,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &8777701844022357263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2746815749046195792, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24714,9 +25343,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt11_1_L/Skirt11_2_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &8793720122936737122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24729,6 +25362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &9044337155225011012 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -2471912926478039045, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24771,9 +25407,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_R/Skirt5_1_R/Skirt5_2_R/Skirt5_4_R
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &2242146468186139247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24786,6 +25426,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &9143292916364577784 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2390724732042817721, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24804,9 +25447,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HeadDressPBroot
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &3283440866714656489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24819,6 +25466,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &9148664103312683118 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6829538911988528337, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24837,9 +25487,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt11_1_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &7789087750247830579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24852,6 +25506,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &9156638505343349258 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6855352503618123445, guid: cd38593efa241b84fb2990309da01f7d,
@@ -24876,9 +25533,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: SkirtOrigin/SideSkirtRoot_L/Skirt7_1_L/Skirt7_2_L
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &8239292976648435915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24891,6 +25552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1001 &2753443534328003906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25329,6 +25993,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560fdafd46c74b2db6422fdf0e7f2363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   InheritProbeAnchor: 3
   ProbeAnchor:
     referencePath: Armature/Hips
@@ -25370,6 +26037,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df373bf91cf30b4bbd495e11cb1a2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   mergeTarget:
     referencePath: Armature
     targetObject: {fileID: 4725497077758998912}
@@ -26098,6 +26768,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
+      propertyPath: parameters.Array.data[0].bitWidth
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
       propertyPath: parameters.Array.data[0].syncType
       value: 2
       objectReference: {fileID: 0}
@@ -26180,6 +26855,21 @@ PrefabInstance:
         type: 3}
       propertyPath: parameters.Array.data[7].nameOrPrefix
       value: AvatarMod/Costume/WaistRibbon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: _modularAvatarVersionTag.MinimumVersion
+      value: 1.18.0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].representation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: _modularAvatarVersionTag.UpdatedAtVersion
+      value: 1.19.0-rc.0
       objectReference: {fileID: 0}
     - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}

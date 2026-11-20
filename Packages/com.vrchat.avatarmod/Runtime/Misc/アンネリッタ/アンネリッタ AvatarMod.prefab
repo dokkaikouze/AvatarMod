@@ -2329,7 +2329,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.1044228, z: 0.04338788}
   rotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &1879924240820653549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,7 +2546,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.21, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &2171600658262650077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,7 +3069,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.15, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &2679419856601146470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,6 +3514,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: ddcea5a3babd31249ada80604b7e536b, type: 2}
   installTargetMenu: {fileID: 11400000, guid: d456a969af3f3b8408d1a7ba90002f40, type: 2}
 --- !u!1 &2759231098994932441
@@ -3781,7 +3796,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.15, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &3082150047037137849
 GameObject:
   m_ObjectHideFlags: 0
@@ -3896,7 +3915,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.21, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &3267049892592561378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4087,6 +4110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: f1120b601a20c3149a02167911700bd6, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7c2ca6ef043ff464bb0262c4c0d05f17, type: 2}
 --- !u!114 &8658976686974914310
@@ -4101,6 +4127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 7aeb9d534d0cd1a4983e05d3bd041634, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &6360856517587985890
@@ -4115,6 +4144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 30d3272644e015a429c3b3500915448c, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &63090859067614376
@@ -4129,6 +4161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u5F8C\u9AEA.1"
     remapTo: 
@@ -4136,6 +4171,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -4146,6 +4185,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -4233,7 +4276,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.115, z: -0.01}
   rotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &3514885938965538696
 GameObject:
   m_ObjectHideFlags: 0
@@ -4349,7 +4396,11 @@ MonoBehaviour:
   position: {x: 0, y: -0.05, z: -0.04}
   rotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &3576086371039808584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,7 +4918,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.119, z: 0.02}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &4300783735193695568
 GameObject:
   m_ObjectHideFlags: 0
@@ -7018,6 +7073,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 9037467958017561495}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -7157,6 +7213,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 1dbfd5830c31ccd4ea743a69e8f0ef13, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &1353250339623054193
@@ -7171,6 +7230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u80F8"
     remapTo: 
@@ -7178,6 +7240,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -7261,6 +7327,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -7370,6 +7437,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.35
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -7547,7 +7615,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.06, z: 0.012}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &4960316100657481468
 GameObject:
   m_ObjectHideFlags: 0
@@ -8109,6 +8181,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 9037467958017561495}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -8352,7 +8425,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.135, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &6133585986997911345
 GameObject:
   m_ObjectHideFlags: 0
@@ -9248,7 +9325,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.21, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &6448139107853870804
 GameObject:
   m_ObjectHideFlags: 0
@@ -9890,6 +9971,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -10185,6 +10267,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: f475d84041678c141930f5fba7292c77, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 85a24c7595c9eef43b31da7dd53e7a1a, type: 2}
 --- !u!114 &7082343707476753218
@@ -10199,6 +10284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 8282f4f75eefde64994ae7555b6685d7, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7c2ca6ef043ff464bb0262c4c0d05f17, type: 2}
 --- !u!114 &4146310755215467791
@@ -10213,6 +10301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: dda19bc370bdb2245879b43f4381095f, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 85a24c7595c9eef43b31da7dd53e7a1a, type: 2}
 --- !u!114 &7870165769850970874
@@ -10227,6 +10318,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: e62245b8a4d198a4ba9c47cb44a54742, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 85a24c7595c9eef43b31da7dd53e7a1a, type: 2}
 --- !u!114 &3980234086034238885
@@ -10241,6 +10335,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 209f118684d05e848b5c94f436809ce9, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7c2ca6ef043ff464bb0262c4c0d05f17, type: 2}
 --- !u!1 &7465120745726503557
@@ -10577,6 +10674,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -10686,6 +10784,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.35
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -10958,7 +11057,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.065, z: -0.02}
   rotation: {x: 0.07184548, y: 0, z: 0, w: -0.9974158}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &8075431939659750185
 GameObject:
   m_ObjectHideFlags: 0
@@ -11612,7 +11715,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.065, z: -0.02}
   rotation: {x: 0.07184548, y: 0, z: 0, w: -0.9974158}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &8255167174528558616
 GameObject:
   m_ObjectHideFlags: 0
@@ -11798,6 +11905,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 186df6be79235914db77aa91efe3af46, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 85a24c7595c9eef43b31da7dd53e7a1a, type: 2}
 --- !u!114 &756248297775757398
@@ -11812,6 +11922,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 721215cfded8f3642ac4eaaab01ffd40, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 85a24c7595c9eef43b31da7dd53e7a1a, type: 2}
 --- !u!114 &8408673451105341148
@@ -11826,6 +11939,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: bd73eea09aeda2a4482f9cadcc38a8b9, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7c2ca6ef043ff464bb0262c4c0d05f17, type: 2}
 --- !u!114 &4326541399638712731
@@ -11840,6 +11956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 8681c4fd11ca689479bbf96e5ad7ad1e, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 85a24c7595c9eef43b31da7dd53e7a1a, type: 2}
 --- !u!1 &8346450937931704514
@@ -12111,7 +12230,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.135, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &8554566916129264471
 GameObject:
   m_ObjectHideFlags: 0
@@ -12165,7 +12288,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.232, z: 0.01}
   rotation: {x: 0.39474386, y: 0, z: 0, w: 0.91879123}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &8599807369071268066
 GameObject:
   m_ObjectHideFlags: 0
@@ -12210,6 +12337,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: 
   attachmentMode: 2
@@ -13090,7 +13220,11 @@ MonoBehaviour:
   position: {x: 0, y: 0.21, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
+  globalCollision: 0
+  globalCollisionAllowSelf: 1
+  globalCollisionAllowOthers: 1
   globalCollisionFlags: 0
+  _globalCollisionSerializationVersion: 1
 --- !u!1 &9166290583265489686
 GameObject:
   m_ObjectHideFlags: 0
@@ -14068,6 +14202,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
+      propertyPath: parameters.Array.data[0].bitWidth
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
       propertyPath: parameters.Array.data[0].syncType
       value: 2
       objectReference: {fileID: 0}
@@ -14075,6 +14214,21 @@ PrefabInstance:
         type: 3}
       propertyPath: parameters.Array.data[0].nameOrPrefix
       value: AvatarMod/Costume/Costume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: _modularAvatarVersionTag.MinimumVersion
+      value: 1.18.0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: parameters.Array.data[0].representation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
+        type: 3}
+      propertyPath: _modularAvatarVersionTag.UpdatedAtVersion
+      value: 1.19.0-rc.0
       objectReference: {fileID: 0}
     - target: {fileID: 8535449522456090183, guid: 27f61b51d12a5574e970fbd647d9fc9e,
         type: 3}
@@ -21047,6 +21201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: Hips_L/Hips_Weight_L
   attachmentMode: 2
@@ -21063,6 +21220,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &111098160614489463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6475328224629717333, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -21081,6 +21241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: db78ddc4e841f914bb8988eb6eac39a2, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 454e4cb4fa3551141a98508b3d5631d3, type: 2}
 --- !u!114 &8264712200886806666
@@ -21095,6 +21258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064\u84CB"
     remapTo: 
@@ -21102,6 +21268,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -21148,6 +21318,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/FrontHairRoot/RightSideHair_2_1_Dummy/RightSideHair_2_2_Dummy/RightSideHair_2_3_Dummy/RightSideHair_2_4_Dummy
   attachmentMode: 2
@@ -21164,6 +21337,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &327889530510056572 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2532524596106471328, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -21194,6 +21370,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 693336d7cd1e6594ebcfcefc3eb09a5c, type: 2}
   installTargetMenu: {fileID: 11400000, guid: c25ff632fb33c2441ac7a786f2b65f3c, type: 2}
 --- !u!114 &5168193963517874612
@@ -21208,6 +21387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30E2\u30D6\u5F8C"
     remapTo: 
@@ -21215,6 +21397,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -21237,6 +21423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/SideHairRoot
   attachmentMode: 2
@@ -21271,6 +21460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: "SkirtRoot_Back/\u53F3Skirt1a-/RightBackSkirt_6_0_Dummy"
   attachmentMode: 2
@@ -21308,6 +21500,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.3333
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -21444,6 +21637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: c5cdf573decc3b34394049f1f5f169da, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &7366495676700502845
@@ -21458,6 +21654,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30CD\u30C3\u30AF\u30EC\u30B9"
     remapTo: 
@@ -21465,6 +21664,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -21700,6 +21903,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 40848fd77dd0c0d4685c8b9946cc20da, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &861589988487038159
@@ -21714,6 +21920,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u8170\u5E03\u30D9\u30FC\u30EB"
     remapTo: 
@@ -21721,6 +21930,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -21743,6 +21956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: Hips_L
   attachmentMode: 2
@@ -21759,6 +21975,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &1027010381557834002 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -6203395153719846194, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -22833,6 +23052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: fceffba39011b324fbb8e8fc0b6673de, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 0e9018392ae871a4bb39c982471dcdbe, type: 2}
 --- !u!114 &758968757004160580
@@ -22847,6 +23069,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u624B\u888B"
     remapTo: 
@@ -22854,6 +23079,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -22876,6 +23105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a660aa9d4e47d992adcac5a05dd808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   m_Scale: {x: 1.1036309, y: 1, z: 1.1036309}
   legacyScaleProxy: {fileID: 0}
 --- !u!1 &1427006975013808499 stripped
@@ -23743,6 +23975,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: d1e1f25c9d4cc7443aded00a05c30d0a, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &2560028197454019951
@@ -23757,6 +23992,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u524D\u9AEA.\u53F3"
     remapTo: 
@@ -23764,6 +24002,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -23786,6 +24028,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 4981976284747b24a84c9188e2d237be, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7745ce9442e0bf7419f877f843f925a0, type: 2}
 --- !u!114 &5785105544500185711
@@ -23800,6 +24045,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u30CB\u30FC\u30BD\u30C3\u30AF\u30B9\u7528"
     remapTo: 
@@ -23807,6 +24055,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -23838,6 +24090,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.3333
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -23956,6 +24209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Cape_5_Root
   attachmentMode: 2
@@ -23990,6 +24246,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/FrontHairRoot/RightSideHair_2_1_Dummy/RightSideHair_2_2_Dummy/RightSideHair_2_3_Dummy/RightSideHair_2_4_Dummy/RightSideHair_2_Dummy_end
   attachmentMode: 2
@@ -24006,6 +24265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &1711974644055113832 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 3489049083654650804, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -24483,6 +24745,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: "SkirtRoot_Back/\u53F3Skirt1a-/RightBackSkirt_6_0_Dummy"
   attachmentMode: 2
@@ -24499,6 +24764,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &1851113527861393666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4748542731044027682, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -24520,6 +24788,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.3333
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -24638,6 +24907,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 2f29e5be0ed952f4a8206a5a9aaa85ca, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 526a310254c489f4aae7e067bd8ef939, type: 2}
 --- !u!114 &5098359114765167414
@@ -24652,6 +24924,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0B"
     remapTo: 
@@ -24659,6 +24934,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -24870,6 +25149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 58d0ed98b875dbb4bb8ecc8ab1437484, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &2573738988009322396
@@ -24884,6 +25166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u9AEA\u7559\u3081\u6A2A"
     remapTo: 
@@ -24891,6 +25176,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -24925,6 +25214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Cape_4_Root
   attachmentMode: 2
@@ -24947,6 +25239,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/SideHairRoot
   attachmentMode: 2
@@ -24963,6 +25258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &2081473164139255685 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4272597358912859225, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -24987,6 +25285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Breasts_Origin/BaseBreastRoot/BaseBreast_PBroot_Animation_R/BaseBreast_PBroot_AnimationSpace_R/BaseBreast_PBroot_R/BaseBreast_Boing1_R/BaseBreast_Boing2_R/BaseBreast_Boing3_R/BaseBreast_Root_R/BaseBreast_Dummy1_R/BaseBreast_Dummy2_R/BaseBreast_Dummy2_Animation1_R/BaseBreast_Dummy2_Animation2_R/BaseBreast_Dummy2_Animation3_R
   attachmentMode: 2
@@ -25009,6 +25310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/FrontHairRoot/RightSideHair_2_1_Dummy/RightSideHair_2_2_Dummy/RightSideHair_2_3_Dummy
   attachmentMode: 2
@@ -25025,6 +25329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &2118203275635679781 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4237023933650950649, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -25043,6 +25350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 998008ecb0eb1244fb59c6f93d990684, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &4098049289531185364
@@ -25057,6 +25367,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D2-\u5DE6\u7E8F\u3081"
     remapTo: 
@@ -25064,6 +25377,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -25116,6 +25433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Breasts_Origin/BaseBreastRoot/BaseBreast_PBroot_Animation_R/BaseBreast_PBroot_AnimationSpace_R/BaseBreast_PBroot_R/BaseBreast_Boing1_R/BaseBreast_Boing2_R/BaseBreast_Boing3_R/BaseBreast_Root_R/BaseBreast_Dummy1_R/BaseBreast_Dummy2_R/BaseBreast_Dummy3_R/BaseBreast_Dummy3_Animation1_R/BaseBreast_Dummy3_Animation2_R/BaseBreast_Dummy3_Animation3_R
   attachmentMode: 2
@@ -25156,6 +25476,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/SideHairRoot/RightSideHair_3_2_Dummy/RightSideHair_3_3_Dummy
   attachmentMode: 2
@@ -25172,6 +25495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &2616582158380720092 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8942380958210137088, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -25391,6 +25717,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: CheekRoot/CheekRoot_L/Cheek_Dummy_L
   attachmentMode: 2
@@ -25407,6 +25736,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &2844005772034492165 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 62558190944156889, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -25458,6 +25790,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -25665,6 +25998,7 @@ MonoBehaviour:
     eyeMovement:
       confidence: 0.4
       excitement: 0.2
+    eyeGazeMode: 0
     leftEye: {fileID: 4846579247091698933}
     rightEye: {fileID: 7574305257051523778}
     eyesLookingStraight:
@@ -25745,7 +26079,7 @@ MonoBehaviour:
     isDefault: 1
   - isEnabled: 0
     type: 3
-    animatorController: {fileID: 9100000, guid: 3d294dda44c01664aadbe8e55858177e,
+    animatorController: {fileID: 9100000, guid: 76198e2b37d6e514cbd799ac7bf91a16,
       type: 2}
     mask: {fileID: 31900000, guid: b2b8bad9583e56a46a3e21795e96ad92, type: 2}
     isDefault: 0
@@ -26206,6 +26540,13 @@ MonoBehaviour:
     height: 0.03279696
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
+  enableFaceTracking: 0
+  useAllTrackingKeys: 0
+  faceTrackingMeshes: []
+  faceTrackingBlendshapesSetList: []
+  faceTrackingParameterBehaviors: []
+  visemeDampenMode: 0
+  visemeDampenAmount: 0
 --- !u!114 &5711809584803165173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26236,6 +26577,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560fdafd46c74b2db6422fdf0e7f2363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   InheritProbeAnchor: 1
   ProbeAnchor:
     referencePath: AutoAnchorObject
@@ -26308,6 +26652,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: "SkirtRoot_Back/\u5DE6Skirt1a-/LeftBackSkirt_6_0_Dummy"
   attachmentMode: 2
@@ -26330,6 +26677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 8471020d170a63d4a85fb3a5ca0a70d0, type: 2}
   installTargetMenu: {fileID: 11400000, guid: f0bef537f29745c40af710a0595b0ea9, type: 2}
 --- !u!114 &426939231363047044
@@ -26344,6 +26694,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Breast/BreastsType
     remapTo: 
@@ -26351,6 +26704,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -26580,6 +26937,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Breasts_Origin/ClothedBreastRoot/ClothedBreast_PBroot_Animation_R/ClothedBreast_PBroot_AnimationSpace_R/ClothedBreast_PBroot_R/ClothedBreast_Boing1_R/ClothedBreast_Boing2_R/ClothedBreast_Boing3_R/ClothedBreast_Root_R/ClothedBreast_Dummy1_R/ClothedBreast_Dummy2_R/ClothedBreast_Dummy2_Animation1_R/ClothedBreast_Dummy2_Animation2_R/ClothedBreast_Dummy2_Animation3_R
   attachmentMode: 2
@@ -26632,6 +26992,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a660aa9d4e47d992adcac5a05dd808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   m_Scale: {x: 1.1905404, y: 1, z: 1.1905404}
   legacyScaleProxy: {fileID: 0}
 --- !u!137 &3890606626665663629 stripped
@@ -26694,6 +27057,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: Hips_R
   attachmentMode: 2
@@ -26710,6 +27076,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &4013995461263017764 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1161123738790296824, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -26896,6 +27265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 341a36fd0104d954aa15a535f3642c8a, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &1679793955470352879
@@ -26910,6 +27282,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u524D\u639B\u3051\u7A74"
     remapTo: 
@@ -26917,6 +27292,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -26951,6 +27330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: Hips_R/Hips_Weight_R
   attachmentMode: 2
@@ -26967,6 +27349,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &4170973153906944837 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2183108399159496857, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -27345,6 +27730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 78be276fe43c9a549acb86ca41e2622f, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7745ce9442e0bf7419f877f843f925a0, type: 2}
 --- !u!114 &5019862223662350930
@@ -27359,6 +27747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC"
     remapTo: 
@@ -27366,6 +27757,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -27406,6 +27801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 7cdf2446615f11543a4028a1943e0439, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 0e9018392ae871a4bb39c982471dcdbe, type: 2}
 --- !u!114 &3040623712458925568
@@ -27420,6 +27818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC\u30D5\u30EA\u30EB"
     remapTo: 
@@ -27427,6 +27828,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -27455,6 +27860,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Breasts_Origin/ClothedBreastRoot/ClothedBreast_PBroot_Animation_R/ClothedBreast_PBroot_AnimationSpace_R
   attachmentMode: 2
@@ -27477,6 +27885,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     remapTo: 
@@ -27484,6 +27895,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -27512,6 +27927,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/SideHairRoot
   attachmentMode: 2
@@ -27546,6 +27964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 75838f109adb9b74e9d25d78d3bd52be, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &4518862359418189011
@@ -27560,6 +27981,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u6A2A\u9AEA1"
     remapTo: 
@@ -27567,6 +27991,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -27601,6 +28029,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/SideHairRoot/RightSideHair_3_2_Dummy
   attachmentMode: 2
@@ -27617,6 +28048,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!4 &4846579247091698933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1951410641895098583, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -27653,6 +28087,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 55960a504ca811b4493245e99a33e2c2, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &6832690856239309271
@@ -27667,6 +28104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D3-\u3071\u3063\u3064\u3093"
     remapTo: 
@@ -27674,6 +28114,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -27717,6 +28161,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 2
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -27838,6 +28283,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 1
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -27967,6 +28413,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Breasts_Origin/ClothedBreastRoot/ClothedBreast_PBroot_Animation_L/ClothedBreast_PBroot_AnimationSpace_L/ClothedBreast_PBroot_L/ClothedBreast_Boing1_L/ClothedBreast_Boing2_L/ClothedBreast_Boing3_L/ClothedBreast_Root_L/ClothedBreast_Dummy1_L/ClothedBreast_Dummy2_L/ClothedBreast_Dummy2_Animation1_L/ClothedBreast_Dummy2_Animation2_L/ClothedBreast_Dummy2_Animation3_L
   attachmentMode: 2
@@ -27998,6 +28447,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.28
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -28116,6 +28566,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: ffe2f4c98c3a2e947847ea17e067b340, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &4969269019810925294
@@ -28130,6 +28583,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C8\u524D"
     remapTo: 
@@ -28137,6 +28593,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28171,6 +28631,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Breasts_Origin/BaseBreastRoot/BaseBreast_PBroot_Animation_L/BaseBreast_PBroot_AnimationSpace_L/BaseBreast_PBroot_L/BaseBreast_Boing1_L/BaseBreast_Boing2_L/BaseBreast_Boing3_L/BaseBreast_Root_L/BaseBreast_Dummy1_L/BaseBreast_Dummy2_L/BaseBreast_Dummy3_L/BaseBreast_Dummy3_Animation1_L/BaseBreast_Dummy3_Animation2_L/BaseBreast_Dummy3_Animation3_L
   attachmentMode: 2
@@ -28205,6 +28668,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: ac73a3ec4eec2e84fb8f1ef0e45d4510, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &1608208272735084899
@@ -28219,6 +28685,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u524D\u9AEA.\u5DE6"
     remapTo: 
@@ -28226,6 +28695,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28440,6 +28913,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 6c044d52066760046b9152bf62f90522, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &7241358434625484602
@@ -28454,6 +28930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B9\u30AB\u30FC\u30C8\u5F8C"
     remapTo: 
@@ -28461,6 +28940,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28489,6 +28972,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 0
   subPath: "SkirtRoot_Back/\u5DE6Skirt1a-/LeftBackSkirt_6_0_Dummy"
   attachmentMode: 2
@@ -28505,6 +28991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &6117532222490132698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -915242973929309434, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -28523,6 +29012,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 9923b7d90c777ee4db61af8774ffd2d0, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 8aae704840fd4ed45930eae1712da0ee, type: 2}
 --- !u!114 &184046206038066494
@@ -28537,6 +29029,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9\u30A4\u30F3\u30CA\u30FC\u7528"
     remapTo: 
@@ -28544,6 +29039,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28566,6 +29065,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: fbfab991d94527b4e8424630eb45330c, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &1045638199625794880
@@ -28580,6 +29082,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u4E09\u3064\u7DE8\u307F\u53F3"
     remapTo: 
@@ -28587,6 +29092,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28609,6 +29118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 943ca055eae24d74487801068a92296e, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7745ce9442e0bf7419f877f843f925a0, type: 2}
 --- !u!114 &1580513324055062990
@@ -28623,6 +29135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u9996\u8F2A"
     remapTo: 
@@ -28630,6 +29145,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28652,6 +29171,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 757f1ee41e581984db5bfbc1b543d4ee, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 0e9018392ae871a4bb39c982471dcdbe, type: 2}
 --- !u!114 &736081655898371672
@@ -28666,6 +29188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
     remapTo: 
@@ -28673,6 +29198,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28701,6 +29230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Cape_5_Root
   attachmentMode: 2
@@ -28741,6 +29273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 2cd2eb57a60f5814082f31a0a21bcf49, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 8aae704840fd4ed45930eae1712da0ee, type: 2}
 --- !u!114 &1614922467602715054
@@ -28755,6 +29290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u4E0A"
     remapTo: 
@@ -28762,6 +29300,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28796,6 +29338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: faa1cb3d1356e014199d45a677802afa, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &6977447809968831575
@@ -28810,6 +29355,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u3042\u307B\u3052"
     remapTo: 
@@ -28817,6 +29365,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28845,6 +29397,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 7b1d29b013e1c7040906d550734e13a1, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &5486744767567690507
@@ -28859,6 +29414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u8170\u5E03"
     remapTo: 
@@ -28866,6 +29424,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28888,6 +29450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: a3236f6336eab954fbde74df4b6b7a43, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 8aae704840fd4ed45930eae1712da0ee, type: 2}
 --- !u!114 &3612814248712731045
@@ -28902,6 +29467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u524D\u639B\u3051\u7528"
     remapTo: 
@@ -28909,6 +29477,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -28931,6 +29503,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 4d02d1d5be85d4b459c4a0dc0e90aa5d, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 526a310254c489f4aae7e067bd8ef939, type: 2}
 --- !u!114 &4701704656112892497
@@ -28945,6 +29520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30D3\u30AD\u30CB\u84CB"
     remapTo: 
@@ -28952,6 +29530,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -29155,6 +29737,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u624B\u888B"
     remapTo: 
@@ -29162,6 +29747,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -29190,6 +29779,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: f02dcfeecdd24a446a2efcfdd8f5c8db, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 0e9018392ae871a4bb39c982471dcdbe, type: 2}
 --- !u!114 &308226054425107609
@@ -29204,6 +29796,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD\u30D5\u30EA\u30EB"
     remapTo: 
@@ -29211,6 +29806,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -29233,6 +29832,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 26321f95ccf260a46bf9fd1bf9a5ae6e, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 454e4cb4fa3551141a98508b3d5631d3, type: 2}
 --- !u!114 &3910814803704934481
@@ -29247,6 +29849,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u3071\u3093\u3064"
     remapTo: 
@@ -29254,6 +29859,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -29792,6 +30401,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: c163f0ae44dc18549a3da442459efc6b, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &1396741982197854271
@@ -29806,6 +30418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u4E09\u3064\u7DE8\u307F\u5DE6"
     remapTo: 
@@ -29813,6 +30428,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -29841,6 +30460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 0630c0d0945b8f646a603d9cdd0d16ea, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &6621546023505783113
@@ -29855,6 +30477,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u982D\u5DFE\u30D9\u30FC\u30EB"
     remapTo: 
@@ -29862,6 +30487,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -29878,6 +30507,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 0630c0d0945b8f646a603d9cdd0d16ea, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!1 &7052994511546808941 stripped
@@ -30336,6 +30968,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.3333
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -30454,6 +31087,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: CheekRoot/CheekRoot_R/Cheek_Dummy_R
   attachmentMode: 2
@@ -30470,6 +31106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &7153986052077223225 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -4259947779345103131, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -30506,6 +31145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Breasts_Origin/ClothedBreastRoot/ClothedBreast_PBroot_Animation_L/ClothedBreast_PBroot_AnimationSpace_L
   attachmentMode: 2
@@ -30528,6 +31170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 436d20a3a6c15924888bcebe8d362b9e, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &2327491114213826699
@@ -30542,6 +31187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30B1\u30FC\u30D7\u5171\u901A"
     remapTo: 
@@ -30549,6 +31197,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -30571,6 +31223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: d8ca6bb7ffbda6445937101eeb0acb32, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7745ce9442e0bf7419f877f843f925a0, type: 2}
 --- !u!114 &5198442821992628720
@@ -30585,6 +31240,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u3071\u3093\u3064\u7528"
     remapTo: 
@@ -30592,6 +31250,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -30614,6 +31276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: f42901a4938512a4789546cecffac86d, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &8475583475182016538
@@ -30628,6 +31293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u524D\u9AEA.\u4E2D1-\u6A19\u6E96"
     remapTo: 
@@ -30635,6 +31303,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -30669,6 +31341,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: ff687b38355b3bf4a93a440856fa9dc7, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 0e9018392ae871a4bb39c982471dcdbe, type: 2}
 --- !u!114 &2121346164545979987
@@ -30683,6 +31358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u80A1\u9593"
     remapTo: 
@@ -30690,6 +31368,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -30712,6 +31394,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u30A2\u30FC\u30E0\u30AB\u30D0\u30FC"
     remapTo: 
@@ -30719,6 +31404,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -30741,6 +31430,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 13ce24c937f13e044a0c7ad7ce19ff05, type: 2}
   installTargetMenu: {fileID: 11400000, guid: c25ff632fb33c2441ac7a786f2b65f3c, type: 2}
 --- !u!114 &6999201651864264606
@@ -30755,6 +31447,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Costume/Shoes
     remapTo: 
@@ -30762,6 +31457,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -30790,6 +31489,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/FrontHairRoot/RightSideHair_2_1_Dummy/RightSideHair_2_2_Dummy
   attachmentMode: 2
@@ -30806,6 +31508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!1 &7597759165395489464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5681600774876916068, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -30824,6 +31529,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 69006cd219e423f4fb165cf55bd57e48, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 526a310254c489f4aae7e067bd8ef939, type: 2}
 --- !u!114 &5102612209569254189
@@ -30838,6 +31546,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u4E73\u9996\u30D4\u30A2\u30B9"
     remapTo: 
@@ -30845,6 +31556,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -30867,6 +31582,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/FrontHairRoot/RightSideHair_2_1_Dummy
   attachmentMode: 2
@@ -30883,6 +31601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &7605683190866524956 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -3592358572144426816, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -30913,6 +31634,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: f7ef3e156fd2bf74886c7ef3ca619859, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7745ce9442e0bf7419f877f843f925a0, type: 2}
 --- !u!114 &1988985570211831282
@@ -30927,6 +31651,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u30A4\u30F3\u30CA\u30FC\u9996\u4E0A"
     remapTo: 
@@ -30934,6 +31661,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -30974,6 +31705,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 223a9f74eb6829c499fb0c29d7078f8b, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &2008279190292423117
@@ -30988,6 +31722,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u524D\u639B\u3051"
     remapTo: 
@@ -30995,6 +31732,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -31023,6 +31764,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Breasts_Origin/BaseBreastRoot/BaseBreast_PBroot_Animation_L/BaseBreast_PBroot_AnimationSpace_L/BaseBreast_PBroot_L/BaseBreast_Boing1_L/BaseBreast_Boing2_L/BaseBreast_Boing3_L/BaseBreast_Root_L/BaseBreast_Dummy1_L/BaseBreast_Dummy2_L/BaseBreast_Dummy2_Animation1_L/BaseBreast_Dummy2_Animation2_L/BaseBreast_Dummy2_Animation3_L
   attachmentMode: 2
@@ -31045,6 +31789,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 10
   subPath: HairRoot/SideHairRoot/RightSideHair_3_2_Dummy/RightSideHair_3_3_Dummy/RightSideHair_3_4_Dummy
   attachmentMode: 2
@@ -31061,6 +31808,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5bf908a199a4648845ebe2fd3b5a4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
 --- !u!137 &7933644549752484977 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5309822947844116397, guid: 5b19403b0a5b0bf4e914f5251538d049,
@@ -31857,6 +32607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: ccac6072fc0af4f4fabf13f9f732d963, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 7745ce9442e0bf7419f877f843f925a0, type: 2}
 --- !u!114 &4681011415537082775
@@ -31871,6 +32624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes1/\u7E26\u30D7\u30EC\u30FC\u30C8"
     remapTo: 
@@ -31878,6 +32634,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -31900,6 +32660,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: b25e388f51163734287fc17ddeb1fb7d, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cfed84b0ca07cde4a83a0924ba8a46ef, type: 2}
 --- !u!114 &68017319837713431
@@ -31914,6 +32677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u982D\u5DFE"
     remapTo: 
@@ -31921,6 +32687,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -31937,6 +32707,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: b25e388f51163734287fc17ddeb1fb7d, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!137 &8433207556813222813 stripped
@@ -31981,6 +32754,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 34f2332b32b8e4b498054fd565be99a6, type: 2}
   installTargetMenu: {fileID: 11400000, guid: c25ff632fb33c2441ac7a786f2b65f3c, type: 2}
 --- !u!114 &3116200893560667006
@@ -31995,6 +32771,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30E2\u30D6\u524D"
     remapTo: 
@@ -32002,6 +32781,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -32024,6 +32807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a660aa9d4e47d992adcac5a05dd808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   m_Scale: {x: 1.1036309, y: 1, z: 1.1036309}
   legacyScaleProxy: {fileID: 0}
 --- !u!137 &8634835392373103419 stripped
@@ -32059,6 +32845,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.28
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -32171,6 +32958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: f8c040b65ba69be4d9a596fc4b900188, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &4206630627165141111
@@ -32185,6 +32975,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u5F8C\u9AEA.\u9AEA\u7559\u3081"
     remapTo: 
@@ -32192,6 +32985,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -32223,6 +33020,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.3333
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -32353,6 +33151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a660aa9d4e47d992adcac5a05dd808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   m_Scale: {x: 1.1905404, y: 1, z: 1.1905404}
   legacyScaleProxy: {fileID: 0}
 --- !u!1 &8966149075205964743 stripped
@@ -32373,6 +33174,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 548dacfa6c003884eaaf3a4ac74d7e98, type: 2}
   installTargetMenu: {fileID: 11400000, guid: cd78d8df267c4634db3e8252a3f35b8a, type: 2}
 --- !u!114 &6945998683544280635
@@ -32387,6 +33191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/hair/\u5F8C\u9AEA.2"
     remapTo: 
@@ -32394,6 +33201,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -32431,6 +33242,7 @@ MonoBehaviour:
   IsActive: 1
   GlobalWeight: 0.3333
   TargetTransform: {fileID: 0}
+  SmoothingFactor: 0
   SolveInLocalSpace: 0
   FreezeToWorld: 0
   RebakeOffsetsWhenUnfrozen: 0
@@ -32543,6 +33355,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 8
   subPath: Cape_4_Root
   attachmentMode: 2
@@ -32815,6 +33630,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 294409a334ee8fc4ca540dda3718eacf, type: 2}
   installTargetMenu: {fileID: 11400000, guid: c25ff632fb33c2441ac7a786f2b65f3c, type: 2}
 --- !u!114 &1838129249378830091
@@ -32829,6 +33647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/clothes2/\u30A2\u30A4\u30DE\u30B9\u30AF"
     remapTo: 
@@ -32836,6 +33657,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -32858,6 +33683,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 055fa2c8fe9e67f4eae4c559462fa05c, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 0e9018392ae871a4bb39c982471dcdbe, type: 2}
 --- !u!114 &1306975592570860866
@@ -32872,6 +33700,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: "AvatarMod/Costume/body/\u30CB\u30FC\u30BD"
     remapTo: 
@@ -32879,6 +33710,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -33010,6 +33845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560fdafd46c74b2db6422fdf0e7f2363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   InheritProbeAnchor: 3
   ProbeAnchor:
     referencePath: Armature/Hips
@@ -33051,6 +33889,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df373bf91cf30b4bbd495e11cb1a2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   mergeTarget:
     referencePath: Armature
     targetObject: {fileID: 5047433491380389603}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8172878027369132816
+--- !u!1 &6908874797293017430
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6865047033186000357}
-  - component: {fileID: 6703941436633997749}
-  - component: {fileID: 5079741877812521676}
-  - component: {fileID: 1572896850514566300}
-  - component: {fileID: 3133544235100073160}
-  - component: {fileID: 1736008929766965710}
+  - component: {fileID: 128567717797095768}
+  - component: {fileID: 2980369928227704060}
+  - component: {fileID: 8130840381807333716}
+  - component: {fileID: 4729993172419496030}
+  - component: {fileID: 1505769179064287086}
+  - component: {fileID: 4927498400319347162}
   m_Layer: 0
   m_Name: FaceEmoPrefab
   m_TagString: Untagged
@@ -21,13 +21,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6865047033186000357
+--- !u!4 &128567717797095768
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172878027369132816}
+  m_GameObject: {fileID: 6908874797293017430}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -36,19 +36,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6703941436633997749
+--- !u!114 &2980369928227704060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172878027369132816}
+  m_GameObject: {fileID: 6908874797293017430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 9100000, guid: abe92103e3446bf4d8d606c97c01a09d, type: 2}
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.3
+    MinimumVersion: 1.18.0
+  animator: {fileID: 9100000, guid: 32d591c0a8a2b7d45a8681190dad5449, type: 2}
   layerType: 5
   deleteAttachedAnimator: 1
   pathMode: 1
@@ -58,32 +61,38 @@ MonoBehaviour:
     targetObject: {fileID: 0}
   layerPriority: 0
   mergeAnimatorMode: 0
---- !u!114 &5079741877812521676
+--- !u!114 &8130840381807333716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172878027369132816}
+  m_GameObject: {fileID: 6908874797293017430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuToAppend: {fileID: 11400000, guid: f36c0360e9e10814cb898e7910fd3a7f, type: 2}
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.3
+    MinimumVersion: 1.18.0
+  menuToAppend: {fileID: 11400000, guid: 19c44118489474f40b08dc9b110bc92b, type: 2}
   installTargetMenu: {fileID: 0}
---- !u!114 &1572896850514566300
+--- !u!114 &4729993172419496030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172878027369132816}
+  m_GameObject: {fileID: 6908874797293017430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.3
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: CN_CONTROLLER_TYPE_QUEST
     remapTo: 
@@ -91,6 +100,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -101,6 +114,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -111,6 +128,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -121,6 +142,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -131,6 +156,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -141,6 +170,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -151,6 +184,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -161,6 +198,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -171,6 +212,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -181,6 +226,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -191,6 +240,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -201,6 +254,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -211,6 +268,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 1
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -221,6 +282,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -231,6 +296,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -241,6 +310,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -251,6 +324,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -261,6 +338,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -271,6 +352,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -281,6 +366,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -291,6 +380,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -301,6 +394,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -311,6 +408,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -321,6 +422,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -331,29 +436,33 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
     m_overrideAnimatorDefaults: 0
---- !u!114 &3133544235100073160
+--- !u!114 &1505769179064287086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172878027369132816}
+  m_GameObject: {fileID: 6908874797293017430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1cec12bf093dfe4f9580f58da3ec3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1736008929766965710
+--- !u!114 &4927498400319347162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172878027369132816}
+  m_GameObject: {fileID: 6908874797293017430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7295bd34fd3ed2d43a44ce3eb08bec9d, type: 3}

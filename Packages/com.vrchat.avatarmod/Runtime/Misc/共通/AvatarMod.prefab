@@ -41,7 +41,6 @@ Transform:
   - {fileID: 7800849313511066238}
   - {fileID: 6316215527280138163}
   - {fileID: 1480801961356939128}
-  - {fileID: 3804701513393048199}
   - {fileID: 1783262201730743235}
   - {fileID: 4080967113530248245}
   - {fileID: 8671806998749701562}
@@ -52,6 +51,8 @@ Transform:
   - {fileID: 5173247130510561977}
   - {fileID: 6148820846169115403}
   - {fileID: 8709149003400045710}
+  - {fileID: 3804701513393048199}
+  - {fileID: 978311158492192731}
   - {fileID: 8211248576437974259}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67,6 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   animator: {fileID: 9100000, guid: c4fc01858ff273d4eae136206fde04b9, type: 2}
   layerType: 5
   deleteAttachedAnimator: 0
@@ -89,6 +93,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 7da7ee5f690e46744b15382d9ec8a9a5, type: 2}
   installTargetMenu: {fileID: 0}
 --- !u!114 &8535449522456090183
@@ -103,6 +110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters: []
 --- !u!114 &4045242108564431531
 MonoBehaviour:
@@ -116,6 +126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c938d7d8a741df99f2eda501b3a6fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   m_mmdWorldSupport: 0
 --- !u!1 &235537689999322988
 GameObject:
@@ -162,6 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 553df7eaa2e33d84d81f11151b41363e, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &5162237940790722348
@@ -176,6 +192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: "AvatarMod/\u306C\u308B\u3066\u304B\u808C"
     remapTo: 
@@ -183,7 +202,105 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.1
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
+--- !u!1 &980329038073481177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978311158492192731}
+  - component: {fileID: 7087300943626126645}
+  - component: {fileID: 7594678560171387289}
+  m_Layer: 0
+  m_Name: "[Option] \u30CF\u30F3\u30C9\u30B5\u30A4\u30F3 - Gesture"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &978311158492192731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980329038073481177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6461410430392657849}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7087300943626126645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980329038073481177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.1
+    MinimumVersion: 1.18.0
+  menuToAppend: {fileID: 11400000, guid: 4fed18aec12c1b8468e755c7e997a946, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
+--- !u!114 &7594678560171387289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980329038073481177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
+  parameters:
+  - nameOrPrefix: AvatarMod/Gesture/Finger
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
+  - nameOrPrefix: AvatarMod/Gesture/Immediate
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 1
@@ -287,6 +404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 760814665e7bf7b4e9fa695b5c6b300d, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &8781932133211191120
@@ -301,6 +421,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/HeadChop
     remapTo: 
@@ -308,6 +431,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 1
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -403,6 +530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: f5278349c71a60e438b382e745869373, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &48992473581310659
@@ -417,6 +547,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/ContactShadows
     remapTo: 
@@ -424,6 +557,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -473,6 +610,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: b3e1ab24fcd285c45b56c018e40f26a3, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &1429736397223523571
@@ -487,6 +627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/LTCGI
     remapTo: 
@@ -494,6 +637,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -543,9 +690,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 5
   subPath: 
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6026001320695102239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,9 +709,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49bb23f95a7baca4186efa68bc5891b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_manualRemap: 1
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.2
+    MinimumVersion: 1.18.0
+  m_manualRemap: 0
   m_colliderToHijack: 9
-  m_lowPriority: 1
+  m_lowPriority: 0
   m_rootTransform:
     referencePath: 
     targetObject: {fileID: 0}
@@ -615,6 +769,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: f346e88cbd90ebd4c83e50df2cd77564, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &6880401003652150117
@@ -629,6 +786,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: "AvatarMod/\u76EEEmission"
     remapTo: 
@@ -636,6 +796,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.03
     saved: 1
     hasExplicitDefaultValue: 1
@@ -1164,6 +1328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: fcfb0fc896fc2b44b86cc67f6a6e3210, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &4145454958367915740
@@ -1178,6 +1345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/SSAO
     remapTo: 
@@ -1185,6 +1355,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 1
@@ -1236,6 +1410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 9ae056bddf49bc4438ae6b6d9af1164c, type: 2}
   installTargetMenu: {fileID: 0}
 --- !u!114 &4424335630928599327
@@ -1250,6 +1427,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/RenderQueueChange
     remapTo: 
@@ -1257,6 +1437,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -1306,6 +1490,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: bce97fa772ab659469592eb44aa593d5, type: 2}
   installTargetMenu: {fileID: 11400000, guid: f0bef537f29745c40af710a0595b0ea9, type: 2}
 --- !u!114 &597189575863660812
@@ -1320,6 +1507,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: AvatarMod/Breast/Height
     remapTo: 
@@ -1327,6 +1517,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.5
     saved: 1
     hasExplicitDefaultValue: 1
@@ -1376,6 +1570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 55d8322446e6e3e4a96e61ef2ce3541d, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &7326683196800882472
@@ -1390,6 +1587,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Shadow
     remapTo: 
@@ -1397,6 +1597,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -1446,9 +1650,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   boneReference: 6
   subPath: 
   attachmentMode: 2
+  matchScale: 0
 --- !u!114 &6340310047868522654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1461,9 +1669,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49bb23f95a7baca4186efa68bc5891b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_manualRemap: 1
-  m_colliderToHijack: 8
-  m_lowPriority: 1
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.2
+    MinimumVersion: 1.18.0
+  m_manualRemap: 0
+  m_colliderToHijack: 14
+  m_lowPriority: 0
   m_rootTransform:
     referencePath: 
     targetObject: {fileID: 0}
@@ -1520,6 +1731,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: d432338de2f3acc4b8a06326a005813f, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &687860126854220133
@@ -1534,6 +1748,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/flagShadowStrength
     remapTo: 
@@ -1541,6 +1758,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 0
     hasExplicitDefaultValue: 1
@@ -1589,6 +1810,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   animator: {fileID: 0}
   layerType: 5
   deleteAttachedAnimator: 1
@@ -1644,6 +1868,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 0}
   installTargetMenu: {fileID: 0}
 --- !u!114 &5637847080924482470
@@ -1658,6 +1885,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: AvatarMod/Light
     remapTo: 
@@ -1665,6 +1895,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.5
     saved: 0
     hasExplicitDefaultValue: 1
@@ -1714,6 +1948,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 1d4d5522170c3d440833334fc56f8279, type: 2}
   installTargetMenu: {fileID: 11400000, guid: f0bef537f29745c40af710a0595b0ea9, type: 2}
 --- !u!114 &5064238011629146978
@@ -1728,6 +1965,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: AvatarMod/Breast/Space
     remapTo: 
@@ -1735,6 +1975,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.5
     saved: 1
     hasExplicitDefaultValue: 1
@@ -1784,6 +2028,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 061d0fe3ec1b24d4bbcfcdea6acb528d, type: 2}
   installTargetMenu: {fileID: 11400000, guid: f0bef537f29745c40af710a0595b0ea9, type: 2}
 --- !u!114 &7482347559745865669
@@ -1798,6 +2045,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: AvatarMod/Breast/Size
     remapTo: 
@@ -1805,6 +2055,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.5
     saved: 1
     hasExplicitDefaultValue: 1
@@ -1815,6 +2069,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 1
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 1
@@ -1825,6 +2083,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 1
@@ -1873,6 +2135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: AvatarMod/ShadowStrength
     remapTo: 
@@ -1880,6 +2145,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.25
     saved: 1
     hasExplicitDefaultValue: 1
@@ -1929,6 +2198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: ed9ea6985d8880845abb1d1b7821c4f8, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &8656720133394300823
@@ -1943,6 +2215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: AvatarMod/RimShade
     remapTo: 
@@ -1950,6 +2225,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.5
     saved: 1
     hasExplicitDefaultValue: 1
@@ -1960,6 +2239,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -2008,6 +2291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   animator: {fileID: 0}
   layerType: 5
   deleteAttachedAnimator: 1
@@ -2049,7 +2335,6 @@ Transform:
   m_Children:
   - {fileID: 2227329954711358472}
   - {fileID: 4116310836465527487}
-  - {fileID: 4114311733433017478}
   m_Father: {fileID: 6461410430392657849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7451172289923407987
@@ -2098,6 +2383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   animator: {fileID: 9100000, guid: c02398e81a5a60c44bcd5691f5a9e366, type: 2}
   layerType: 0
   deleteAttachedAnimator: 0
@@ -2120,6 +2408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 392159be186dc3d42a179a4cc056fced, type: 2}
   installTargetMenu: {fileID: 0}
 --- !u!114 &3920685836080823511
@@ -2134,6 +2425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: VRCSupine
     remapTo: 
@@ -2141,6 +2435,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 1
     localOnly: 0
+    bitWidth: 6
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -2151,6 +2449,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -2161,6 +2463,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -2171,6 +2477,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 5
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -2181,6 +2491,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 1
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 1
@@ -2191,6 +2505,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 1
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -2240,6 +2558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 8edaa064273964e42a8f8577b5b550a7, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &2257289880926770803
@@ -2254,6 +2575,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/P_Squish
     remapTo: 
@@ -2261,100 +2585,14 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
---- !u!1 &8385598662170681234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4114311733433017478}
-  - component: {fileID: 2280435550697484388}
-  - component: {fileID: 7700345445878947243}
-  - component: {fileID: 3712532823536212299}
-  m_Layer: 0
-  m_Name: "\u53E3(\u672A\u8ABF\u6574)"
-  m_TagString: EditorOnly
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4114311733433017478
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8385598662170681234}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8211248576437974259}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2280435550697484388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8385598662170681234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42581d8044b64899834d3d515ab3a144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boneReference: 10
-  subPath: 
-  attachmentMode: 2
---- !u!114 &7700345445878947243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8385598662170681234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49bb23f95a7baca4186efa68bc5891b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_manualRemap: 1
-  m_colliderToHijack: 2
-  m_lowPriority: 1
-  m_rootTransform:
-    referencePath: 
-    targetObject: {fileID: 0}
-  m_copyHijackedShape: 0
-  m_visualizeGizmo: 1
-  m_radius: 0.05
-  m_height: 0.2
-  m_position: {x: 0, y: 0, z: 0}
-  m_rotation: {x: 0, y: 0, z: 0, w: 1}
---- !u!114 &3712532823536212299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8385598662170681234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1888410255, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetBones:
-  - transform: {fileID: 4114311733433017478}
-    scaleFactor: 1
-    applyCondition: 0
-  globalScaleFactor: 1
 --- !u!1 &8415077922164352986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,6 +2701,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: a8f43c5b45e7ebe40acedb6ccc117298, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &7384140135839639441
@@ -2477,6 +2718,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Depth
     remapTo: 
@@ -2484,6 +2728,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 1
@@ -2533,6 +2781,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 9824b67e93a6dd346b20bcf24622aa8b, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &3507614445052237311
@@ -2547,6 +2798,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: AvatarMod/Reflection
     remapTo: 
@@ -2554,6 +2808,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
@@ -2564,6 +2822,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
@@ -2615,6 +2877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: e12afbc1de7bc5f4b87950513a78e1f4, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &3814755182487221320
@@ -2629,6 +2894,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Dance
     remapTo: 
@@ -2636,6 +2904,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 0
@@ -2646,6 +2918,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 0
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0
     saved: 0
     hasExplicitDefaultValue: 1
@@ -2682,6 +2958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb122659f724ebf85fe095ac02dc339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   animator: {fileID: 9100000, guid: bc1f0a9f4bdd477479e9032a399e64e6, type: 2}
   layerType: 7
   deleteAttachedAnimator: 0
@@ -2736,6 +3015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 1.19.0-rc.0
+    MinimumVersion: 1.18.0
   parameters:
   - nameOrPrefix: AvatarMod/ShadowStrength
     remapTo: 
@@ -2743,6 +3025,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
+    bitWidth: 7
+    representation: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 0.5
     saved: 1
     hasExplicitDefaultValue: 1
@@ -3191,6 +3477,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef83cb0c23d4d7c9d41021e544a1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   menuToAppend: {fileID: 11400000, guid: 11ae0c771a01cce49ac26feee38451c0, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 6bc751192bb9cad44a846030307a3550, type: 2}
 --- !u!114 &5280349381411111842
@@ -3205,6 +3494,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _modularAvatarVersionTag:
+    UpdatedAtVersion: 
+    MinimumVersion: 
   parameters:
   - nameOrPrefix: AvatarMod/Uzumore
     remapTo: 
@@ -3212,6 +3504,10 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 3
     localOnly: 0
+    bitWidth: 0
+    representation: 0
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1

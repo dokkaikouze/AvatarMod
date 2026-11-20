@@ -19,6 +19,7 @@ internal static class AvatarModMetaTemplateFiles
     internal const string StateDirectory = "UserSettings/AvatarMod";
     internal const string StatePath = StateDirectory + "/MetaTemplateState.json";
     internal const string BackupDirectory = StateDirectory + "/MetaBackups";
+    internal const int PersistentStateSchemaVersion = 2;
 
     [Serializable]
     internal sealed class TemplateData
@@ -40,7 +41,7 @@ internal static class AvatarModMetaTemplateFiles
     [Serializable]
     internal sealed class PersistentState
     {
-        public int schemaVersion = 1;
+        public int schemaVersion = PersistentStateSchemaVersion;
         public string packageVersion;
         public string templateHash;
         public string lastPromptFingerprint;
@@ -324,7 +325,7 @@ internal static class AvatarModMetaTemplatePackageMonitor
         ScheduleCheck(false);
     }
 
-    private static void ScheduleCheck(bool packageEvent)
+    internal static void ScheduleCheck(bool packageEvent)
     {
         packageEventPending |= packageEvent;
         if (scheduled)
@@ -387,6 +388,12 @@ internal sealed class AvatarModMetaTemplateSyncWindow : EditorWindow
 
     internal static void CheckForChanges(bool packageEvent)
     {
+        if (EditorApplication.isCompiling || EditorApplication.isUpdating)
+        {
+            AvatarModMetaTemplatePackageMonitor.ScheduleCheck(packageEvent);
+            return;
+        }
+
         string templatePath = AvatarModMetaTemplateFiles.GetBundledTemplatePath(true);
         if (string.IsNullOrEmpty(templatePath))
         {
@@ -402,16 +409,35 @@ internal sealed class AvatarModMetaTemplateSyncWindow : EditorWindow
         string packageVersion = AvatarModMetaTemplateFiles.GetPackageVersion();
         string templateHash = AvatarModMetaTemplateFiles.Hash(read);
         bool stateChanged = state.packageVersion != packageVersion || state.templateHash != templateHash;
-        if (!packageEvent && !stateChanged)
+        bool stateSchemaChanged = state.schemaVersion < AvatarModMetaTemplateFiles.PersistentStateSchemaVersion;
+        if (!packageEvent && !stateChanged && !stateSchemaChanged)
         {
             return;
         }
 
         string fingerprint = packageVersion + ":" + templateHash;
+        List<DifferenceRow> rows = FindDifferences(templatePath, state, out string error);
+        if (!string.IsNullOrEmpty(error))
+        {
+            Debug.LogWarning("[AvatarMod ファイル設定同期] 起動時の照合に失敗したため、次回起動時に再確認します: " + error);
+            return;
+        }
+
+        bool hasApplicableDifferences = rows.Any(row => row.status == "内容が異なる" && !row.permanentlyExcluded);
+        state.schemaVersion = AvatarModMetaTemplateFiles.PersistentStateSchemaVersion;
         state.packageVersion = packageVersion;
         state.templateHash = templateHash;
-        state.lastPromptFingerprint = fingerprint;
+        if (hasApplicableDifferences)
+        {
+            state.lastPromptFingerprint = fingerprint;
+        }
         AvatarModMetaTemplateFiles.SaveState(state);
+
+        if (!hasApplicableDifferences)
+        {
+            LogSyncCheckResult(templatePath, rows);
+            return;
+        }
 
         ShowRecommendedSettingsPrompt(templatePath);
     }
